@@ -9,7 +9,7 @@ library(lubridate)
 load_all(".")
 
 # ---- Function to download and clean ----
-scrape_data <- function(id, table, range, date_start, date_end, days) {
+scrape_data <- function(id, sheet, range, date_start, date_end, days) {
 
   # Download
   query_url <-
@@ -26,7 +26,7 @@ scrape_data <- function(id, table, range, date_start, date_end, days) {
   raw_trusts <-
     read_excel(
       download,
-      sheet = table,
+      sheet = sheet,
       range = range
     )
 
@@ -69,7 +69,7 @@ scrape_data <- function(id, table, range, date_start, date_end, days) {
 df <-
   tibble(
     id = query_urls |> filter(str_detect(id, "^nhs_discharge")) |> pull(id),
-    table = rep("Table 2", 4),
+    sheet = rep("Table 2", 4),
     range = c("C61:DT182", "C60:DX181", "C60:DT181", "C60:DX181"),
     date_start = c("2022-04-01", "2022-05-01", "2022-06-01", "2022-07-01"),
     date_end = c("2022-04-30", "2022-05-31", "2022-06-30", "2022-07-31"),

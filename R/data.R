@@ -11,4 +11,4 @@
 #'   ...
 #' }
 #' @source \url{https://www.england.nhs.uk/}
-"hospital_discharge_criteria_22"
+"nhs_discharge_criteria_22"

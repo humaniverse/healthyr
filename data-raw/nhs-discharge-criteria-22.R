@@ -68,7 +68,7 @@ scrape_data <- function(id, table, range, date_start, date_end, days) {
 # Generate a dataframe with function arguments
 df <-
   tibble(
-    id = query_urls |> filter(str_detect(id, "^hospital_discharge")) |> pull(id),
+    id = query_urls |> filter(str_detect(id, "^nhs_discharge")) |> pull(id),
     table = rep("Table 2", 4),
     range = c("C61:DT182", "C60:DX181", "C60:DT181", "C60:DX181"),
     date_start = c("2022-04-01", "2022-05-01", "2022-06-01", "2022-07-01"),
@@ -77,7 +77,7 @@ df <-
   )
 
 # Build dataframe with all months
-hospital_discharge_criteria_22 <- pmap_dfr(df, scrape_data)
+nhs_discharge_criteria_22 <- pmap_dfr(df, scrape_data)
 
 # Save output to data/ folder
-usethis::use_data(hospital_discharge_criteria_22, overwrite = TRUE)
+usethis::use_data(nhs_discharge_criteria_22, overwrite = TRUE)

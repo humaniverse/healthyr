@@ -3,10 +3,7 @@
 \docType{data}
 \name{nhs_critical_general_acute_beds_22}
 \alias{nhs_critical_general_acute_beds_22}
-\title{Critical care and General & Acute Beds
-A dataset containing NHS Trust level critical care and general and acute bed
-availability information. This is taken from the urgent and emergency care
-daily situation reports for each month of 2022.}
+\title{Critical care and General & Acute Beds}
 \format{
 A data frame with 548 rows and 20 variables:
 \describe{
@@ -40,7 +37,6 @@ A data frame with 548 rows and 20 variables:
 nhs_critical_general_acute_beds_22
 }
 \description{
-Critical care and General & Acute Beds
 A dataset containing NHS Trust level critical care and general and acute bed
 availability information. This is taken from the urgent and emergency care
 daily situation reports for each month of 2022.

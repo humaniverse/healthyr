@@ -1,4 +1,5 @@
 #' Critical care and General & Acute Beds
+#' 
 #' A dataset containing NHS Trust level critical care and general and acute bed
 #' availability information. This is taken from the urgent and emergency care
 #' daily situation reports for each month of 2022.

@@ -79,5 +79,21 @@ df <-
 # Build dataframe with all months
 nhs_discharge_criteria_22 <- pmap_dfr(df, scrape_data)
 
+# Two clear outliers exist in the data, presumably from data entry errors
+nhs_discharge_criteria_22 |>
+  arrange(desc(do_not_meet_criteria_to_reside))
+
+# Replace outliers with previous value in series
+nhs_discharge_criteria_22 <-
+  nhs_discharge_criteria_22 |>
+  mutate(
+    do_not_meet_criteria_to_reside = case_when(
+      nhs_trust22_code == "RXQ" & date == "2022-06-15" ~ NA_real_,
+      nhs_trust22_code == "RH8" & date == "2022-05-22" ~ NA_real_,
+      TRUE ~ do_not_meet_criteria_to_reside
+    )
+  ) |>
+  fill(do_not_meet_criteria_to_reside)
+
 # Save output to data/ folder
 usethis::use_data(nhs_discharge_criteria_22, overwrite = TRUE)

@@ -57,9 +57,7 @@ scrape_data <- function(id, sheet, range, date_start, date_end, days) {
   data <-
     long |>
     mutate(date = dates, name = variables) |>
-    filter(name == "Do not meet criteria to reside") |>
-    pivot_wider(names_from = "name", values_from = "value") |>
-    rename(do_not_meet_criteria_to_reside = `Do not meet criteria to reside`)
+    pivot_wider(names_from = "name", values_from = "value")
 
   return(data)
 }
@@ -68,7 +66,7 @@ scrape_data <- function(id, sheet, range, date_start, date_end, days) {
 # Generate a dataframe with function arguments
 df <-
   tibble(
-    id = query_urls |> filter(str_detect(id, "^nhs_discharge")) |> pull(id),
+    id = query_urls |> filter(str_detect(id, "^nhs_hospital_discharge")) |> pull(id),
     sheet = rep("Table 2", 4),
     range = c("C61:DT182", "C60:DX181", "C60:DT181", "C60:DX181"),
     date_start = c("2022-04-01", "2022-05-01", "2022-06-01", "2022-07-01"),
@@ -77,15 +75,24 @@ df <-
   )
 
 # Build dataframe with all months
-nhs_discharge_criteria_22 <- pmap_dfr(df, scrape_data)
+nhs_discharge_data_22 <- pmap_dfr(df, scrape_data)
+
+# ---- Criteria to reside ----
+criteria_to_reside <-
+  nhs_discharge_data_22 |>
+  select(
+    nhs_trust22_code,
+    date,
+    do_not_meet_criteria_to_reside = `Do not meet criteria to reside`
+  )
 
 # Two clear outliers exist in the data, presumably from data entry errors
-nhs_discharge_criteria_22 |>
+criteria_to_reside |>
   arrange(desc(do_not_meet_criteria_to_reside))
 
 # Replace outliers with previous value in series
-nhs_discharge_criteria_22 <-
-  nhs_discharge_criteria_22 |>
+nhs_criteria_to_reside_22 <-
+  criteria_to_reside |>
   mutate(
     do_not_meet_criteria_to_reside = case_when(
       nhs_trust22_code == "RXQ" & date == "2022-06-15" ~ NA_real_,
@@ -96,4 +103,4 @@ nhs_discharge_criteria_22 <-
   fill(do_not_meet_criteria_to_reside)
 
 # Save output to data/ folder
-usethis::use_data(nhs_discharge_criteria_22, overwrite = TRUE)
+usethis::use_data(nhs_criteria_to_reside_22, overwrite = TRUE)

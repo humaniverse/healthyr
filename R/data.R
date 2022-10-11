@@ -31,7 +31,7 @@
 #' @source \url{https://www.england.nhs.uk/}
 "nhs_critical_general_acute_beds_22"
 
-#' Hosptial Discharge - Criteria to Reside (2022)
+#' Hosptial Discharge Data - Criteria to Reside (2022)
 #'
 #' A dataset containing NHS Trust level hopsital discharge data on how many
 #' patients do not meet criteria to reside for each day of 2022.
@@ -44,4 +44,4 @@
 #'   ...
 #' }
 #' @source \url{https://www.england.nhs.uk/}
-"nhs_discharge_criteria_22"
+"nhs_criteria_to_reside_22"

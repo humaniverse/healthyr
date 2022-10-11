@@ -45,3 +45,20 @@
 #' }
 #' @source \url{https://www.england.nhs.uk/}
 "nhs_criteria_to_reside_22"
+
+#' Hosptial Discharge Data - Discharged Patients (2022)
+#'
+#' A dataset containing NHS Trust level hopsital discharge data on how many
+#' patients were discharged for each day of 2022.
+#'
+#' @format A data frame with 14,762 rows and 5 variables:
+#' \describe{
+#'   \item{nhs_trust22_code}{NHS Trust (organisational) code}
+#'   \item{date}{Date}
+#'   \item{discharged_by_1700}{Number of patients discharged by 17:00}
+#'   \item{discharged_between_1701_2359}{Number of patients discharged between 17:01 and 23:59}
+#'   \item{discharged_total}{Total number of patients discharged}
+#'   ...
+#' }
+#' @source \url{https://www.england.nhs.uk/}
+"nhs_discharged_patients_22"

@@ -104,3 +104,22 @@ nhs_criteria_to_reside_22 <-
 
 # Save output to data/ folder
 usethis::use_data(nhs_criteria_to_reside_22, overwrite = TRUE)
+
+# ---- Number discharged ----
+discharged_patients <-
+  nhs_discharge_data_22 |>
+  select(
+    nhs_trust22_code,
+    date,
+    discharged_by_1700 = `Discharged by 17:00`,
+    discharged_between_1701_2359 = `Discharged between 17:01 and 23:59`
+  )
+
+nhs_discharged_patients_22 <-
+  discharged_patients |>
+  rowwise() |>
+  mutate(discharged_total = sum(c_across(starts_with("discharged")))) |>
+  ungroup()
+
+# Save output to data/ folder
+usethis::use_data(nhs_discharged_patients_22, overwrite = TRUE)

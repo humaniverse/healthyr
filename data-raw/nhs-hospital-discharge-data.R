@@ -67,11 +67,11 @@ scrape_data <- function(id, sheet, range, date_start, date_end, days) {
 df <-
   tibble(
     id = query_urls |> filter(str_detect(id, "^nhs_hospital_discharge")) |> pull(id),
-    sheet = rep("Table 2", 4),
-    range = c("C61:DT182", "C60:DX181", "C60:DT181", "C60:DX181"),
-    date_start = c("2022-04-01", "2022-05-01", "2022-06-01", "2022-07-01"),
-    date_end = c("2022-04-30", "2022-05-31", "2022-06-30", "2022-07-31"),
-    days = c(30, 31, 30, 31)
+    sheet = rep("Table 2", 5),
+    range = c("C61:DT182", "C60:DX181", "C60:DT181", "C60:DX181", "C60:DX181"),
+    date_start = c("2022-04-01", "2022-05-01", "2022-06-01", "2022-07-01", "2022-08-01"),
+    date_end = c("2022-04-30", "2022-05-31", "2022-06-30", "2022-07-31", "2022-08-31"),
+    days = c(30, 31, 30, 31, 31)
   )
 
 # Build dataframe with all months

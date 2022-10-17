@@ -1,5 +1,5 @@
 #' Critical care and General & Acute Beds
-#' 
+#'
 #' A dataset containing NHS Trust level critical care and general and acute bed
 #' availability information. This is taken from the urgent and emergency care
 #' daily situation reports for each month of 2022.
@@ -62,3 +62,18 @@
 #' }
 #' @source \url{https://www.england.nhs.uk/}
 "nhs_discharged_patients_22"
+
+#' Physchological Therpaies - IAPT (2022)
+#'
+#' A dataset containing NHS Trust level IAPT data.
+#'
+#' @format A data frame with 6,876 rows and 4 variables:
+#' \describe{
+#'   \item{nhs_trust22_code}{NHS Trust (organisational) code}
+#'   \item{date}{Date}
+#'   \item{name}{Name of the variable}
+#'   \item{value}{Value of the variable}
+#'   ...
+#' }
+#' @source \url{https://www.england.nhs.uk/}
+"nhs_iapt_22"

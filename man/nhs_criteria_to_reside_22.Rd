@@ -5,7 +5,7 @@
 \alias{nhs_criteria_to_reside_22}
 \title{Hosptial Discharge Data - Criteria to Reside (2022)}
 \format{
-A data frame with 18,513 rows and 3 variables:
+A data frame with 22,143 rows and 3 variables:
 \describe{
 \item{nhs_trust22_code}{NHS Trust (organisational) code}
 \item{date}{Date}

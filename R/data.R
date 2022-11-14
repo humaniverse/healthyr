@@ -4,7 +4,7 @@
 #' availability information. This is taken from the urgent and emergency care
 #' daily situation reports for each month of 2022.
 #'
-#' @format A data frame with 822 rows and 20 variables:
+#' @format A data frame with 959 rows and 20 variables:
 #' \describe{
 #'   \item{nhs_trust22_code}{NHS Trust (organisational) code}
 #'   \item{date}{Date}
@@ -36,7 +36,7 @@
 #' A dataset containing NHS Trust level hopsital discharge data on how many
 #' patients do not meet criteria to reside for each day of 2022.
 #'
-#' @format A data frame with 22,143 rows and 3 variables:
+#' @format A data frame with 25,894 rows and 3 variables:
 #' \describe{
 #'   \item{nhs_trust22_code}{NHS Trust (organisational) code}
 #'   \item{date}{Date}
@@ -51,7 +51,7 @@
 #' A dataset containing NHS Trust level hopsital discharge data on how many
 #' patients were discharged for each day of 2022.
 #'
-#' @format A data frame with 22,143 rows and 5 variables:
+#' @format A data frame with 25,894 rows and 5 variables:
 #' \describe{
 #'   \item{nhs_trust22_code}{NHS Trust (organisational) code}
 #'   \item{date}{Date}

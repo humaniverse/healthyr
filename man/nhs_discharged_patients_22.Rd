@@ -5,7 +5,7 @@
 \alias{nhs_discharged_patients_22}
 \title{Hosptial Discharge Data - Discharged Patients (2022)}
 \format{
-A data frame with 22,143 rows and 5 variables:
+A data frame with 25,894 rows and 5 variables:
 \describe{
 \item{nhs_trust22_code}{NHS Trust (organisational) code}
 \item{date}{Date}

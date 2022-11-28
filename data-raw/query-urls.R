@@ -18,7 +18,11 @@ query_urls <-
     "Hospital discharge (criteria to reside)", "nhs_hospital_discharge_data_august_22", "August 2022", "OGLv3", "https://www.england.nhs.uk/statistics/wp-content/uploads/sites/2/2022/09/Daily-discharge-sitrep-monthly-data-webfile-August2022.xlsx", "https://www.england.nhs.uk/statistics/statistical-work-areas/hospital-discharge-data/",
     "Hospital discharge (criteria to reside)", "nhs_hospital_discharge_data_september_22", "September 2022", "OGLv3", "https://www.england.nhs.uk/statistics/wp-content/uploads/sites/2/2022/10/Daily-discharge-sitrep-monthly-data-webfile-September2022-1.xlsx", "https://www.england.nhs.uk/statistics/statistical-work-areas/hospital-discharge-data/",
     "Hospital discharge (criteria to reside)", "nhs_hospital_discharge_data_october_22", "October 2022", "OGLv3", "https://www.england.nhs.uk/statistics/wp-content/uploads/sites/2/2022/11/Daily-discharge-sitrep-monthly-data-webfile-October2022.xlsx", "https://www.england.nhs.uk/statistics/statistical-work-areas/hospital-discharge-data/",
-    "Psychologoical Therapies (IAPT)", "nhs_iapt_july_22", "July 2022", "OGLv3", "https://files.digital.nhs.uk/30/36DAC1/iapt_month_jul_22_activity.csv", "https://digital.nhs.uk/data-and-information/publications/statistical/psychological-therapies-report-on-the-use-of-iapt-services"
+    "Psychologoical Therapies (IAPT)", "nhs_iapt_july_22", "July 2022", "OGLv3", "https://files.digital.nhs.uk/30/36DAC1/iapt_month_jul_22_activity.csv", "https://digital.nhs.uk/data-and-information/publications/statistical/psychological-therapies-report-on-the-use-of-iapt-services",
+
+    # Scotland
+    "Delayed Discharge Bed Days by Health Board", "scotland_delayed_discharge_hb", "2016 - 2022", "OGLv3", "https://www.opendata.nhs.scot/dataset/52591cba-fd71-48b2-bac3-e71ac108dfee/resource/fd354e4b-6211-48ba-8e4f-8356a5ed4215/download/2022-09_delayed-discharge-beddays-health-board.csv", "https://www.opendata.nhs.scot/dataset/delayed-discharges-in-nhsscotland/resource/fd354e4b-6211-48ba-8e4f-8356a5ed4215",
+    "Delayed Discharge Bed Days by Council Area", "scotland_delayed_discharge_ltla", "2016 - 2022", "OGLv3", "https://www.opendata.nhs.scot/dataset/52591cba-fd71-48b2-bac3-e71ac108dfee/resource/513d2d71-cf73-458e-8b44-4fa9bccbf50a/download/2022-09_delayed-discharge-beddays-council-area.csv", "https://www.opendata.nhs.scot/dataset/delayed-discharges-in-nhsscotland/resource/fd354e4b-6211-48ba-8e4f-8356a5ed4215"
   )
 
 usethis::use_data(query_urls, internal = TRUE, overwrite = TRUE)

@@ -18,7 +18,10 @@ query_urls <-
     "Hospital discharge (criteria to reside)", "nhs_hospital_discharge_data_august_22", "August 2022", "OGLv3", "https://www.england.nhs.uk/statistics/wp-content/uploads/sites/2/2022/09/Daily-discharge-sitrep-monthly-data-webfile-August2022.xlsx", "https://www.england.nhs.uk/statistics/statistical-work-areas/hospital-discharge-data/",
     "Hospital discharge (criteria to reside)", "nhs_hospital_discharge_data_september_22", "September 2022", "OGLv3", "https://www.england.nhs.uk/statistics/wp-content/uploads/sites/2/2022/10/Daily-discharge-sitrep-monthly-data-webfile-September2022-1.xlsx", "https://www.england.nhs.uk/statistics/statistical-work-areas/hospital-discharge-data/",
     "Hospital discharge (criteria to reside)", "nhs_hospital_discharge_data_october_22", "October 2022", "OGLv3", "https://www.england.nhs.uk/statistics/wp-content/uploads/sites/2/2022/11/Daily-discharge-sitrep-monthly-data-webfile-October2022.xlsx", "https://www.england.nhs.uk/statistics/statistical-work-areas/hospital-discharge-data/",
-    "Psychologoical Therapies (IAPT)", "nhs_iapt_july_22", "July 2022", "OGLv3", "https://files.digital.nhs.uk/30/36DAC1/iapt_month_jul_22_activity.csv", "https://digital.nhs.uk/data-and-information/publications/statistical/psychological-therapies-report-on-the-use-of-iapt-services"
+    "Psychologoical Therapies (IAPT)", "nhs_iapt_july_22", "July 2022", "OGLv3", "https://files.digital.nhs.uk/30/36DAC1/iapt_month_jul_22_activity.csv", "https://digital.nhs.uk/data-and-information/publications/statistical/psychological-therapies-report-on-the-use-of-iapt-services",
+
+    # Northern Ireland
+    "Bed occupancy", "ni_bed_occupancy_21_22", "2021/22", "OGLv3", "https://www.health-ni.gov.uk/sites/default/files/publications/health/hs-inpatient-day-case-tables-21-22.xlsx", "https://www.health-ni.gov.uk/publications/hospital-statistics-inpatient-and-day-case-activity-202122"
   )
 
 usethis::use_data(query_urls, internal = TRUE, overwrite = TRUE)

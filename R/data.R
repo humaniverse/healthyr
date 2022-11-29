@@ -93,3 +93,19 @@
 #' }
 #' @source \url{https://www.health-ni.gov.uk/}
 "ni_bed_occupancy"
+
+#' Bed occupancy/availability in Scotland
+#'
+#' Beds by Board of Treatment and Specialty, 2016-2021.
+#'
+#' @format A data frame with 30,458 rows and 5 variables:
+#' \describe{
+#'   \item{hb_code}{Scottish Health Board code}
+#'   \item{date}{Date}
+#'   \item{average_number_available_staffed_beds}{Daily average number of available staffed beds}
+#'   \item{average_number_occupied_beds}{Daily average number of occupied beds}
+#'   \item{percent_occuped_beds}{Percentage (%) of daily occupancy of beds}
+#'   ...
+#' }
+#' @source \url{https://www.opendata.nhs.scot}
+"scotland_beds"

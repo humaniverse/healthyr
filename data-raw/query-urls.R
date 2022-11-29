@@ -21,7 +21,10 @@ query_urls <-
     "Psychologoical Therapies (IAPT)", "nhs_iapt_july_22", "July 2022", "OGLv3", "https://files.digital.nhs.uk/30/36DAC1/iapt_month_jul_22_activity.csv", "https://digital.nhs.uk/data-and-information/publications/statistical/psychological-therapies-report-on-the-use-of-iapt-services",
 
     # Northern Ireland
-    "Bed occupancy", "ni_bed_occupancy_21_22", "2021/22", "OGLv3", "https://www.health-ni.gov.uk/sites/default/files/publications/health/hs-inpatient-day-case-tables-21-22.xlsx", "https://www.health-ni.gov.uk/publications/hospital-statistics-inpatient-and-day-case-activity-202122"
+    "Bed occupancy", "ni_bed_occupancy_21_22", "2021/22", "OGLv3", "https://www.health-ni.gov.uk/sites/default/files/publications/health/hs-inpatient-day-case-tables-21-22.xlsx", "https://www.health-ni.gov.uk/publications/hospital-statistics-inpatient-and-day-case-activity-202122",
+
+    # Scotland
+    "Beds by Board of Treatment and Specialty", "scotland_beds", "2016 - 2021", "OGLv3", "https://www.opendata.nhs.scot/dataset/554b0e7a-ccac-4bb6-82db-1a8b306fcb36/resource/f272bb7d-5320-4491-84c1-614a2c064007/download/beds_by_nhs_board_of_treatment_and_specialty.csv", "https://www.opendata.nhs.scot/dataset/554b0e7a-ccac-4bb6-82db-1a8b306fcb36/resource/f272bb7d-5320-4491-84c1-614a2c064007/download/beds_by_nhs_board_of_treatment_and_specialty.csv"
   )
 
 usethis::use_data(query_urls, internal = TRUE, overwrite = TRUE)

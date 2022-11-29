@@ -15,7 +15,7 @@ query_url <-
 
 raw <- read_csv(query_url)
 
-nhs_iapt_22 <- raw |>
+england_iapt <- raw |>
   select(
     nhs_trust22_code = ORG_CODE2,
     name = MEASURE_NAME,
@@ -25,4 +25,4 @@ nhs_iapt_22 <- raw |>
   relocate(date, .after = nhs_trust22_code) |>
   filter(nhs_trust22_code %in% geographr::points_nhs_trusts22$nhs_trust22_code)
 
-usethis::use_data(nhs_iapt_22, overwrite = TRUE)
+usethis::use_data(england_iapt, overwrite = TRUE)

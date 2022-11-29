@@ -10,7 +10,6 @@ load_all(".")
 
 # ---- Function to download and clean ----
 scrape_data <- function(id, sheet, range, date) {
-
   # Download
   query_url <-
     query_urls |>
@@ -70,7 +69,7 @@ df <-
   )
 
 # Build dataframe with all months
-nhs_critical_general_acute_beds_22 <- pmap_dfr(df, scrape_data)
+england_critical_general_acute_beds <- pmap_dfr(df, scrape_data)
 
 # Save output to data/ folder
-usethis::use_data(nhs_critical_general_acute_beds_22, overwrite = TRUE)
+usethis::use_data(england_critical_general_acute_beds, overwrite = TRUE)

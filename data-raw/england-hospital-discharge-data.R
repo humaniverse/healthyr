@@ -10,7 +10,6 @@ load_all(".")
 
 # ---- Function to download and clean ----
 scrape_data <- function(id, sheet, range, date_start, date_end, days) {
-
   # Download
   query_url <-
     query_urls |>
@@ -75,11 +74,11 @@ df <-
   )
 
 # Build dataframe with all months
-nhs_discharge_data_22 <- pmap_dfr(df, scrape_data)
+england_discharge_data <- pmap_dfr(df, scrape_data)
 
 # ---- Criteria to reside ----
 criteria_to_reside <-
-  nhs_discharge_data_22 |>
+  england_discharge_data |>
   select(
     nhs_trust22_code,
     date,
@@ -91,7 +90,7 @@ criteria_to_reside |>
   arrange(desc(do_not_meet_criteria_to_reside))
 
 # Replace outliers with previous value in series
-nhs_criteria_to_reside_22 <-
+england_criteria_to_reside <-
   criteria_to_reside |>
   mutate(
     do_not_meet_criteria_to_reside = case_when(
@@ -103,11 +102,11 @@ nhs_criteria_to_reside_22 <-
   fill(do_not_meet_criteria_to_reside)
 
 # Save output to data/ folder
-usethis::use_data(nhs_criteria_to_reside_22, overwrite = TRUE)
+usethis::use_data(england_criteria_to_reside, overwrite = TRUE)
 
 # ---- Number discharged ----
 discharged_patients <-
-  nhs_discharge_data_22 |>
+  england_discharge_data |>
   select(
     nhs_trust22_code,
     date,
@@ -115,11 +114,11 @@ discharged_patients <-
     discharged_between_1701_2359 = `Discharged between 17:01 and 23:59`
   )
 
-nhs_discharged_patients_22 <-
+england_discharged_patients <-
   discharged_patients |>
   rowwise() |>
   mutate(discharged_total = sum(c_across(starts_with("discharged")))) |>
   ungroup()
 
 # Save output to data/ folder
-usethis::use_data(nhs_discharged_patients_22, overwrite = TRUE)
+usethis::use_data(england_discharged_patients, overwrite = TRUE)

@@ -2,7 +2,7 @@
 #'
 #' A dataset containing NHS Trust level critical care and general and acute bed
 #' availability information. This is taken from the urgent and emergency care
-#' daily situation reports for each month of 2022.
+#' daily situation reports.
 #'
 #' @format A data frame with 959 rows and 20 variables:
 #' \describe{
@@ -29,12 +29,12 @@
 #'   ...
 #' }
 #' @source \url{https://www.england.nhs.uk/}
-"nhs_critical_general_acute_beds_22"
+"england_critical_general_acute_beds"
 
-#' Hosptial Discharge Data - Criteria to Reside (2022)
+#' Hosptial Discharge Data - Criteria to Reside
 #'
 #' A dataset containing NHS Trust level hopsital discharge data on how many
-#' patients do not meet criteria to reside for each day of 2022.
+#' patients do not meet criteria to reside each day.
 #'
 #' @format A data frame with 25,894 rows and 3 variables:
 #' \describe{
@@ -44,12 +44,12 @@
 #'   ...
 #' }
 #' @source \url{https://www.england.nhs.uk/}
-"nhs_criteria_to_reside_22"
+"england_criteria_to_reside"
 
-#' Hosptial Discharge Data - Discharged Patients (2022)
+#' Hosptial Discharge Data - Discharged Patients
 #'
 #' A dataset containing NHS Trust level hopsital discharge data on how many
-#' patients were discharged for each day of 2022.
+#' patients were discharged each day.
 #'
 #' @format A data frame with 25,894 rows and 5 variables:
 #' \describe{
@@ -61,9 +61,9 @@
 #'   ...
 #' }
 #' @source \url{https://www.england.nhs.uk/}
-"nhs_discharged_patients_22"
+"england_discharged_patients"
 
-#' Physchological Therpaies - IAPT (2022)
+#' Physchological Therpaies - IAPT
 #'
 #' A dataset containing NHS Trust level IAPT data.
 #'
@@ -76,7 +76,39 @@
 #'   ...
 #' }
 #' @source \url{https://www.england.nhs.uk/}
-"nhs_iapt_22"
+"england_iapt"
+
+#' Bed Occupany
+#'
+#' A dataset containing Health and Social Care Trust level bed occupancy data.
+#'
+#' @format A data frame with 5 rows and 5 variables:
+#' \describe{
+#'   \item{trust18_code}{Health and Social Care Trust code code}
+#'   \item{date}{Date}
+#'   \item{beds_available_count}{Total number of available beds}
+#'   \item{beds_occupied_count}{Total number of occupied beds}
+#'   \item{beds_occupied_percentage}{The percentage of occupied beds}
+#'   ...
+#' }
+#' @source \url{https://www.health-ni.gov.uk/}
+"ni_bed_occupancy"
+
+#' Bed occupancy/availability in Scotland
+#'
+#' Beds by Board of Treatment and Specialty, 2016-2021.
+#'
+#' @format A data frame with 30,458 rows and 5 variables:
+#' \describe{
+#'   \item{hb_code}{Scottish Health Board code}
+#'   \item{date}{Date}
+#'   \item{average_number_available_staffed_beds}{Daily average number of available staffed beds}
+#'   \item{average_number_occupied_beds}{Daily average number of occupied beds}
+#'   \item{percent_occuped_beds}{Percentage (%) of daily occupancy of beds}
+#'   ...
+#' }
+#' @source \url{https://www.opendata.nhs.scot}
+"scotland_beds"
 
 #' Delayed Discharge Bed Days by Health Board in Scotland
 #'

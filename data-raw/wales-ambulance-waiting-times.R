@@ -12,7 +12,7 @@ library(lubridate)
 raw <- raw <- statswales_get_dataset("hlth1308")
 
 # ---- Clean data ----
-wales_amublance_services <-
+wales_ambulance_waiting_times <-
   raw |>
   as_tibble() |>
   # Filter to only include data from Jan 2021
@@ -24,10 +24,9 @@ wales_amublance_services <-
     Measure_ItemName_ENG,
     Data
   ) |>
-  pivot_wider(names_from = Measure_ItemName_ENG, values_from = Data)
+  pivot_wider(names_from = Measure_ItemName_ENG, values_from = Data) |> 
+  clean_names()
 
-wales_amublance_services |>
-  write_rds("data/wales_ambulance_services.rds")
 
 # Save output to data/ folder
-usethis::use_data(wales_amublance_services, overwrite = TRUE)
+usethis::use_data(wales_ambulance_waiting_times, overwrite = TRUE)

@@ -20,8 +20,6 @@ query_urls <-
     "Hospital discharge (criteria to reside)", "nhs_hospital_discharge_data_october_22", "October 2022", "OGLv3", "https://www.england.nhs.uk/statistics/wp-content/uploads/sites/2/2022/11/Daily-discharge-sitrep-monthly-data-webfile-October2022.xlsx", "https://www.england.nhs.uk/statistics/statistical-work-areas/hospital-discharge-data/",
     "Psychologoical Therapies (IAPT)", "nhs_iapt_july_22", "July 2022", "OGLv3", "https://files.digital.nhs.uk/30/36DAC1/iapt_month_jul_22_activity.csv", "https://digital.nhs.uk/data-and-information/publications/statistical/psychological-therapies-report-on-the-use-of-iapt-services",
     "Wales ambulance waiting times", "wales_ambulance_waiting_times", "November 2022", "OGLv3", "http://open.statswales.gov.wales/dataset/hlth1308", "https://statswales.gov.wales/Catalogue/Health-and-Social-Care/NHS-Performance/Ambulance-Services",
-    "Wales beds by specialty, organisation and month", "wales_critical_general_acute_beds", "October 2022", "OGLv3", "http://open.statswales.gov.wales/dataset/hlth0310", "https://statswales.gov.wales/Catalogue/Health-and-Social-Care/NHS-Hospital-Activity/NHS-Beds/nhsbeds-by-organisation-specialty-month",
-    "Wales hospital discharge (criteria to reside)", "wales_hospital_discharge_data", "November 2022", "OGLv3","https://gov.wales/sites/default/files/statistics-and-research/2022-11/hospital-discharge-data-discharge-pathway-delays-by-type-of-delay-and-date-september-october-2022-201.ods", "https://gov.wales/nhs-activity-and-performance-summary-september-and-october-2022"
-  )
+    "Wales beds by specialty, organisation and month", "wales_critical_general_acute_beds", "October 2022", "OGLv3", "http://open.statswales.gov.wales/dataset/hlth0310", "https://statswales.gov.wales/Catalogue/Health-and-Social-Care/NHS-Hospital-Activity/NHS-Beds/nhsbeds-by-organisation-specialty-month")
 
 usethis::use_data(query_urls, internal = TRUE, overwrite = TRUE)

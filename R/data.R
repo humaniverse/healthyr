@@ -109,3 +109,37 @@
 #' }
 #' @source \url{https://www.opendata.nhs.scot}
 "scotland_beds"
+
+#' Delayed Discharge Bed Days by Health Board in Scotland
+#'
+#' A dataset containing Delayed Discharge Bed Days by Scottish Health Board.
+#'
+#' @format A data frame with 16,875 rows and 6 variables:
+#' \describe{
+#'   \item{hb_code}{Scottish Health Board code}
+#'   \item{date}{Date}
+#'   \item{age_group}{Age grouping is calculated as at the person's ready for discharge date}
+#'   \item{delay_reason}{Reason for delay indicates the principal reason grouping for a person's delay at the end of the reporting month}
+#'   \item{num_delayed_bed_days}{The total number of delayed bed days}
+#'   \item{average_daily_delayed_beds}{The average daily number of delayed beds is calculated by dividing the total number of delayed discharge bed days in the month by the number of days in the calendar month}
+#'   ...
+#' }
+#' @source \url{https://www.opendata.nhs.scot/}
+"scotland_delayed_discharge_hb"
+
+#' Delayed Discharge Bed Days by Council Area in Scotland
+#'
+#' A dataset containing Delayed Discharge Bed Days by Scottish Council Area
+#'
+#' @format A data frame with 38,250 rows and 6 variables:
+#' \describe{
+#'   \item{ltla_code}{Scottish Council Area code}
+#'   \item{date}{Date}
+#'   \item{age_group}{Age grouping is calculated as at the person's ready for discharge date}
+#'   \item{delay_reason}{Reason for delay indicates the principal reason grouping for a person's delay at the end of the reporting month}
+#'   \item{num_delayed_bed_days}{The total number of delayed bed days}
+#'   \item{average_daily_delayed_beds}{The average daily number of delayed beds is calculated by dividing the total number of delayed discharge bed days in the month by the number of days in the calendar month}
+#'   ...
+#' }
+#' @source \url{https://www.opendata.nhs.scot/}
+"scotland_delayed_discharge_ltla"

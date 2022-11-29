@@ -63,6 +63,21 @@
 #' @source \url{https://www.england.nhs.uk/}
 "england_discharged_patients"
 
+#' England Health Index (ONS)
+#'
+#' A dataset containing overall health index scores for the English lower tier
+#' local authorities from 2015-2022.
+#'
+#' @format A data frame with 1,842 rows and 3 variables:
+#' \describe{
+#'   \item{ltla21_code}{2021 Lower tier local authority code}
+#'   \item{year}{Year}
+#'   \item{overall_score}{The overall health index score}
+#'   ...
+#' }
+#' @source \url{https://www.ons.gov.uk/}
+"england_health_index"
+
 #' Physchological Therpaies - IAPT
 #'
 #' A dataset containing NHS Trust level IAPT data.

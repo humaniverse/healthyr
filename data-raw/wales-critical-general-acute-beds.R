@@ -7,6 +7,7 @@ library(dplyr)
 library(readr)
 library(tidyr)
 library(lubridate)
+library(janitor)
 
 
 # ---- Function to download data from Stats Wales website ----
@@ -14,7 +15,7 @@ raw <- statswales_get_dataset("hlth0310")
 
 
 # Clean the data
-wales_beds <-
+wales_critical_general_acute_beds <-
   raw |>
   as_tibble() |> 
   # Filter to only include data from Jan 2021
@@ -32,13 +33,12 @@ wales_beds <-
     date = Month_ItemName_ENG, 
     hospital_code = Organisation_Code,
     hospital_name = Organisation_ItemName_ENG,
-    specialty_name, 
+    specialty_name = Specialty_ItemName_ENG, 
     measure, Data
     ) |>
-  pivot_wider(names_from = c(specialty_name, measure), values_from = Data, values_fn = list)
+  pivot_wider(names_from = c(specialty_name, measure), values_from = Data, values_fn = list) |> 
+  clean_names() 
 
-wales_beds |>
-  write_rds("data/wales_beds.rds")
 
 # Save output to data/ folder
-usethis::use_data(wales_beds, overwrite = TRUE)
+usethis::use_data(wales_critical_general_acute_beds, overwrite = TRUE)

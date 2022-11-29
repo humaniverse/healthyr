@@ -3,7 +3,7 @@ query_urls <-
     # Column Names
     ~data_type, ~id, ~date, ~license, ~query, ~source,
 
-    # NHSE
+    # England
     "Critical care and General & Acute Beds – Urgent and Emergency Care Daily Situation Reports", "nhs_critical_general_acute_beds_april_22", "April 2022", "OGLv3", "https://www.england.nhs.uk/statistics/wp-content/uploads/sites/2/2022/05/202204-April-2022-sitrep-data-FINAL.xlsx", "https://www.england.nhs.uk/statistics/statistical-work-areas/bed-availability-and-occupancy/critical-care-and-general-acute-beds-urgent-and-emergency-care-daily-situation-reports/critical-care-and-general-acute-beds-urgent-and-emergency-care-daily-situation-reports-2022-23/",
     "Critical care and General & Acute Beds – Urgent and Emergency Care Daily Situation Reports", "nhs_critical_general_acute_beds_may_22", "May 2022", "OGLv3", "https://www.england.nhs.uk/statistics/wp-content/uploads/sites/2/2022/06/202205-May-2022-sitrep-data-FINAL.xlsx", "https://www.england.nhs.uk/statistics/statistical-work-areas/bed-availability-and-occupancy/critical-care-and-general-acute-beds-urgent-and-emergency-care-daily-situation-reports/critical-care-and-general-acute-beds-urgent-and-emergency-care-daily-situation-reports-2022-23/",
     "Critical care and General & Acute Beds – Urgent and Emergency Care Daily Situation Reports", "nhs_critical_general_acute_beds_june_22", "June 2022", "OGLv3", "https://www.england.nhs.uk/statistics/wp-content/uploads/sites/2/2022/07/202206-June-2022-sitrep-data-FINAL.xlsx", "https://www.england.nhs.uk/statistics/statistical-work-areas/bed-availability-and-occupancy/critical-care-and-general-acute-beds-urgent-and-emergency-care-daily-situation-reports/critical-care-and-general-acute-beds-urgent-and-emergency-care-daily-situation-reports-2022-23/",
@@ -19,6 +19,9 @@ query_urls <-
     "Hospital discharge (criteria to reside)", "nhs_hospital_discharge_data_september_22", "September 2022", "OGLv3", "https://www.england.nhs.uk/statistics/wp-content/uploads/sites/2/2022/10/Daily-discharge-sitrep-monthly-data-webfile-September2022-1.xlsx", "https://www.england.nhs.uk/statistics/statistical-work-areas/hospital-discharge-data/",
     "Hospital discharge (criteria to reside)", "nhs_hospital_discharge_data_october_22", "October 2022", "OGLv3", "https://www.england.nhs.uk/statistics/wp-content/uploads/sites/2/2022/11/Daily-discharge-sitrep-monthly-data-webfile-October2022.xlsx", "https://www.england.nhs.uk/statistics/statistical-work-areas/hospital-discharge-data/",
     "Psychologoical Therapies (IAPT)", "nhs_iapt_july_22", "July 2022", "OGLv3", "https://files.digital.nhs.uk/30/36DAC1/iapt_month_jul_22_activity.csv", "https://digital.nhs.uk/data-and-information/publications/statistical/psychological-therapies-report-on-the-use-of-iapt-services",
+
+    # Northern Ireland
+    "Bed occupancy", "ni_bed_occupancy_21_22", "2021/22", "OGLv3", "https://www.health-ni.gov.uk/sites/default/files/publications/health/hs-inpatient-day-case-tables-21-22.xlsx", "https://www.health-ni.gov.uk/publications/hospital-statistics-inpatient-and-day-case-activity-202122",
 
     # Scotland
     "Beds by Board of Treatment and Specialty", "scotland_beds", "2016 - 2021", "OGLv3", "https://www.opendata.nhs.scot/dataset/554b0e7a-ccac-4bb6-82db-1a8b306fcb36/resource/f272bb7d-5320-4491-84c1-614a2c064007/download/beds_by_nhs_board_of_treatment_and_specialty.csv", "https://www.opendata.nhs.scot/dataset/554b0e7a-ccac-4bb6-82db-1a8b306fcb36/resource/f272bb7d-5320-4491-84c1-614a2c064007/download/beds_by_nhs_board_of_treatment_and_specialty.csv"

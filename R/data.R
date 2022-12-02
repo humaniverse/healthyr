@@ -162,6 +162,23 @@
 #' @source \url{https://www.health-ni.gov.uk/}
 "ni_bed_occupancy"
 
+#' Consultant-led Referral to Treatment (RTT) by Health & Social Care Trust
+#'
+#' A dataset containing RTT data for Health & Social Care Trusts in NI.
+#'
+#' @format A data frame with 1,992 rows and 7 variables:
+#' \describe{
+#'   \item{hsct22_name}{Health & Social Care Trust name}
+#'   \item{date}{Date}
+#'   \item{year}{Year}
+#'   \item{month}{Month}
+#'   \item{specialty}{Specialty}
+#'   \item{waits_over_18_weeks}{Total waiting > 18 weeks}
+#'   \item{waits_over_52_weeks}{Total waiting > 52 weeks}
+#' }
+#' @source \url{https://www.health-ni.gov.uk/}
+"ni_rtt_hsct"
+
 #' Bed occupancy/availability in Scotland
 #'
 #' Beds by Board of Treatment and Specialty, 2016-2021.

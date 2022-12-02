@@ -16,7 +16,7 @@ A data frame with 1,260 rows and 6 variables:
 }
 }
 \source{
-\url{https://www.england.nhs.uk/}
+\url{https://statswales.gov.wales/}
 }
 \usage{
 wales_rtt_lhb

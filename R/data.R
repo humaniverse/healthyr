@@ -225,5 +225,5 @@
 #'   \item{waits_over_18_weeks}{Total waiting > 18 weeks}
 #'   \item{waits_over_52_weeks}{Total waiting > 52 weeks}
 #' }
-#' @source \url{https://www.england.nhs.uk/}
+#' @source \url{https://statswales.gov.wales/}
 "wales_rtt_lhb"

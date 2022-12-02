@@ -93,6 +93,59 @@
 #' @source \url{https://www.england.nhs.uk/}
 "england_iapt"
 
+#' Consultant-led Referral to Treatment (RTT) by ICS/STP
+#'
+#' A dataset containing ICS/STP-level RTT data.
+#'
+#' @format A data frame with 27,196 rows and 7 variables:
+#' \describe{
+#'   \item{stp20_nhs_code}{NHS code for the ICS/STP}
+#'   \item{stp20_name}{Name of the ICS/STP}
+#'   \item{date}{Date}
+#'   \item{year}{Year}
+#'   \item{month}{Month}
+#'   \item{treatment}{Treatment function name}
+#'   \item{waits_over_18_weeks}{Total waiting > 18 weeks}
+#'   \item{waits_over_52_weeks}{Total waiting > 52 weeks}
+#' }
+#' @source \url{https://www.england.nhs.uk/}
+"england_rtt_stp"
+
+#' Consultant-led Referral to Treatment (RTT) by NHS Region
+#'
+#' A dataset containing ICS/STP-level RTT data.
+#'
+#' @format A data frame with 6,804 rows and 7 variables:
+#' \describe{
+#'   \item{nhs_region20_name}{Name of NHS England region}
+#'   \item{date}{Date}
+#'   \item{year}{Year}
+#'   \item{month}{Month}
+#'   \item{treatment}{Treatment function name}
+#'   \item{waits_over_18_weeks}{Total waiting > 18 weeks}
+#'   \item{waits_over_52_weeks}{Total waiting > 52 weeks}
+#' }
+#' @source \url{https://www.england.nhs.uk/}
+"england_rtt_region"
+
+#' Consultant-led Referral to Treatment (RTT) pathway flow by ICS/STP
+#'
+#' A dataset containing ICS/STP-level RTT data.
+#'
+#' @format A data frame with 1,260 rows and 7 variables:
+#' \describe{
+#'   \item{stp20_nhs_code}{NHS code for the ICS/STP}
+#'   \item{stp20_name}{Name of the ICS/STP}
+#'   \item{date}{Date}
+#'   \item{year}{Year}
+#'   \item{month}{Month}
+#'   \item{completed}{Number of pathways completed}
+#'   \item{incomplete}{Number of incomplete pathways}
+#'   \item{new}{Number of new pathways}
+#' }
+#' @source \url{https://www.england.nhs.uk/}
+"england_rtt_flow_stp"
+
 #' Bed Occupany
 #'
 #' A dataset containing Health and Social Care Trust level bed occupancy data.

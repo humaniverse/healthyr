@@ -212,6 +212,36 @@
 #' @source \url{https://www.opendata.nhs.scot/}
 "scotland_delayed_discharge_ltla"
 
+#' Consultant-led Referral to Treatment (RTT) in Scotland
+#'
+#' A dataset containing RTT data for Scotland.
+#'
+#' @format A data frame with 141 rows and 4 variables:
+#' \describe{
+#'   \item{date}{Date}
+#'   \item{year}{Year}
+#'   \item{month}{Month}
+#'   \item{waits_over_18_weeks}{Total waiting > 18 weeks}
+#' }
+#' @source \url{https://www.opendata.nhs.scot/}
+"scotland_rtt"
+
+#' Consultant-led Referral to Treatment (RTT) by Scottish Health Board
+#'
+#' A dataset containing RTT data for Scottish Health Boards.
+#'
+#' @format A data frame with 2,091 rows and 6 variables:
+#' \describe{
+#'   \item{hb19_code}{Scottish Health Board code}
+#'   \item{date}{Date}
+#'   \item{year}{Year}
+#'   \item{month}{Month}
+#'   \item{specialty}{Specialty}
+#'   \item{waits_over_18_weeks}{Total waiting > 18 weeks}
+#' }
+#' @source \url{https://www.opendata.nhs.scot/}
+"scotland_rtt_hb"
+
 #' Consultant-led Referral to Treatment (RTT) by Local Health Board
 #'
 #' A dataset containing RTT data for Wales.

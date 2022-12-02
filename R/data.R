@@ -211,3 +211,19 @@
 #' }
 #' @source \url{https://www.opendata.nhs.scot/}
 "scotland_delayed_discharge_ltla"
+
+#' Consultant-led Referral to Treatment (RTT) by Local Health Board
+#'
+#' A dataset containing RTT data for Wales.
+#'
+#' @format A data frame with 1,260 rows and 6 variables:
+#' \describe{
+#'   \item{lhb22_code}{Local Health Board code}
+#'   \item{lhb22_name}{Local Health Board name}
+#'   \item{date}{Date}
+#'   \item{pathway_stage}{Stage of the treatment pathway}
+#'   \item{waits_over_18_weeks}{Total waiting > 18 weeks}
+#'   \item{waits_over_52_weeks}{Total waiting > 52 weeks}
+#' }
+#' @source \url{https://www.england.nhs.uk/}
+"wales_rtt_lhb"

@@ -100,24 +100,71 @@
 #' @source \url{https://statswales.gov.wales/}
 "wales_ambulance_waiting_times"
 
-#' Wales bed availability - (2022)
+#' Wales hospital bed availability - (2022)
 #'
-#' A dataset containing Welsh monthly NHS beds data by measure, site and 
-#' specialty 
+#' A dataset containing Welsh monthly NHS beds data by hospital site, measure, 
+#' and specialty 
 #'
-#' @format A data frame with 176 rows and 9 variables:
+#' @format A data frame with 1610 rows and 21 variables:
 #' \describe{
 #'   \item{date}{Date}
-#'   \item{hb_code}{Local health board coade}
-#'   \item{hb}{Name of local health board}
-#'   \item{red_calls}{Number of red calls}
-#'   \item{red_calls_resulting_in_an_emergency_response_at_the_scene}{Number of red call resulting in an emergency response at the scene}
-#'   \item{amber_calls}{Number of amber calls}
-#'   \item{green_calls}{Number of green calls}
-#'   \item{red_calls_resulting_in_an_emergency_response_at_the_scene_within_8_minutes}{Number of red call resulting in an emergency response at the scene within 8 minutes}
-#'   \item{red_calls_percent_of_emergency_responses_arriving_at_the_scene_within_8_minutes}{Percentage of emergency responses to red calls arriving at the scene within 8 minutes}
+#'   \item{hospital_code}{Local health board code}
+#'   \item{hospital_name}{Name of local health board}
+#'   \item{all_specialties_average_daily_beds_available}{All specialties beds available}
+#'   \item{all_specialties_average_daily_beds_occupied}{All specialties beds occupied}
+#'   \item{all_specialties_beds_occupancy_rate}{All specialties occupancy rate}
+#'   \item{surgical_acute_average_daily_beds_available}{Surgical acute beds available}
+#'   \item{surgical_acute_average_daily_beds_occupied}{Surgical acute beds occupied}
+#'   \item{surgical_acute_beds_occupancy_rate}{Surgical acute occupancy rate}
+#'   \item{medical_acute_average_daily_beds_available}{Medical acute beds available}
+#'   \item{medical_acute_average_daily_beds_occupied}{Medical acute beds occupied}
+#'   \item{medical_acute_beds_occupancy_rate}{Medical acute occupancy rate}
+#'   \item{mental_illness_average_daily_beds_available}{Mental illness beds available}
+#'   \item{mental_illness_average_daily_beds_occupied}{Mental illness beds occupied}
+#'   \item{mental_illness_beds_occupancy_rate}{Mental illness occupancy rate}
+#'   \item{geriatric_medicine_average_daily_beds_occupied}{Geriatric beds available}
+#'   \item{geriatric_medicine_average_daily_beds_available}{Geriatric beds occupied}
+#'   \item{geriatric_medicine_beds_occupancy_rate}{Geriatric occupancy rate}
+#'   \item{maternity_average_daily_beds_available}{Maternity beds available}
+#'   \item{maternity_average_daily_beds_occupied}{Maternity beds occupied}
+#'   \item{maternity_beds_occupancy_rate}{Maternity occupancy rate}
 #'   
 #'   ...
 #' }
 #' @source \url{https://statswales.gov.wales/}
-"wales_critical_general_acute_beds"
+"wales_hospitals_critical_general_acute_beds"
+
+
+#' Wales health board bed availability - (2022)
+#'
+#' A dataset containing Welsh monthly NHS beds data by health board, measure, 
+#' and specialty 
+#'
+#' @format A data frame with 120 rows and 21 variables:
+#' \describe{
+#'   \item{date}{Date}
+#'   \item{hospital_code}{Local health board code}
+#'   \item{hospital_name}{Name of local health board}
+#'   \item{all_specialties_average_daily_beds_available}{All specialties beds available}
+#'   \item{all_specialties_average_daily_beds_occupied}{All specialties beds occupied}
+#'   \item{all_specialties_beds_occupancy_rate}{All specialties occupancy rate}
+#'   \item{surgical_acute_average_daily_beds_available}{Surgical acute beds available}
+#'   \item{surgical_acute_average_daily_beds_occupied}{Surgical acute beds occupied}
+#'   \item{surgical_acute_beds_occupancy_rate}{Surgical acute occupancy rate}
+#'   \item{medical_acute_average_daily_beds_available}{Medical acute beds available}
+#'   \item{medical_acute_average_daily_beds_occupied}{Medical acute beds occupied}
+#'   \item{medical_acute_beds_occupancy_rate}{Medical acute occupancy rate}
+#'   \item{mental_illness_average_daily_beds_available}{Mental illness beds available}
+#'   \item{mental_illness_average_daily_beds_occupied}{Mental illness beds occupied}
+#'   \item{mental_illness_beds_occupancy_rate}{Mental illness occupancy rate}
+#'   \item{geriatric_medicine_average_daily_beds_occupied}{Geriatric beds available}
+#'   \item{geriatric_medicine_average_daily_beds_available}{Geriatric beds occupied}
+#'   \item{geriatric_medicine_beds_occupancy_rate}{Geriatric occupancy rate}
+#'   \item{maternity_average_daily_beds_available}{Maternity beds available}
+#'   \item{maternity_average_daily_beds_occupied}{Maternity beds occupied}
+#'   \item{maternity_beds_occupancy_rate}{Maternity occupancy rate}
+#'   
+#'   ...
+#' }
+#' @source \url{https://statswales.gov.wales/}
+"wales_health_board_critical_general_acute_beds"

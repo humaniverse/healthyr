@@ -134,7 +134,6 @@
 #' @source \url{https://statswales.gov.wales/}
 "wales_hospitals_critical_general_acute_beds"
 
-
 #' Wales health board bed availability - (2022)
 #'
 #' A dataset containing Welsh monthly NHS beds data by health board, measure, 

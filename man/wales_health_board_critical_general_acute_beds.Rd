@@ -5,29 +5,15 @@
 \alias{wales_health_board_critical_general_acute_beds}
 \title{Wales health board bed availability - (2022)}
 \format{
-A data frame with 120 rows and 21 variables:
+A data frame with 633 rows and 7 variables:
 \describe{
 \item{date}{Date}
-\item{hospital_code}{Local health board code}
-\item{hospital_name}{Name of local health board}
-\item{all_specialties_average_daily_beds_available}{All specialties beds available}
-\item{all_specialties_average_daily_beds_occupied}{All specialties beds occupied}
-\item{all_specialties_beds_occupancy_rate}{All specialties occupancy rate}
-\item{surgical_acute_average_daily_beds_available}{Surgical acute beds available}
-\item{surgical_acute_average_daily_beds_occupied}{Surgical acute beds occupied}
-\item{surgical_acute_beds_occupancy_rate}{Surgical acute occupancy rate}
-\item{medical_acute_average_daily_beds_available}{Medical acute beds available}
-\item{medical_acute_average_daily_beds_occupied}{Medical acute beds occupied}
-\item{medical_acute_beds_occupancy_rate}{Medical acute occupancy rate}
-\item{mental_illness_average_daily_beds_available}{Mental illness beds available}
-\item{mental_illness_average_daily_beds_occupied}{Mental illness beds occupied}
-\item{mental_illness_beds_occupancy_rate}{Mental illness occupancy rate}
-\item{geriatric_medicine_average_daily_beds_occupied}{Geriatric beds available}
-\item{geriatric_medicine_average_daily_beds_available}{Geriatric beds occupied}
-\item{geriatric_medicine_beds_occupancy_rate}{Geriatric occupancy rate}
-\item{maternity_average_daily_beds_available}{Maternity beds available}
-\item{maternity_average_daily_beds_occupied}{Maternity beds occupied}
-\item{maternity_beds_occupancy_rate}{Maternity occupancy rate}
+\item{health_board_code}{Local health board code}
+\item{health_board_name}{Name of local health board}
+\item{specialism}{Name of specialism}
+\item{daily_beds_available}{Average number of daily beds available}
+\item{daily_beds_occupied}{Average number of daily beds occucpied}
+\item{beds_occupancy_rate}{Bed occupancy rate}
 
 ...
 }

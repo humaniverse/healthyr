@@ -27,7 +27,11 @@ query_urls <-
     # Scotland
     "Beds by Board of Treatment and Specialty", "scotland_beds", "2016 - 2021", "OGLv3", "https://www.opendata.nhs.scot/dataset/554b0e7a-ccac-4bb6-82db-1a8b306fcb36/resource/f272bb7d-5320-4491-84c1-614a2c064007/download/beds_by_nhs_board_of_treatment_and_specialty.csv", "https://www.opendata.nhs.scot/dataset/554b0e7a-ccac-4bb6-82db-1a8b306fcb36/resource/f272bb7d-5320-4491-84c1-614a2c064007/download/beds_by_nhs_board_of_treatment_and_specialty.csv",
     "Delayed Discharge Bed Days by Health Board", "scotland_delayed_discharge_hb", "2016 - 2022", "OGLv3", "https://www.opendata.nhs.scot/dataset/52591cba-fd71-48b2-bac3-e71ac108dfee/resource/fd354e4b-6211-48ba-8e4f-8356a5ed4215/download/2022-09_delayed-discharge-beddays-health-board.csv", "https://www.opendata.nhs.scot/dataset/delayed-discharges-in-nhsscotland/resource/fd354e4b-6211-48ba-8e4f-8356a5ed4215",
-    "Delayed Discharge Bed Days by Council Area", "scotland_delayed_discharge_ltla", "2016 - 2022", "OGLv3", "https://www.opendata.nhs.scot/dataset/52591cba-fd71-48b2-bac3-e71ac108dfee/resource/513d2d71-cf73-458e-8b44-4fa9bccbf50a/download/2022-09_delayed-discharge-beddays-council-area.csv", "https://www.opendata.nhs.scot/dataset/delayed-discharges-in-nhsscotland/resource/fd354e4b-6211-48ba-8e4f-8356a5ed4215"
+    "Delayed Discharge Bed Days by Council Area", "scotland_delayed_discharge_ltla", "2016 - 2022", "OGLv3", "https://www.opendata.nhs.scot/dataset/52591cba-fd71-48b2-bac3-e71ac108dfee/resource/513d2d71-cf73-458e-8b44-4fa9bccbf50a/download/2022-09_delayed-discharge-beddays-council-area.csv", "https://www.opendata.nhs.scot/dataset/delayed-discharges-in-nhsscotland/resource/fd354e4b-6211-48ba-8e4f-8356a5ed4215",
+
+    # Wales
+    "Wales ambulance waiting times", "wales_ambulance_waiting_times", "October 2022", "OGLv3", "http://open.statswales.gov.wales/dataset/hlth1308", "https://statswales.gov.wales/Catalogue/Health-and-Social-Care/NHS-Performance/Ambulance-Services",
+    "Wales beds by specialty, organisation and month", "wales_critical_general_acute_beds", "March 2022", "OGLv3", "http://open.statswales.gov.wales/dataset/hlth0310", "https://statswales.gov.wales/Catalogue/Health-and-Social-Care/NHS-Hospital-Activity/NHS-Beds/nhsbeds-by-organisation-specialty-month"
   )
 
 usethis::use_data(query_urls, internal = TRUE, overwrite = TRUE)

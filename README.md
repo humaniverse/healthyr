@@ -47,4 +47,4 @@ when submitting changes.
 
 ## Credits
 
-See [LICESNE](/LICENSE)# healthyr
+See [LICESNE](/LICENSE)

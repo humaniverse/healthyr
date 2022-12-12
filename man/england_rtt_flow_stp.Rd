@@ -8,7 +8,6 @@
 A data frame with 1,260 rows and 7 variables:
 \describe{
 \item{stp20_nhs_code}{NHS code for the ICS/STP}
-\item{stp20_name}{Name of the ICS/STP}
 \item{date}{Date}
 \item{year}{Year}
 \item{month}{Month}

@@ -136,7 +136,6 @@
 #' @format A data frame with 1,260 rows and 7 variables:
 #' \describe{
 #'   \item{stp20_nhs_code}{NHS code for the ICS/STP}
-#'   \item{stp20_name}{Name of the ICS/STP}
 #'   \item{date}{Date}
 #'   \item{year}{Year}
 #'   \item{month}{Month}
@@ -271,7 +270,7 @@
 #'   \item{date}{Date}
 #'   \item{pathway_stage}{Stage of the treatment pathway}
 #'   \item{waits_over_18_weeks}{Total waiting > 18 weeks}
-#'   \item{waits_over_52_weeks}{Total waiting > 52 weeks}
+#'   \item{waits_over_53_weeks}{Total waiting > 53 weeks}
 #' }
 #' @source \url{https://statswales.gov.wales/}
 "wales_rtt_lhb"

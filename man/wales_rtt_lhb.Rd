@@ -12,7 +12,7 @@ A data frame with 1,260 rows and 6 variables:
 \item{date}{Date}
 \item{pathway_stage}{Stage of the treatment pathway}
 \item{waits_over_18_weeks}{Total waiting > 18 weeks}
-\item{waits_over_52_weeks}{Total waiting > 52 weeks}
+\item{waits_over_53_weeks}{Total waiting > 53 weeks}
 }
 }
 \source{

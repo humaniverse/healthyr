@@ -39,6 +39,7 @@ england_critical_general_acute_beds
 \description{
 A dataset containing NHS Trust level critical care and general and acute bed
 availability information. This is taken from the urgent and emergency care
-daily situation reports.
+daily situation reports. Bed numbers are daily figures averaged over the
+month.
 }
 \keyword{datasets}

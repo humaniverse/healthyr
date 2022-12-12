@@ -2,7 +2,8 @@
 #'
 #' A dataset containing NHS Trust level critical care and general and acute bed
 #' availability information. This is taken from the urgent and emergency care
-#' daily situation reports.
+#' daily situation reports. Bed numbers are daily figures averaged over the
+#' month.
 #'
 #' @format A data frame with 959 rows and 20 variables:
 #' \describe{

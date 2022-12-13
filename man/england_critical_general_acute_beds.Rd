@@ -9,7 +9,7 @@ A data frame with 959 rows and 20 variables:
 \describe{
 \item{nhs_trust22_code}{NHS Trust (organisational) code}
 \item{date}{Date}
-\item{general_acute_beds_availabile}{"G&A beds available"}
+\item{general_acute_beds_available}{"G&A beds available"}
 \item{general_acute_beds_occupied}{"G&A beds occupied"}
 \item{general_acute_beds_occupancy_rate}{"G&A occupancy rate"}
 \item{adult_general_acute_beds_available}{"Adult G&A beds available"}

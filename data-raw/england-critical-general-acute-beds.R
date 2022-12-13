@@ -33,7 +33,7 @@ scrape_data <- function(id, sheet, range, date) {
     raw_trusts |>
     rename(
       nhs_trust22_code = "Code",
-      general_acute_beds_availabile = "G&A beds available",
+      general_acute_beds_available = "G&A beds available",
       general_acute_beds_occupied = "G&A beds occupied",
       general_acute_beds_occupancy_rate = "G&A occupancy rate",
       adult_general_acute_beds_available = "Adult G&A beds available",

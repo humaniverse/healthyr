@@ -31,7 +31,7 @@ scrape_data <- function(id, sheet, range, date) {
 
   data <-
     raw_trusts |>
-    rename(
+    select(
       nhs_trust22_code = "Code",
       general_acute_beds_available = "G&A beds available",
       general_acute_beds_occupied = "G&A beds occupied",
@@ -63,9 +63,9 @@ scrape_data <- function(id, sheet, range, date) {
 df <-
   tibble(
     id = query_urls |> filter(str_detect(id, "^nhs_critical_general_acute_beds")) |> pull(id),
-    sheet = rep(2, 7),
-    range = rep("D26:V163", 7),
-    date = c("April 2022", "May 2022", "June 2022", "July 2022", "August 2022", "September 2022", "October 2022")
+    sheet = rep(2, 8),
+    range = c(rep("D26:V163", 7), "D26:AB163"),
+    date = c("April 2022", "May 2022", "June 2022", "July 2022", "August 2022", "September 2022", "October 2022", "November 2022")
   )
 
 # Build dataframe with all months

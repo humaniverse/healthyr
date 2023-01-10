@@ -5,7 +5,7 @@
 \alias{england_iapt}
 \title{Physchological Therpaies - IAPT}
 \format{
-A data frame with 6,876 rows and 4 variables:
+A data frame with 52,932 rows and 4 variables:
 \describe{
 \item{nhs_trust22_code}{NHS Trust (organisational) code}
 \item{date}{Date}

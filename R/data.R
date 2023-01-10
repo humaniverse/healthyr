@@ -83,7 +83,7 @@
 #'
 #' A dataset containing NHS Trust level IAPT data.
 #'
-#' @format A data frame with 6,876 rows and 4 variables:
+#' @format A data frame with 52,932 rows and 4 variables:
 #' \describe{
 #'   \item{nhs_trust22_code}{NHS Trust (organisational) code}
 #'   \item{date}{Date}

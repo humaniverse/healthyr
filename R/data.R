@@ -37,7 +37,7 @@
 #' A dataset containing NHS Trust level hopsital discharge data on how many
 #' patients do not meet criteria to reside each day.
 #'
-#' @format A data frame with 29,524 rows and 3 variables:
+#' @format A data frame with 37,026 rows and 3 variables:
 #' \describe{
 #'   \item{nhs_trust22_code}{NHS Trust (organisational) code}
 #'   \item{date}{Date}
@@ -52,7 +52,7 @@
 #' A dataset containing NHS Trust level hopsital discharge data on how many
 #' patients were discharged each day.
 #'
-#' @format A data frame with 29,524 rows and 5 variables:
+#' @format A data frame with 37,026 rows and 5 variables:
 #' \describe{
 #'   \item{nhs_trust22_code}{NHS Trust (organisational) code}
 #'   \item{date}{Date}

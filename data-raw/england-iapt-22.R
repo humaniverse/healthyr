@@ -13,6 +13,10 @@ query_url <-
 
 raw <- read_csv(query_url)
 
+# Note: different providers (determined in the GROUP_TYPE col) contribute
+# statistics to the same org codes on the same day. This means there are repeat
+# observations for any given trust in any given reporting period that require
+# averaging.
 england_iapt_nhs_trusts <- raw |>
   select(
     nhs_trust22_code = ORG_CODE2,
@@ -29,9 +33,12 @@ england_iapt_nhs_trusts <- raw |>
   ) |>
   filter(nhs_trust22_code %in% geographr::points_nhs_trusts22$nhs_trust22_code)
 
-# Replace `*` values with NA
+# Replace `*` values with NA and calculate the mean
 england_iapt <- england_iapt_nhs_trusts |> 
   mutate(value = if_else(value == "*", NA_character_, value)) |>
-  mutate(value = as.double(value))
+  mutate(value = as.double(value)) |> 
+  group_by(nhs_trust22_code, date, name) |> 
+  summarise(value = mean(value, na.rm = TRUE)) |> 
+  ungroup()
 
 usethis::use_data(england_iapt, overwrite = TRUE)

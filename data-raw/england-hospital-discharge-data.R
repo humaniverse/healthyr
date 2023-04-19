@@ -61,24 +61,25 @@ scrape_data <- function(id, sheet, range, date_start, date_end, days) {
   return(data)
 }
 
-# ---- Iterate over all data sets and return as a dataframe ----
+# ---- Trust level data ----
+# - Iterate over all data sets and return as a dataframe
 # Generate a dataframe with function arguments
-df <-
+trust_df <-
   tibble(
     id = query_urls |> filter(str_detect(id, "^nhs_hospital_discharge")) |> pull(id),
-    sheet = rep("Table 2", 11),
-    range = c("C61:DT182", "C60:DX181", "C60:DT181", "C60:DX181", "C60:DX181", "C59:DT180", "C60:DX181", "C59:DT180", "C59:DX180", "C59:DX180", "C59:DL180"),
-    date_start = c("2022-04-01", "2022-05-01", "2022-06-01", "2022-07-01", "2022-08-01", "2022-09-01", "2022-10-01", "2022-11-01", "2022-12-01", "2023-01-01", "2023-02-01"),
-    date_end = c("2022-04-30", "2022-05-31", "2022-06-30", "2022-07-31", "2022-08-31", "2022-09-30", "2022-10-31", "2022-11-30", "2022-12-31", "2023-01-31", "2023-02-28"),
-    days = c(30, 31, 30, 31, 31, 30, 31, 30, 31, 31, 28)
+    sheet = rep("Table 2", 12),
+    range = c("C61:DT182", "C60:DX181", "C60:DT181", "C60:DX181", "C60:DX181", "C59:DT180", "C60:DX181", "C59:DT180", "C59:DX180", "C59:DX180", "C59:DL180", "C59:DX180"),
+    date_start = c("2022-04-01", "2022-05-01", "2022-06-01", "2022-07-01", "2022-08-01", "2022-09-01", "2022-10-01", "2022-11-01", "2022-12-01", "2023-01-01", "2023-02-01", "2023-03-01"),
+    date_end = c("2022-04-30", "2022-05-31", "2022-06-30", "2022-07-31", "2022-08-31", "2022-09-30", "2022-10-31", "2022-11-30", "2022-12-31", "2023-01-31", "2023-02-28", "2023-03-31"),
+    days = c(30, 31, 30, 31, 31, 30, 31, 30, 31, 31, 28, 31)
   )
 
 # Build dataframe with all months
-england_discharge_data <- pmap_dfr(df, scrape_data)
+england_trust_discharge_data <- pmap_dfr(trust_df, scrape_data)
 
-# ---- Criteria to reside ----
-criteria_to_reside <-
-  england_discharge_data |>
+# - Criteria to reside
+trust_criteria_to_reside <-
+  england_trust_discharge_data |>
   select(
     nhs_trust22_code,
     date,
@@ -86,12 +87,12 @@ criteria_to_reside <-
   )
 
 # Two clear outliers exist in the data, presumably from data entry errors
-criteria_to_reside |>
+trust_criteria_to_reside |>
   arrange(desc(do_not_meet_criteria_to_reside))
 
 # Replace outliers with previous value in series
-england_criteria_to_reside <-
-  criteria_to_reside |>
+england_trust_criteria_to_reside <-
+  trust_criteria_to_reside |>
   mutate(
     do_not_meet_criteria_to_reside = case_when(
       nhs_trust22_code == "RXQ" & date == "2022-06-15" ~ NA_real_,
@@ -102,11 +103,11 @@ england_criteria_to_reside <-
   fill(do_not_meet_criteria_to_reside)
 
 # Save output to data/ folder
-usethis::use_data(england_criteria_to_reside, overwrite = TRUE)
+usethis::use_data(england_trust_criteria_to_reside, overwrite = TRUE)
 
-# ---- Number discharged ----
-discharged_patients <-
-  england_discharge_data |>
+# - Number discharged
+trust_discharged_patients <-
+  england_trust_discharge_data |>
   select(
     nhs_trust22_code,
     date,
@@ -114,11 +115,13 @@ discharged_patients <-
     discharged_between_1701_2359 = `Discharged between 17:01 and 23:59`
   )
 
-england_discharged_patients <-
-  discharged_patients |>
+england_trust_discharged_patients <-
+  trust_discharged_patients |>
   rowwise() |>
   mutate(discharged_total = sum(c_across(starts_with("discharged")))) |>
   ungroup()
 
 # Save output to data/ folder
-usethis::use_data(england_discharged_patients, overwrite = TRUE)
+usethis::use_data(england_trust_discharged_patients, overwrite = TRUE)
+
+# ---- ICB level data ----

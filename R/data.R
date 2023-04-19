@@ -32,12 +32,12 @@
 #' @source \url{https://www.england.nhs.uk/}
 "england_critical_general_acute_beds"
 
-#' Hosptial Discharge Data - Criteria to Reside
+#' Hosptial Trust Discharge Data - Criteria to Reside
 #'
 #' A dataset containing NHS Trust level hopsital discharge data on how many
 #' patients do not meet criteria to reside each day.
 #'
-#' @format A data frame with 40,414 rows and 3 variables:
+#' @format A data frame with 44,165 rows and 3 variables:
 #' \describe{
 #'   \item{nhs_trust22_code}{NHS Trust (organisational) code}
 #'   \item{date}{Date}
@@ -45,14 +45,14 @@
 #'   ...
 #' }
 #' @source \url{https://www.england.nhs.uk/}
-"england_criteria_to_reside"
+"england_trust_criteria_to_reside"
 
-#' Hosptial Discharge Data - Discharged Patients
+#' Hosptial Trust Discharge Data - Discharged Patients
 #'
 #' A dataset containing NHS Trust level hopsital discharge data on how many
 #' patients were discharged each day.
 #'
-#' @format A data frame with 40,414 rows and 5 variables:
+#' @format A data frame with 44,165 rows and 5 variables:
 #' \describe{
 #'   \item{nhs_trust22_code}{NHS Trust (organisational) code}
 #'   \item{date}{Date}
@@ -62,7 +62,7 @@
 #'   ...
 #' }
 #' @source \url{https://www.england.nhs.uk/}
-"england_discharged_patients"
+"england_trust_discharged_patients"
 
 #' England Health Index (ONS)
 #'

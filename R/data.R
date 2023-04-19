@@ -32,6 +32,21 @@
 #' @source \url{https://www.england.nhs.uk/}
 "england_critical_general_acute_beds"
 
+#' Hosptial ICB Discharge Data - Criteria to Reside
+#'
+#' A dataset containing NHS Integrated Care Board discharge data on how many
+#' patients do not meet criteria to reside each day.
+#'
+#' @format A data frame with 15,330 rows and 3 variables:
+#' \describe{
+#'   \item{icb22_code}{Integrated Care Board code}
+#'   \item{date}{Date}
+#'   \item{do_not_meet_criteria_to_reside}{Number of patients who no longer meet the criteria to reside}
+#'   ...
+#' }
+#' @source \url{https://www.england.nhs.uk/}
+"england_icb_criteria_to_reside"
+
 #' Hosptial Trust Discharge Data - Criteria to Reside
 #'
 #' A dataset containing NHS Trust level hopsital discharge data on how many
@@ -46,6 +61,23 @@
 #' }
 #' @source \url{https://www.england.nhs.uk/}
 "england_trust_criteria_to_reside"
+
+#' Hosptial ICB Discharge Data - Discharged Patients
+#'
+#' A dataset containing NHS Integrated Care Board discharge data on how many
+#' patients were discharged each day.
+#'
+#' @format A data frame with 15,330 rows and 5 variables:
+#' \describe{
+#'   \item{icb22_code}{Integrated Care Board code}
+#'   \item{date}{Date}
+#'   \item{discharged_by_1700}{Number of patients discharged by 17:00}
+#'   \item{discharged_between_1701_2359}{Number of patients discharged between 17:01 and 23:59}
+#'   \item{discharged_total}{Total number of patients discharged}
+#'   ...
+#' }
+#' @source \url{https://www.england.nhs.uk/}
+"england_icb_discharged_patients"
 
 #' Hosptial Trust Discharge Data - Discharged Patients
 #'

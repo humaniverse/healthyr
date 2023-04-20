@@ -113,9 +113,24 @@
 
 #' Physchological Therpaies - IAPT
 #'
+#' A dataset containing NHS Sub Integrated Care Board (formerly CCGs) data.
+#'
+#' @format A data frame with 8,162 rows and 4 variables:
+#' \describe{
+#'   \item{sicbl22_code}{Sub Integrated Care Board code}
+#'   \item{date}{Date}
+#'   \item{name}{Name of the variable}
+#'   \item{value}{Value of the variable}
+#'   ...
+#' }
+#' @source \url{https://www.england.nhs.uk/}
+"england_sicb_iapt"
+
+#' Physchological Therpaies - IAPT
+#'
 #' A dataset containing NHS Trust level IAPT data.
 #'
-#' @format A data frame with 5,093 rows and 4 variables:
+#' @format A data frame with 5,082 rows and 4 variables:
 #' \describe{
 #'   \item{nhs_trust22_code}{NHS Trust (organisational) code}
 #'   \item{date}{Date}
@@ -124,7 +139,7 @@
 #'   ...
 #' }
 #' @source \url{https://www.england.nhs.uk/}
-"england_iapt"
+"england_trust_iapt"
 
 #' Consultant-led Referral to Treatment (RTT) by ICS/STP
 #'

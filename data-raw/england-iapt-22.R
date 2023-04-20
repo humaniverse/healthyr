@@ -1,25 +1,36 @@
 # ---- Load libs ----
 library(tidyverse)
 library(lubridate)
+library(compositr)
+
+# ---- Create lookups ----
+lookup_sicb <- geographr::lookup_lsoa11_sicbl22_icb22_ltla22 |>
+  distinct(sicbl22_code_h, sicbl22_code)
 
 # ---- Load internal sysdata.rda file with URL's ----
 devtools::load_all()
 
-# ---- Download and clean ----
+# ---- Download and read ----
 query_url <-
   query_urls |>
-  filter(id == "nhs_iapt_21_22") |>
+  filter(id == "nhs_iapt_22_23") |>
   pull(query)
 
-raw <- read_csv(query_url)
+tf <- download_file(query_url, ".zip")
+unzip(tf, exdir = tempdir())
 
-# Note: different providers (determined in the GROUP_TYPE col) contribute
-# statistics to the same org codes on the same day. This means there are repeat
-# observations for any given trust in any given reporting period that require
-# averaging.
-england_iapt_nhs_trusts <- raw |>
+file <- paste0(tempdir(), "/iapt_time_series_Jan_22_Jan_23_key_measures.csv")
+
+raw <- read_csv(file)
+
+# ---- Clean ----
+iapt_raw <- raw |>
   select(
-    nhs_trust22_code = ORG_CODE2,
+    group_type = GROUP_TYPE,
+    org_code1 = ORG_CODE1,
+    org_code2 = ORG_CODE2,
+    org_name1 = ORG_NAME1,
+    org_name2 = ORG_NAME2,
     date = REPORTING_PERIOD_START,
     name = MEASURE_NAME,
     value = MEASURE_VALUE
@@ -31,14 +42,21 @@ england_iapt_nhs_trusts <- raw |>
       str_sub(date, -4)
     )
   ) |>
-  filter(nhs_trust22_code %in% geographr::points_nhs_trusts22$nhs_trust22_code)
+  mutate(value = if_else(value == "*", NA_character_, value))
 
-# Replace `*` values with NA and calculate the mean
-england_iapt <- england_iapt_nhs_trusts |> 
-  mutate(value = if_else(value == "*", NA_character_, value)) |>
-  mutate(value = as.double(value)) |> 
-  group_by(nhs_trust22_code, date, name) |> 
-  summarise(value = mean(value, na.rm = TRUE)) |> 
-  ungroup()
+# ---- Export SubICB data ----
+england_sicb_iapt <- iapt_raw |>
+  filter(group_type == "SubICB") |>
+  filter(org_code1 %in% lookup_sicb$sicbl22_code_h) |>
+  left_join(lookup_sicb, by = c("org_code1" = "sicbl22_code_h")) |>
+  select(sicbl22_code, date, name, value)
 
-usethis::use_data(england_iapt, overwrite = TRUE)
+usethis::use_data(england_sicb_iapt, overwrite = TRUE)
+
+# ---- Export Trust level data ----
+england_trust_iapt <- iapt_raw |>
+  filter(org_code2 %in% geographr::points_nhs_trusts22$nhs_trust22_code) |>
+  filter(group_type == "Provider") |>
+  select(nhs_trust22_code = org_code2, date, name, value)
+
+usethis::use_data(england_trust_iapt, overwrite = TRUE)

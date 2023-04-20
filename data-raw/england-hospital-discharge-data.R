@@ -130,51 +130,8 @@ usethis::use_data(england_trust_discharged_patients, overwrite = TRUE)
 # Older 'h' codes are provided in the data that need replacing with newer ICB
 # codes.
 # Source: https://geoportal.statistics.gov.uk/datasets/ons::lsoa-2011-to-sub-icb-locations-to-integrated-care-boards-july-2022-lookup-in-england/explore
-lookup_icb_codes <- tribble(
-  ~icb22_code, ~icb22_code_h,
-  "E54000008", "QYG",
-  "E54000010", "QNC",
-  "E54000011", "QOC",
-  "E54000013", "QJM",
-  "E54000015", "QK1",
-  "E54000018", "QWU",
-  "E54000019", "QGH",
-  "E54000022", "QMM",
-  "E54000023", "QJG",
-  "E54000024", "QHG",
-  "E54000025", "QM7",
-  "E54000026", "QH8",
-  "E54000027", "QRV",
-  "E54000028", "QMJ",
-  "E54000029", "QMF",
-  "E54000030", "QKK",
-  "E54000031", "QWE",
-  "E54000032", "QKS",
-  "E54000034", "QNQ",
-  "E54000036", "QT6",
-  "E54000037", "QJK",
-  "E54000038", "QSL",
-  "E54000039", "QUY",
-  "E54000040", "QOX",
-  "E54000041", "QVV",
-  "E54000042", "QRL",
-  "E54000043", "QR1",
-  "E54000044", "QU9",
-  "E54000048", "QE1",
-  "E54000050", "QHM",
-  "E54000051", "QOQ",
-  "E54000052", "QXU",
-  "E54000053", "QNX",
-  "E54000054", "QWO",
-  "E54000055", "QHL",
-  "E54000056", "QUE",
-  "E54000057", "QOP",
-  "E54000058", "QJ2",
-  "E54000059", "QPM",
-  "E54000060", "QT1",
-  "E54000061", "QF7",
-  "E54000062", "QUA",
-)
+lookup_icb_codes <- geographr::lookup_lsoa11_sicbl22_icb22_ltla22 |> 
+  distinct(icb22_code, icb22_code_h)
 
 # - Iterate over all data sets and return as a dataframe
 # Generate a dataframe with function arguments

@@ -5,7 +5,7 @@
 #' daily situation reports. Bed numbers are daily figures averaged over the
 #' month.
 #'
-#' @format A data frame with 1,507 rows and 20 variables:
+#' @format A data frame with 1,644 rows and 20 variables:
 #' \describe{
 #'   \item{nhs_trust22_code}{NHS Trust (organisational) code}
 #'   \item{date}{Date}

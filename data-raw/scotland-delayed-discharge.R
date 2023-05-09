@@ -41,9 +41,7 @@ scotland_delayed_discharge_ltla <- read_csv(query_url)
 
 scotland_delayed_discharge_ltla <-
   scotland_delayed_discharge_ltla |>
-
   mutate(date = ym(MonthOfDelay)) |>
-
   select(
     ltla_code = CA,
     date,

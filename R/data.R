@@ -263,7 +263,7 @@
 #'
 #' A dataset containing Delayed Discharge Bed Days by Scottish Council Area
 #'
-#' @format A data frame with 38,250 rows and 6 variables:
+#' @format A data frame with 41,310 rows and 6 variables:
 #' \describe{
 #'   \item{ltla_code}{Scottish Council Area code}
 #'   \item{date}{Date}

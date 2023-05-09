@@ -5,7 +5,7 @@
 \alias{scotland_delayed_discharge_ltla}
 \title{Delayed Discharge Bed Days by Council Area in Scotland}
 \format{
-A data frame with 38,250 rows and 6 variables:
+A data frame with 41,310 rows and 6 variables:
 \describe{
 \item{ltla_code}{Scottish Council Area code}
 \item{date}{Date}

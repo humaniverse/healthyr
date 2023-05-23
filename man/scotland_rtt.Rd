@@ -5,12 +5,13 @@
 \alias{scotland_rtt}
 \title{Consultant-led Referral to Treatment (RTT) in Scotland}
 \format{
-A data frame with 141 rows and 4 variables:
+A data frame with 144 rows and 5 variables:
 \describe{
 \item{date}{Date}
 \item{year}{Year}
 \item{month}{Month}
-\item{waits_over_18_weeks}{Total waiting > 18 weeks}
+\item{waits_over_18_weeks_count}{Total number waiting > 18 weeks}
+\item{waits_over_18_weeks_percent}{Percent waiting > 18 weeks}
 }
 }
 \source{

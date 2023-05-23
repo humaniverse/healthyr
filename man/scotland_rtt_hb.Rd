@@ -5,14 +5,15 @@
 \alias{scotland_rtt_hb}
 \title{Consultant-led Referral to Treatment (RTT) by Scottish Health Board}
 \format{
-A data frame with 2,091 rows and 6 variables:
+A data frame with 2,160 rows and 7 variables:
 \describe{
 \item{hb19_code}{Scottish Health Board code}
 \item{date}{Date}
 \item{year}{Year}
 \item{month}{Month}
 \item{specialty}{Specialty}
-\item{waits_over_18_weeks}{Total waiting > 18 weeks}
+\item{waits_over_18_weeks_count}{Total number waiting > 18 weeks}
+\item{waits_over_18_weeks_percent}{Percent waiting > 18 weeks}
 }
 }
 \source{

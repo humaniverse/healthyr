@@ -12,19 +12,24 @@ query_url <-
   pull(query)
 
 # ---- Download and wrangle data ----
-scotland_beds <- read_csv(query_url)
+raw <- read_csv(query_url)
 
-scotland_beds <-
-  scotland_beds |>
+# Filter to make Health Board codes match with location codes. This ensures
+# hospital and other statistics are dropped, keeping only the Health Board
+# statistics of interest.
+scotland_beds <- raw |>
+  filter(HB == Location) |>
   mutate(date = yq(Quarter)) |>
-
+  filter(HB != "SB0801" & HB != "S92000003") |>
   select(
-    hb_code = HB,
+    hb19_code = HB,
     date,
+    specialty = SpecialtyName,
     average_number_available_staffed_beds = AverageAvailableStaffedBeds,
     average_number_occupied_beds = AverageOccupiedBeds,
-    percent_occuped_beds = PercentageOccupancy
-  )
+    percent_occupied_beds = PercentageOccupancy
+  ) |>
+  mutate(percent_occupied_beds = percent_occupied_beds / 100)
 
 # Save output to data/ folder
 usethis::use_data(scotland_beds, overwrite = TRUE)

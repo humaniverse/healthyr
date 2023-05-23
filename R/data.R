@@ -230,13 +230,14 @@
 #'
 #' Beds by Board of Treatment and Specialty, 2016-2021.
 #'
-#' @format A data frame with 30,458 rows and 5 variables:
+#' @format A data frame with 11,060 rows and 6 variables:
 #' \describe{
-#'   \item{hb_code}{Scottish Health Board code}
-#'   \item{date}{Date}
+#'   \item{hb19_code}{Scottish Health Board code}
+#'   \item{date}{Date, representing the start of the quarter}
+#'   \item{specialty}{Name of the specialty}
 #'   \item{average_number_available_staffed_beds}{Daily average number of available staffed beds}
 #'   \item{average_number_occupied_beds}{Daily average number of occupied beds}
-#'   \item{percent_occuped_beds}{Percentage (%) of daily occupancy of beds}
+#'   \item{percent_occupied_beds}{Percentage (%) of daily occupancy of beds}
 #'   ...
 #' }
 #' @source \url{https://www.opendata.nhs.scot}

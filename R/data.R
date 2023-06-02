@@ -386,3 +386,41 @@
 #' }
 #' @source \url{https://statswales.gov.wales/}
 "wales_hospitals_critical_general_acute_beds"
+
+#' England Accident and Emergency Admissions by Integrated Care Board  - (2022-23)
+#'
+#' A dataset containing England Accident and Emergency attendances and Emergency Admissions at Integrated Care Board level, by month 
+#'
+#' @format A data frame with 504 rows and 8 variables:
+#' \describe{
+#'   \item{code}{Integrated Care Board code}
+#'   \item{total_attendances}{The total number of patients in an A&E service seeking medical attention}
+#'   \item{attendances_over_4hours}{The number of patients seeking medical attention that spend over 4 hours from arrival to admission, transfer or discharge}
+#'   \item{total_emergency_admissions}{The total number of admissions to a hospital bed as an emergency}
+#'   \item{emergency_admissions_over_4hours}{The number of patients seeking admission to a hospital bed as an emergency that spend over 4 hours from decision to admit to admission}
+#'   \item{pct_attendance_over_4hours}{The percentage of attendance that spend over 4 hours from arrival to admission, transfer of discharge}
+#'   \item{date}{Date}
+#'   \item{pct_emergency_admissions_over_4hours}{The percentage of emergency admissions that spend over 4 hours from decision to admit to admission}
+#'   ...
+#' }
+#' @source \url{https://www.england.nhs.uk/}
+"england_icb_accidents_emergency"
+
+#' England Accident and Emergency Admissions by Trust - (2022-23)
+#'
+#' A dataset containing England Accident and Emergency attendances and Emergency Admissions at provider level, by month. 
+#'
+#' @format A data frame with 2,442 rows and 8 variables:
+#' \describe{
+#'   \item{code}{Integrated Care Board code}
+#'   \item{total_attendances}{The total number of patients in an A&E service seeking medical attention}
+#'   \item{attendances_over_4hours}{The number of patients seeking medical attention that spend over 4 hours from arrival to admission, transfer or discharge}
+#'   \item{total_emergency_admissions}{The total number of admissions to a hospital bed as an emergency}
+#'   \item{emergency_admissions_over_4hours}{The number of patients seeking admission to a hospital bed as an emergency that spend over 4 hours from decision to admit to admission}
+#'   \item{pct_attendance_over_4hours}{The percentage of attendance that spend over 4 hours from arrival to admission, transfer of discharge}
+#'   \item{date}{Date}
+#'   \item{pct_emergency_admissions_over_4hours}{The percentage of emergency admissions that spend over 4 hours from decision to admit to admission}
+#'   ...
+#' }
+#' @source \url{https://www.england.nhs.uk/}
+"england_trust_accidents_emergency"

@@ -406,11 +406,11 @@
 #' @source \url{https://www.england.nhs.uk/}
 "england_icb_accidents_emergency"
 
-#' England Accident and Emergency Admissions by Trust - (2022-23)
+#' England Accident and Emergency Admissions by Trust - (2021-23)
 #'
 #' A dataset containing England Accident and Emergency attendances and Emergency Admissions at provider level, by month. 
 #'
-#' @format A data frame with 2,442 rows and 8 variables:
+#' @format A data frame with 5,104 rows and 8 variables:
 #' \describe{
 #'   \item{code}{Integrated Care Board code}
 #'   \item{total_attendances}{The total number of patients in an A&E service seeking medical attention}

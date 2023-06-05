@@ -58,11 +58,11 @@ scrape_data <- function(id, sheet, range, date, col_index) {
 # Generate a dataframe with function arguments
 icb_df <-
   tibble(
-    id = query_urls |> filter(str_detect(id, "^nhs_accident_emergency")) |> pull(id),
-    sheet = rep("System Level Data", 12),
-    range = rep("B16:AA61", 12),
-    date = c("April 2022", "May 2022", "June 2022", "July 2022", "August 2022", "September 2022", "October 2022", "November 2022", "December 2022", "January 2023", "February 2023", "March 2023"),
-    col_index = rep(list(c(1, 6, 14, 24, 25)), 12)
+    id = query_urls[which(query_urls$id == "nhs_accident_emergency_april_22"):(which(query_urls$id == "nhs_accident_emergency_april_22") + 12), ] |> pull(id),
+    sheet = rep("System Level Data", 13),
+    range = rep("B16:AA61", 13),
+    date = c("April 2022", "May 2022", "June 2022", "July 2022", "August 2022", "September 2022", "October 2022", "November 2022", "December 2022", "January 2023", "February 2023", "March 2023", "April 2023"),
+    col_index = rep(list(c(1, 6, 14, 24, 25)), 13)
   )
 
 # Build dataframe with all months
@@ -78,10 +78,10 @@ usethis::use_data(england_icb_accidents_emergency, overwrite = TRUE)
 trust_df <-
   tibble(
     id = query_urls |> filter(str_detect(id, "^nhs_accident_emergency")) |> pull(id),
-    sheet = rep("Provider Level Data", 12),
-    range = rep("B16:AB223", 12),
-    date = c("April 2022", "May 2022", "June 2022", "July 2022", "August 2022", "September 2022", "October 2022", "November 2022", "December 2022", "January 2023", "February 2023", "March 2023"),
-    col_index = rep(list(c(1, 7, 15, 25, 26)), 12)
+    sheet = rep("Provider Level Data", 25),
+    range = rep("B16:AB223", 25),
+    date = c("April 2021", "May 2021", "June 2021", "July 2021", "August 2021", "September 2021", "October 2021", "November 2021", "December 2021", "January 2022", "February 2022", "March 2022", "April 2022", "May 2022", "June 2022", "July 2022", "August 2022", "September 2022", "October 2022", "November 2022", "December 2022", "January 2023", "February 2023", "March 2023", "April 2023"),
+    col_index = rep(list(c(1, 7, 15, 25, 26)), 25)
   )
 
 # Build dataframe with all months

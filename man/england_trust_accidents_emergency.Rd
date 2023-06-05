@@ -3,9 +3,9 @@
 \docType{data}
 \name{england_trust_accidents_emergency}
 \alias{england_trust_accidents_emergency}
-\title{England Accident and Emergency Admissions by Trust - (2022-23)}
+\title{England Accident and Emergency Admissions by Trust - (2021-23)}
 \format{
-A data frame with 2,442 rows and 8 variables:
+A data frame with 5,104 rows and 8 variables:
 \describe{
 \item{code}{Integrated Care Board code}
 \item{total_attendances}{The total number of patients in an A&E service seeking medical attention}

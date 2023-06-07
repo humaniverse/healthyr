@@ -32,41 +32,53 @@ scrape_data <- function(id, sheet, range, date, col_index) {
 
   # clean the df
   data <- raw |>
-    select(all_of(col_index)) |> # select relevant columns
+    select(all_of(col_index)) |> 
     rename(
       code = 1, 
       total_attendances = 2, 
       attendances_over_4hours = 3, 
       total_emergency_admissions = 4, 
       emergency_admissions_over_4hours = 5
-    ) |> # rename columns
-    slice(-1) |> # remove first row
-    filter(!is.na(code)) |> # remove NAs
-    mutate_at(2:5, as.numeric) |> # change cols datatype to numeric
+    ) |> 
+    slice(-1) |> 
+    filter(!is.na(code)) |> 
+    mutate_at(2:5, as.numeric) |> 
     mutate(
       pct_attendance_over_4hours = round(attendances_over_4hours / total_attendances, 2),
       pct_emergency_admissions_over_4hours = round(emergency_admissions_over_4hours / total_emergency_admissions, 2),
       date = date
-    ) # add percentage and date columns
+    )
 
   return(data)
 }
 
 # ---- ICB level data ----
-# - Iterate over all data sets and return as a dataframe
+# Older 'h' codes are provided in the data that need replacing with newer ICB
+# codes.
+# Source: https://geoportal.statistics.gov.uk/datasets/ons::lsoa-2011-to-sub-icb-locations-to-integrated-care-boards-july-2022-lookup-in-england/explore
+lookup_icb_codes <- geographr::lookup_lsoa11_sicbl22_icb22_ltla22 |> 
+  distinct(icb22_code, icb22_code_h)
 
+# - Iterate over all data sets and return as a dataframe
 # Generate a dataframe with function arguments
 icb_df <-
   tibble(
     id = query_urls[which(query_urls$id == "nhs_accident_emergency_april_22"):(which(query_urls$id == "nhs_accident_emergency_april_22") + 12), ] |> pull(id),
     sheet = rep("System Level Data", 13),
-    range = rep("B16:AA61", 13),
+    range = rep("B16:AB63", 13),
     date = c("April 2022", "May 2022", "June 2022", "July 2022", "August 2022", "September 2022", "October 2022", "November 2022", "December 2022", "January 2023", "February 2023", "March 2023", "April 2023"),
-    col_index = rep(list(c(1, 6, 14, 24, 25)), 13)
+    col_index = c(rep(list(c(1, 6, 14, 24, 25)), 4), list(c(1, 7, 15, 25, 26)), rep(list(c(1, 6, 14, 24, 25)), 8))
   )
 
 # Build dataframe with all months
 england_icb_accidents_emergency <- pmap_dfr(icb_df, scrape_data)
+
+# Replace old 'h' codes with new icb codes
+england_icb_accidents_emergency <- england_icb_accidents_emergency |>
+  rename(icb22_code_h = code) |>
+  left_join(lookup_icb_codes) |>
+  relocate(icb22_code) |>
+  select(-icb22_code_h)
 
 # Save output to data/ folder
 usethis::use_data(england_icb_accidents_emergency, overwrite = TRUE)
@@ -86,6 +98,11 @@ trust_df <-
 
 # Build dataframe with all months
 england_trust_accidents_emergency <- pmap_dfr(trust_df, scrape_data)
+
+# Include only NHS Trusts
+england_trust_accidents_emergency <- england_trust_accidents_emergency |> 
+  filter(code %in% geographr::points_nhs_trusts22$nhs_trust22_code)
+  rename(nhs_trust22_code = code)
 
 # Save output to data/ folder
 usethis::use_data(england_trust_accidents_emergency, overwrite = TRUE)

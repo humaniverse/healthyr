@@ -32,17 +32,17 @@ scrape_data <- function(id, sheet, range, date, col_index) {
 
   # clean the df
   data <- raw |>
-    select(all_of(col_index)) |> 
+    select(all_of(col_index)) |>
     rename(
-      code = 1, 
-      total_attendances = 2, 
-      attendances_over_4hours = 3, 
-      total_emergency_admissions = 4, 
+      code = 1,
+      total_attendances = 2,
+      attendances_over_4hours = 3,
+      total_emergency_admissions = 4,
       emergency_admissions_over_4hours = 5
-    ) |> 
-    slice(-1) |> 
-    filter(!is.na(code)) |> 
-    mutate_at(2:5, as.numeric) |> 
+    ) |>
+    slice(-1) |>
+    filter(!is.na(code)) |>
+    mutate_at(2:5, as.numeric) |>
     mutate(
       pct_attendance_over_4hours = round(attendances_over_4hours / total_attendances, 2),
       pct_emergency_admissions_over_4hours = round(emergency_admissions_over_4hours / total_emergency_admissions, 2),
@@ -56,14 +56,14 @@ scrape_data <- function(id, sheet, range, date, col_index) {
 # Older 'h' codes are provided in the data that need replacing with newer ICB
 # codes.
 # Source: https://geoportal.statistics.gov.uk/datasets/ons::lsoa-2011-to-sub-icb-locations-to-integrated-care-boards-july-2022-lookup-in-england/explore
-lookup_icb_codes <- geographr::lookup_lsoa11_sicbl22_icb22_ltla22 |> 
+lookup_icb_codes <- geographr::lookup_lsoa11_sicbl22_icb22_ltla22 |>
   distinct(icb22_code, icb22_code_h)
 
 # - Iterate over all data sets and return as a dataframe
 # Generate a dataframe with function arguments
 icb_df <-
   tibble(
-    id = query_urls[which(query_urls$id == "nhs_accident_emergency_april_22"):(which(query_urls$id == "nhs_accident_emergency_april_22") + 12), ] |> pull(id),
+    id = query_urls |> slice(which(query_urls$id == "nhs_accident_emergency_april_22"):which(query_urls$id == "nhs_accident_emergency_april_23")) |> pull(id),
     sheet = rep("System Level Data", 13),
     range = rep("B16:AB63", 13),
     date = c("April 2022", "May 2022", "June 2022", "July 2022", "August 2022", "September 2022", "October 2022", "November 2022", "December 2022", "January 2023", "February 2023", "March 2023", "April 2023"),
@@ -100,8 +100,8 @@ trust_df <-
 england_trust_accidents_emergency <- pmap_dfr(trust_df, scrape_data)
 
 # Include only NHS Trusts
-england_trust_accidents_emergency <- england_trust_accidents_emergency |> 
-  filter(code %in% geographr::points_nhs_trusts22$nhs_trust22_code)
+england_trust_accidents_emergency <- england_trust_accidents_emergency |>
+  filter(code %in% geographr::points_nhs_trusts22$nhs_trust22_code) |>
   rename(nhs_trust22_code = code)
 
 # Save output to data/ folder

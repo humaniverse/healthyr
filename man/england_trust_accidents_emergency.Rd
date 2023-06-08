@@ -5,9 +5,9 @@
 \alias{england_trust_accidents_emergency}
 \title{England Accident and Emergency Admissions by Trust - (2021-23)}
 \format{
-A data frame with 5,104 rows and 8 variables:
+A data frame with 3,828 rows and 8 variables:
 \describe{
-\item{code}{Integrated Care Board code}
+\item{nhs_trust22_code}{NHS Trust (organisational) code}
 \item{total_attendances}{The total number of patients in an A&E service seeking medical attention}
 \item{attendances_over_4hours}{The number of patients seeking medical attention that spend over 4 hours from arrival to admission, transfer or discharge}
 \item{total_emergency_admissions}{The total number of admissions to a hospital bed as an emergency}

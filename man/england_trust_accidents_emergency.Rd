@@ -27,4 +27,11 @@ england_trust_accidents_emergency
 \description{
 A dataset containing England Accident and Emergency attendances and Emergency Admissions at provider level, by month.
 }
+\details{
+Data notes:
+\itemize{
+\item Due to a cyber-attack several sites have been unable to provide complete data since August 2022
+\item Fourteen trusts are field testing new A&E performance standards and as a result are not required to report attendances over four hours from May 2019
+}
+}
 \keyword{datasets}

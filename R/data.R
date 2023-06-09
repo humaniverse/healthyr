@@ -422,5 +422,10 @@
 #'   \item{pct_emergency_admissions_over_4hours}{The percentage of emergency admissions that spend over 4 hours from decision to admit to admission}
 #'   ...
 #' }
+#' @details
+#' Data notes:
+#' - Due to a cyber-attack several sites have been unable to provide complete data since August 2022
+#' - Fourteen trusts are field testing new A&E performance standards and as a result are not required to report attendances over four hours from May 2019
+#' 
 #' @source \url{https://www.england.nhs.uk/}
 "england_trust_accidents_emergency"

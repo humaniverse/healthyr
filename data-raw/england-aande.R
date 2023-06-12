@@ -104,5 +104,15 @@ england_trust_accidents_emergency <- england_trust_accidents_emergency |>
   filter(code %in% geographr::points_nhs_trusts22$nhs_trust22_code) |>
   rename(nhs_trust22_code = code)
 
+# Replace data entry error with 0
+england_trust_accidents_emergency <- england_trust_accidents_emergency |>
+  mutate(pct_emergency_admissions_over_4hours = case_when(
+    emergency_admissions_over_4hours == 29 & nhs_trust22_code == "RTQ" ~ 0, TRUE ~ pct_emergency_admissions_over_4hours
+  )) |>
+  mutate(emergency_admissions_over_4hours = case_when(
+    emergency_admissions_over_4hours == 29 & nhs_trust22_code == "RTQ" ~ 0, TRUE ~ emergency_admissions_over_4hours
+  ))
+
 # Save output to data/ folder
 usethis::use_data(england_trust_accidents_emergency, overwrite = TRUE)
+

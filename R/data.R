@@ -1,3 +1,46 @@
+#' England Accident and Emergency Admissions by Integrated Care Board  - (2022-23)
+#'
+#' A dataset containing England Accident and Emergency attendances and Emergency Admissions at Integrated Care Board level, by month 
+#'
+#' @format A data frame with 546 rows and 8 variables:
+#' \describe{
+#'   \item{icb22_code}{Integrated Care Board code}
+#'   \item{total_attendances}{The total number of patients in an A&E service seeking medical attention}
+#'   \item{attendances_over_4hours}{The number of patients seeking medical attention that spend over 4 hours from arrival to admission, transfer or discharge}
+#'   \item{total_emergency_admissions}{The total number of admissions to a hospital bed as an emergency}
+#'   \item{emergency_admissions_over_4hours}{The number of patients seeking admission to a hospital bed as an emergency that spend over 4 hours from decision to admit to admission}
+#'   \item{pct_attendance_over_4hours}{The percentage of attendance that spend over 4 hours from arrival to admission, transfer of discharge}
+#'   \item{date}{Date}
+#'   \item{pct_emergency_admissions_over_4hours}{The percentage of emergency admissions that spend over 4 hours from decision to admit to admission}
+#'   ...
+#' }
+#' @source \url{https://www.england.nhs.uk/}
+"england_icb_accidents_emergency"
+
+#' England Accident and Emergency Admissions by Trust - (2021-23)
+#'
+#' A dataset containing England Accident and Emergency attendances and Emergency Admissions at provider level, by month. 
+#'
+#' @format A data frame with 3,828 rows and 8 variables:
+#' \describe{
+#'   \item{nhs_trust22_code}{NHS Trust (organisational) code}
+#'   \item{total_attendances}{The total number of patients in an A&E service seeking medical attention}
+#'   \item{attendances_over_4hours}{The number of patients seeking medical attention that spend over 4 hours from arrival to admission, transfer or discharge}
+#'   \item{total_emergency_admissions}{The total number of admissions to a hospital bed as an emergency}
+#'   \item{emergency_admissions_over_4hours}{The number of patients seeking admission to a hospital bed as an emergency that spend over 4 hours from decision to admit to admission}
+#'   \item{pct_attendance_over_4hours}{The percentage of attendance that spend over 4 hours from arrival to admission, transfer of discharge}
+#'   \item{date}{Date}
+#'   \item{pct_emergency_admissions_over_4hours}{The percentage of emergency admissions that spend over 4 hours from decision to admit to admission}
+#'   ...
+#' }
+#' @details
+#' Data notes:
+#' - Due to a cyber-attack several sites have been unable to provide complete data since August 2022
+#' - Fourteen trusts are field testing new A&E performance standards and as a result are not required to report attendances over four hours from May 2019
+#' 
+#' @source \url{https://www.england.nhs.uk/}
+"england_trust_accidents_emergency"
+
 #' Critical care and General & Acute Beds
 #'
 #' A dataset containing NHS Trust level critical care and general and acute bed

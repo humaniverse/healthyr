@@ -17,7 +17,7 @@ load_all(".")
 # ---- Download data ----
 query_url <-
   query_urls |>
-  filter(id == "england_health_index_2020") |>
+  filter(id == "england_health_index_2021") |>
   pull(query)
 
 download <- tempfile(fileext = ".xlsx")
@@ -28,13 +28,13 @@ request(query_url) |>
 raw <- read_excel(
   download,
   sheet = "Table_2_Index_scores",
-  range = "A3:I344"
+  range = "A3:J344"
 )
 
 # ---- Clean data ----
 england_health_index <- raw |>
   filter(`Area Type [Note 3]` == "LTLA") |>
-  select(ltla21_code = `Area Code`, `2015`:`2020`) |>
+  select(ltla21_code = `Area Code`, `2015`:`2021`) |>
   pivot_longer(!ltla21_code, names_to = "year", values_to = "overall_score")
 
 # ---- Save output to data/ folder ----

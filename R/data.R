@@ -142,9 +142,9 @@
 #' England Health Index (ONS)
 #'
 #' A dataset containing overall health index scores for the English lower tier
-#' local authorities from 2015-2022.
+#' local authorities from 2015-2021.
 #'
-#' @format A data frame with 1,842 rows and 3 variables:
+#' @format A data frame with 2,149 rows and 3 variables:
 #' \describe{
 #'   \item{ltla21_code}{2021 Lower tier local authority code}
 #'   \item{year}{Year}

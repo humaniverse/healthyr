@@ -5,7 +5,7 @@
 \alias{england_icb_discharged_patients}
 \title{Hosptial ICB Discharge Data - Discharged Patients}
 \format{
-A data frame with 15,330 rows and 5 variables:
+A data frame with 17,892 rows and 5 variables:
 \describe{
 \item{icb22_code}{Integrated Care Board code}
 \item{date}{Date}

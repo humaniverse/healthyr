@@ -80,7 +80,7 @@
 #' A dataset containing NHS Integrated Care Board discharge data on how many
 #' patients do not meet criteria to reside each day.
 #'
-#' @format A data frame with 15,330 rows and 3 variables:
+#' @format A data frame with 17,892 rows and 3 variables:
 #' \describe{
 #'   \item{icb22_code}{Integrated Care Board code}
 #'   \item{date}{Date}
@@ -95,7 +95,7 @@
 #' A dataset containing NHS Trust level hopsital discharge data on how many
 #' patients do not meet criteria to reside each day.
 #'
-#' @format A data frame with 44,165 rows and 3 variables:
+#' @format A data frame with 51,515 rows and 3 variables:
 #' \describe{
 #'   \item{nhs_trust22_code}{NHS Trust (organisational) code}
 #'   \item{date}{Date}
@@ -110,7 +110,7 @@
 #' A dataset containing NHS Integrated Care Board discharge data on how many
 #' patients were discharged each day.
 #'
-#' @format A data frame with 15,330 rows and 5 variables:
+#' @format A data frame with 17,892 rows and 5 variables:
 #' \describe{
 #'   \item{icb22_code}{Integrated Care Board code}
 #'   \item{date}{Date}
@@ -127,7 +127,7 @@
 #' A dataset containing NHS Trust level hopsital discharge data on how many
 #' patients were discharged each day.
 #'
-#' @format A data frame with 44,165 rows and 5 variables:
+#' @format A data frame with 51,515 rows and 5 variables:
 #' \describe{
 #'   \item{nhs_trust22_code}{NHS Trust (organisational) code}
 #'   \item{date}{Date}

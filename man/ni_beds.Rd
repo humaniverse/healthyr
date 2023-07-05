@@ -5,7 +5,7 @@
 \alias{ni_beds}
 \title{Bed Availability in Northern Ireland}
 \format{
-A data frame with 13,237 rows and 15 variables:
+A data frame with 13,237 rows and 17 variables:
 \describe{
 \item{financial_year}{Financial year}
 \item{quarter_ending}{Quarter ending date}
@@ -22,6 +22,8 @@ A data frame with 13,237 rows and 15 variables:
 \item{elective_inpatient}{Number of elective inpatients}
 \item{non_elective_inpatient}{Number of non-elective inpatients}
 \item{regular_attenders}{Number of regular attenders}
+\item{total_discharged_beds}{Total number of discharged beds}
+\item{average_discharged_beds}{Average number of discharged beds}
 }
 }
 \source{

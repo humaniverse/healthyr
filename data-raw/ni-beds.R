@@ -19,6 +19,7 @@ raw <- read_csv(query_url, skip=2)
 
 # Change dataset to tidy data with all relevant information
 # Removed "Day Case" column since it included missing values and duplicate values with "Total Day Cases".
+# Can calculate number of discharge beds = total available beds - total occupied beds
 ni_beds <- raw |>
   select(
     financial_year = "Financial Year",
@@ -35,7 +36,9 @@ ni_beds <- raw |>
     total_day_case = "Total Day Case",
     elective_inpatient = "Elective Inpatient",
     non_elective_inpatient = "Non Elective Inpatient",
-    regular_attenders = "Regular Attenders")
+    regular_attenders = "Regular Attenders") |>
+  mutate(total_discharged_beds = total_available_beds - total_occupied_beds,
+         average_discharged_beds = average_available_beds - average_occupied_beds)
 
 # Save output to data/ folder
 usethis::use_data(ni_beds, overwrite = TRUE)

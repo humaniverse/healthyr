@@ -1,6 +1,6 @@
 #' England Accident and Emergency Admissions by Integrated Care Board  - (2022-23)
 #'
-#' A dataset containing England Accident and Emergency attendances and Emergency Admissions at Integrated Care Board level, by month 
+#' A dataset containing England Accident and Emergency attendances and Emergency Admissions at Integrated Care Board level, by month
 #'
 #' @format A data frame with 546 rows and 8 variables:
 #' \describe{
@@ -19,7 +19,7 @@
 
 #' England Accident and Emergency Admissions by Trust - (2021-23)
 #'
-#' A dataset containing England Accident and Emergency attendances and Emergency Admissions at provider level, by month. 
+#' A dataset containing England Accident and Emergency attendances and Emergency Admissions at provider level, by month.
 #'
 #' @format A data frame with 3,828 rows and 8 variables:
 #' \describe{
@@ -37,7 +37,7 @@
 #' Data notes:
 #' - Due to a cyber-attack several sites have been unable to provide complete data since August 2022
 #' - Fourteen trusts are field testing new A&E performance standards and as a result are not required to report attendances over four hours from May 2019
-#' 
+#'
 #' @source \url{https://www.england.nhs.uk/}
 "england_trust_accidents_emergency"
 
@@ -236,6 +236,33 @@
 #' @source \url{https://www.england.nhs.uk/}
 "england_rtt_flow_stp"
 
+#' Bed Availability in Northern Ireland
+#'
+#' A dataset containing hospital statistics on bed availability, bed occupancy and inpatients data.
+#'
+#' @format A data frame with 13,237 rows and 17 variables:
+#' \describe{
+#'   \item{financial_year}{Financial year}
+#'   \item{quarter_ending}{Quarter ending date}
+#'   \item{HSC}{Health and Social Care Trust locations}
+#'   \item{hospital}{Hospital name}
+#'   \item{programme_of_care}{Programme of care}
+#'   \item{specialty}{Specialty}
+#'   \item{total_available_beds}{Total number of available beds}
+#'   \item{average_available_beds}{Average number of available beds}
+#'   \item{total_occupied_beds}{Total number of occupied beds}
+#'   \item{average_occupied_beds}{Average number of occupied beds}
+#'   \item{total_inpatients}{Total number of inpatients}
+#'   \item{total_day_case}{Total number of day cases}
+#'   \item{elective_inpatient}{Number of elective inpatients}
+#'   \item{non_elective_inpatient}{Number of non-elective inpatients}
+#'   \item{regular_attenders}{Number of regular attenders}
+#'   \item{total_discharged_beds}{Total number of discharged beds}
+#'   \item{average_discharged_beds}{Average number of discharged beds}
+#' }
+#' @source \url{https://www.health-ni.gov.uk/}
+"ni_beds"
+
 #' Bed Occupany
 #'
 #' A dataset containing Health and Social Care Trust level bed occupancy data.
@@ -251,6 +278,25 @@
 #' }
 #' @source \url{https://www.health-ni.gov.uk/}
 "ni_bed_occupancy"
+
+#' Provision of unpaid care (delayed discharge) in Northern Ireland
+#'
+#' A dataset containing unpaid care data in Local Government Districts in NI.
+#'
+#' @format A data frame with 11 rows and 8 variables:
+#' \describe{
+#'   \item{ltla21_name}{Local Government Districts name}
+#'   \item{ltla21_code}{Local Government Districts code}
+#'   \item{total_population}{Population aged over 5 years}
+#'   \item{total_unpaid_carers}{Total number of unpaid carers}
+#'   \item{age_5_to_14_years}{Unpaid carers aged between 5 and 14}
+#'   \item{age_15_to_39_years}{Unpaid carers aged between 15 and 39}
+#'   \item{age_40_to_64_years}{Unpaid carers aged between 40 and 64}
+#'   \item{age_65_over_years}{Unpaid carers aged over 65}
+#'   ...
+#' }
+#' @source \url{https://www.nisra.gov.uk/}
+"ni_unpaid_care_21"
 
 #' Consultant-led Referral to Treatment (RTT) by Health & Social Care Trust
 #'
@@ -370,7 +416,7 @@
 
 #' Wales ambulance waiting times - (2022)
 #'
-#' A dataset containing Welsh emergency ambulance calls and responses to red 
+#' A dataset containing Welsh emergency ambulance calls and responses to red
 #' calls, by local health boards (HB) and month
 #'
 #' @format A data frame with 176 rows and 9 variables:
@@ -384,7 +430,7 @@
 #'   \item{green_calls}{Number of green calls}
 #'   \item{red_calls_resulting_in_an_emergency_response_at_the_scene_within_8_minutes}{Number of red call resulting in an emergency response at the scene within 8 minutes}
 #'   \item{red_calls_percent_of_emergency_responses_arriving_at_the_scene_within_8_minutes}{Percentage of emergency responses to red calls arriving at the scene within 8 minutes}
-#'   
+#'
 #'   ...
 #' }
 #' @source \url{https://statswales.gov.wales/}
@@ -392,8 +438,8 @@
 
 #' Wales health board bed availability - (2022)
 #'
-#' A dataset containing Welsh monthly NHS beds data by health board, measure, 
-#' and specialty 
+#' A dataset containing Welsh monthly NHS beds data by health board, measure,
+#' and specialty
 #'
 #' @format A data frame with 633 rows and 7 variables:
 #' \describe{
@@ -404,7 +450,7 @@
 #'   \item{daily_beds_available}{Average number of daily beds available}
 #'   \item{daily_beds_occupied}{Average number of daily beds occucpied}
 #'   \item{beds_occupancy_rate}{Bed occupancy rate}
-#'   
+#'
 #'   ...
 #' }
 #' @source \url{https://statswales.gov.wales/}
@@ -412,8 +458,8 @@
 
 #' Wales hospital bed availability - (2022)
 #'
-#' A dataset containing Welsh monthly NHS beds data by hospital site, measure, 
-#' and specialty 
+#' A dataset containing Welsh monthly NHS beds data by hospital site, measure,
+#' and specialty
 #'
 #' @format A data frame with 4171 rows and 7 variables:
 #' \describe{
@@ -424,7 +470,7 @@
 #'   \item{daily_beds_available}{Average number of daily beds available}
 #'   \item{daily_beds_occupied}{Average number of daily beds occucpied}
 #'   \item{beds_occupancy_rate}{Bed occupancy rate}
-#'   
+#'
 #'   ...
 #' }
 #' @source \url{https://statswales.gov.wales/}

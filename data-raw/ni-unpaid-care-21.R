@@ -67,7 +67,8 @@ total_hours_unpaid <- raw |>
     count_65_and_over_1to19_hours = "All usual residents aged 65+ years:\r\nProvides 1-19 hours unpaid care per week",
     count_65_and_over_20to34_hours = "All usual residents aged 65+ years:\r\nProvides 20-34 hours unpaid care per week",
     count_65_and_over_35to49_hours = "All usual residents aged 65+ years:\r\nProvides 35-49 hours unpaid care per week",
-    count_65_and_over_50plus_hours = "All usual residents aged 65+ years:\r\nProvides 50+ hours unpaid care per week") |>
+    count_65_and_over_50plus_hours = "All usual residents aged 65+ years:\r\nProvides 50+ hours unpaid care per week"
+  ) |>
   filter(ltla21_code != "N92000002")
 
 percent_hours_unpaid <- raw2 |>
@@ -97,11 +98,20 @@ percent_hours_unpaid <- raw2 |>
     percent_65_and_over_1to19_hours = "All usual residents aged 65+ years:\r\nProvides 1-19 hours unpaid care per week",
     percent_65_and_over_20to34_hours = "All usual residents aged 65+ years:\r\nProvides 20-34 hours unpaid care per week",
     percent_65_and_over_35to49_hours = "All usual residents aged 65+ years:\r\nProvides 35-49 hours unpaid care per week",
-    percent_65_and_over_50plus_hours = "All usual residents aged 65+ years:\r\nProvides 50+ hours unpaid care per week") |>
+    percent_65_and_over_50plus_hours = "All usual residents aged 65+ years:\r\nProvides 50+ hours unpaid care per week"
+  ) |>
   filter(ltla21_code != "N92000002")
 
-ni_unpaid_care_21 <- inner_join(total_hours_unpaid, percent_hours_unpaid, by = "ltla21_code") |>
-  pivot_longer(cols = -c(ltla21_name, ltla21_code), names_to = "variable", values_to = "value")
+ni_unpaid_care_21 <-
+  inner_join(
+    total_hours_unpaid,
+    percent_hours_unpaid,
+    by = "ltla21_code"
+  ) |>
+  pivot_longer(
+    cols = -c(ltla21_name, ltla21_code),
+    names_to = "variable", values_to = "value"
+  )
 
 # ---- Save output to data/ folder ----
 usethis::use_data(ni_unpaid_care_21, overwrite = TRUE)

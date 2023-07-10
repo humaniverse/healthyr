@@ -254,7 +254,8 @@
 
 #' Provision of unpaid care (delayed discharge) in Northern Ireland
 #'
-#' A dataset containing unpaid care data in Local Government Districts in NI.
+#' A dataset containing unpaid care data in Local Government Districts in NI
+#' from 2021 census.
 #'
 #' @format A data frame with 11 rows and 8 variables:
 #' \describe{

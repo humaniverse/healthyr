@@ -25,6 +25,7 @@ A data frame with 11 rows and 8 variables:
 ni_unpaid_care_21
 }
 \description{
-A dataset containing unpaid care data in Local Government Districts in NI.
+A dataset containing unpaid care data in Local Government Districts in NI
+from 2021 census.
 }
 \keyword{datasets}

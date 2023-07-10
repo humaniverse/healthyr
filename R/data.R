@@ -254,13 +254,13 @@
 
 #' Bed Availability in Northern Ireland
 #'
-#' A dataset containing hospital statistics on bed availability, bed occupancy and inpatients data.
+#' A dataset containing hospital statistics on bed availability, bed occupancy
+#' and inpatients data.
 #'
 #' @format A data frame with 13,237 rows and 17 variables:
 #' \describe{
-#'   \item{financial_year}{Financial year}
 #'   \item{quarter_ending}{Quarter ending date}
-#'   \item{HSC}{Health and Social Care Trust locations}
+#'   \item{trust_code}{Health and Social Care Trust locations}
 #'   \item{hospital}{Hospital name}
 #'   \item{programme_of_care}{Programme of care}
 #'   \item{specialty}{Specialty}
@@ -273,8 +273,6 @@
 #'   \item{elective_inpatient}{Number of elective inpatients}
 #'   \item{non_elective_inpatient}{Number of non-elective inpatients}
 #'   \item{regular_attenders}{Number of regular attenders}
-#'   \item{total_discharged_beds}{Total number of discharged beds}
-#'   \item{average_discharged_beds}{Average number of discharged beds}
 #' }
 #' @source \url{https://www.health-ni.gov.uk/}
 "ni_beds"

@@ -4,7 +4,6 @@
 # ---- Load libs ----
 library(tidyverse)
 library(devtools)
-library(zoo)
 
 # ---- Load internal sysdata.rda file with URL's ----
 load_all(".")

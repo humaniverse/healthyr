@@ -257,16 +257,12 @@
 #' A dataset containing unpaid care data in Local Government Districts in NI
 #' from 2021 census.
 #'
-#' @format A data frame with 11 rows and 8 variables:
+#' @format A data frame with 605 rows and 4 variables:
 #' \describe{
 #'   \item{ltla21_name}{Local Government Districts name}
 #'   \item{ltla21_code}{Local Government Districts code}
-#'   \item{total_population}{Population aged over 5 years}
-#'   \item{total_unpaid_carers}{Total number of unpaid carers}
-#'   \item{age_5_to_14_years}{Unpaid carers aged between 5 and 14}
-#'   \item{age_15_to_39_years}{Unpaid carers aged between 15 and 39}
-#'   \item{age_40_to_64_years}{Unpaid carers aged between 40 and 64}
-#'   \item{age_65_over_years}{Unpaid carers aged over 65}
+#'   \item{variable}{Age band and count/percentage of unpaid care hours}
+#'   \item{value}{Value of the chosen variable}
 #'   ...
 #' }
 #' @source \url{https://www.nisra.gov.uk/}

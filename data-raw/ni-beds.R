@@ -4,6 +4,8 @@
 # ---- Load libs ----
 library(tidyverse)
 library(devtools)
+library(geographr)
+library(sf)
 
 # ---- Load internal sysdata.rda file with URL's ----
 load_all(".")
@@ -16,11 +18,16 @@ query_url <-
 # ---- Download and wrangle data ----
 raw <- read_csv(query_url, skip = 2)
 
+lookup_trusts <- geographr::boundaries_trusts_ni18 |>
+  st_drop_geometry()
+
 # Removed "Day Case" column since it included missing values and duplicate values with "Total Day Cases".
 ni_beds <- raw |>
+  rename(trust18_name = "HSC Trust") |>
+  left_join(lookup_trusts, by = "trust18_name") |>
   select(
-    quarter_ending = "Quarter Ending",
-    trust_code = "HSC Trust",
+    trust18_code,
+    date = "Quarter Ending",
     hospital = "Hospital",
     programme_of_care = "Programme of Care",
     specialty = "Specialty",
@@ -34,7 +41,8 @@ ni_beds <- raw |>
     non_elective_inpatient = "Non Elective Inpatient",
     regular_attenders = "Regular Attenders"
   ) |>
-  mutate(quarter_ending = as_date(quarter_ending, format = "%d/%m/%Y"))
+  mutate(date = as_date(date, format = "%d/%m/%Y"))
+
 
 # Save output to data/ folder
 usethis::use_data(ni_beds, overwrite = TRUE)

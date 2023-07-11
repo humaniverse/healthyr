@@ -257,10 +257,10 @@
 #' A dataset containing hospital statistics on bed availability, bed occupancy
 #' and inpatients data.
 #'
-#' @format A data frame with 13,237 rows and 17 variables:
+#' @format A data frame with 13,237 rows and 14 variables:
 #' \describe{
-#'   \item{quarter_ending}{Quarter ending date}
-#'   \item{trust_code}{Health and Social Care Trust locations}
+#'   \item{trust18_code}{Health and Social Care Trust code}
+#'   \item{date}{Quarter ending date}
 #'   \item{hospital}{Hospital name}
 #'   \item{programme_of_care}{Programme of care}
 #'   \item{specialty}{Specialty}

@@ -61,6 +61,7 @@ query_urls <-
     # Northern Ireland
     "Bed occupancy", "ni_bed_occupancy_21_22", "2021/22", "OGLv3", "https://www.health-ni.gov.uk/sites/default/files/publications/health/hs-inpatient-day-case-tables-21-22.xlsx", "https://www.health-ni.gov.uk/publications/hospital-statistics-inpatient-and-day-case-activity-202122",
     "Bed availability", "ni_beds", "2013 - 2022", "OGLv3", "https://www.health-ni.gov.uk/sites/default/files/publications/health/hs-inpatient-hts-tables-21-22.csv", "https://www.health-ni.gov.uk/publications/hospital-statistics-inpatient-and-day-case-activity-202122",
+    "Provision of unpaid care (delayed discharge)", "ni_unpaid_care_21", "2021", "OGLv3", "https://www.nisra.gov.uk/system/files/statistics/census-2021-ms-d17.xlsx", "https://www.nisra.gov.uk/publications/census-2021-main-statistics-health-disability-and-unpaid-care-tables",
 
     # Scotland
     "Beds by Board of Treatment and Specialty", "scotland_beds", "2016 - 2021", "OGLv3", "https://www.opendata.nhs.scot/dataset/554b0e7a-ccac-4bb6-82db-1a8b306fcb36/resource/f272bb7d-5320-4491-84c1-614a2c064007/download/beds_by_nhs_board_of_treatment_and_specialty.csv", "https://www.opendata.nhs.scot/dataset/554b0e7a-ccac-4bb6-82db-1a8b306fcb36/resource/f272bb7d-5320-4491-84c1-614a2c064007/download/beds_by_nhs_board_of_treatment_and_specialty.csv",

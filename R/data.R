@@ -277,6 +277,22 @@
 #' @source \url{https://www.health-ni.gov.uk/}
 "ni_beds"
 
+#' Provision of unpaid care (delayed discharge) in Northern Ireland
+#'
+#' A dataset containing unpaid care data in Local Government Districts in NI
+#' from 2021 census.
+#'
+#' @format A data frame with 605 rows and 4 variables:
+#' \describe{
+#'   \item{ltla21_name}{Local Government Districts name}
+#'   \item{ltla21_code}{Local Government Districts code}
+#'   \item{variable}{Age band and count/percentage of unpaid care hours}
+#'   \item{value}{Value of the chosen variable}
+#'   ...
+#' }
+#' @source \url{https://www.nisra.gov.uk/}
+"ni_unpaid_care_21"
+
 #' Consultant-led Referral to Treatment (RTT) by Health & Social Care Trust
 #'
 #' A dataset containing RTT data for Health & Social Care Trusts in NI.

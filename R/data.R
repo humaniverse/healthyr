@@ -252,6 +252,31 @@
 #' @source \url{https://www.health-ni.gov.uk/}
 "ni_bed_occupancy"
 
+#' Bed Availability in Northern Ireland
+#'
+#' A dataset containing hospital statistics on bed availability, bed occupancy
+#' and inpatients data.
+#'
+#' @format A data frame with 13,237 rows and 14 variables:
+#' \describe{
+#'   \item{trust18_code}{Health and Social Care Trust code}
+#'   \item{date}{Quarter ending date}
+#'   \item{hospital}{Hospital name}
+#'   \item{programme_of_care}{Programme of care}
+#'   \item{specialty}{Specialty}
+#'   \item{total_available_beds}{Total number of available beds}
+#'   \item{average_available_beds}{Average number of available beds}
+#'   \item{total_occupied_beds}{Total number of occupied beds}
+#'   \item{average_occupied_beds}{Average number of occupied beds}
+#'   \item{total_inpatients}{Total number of inpatients}
+#'   \item{total_day_case}{Total number of day cases}
+#'   \item{elective_inpatient}{Number of elective inpatients}
+#'   \item{non_elective_inpatient}{Number of non-elective inpatients}
+#'   \item{regular_attenders}{Number of regular attenders}
+#' }
+#' @source \url{https://www.health-ni.gov.uk/}
+"ni_beds"
+
 #' Provision of unpaid care (delayed discharge) in Northern Ireland
 #'
 #' A dataset containing unpaid care data in Local Government Districts in NI

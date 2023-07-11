@@ -236,22 +236,6 @@
 #' @source \url{https://www.england.nhs.uk/}
 "england_rtt_flow_stp"
 
-#' Bed Occupany
-#'
-#' A dataset containing Health and Social Care Trust level bed occupancy data.
-#'
-#' @format A data frame with 5 rows and 5 variables:
-#' \describe{
-#'   \item{trust18_code}{Health and Social Care Trust code code}
-#'   \item{date}{Date}
-#'   \item{beds_available_count}{Total number of available beds}
-#'   \item{beds_occupied_count}{Total number of occupied beds}
-#'   \item{beds_occupied_percentage}{The percentage of occupied beds}
-#'   ...
-#' }
-#' @source \url{https://www.health-ni.gov.uk/}
-"ni_bed_occupancy"
-
 #' Bed Availability in Northern Ireland
 #'
 #' A dataset containing hospital statistics on bed availability, bed occupancy

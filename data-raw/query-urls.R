@@ -59,7 +59,6 @@ query_urls <-
     "Psychologoical Therapies (IAPT)", "nhs_iapt_22_23", "January 2022-23", "OGLv3", "https://files.digital.nhs.uk/89/B4C209/iapt_time_series_Jan_22_Jan_23_key_measures.zip", "https://digital.nhs.uk/data-and-information/publications/statistical/psychological-therapies-report-on-the-use-of-iapt-services",
 
     # Northern Ireland
-    "Bed occupancy", "ni_bed_occupancy_21_22", "2021/22", "OGLv3", "https://www.health-ni.gov.uk/sites/default/files/publications/health/hs-inpatient-day-case-tables-21-22.xlsx", "https://www.health-ni.gov.uk/publications/hospital-statistics-inpatient-and-day-case-activity-202122",
     "Bed availability", "ni_beds", "2013 - 2022", "OGLv3", "https://www.health-ni.gov.uk/sites/default/files/publications/health/hs-inpatient-hts-tables-21-22.csv", "https://www.health-ni.gov.uk/publications/hospital-statistics-inpatient-and-day-case-activity-202122",
     "Provision of unpaid care (delayed discharge)", "ni_unpaid_care_21", "2021", "OGLv3", "https://www.nisra.gov.uk/system/files/statistics/census-2021-ms-d17.xlsx", "https://www.nisra.gov.uk/publications/census-2021-main-statistics-health-disability-and-unpaid-care-tables",
 

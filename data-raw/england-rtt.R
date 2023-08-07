@@ -40,6 +40,13 @@ nhs_region_lookup <- tribble(
 # ---- Download waiting list data ----
 # URLs for full waiting list data by month from https://www.england.nhs.uk/statistics/statistical-work-areas/rtt-waiting-times
 urls <- c(
+  mar_23 = "https://www.england.nhs.uk/statistics/wp-content/uploads/sites/2/2023/05/Full-CSV-data-file-Mar23-ZIP-3823K-53773.zip",
+  feb_23 = "https://www.england.nhs.uk/statistics/wp-content/uploads/sites/2/2023/04/Full-CSV-data-file-Feb23-ZIP-3552K-55444.zip",
+  jan_23 = "https://www.england.nhs.uk/statistics/wp-content/uploads/sites/2/2023/03/Full-CSV-data-file-Jan23-ZIP-3608K-03732.zip",
+  
+  dec_22 = "https://www.england.nhs.uk/statistics/wp-content/uploads/sites/2/2023/02/Full-CSV-data-file-Dec22-ZIP-3407K-58481.zip",
+  nov_22 = "https://www.england.nhs.uk/statistics/wp-content/uploads/sites/2/2023/01/Full-CSV-data-file-Nov22-ZIP-3510K-63230.zip",
+  oct_22 = "https://www.england.nhs.uk/statistics/wp-content/uploads/sites/2/2022/12/Full-CSV-data-file-Oct22-ZIP-3701K-v2.zip",
   sep_22 = "https://www.england.nhs.uk/statistics/wp-content/uploads/sites/2/2022/11/Full-CSV-data-file-Sep22-ZIP-3524K-34691.zip",
   aug_22 = "https://www.england.nhs.uk/statistics/wp-content/uploads/sites/2/2022/10/Full-CSV-data-file-Aug22-ZIP-3488K-48428.zip",
   jul_22 = "https://www.england.nhs.uk/statistics/wp-content/uploads/sites/2/2022/09/Full-CSV-data-file-Jul22-ZIP-3643K-11455.zip",

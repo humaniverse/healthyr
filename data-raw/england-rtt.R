@@ -1,6 +1,7 @@
 library(tidyverse)
 library(lubridate)
 library(compositr)
+library(sf)
 # library(httr)
 
 # ---- Lookup table for matching old/new NHS Regions ----
@@ -106,11 +107,12 @@ for (url in urls) {
   unlink(tf)
 }
 
-# list.files(td)
+# list.files(td, pattern = "*.csv", full.names = TRUE)
 
 # Sustainability Transformation Partnerships and NHS England (Region) (April 2020) Lookup in England
-# Source: https://geoportal.statistics.gov.uk/datasets/sustainability-transformation-partnerships-and-nhs-england-region-april-2020-lookup-in-england/
-stp_region <- read_csv("https://opendata.arcgis.com/datasets/00613813dd4b4f2dba16268720b50bd4_0.csv")
+# Source: https://geoportal.statistics.gov.uk/datasets/ons::sustainability-transformation-partnerships-and-nhs-england-region-april-2020-lookup-in-england-1/about
+stp_region <- read_sf("https://services1.arcgis.com/ESMARspQHYMw9BZ9/arcgis/rest/services/STP20_NHSER20_EN_LU_e268d9cb3626464584f6b988a0aa4e61/FeatureServer/0/query?outFields=*&where=1%3D1&f=geojson") |> 
+  st_drop_geometry()
 
 # ---- Load waiting list data into separate dataframes ----
 # Set up empty dataframes

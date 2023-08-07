@@ -133,7 +133,7 @@ for (file in list.files(td, pattern = "*.csv", full.names = TRUE)) {
            Month = month.abb[month(Date)],
            Year = year(Date))
 
-  # Data from April 2020 onward contains STPs/ICSs
+  # Data from April 2021 onward contains STPs/ICSs
   if (d$Date[1] >= dmy("01-04-2021")) {
     # Calculate STP/ICS totals
     d_stp <-

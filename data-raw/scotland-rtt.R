@@ -2,7 +2,7 @@ library(tidyverse)
 library(lubridate)
 
 # Download monthly RTT data by Health Board from https://www.opendata.nhs.scot/dataset/18-weeks-referral-to-treatment
-raw <- read_csv("https://www.opendata.nhs.scot/dataset/aa8b22e8-8a02-484d-a6c8-0a0154a6249d/resource/f2598c24-bf00-4171-b7ef-a469bbacbf6c/download/open_data_18_weeks_rtt_jun22.csv")
+raw <- read_csv("https://www.opendata.nhs.scot/dataset/aa8b22e8-8a02-484d-a6c8-0a0154a6249d/resource/f2598c24-bf00-4171-b7ef-a469bbacbf6c/download/open_data_18_weeks_rtt_march23.csv")
 
 scotland_rtt <- raw |>
   filter(HBT == "S92000003") |> # national waiting lists

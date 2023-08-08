@@ -32,10 +32,20 @@ ni_inpatient_sum <-
     Year = year(Date)
   ) |> 
   filter(Year >= 2019) |> 
+  select_if(~ !all(is.na(.))) |> 
   group_by(`HSC Trust`, Year, Month, Specialty) |> 
   summarise(
-    `Total waiting > 52 weeks` = sum(`>52 weeks`, na.rm = TRUE),
-    `Total waiting > 21 weeks` = sum(`> 21 - 26 weeks`, na.rm = TRUE) + sum(`> 26-30 weeks`, na.rm = TRUE) + sum(`> 30 weeks`, na.rm = TRUE)
+    `Total waiting > 52 weeks` = 
+      sum(`>52 weeks`, na.rm = TRUE),
+    `Total waiting > 21 weeks` = 
+      sum(`> 21 - 26 weeks`, na.rm = TRUE) + 
+      sum(`>26-52 weeks`, na.rm = TRUE) +
+      sum(`>52 weeks`, na.rm = TRUE),
+    `Total waiting > 13 weeks` = 
+      sum(`> 13 - 21 weeks`, na.rm = TRUE) + 
+      sum(`> 21 - 26 weeks`, na.rm = TRUE) + 
+      sum(`>26-52 weeks`, na.rm = TRUE) +
+      sum(`>52 weeks`, na.rm = TRUE)
   )
 
 ni_outpatient_sum <-

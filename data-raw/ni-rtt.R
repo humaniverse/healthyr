@@ -30,44 +30,51 @@ ni_inpatient_sum <-
     Date = dmy(`Quarter Ending`),
     Month = month.abb[month(Date)],
     Year = year(Date)
-  ) |> 
-  filter(Year >= 2019) |> 
-  select_if(~ !all(is.na(.))) |> 
-  group_by(`HSC Trust`, Year, Month, Specialty) |> 
+  ) |>
+  filter(Year >= 2019) |>
+  select_if(~ !all(is.na(.))) |>
+  group_by(`HSC Trust`, Year, Month, Specialty) |>
   summarise(
-    `Total waiting > 52 weeks` = 
+    `Total waiting > 52 weeks` =
       sum(`>52 weeks`, na.rm = TRUE),
-    `Total waiting > 21 weeks` = 
-      sum(`> 21 - 26 weeks`, na.rm = TRUE) + 
-      sum(`>26-52 weeks`, na.rm = TRUE) +
-      sum(`>52 weeks`, na.rm = TRUE),
-    `Total waiting > 13 weeks` = 
-      sum(`> 13 - 21 weeks`, na.rm = TRUE) + 
-      sum(`> 21 - 26 weeks`, na.rm = TRUE) + 
-      sum(`>26-52 weeks`, na.rm = TRUE) +
-      sum(`>52 weeks`, na.rm = TRUE)
+    `Total waiting > 21 weeks` =
+      sum(`> 21 - 26 weeks`, na.rm = TRUE) +
+        sum(`>26-52 weeks`, na.rm = TRUE) +
+        sum(`>52 weeks`, na.rm = TRUE),
+    `Total waiting > 13 weeks` =
+      sum(`> 13 - 21 weeks`, na.rm = TRUE) +
+        sum(`> 21 - 26 weeks`, na.rm = TRUE) +
+        sum(`>26-52 weeks`, na.rm = TRUE) +
+        sum(`>52 weeks`, na.rm = TRUE)
   )
 
 ni_outpatient_sum <-
-  ni_outpatient |> 
+  ni_outpatient |>
   # Remove commas from the data columns
   mutate(across(`0 - 6 weeks`:`Total Waiting`, ~ as.numeric(str_remove(.x, ",")))) %>%
   mutate(
     Date = dmy(`Quarter Ending`),
     Month = month.abb[month(Date)],
     Year = year(Date)
-  ) |> 
-  filter(Year >= 2019) |> 
-  mutate(
-    more_18_weeks = 
-      `>18-26 weeks`+
-      `>26 - 39 weeks`+
-      `>39 - 52 weeks`+
-      )
-  group_by(`HSC Trust`, Year, Month, Specialty) |> 
+  ) |>
+  filter(Year >= 2019) |>
+  select_if(~ !all(is.na(.))) |>
+  group_by(`HSC Trust`, Year, Month, Specialty) |>
   summarise(
-    `Total waiting > 52 weeks` = sum(`>18-26 weeks`, na.rm = TRUE) + sum(`>65-78 weeks`, na.rm = TRUE) + sum(`>78-91 weeks`, na.rm = TRUE) + sum(`>91-104 weeks`) + sum(`>104 weeks`, na.rm = TRUE),
-    `Total waiting > 18 weeks` = sum(`>18`)
+    `Total waiting > 52 weeks` =
+      sum(`>52 - 65 weeks`, na.rm = TRUE) +
+        sum(`>65 - 78 weeks`, na.rm = TRUE) +
+        sum(`>78 - 91 weeks`, na.rm = TRUE) +
+        sum(`>91 - 104 weeks`, na.rm = TRUE) +
+        sum(`>104 weeks`, na.rm = TRUE),
+    `Total waiting > 18 weeks` =
+      sum(`>18 - 26 weeks`, na.rm = TRUE) +
+        sum(`>26 - 39 weeks`, na.rm = TRUE) +
+        sum(`>39 - 52 weeks`, na.rm = TRUE) +
+        sum(`>52 - 65 weeks`, na.rm = TRUE) +
+        sum(`>65 - 78 weeks`, na.rm = TRUE) +
+        sum(`>78 - 91 weeks`, na.rm = TRUE) +
+        sum(`>91 - 104 weeks`, na.rm = TRUE)
   )
 
 ni_waits <-

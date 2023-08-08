@@ -4,6 +4,7 @@ query_urls <-
     ~data_type, ~id, ~date, ~license, ~query, ~source,
 
     # England
+    "A&E Providers to Acute Trusts Lookup", "acute_trust_attribution", "June 2022", "OGLv3", "https://www.england.nhs.uk/statistics/wp-content/uploads/sites/2/2023/02/June-2022-Acute-Trust-Attribution-File.xls", "https://www.england.nhs.uk/statistics/statistical-work-areas/ae-waiting-times-and-activity/ae-attendances-and-emergency-admissions-2022-23/",
     "A&E Attendances and Emergency Admissions", "nhs_accident_emergency_april_21", "April 2021", "OGLv3", "https://www.england.nhs.uk/statistics/wp-content/uploads/sites/2/2022/05/April-2021-AE-by-provider-Q773u.xls", "https://www.england.nhs.uk/statistics/statistical-work-areas/ae-waiting-times-and-activity/ae-attendances-and-emergency-admissions-2021-22/",
     "A&E Attendances and Emergency Admissions", "nhs_accident_emergency_may_21", "May 2021", "OGLv3", "https://www.england.nhs.uk/statistics/wp-content/uploads/sites/2/2022/05/May-2021-AE-by-provider-R85f2.xls", "https://www.england.nhs.uk/statistics/statistical-work-areas/ae-waiting-times-and-activity/ae-attendances-and-emergency-admissions-2021-22/",
     "A&E Attendances and Emergency Admissions", "nhs_accident_emergency_june_21", "June 2021", "OGLv3", "https://www.england.nhs.uk/statistics/wp-content/uploads/sites/2/2022/05/June-2021-AE-by-provider-2Qavs.xls", "https://www.england.nhs.uk/statistics/statistical-work-areas/ae-waiting-times-and-activity/ae-attendances-and-emergency-admissions-2021-22/",

@@ -1,3 +1,6 @@
+#' @importFrom tibble tibble
+NULL
+
 #' England Attribution from Type 3 A&E Providers to Acute Trusts (updated June 2022)
 #'
 #' A dataset mapping proportion of A&E attendances attributed to Acute Trusts from Type 3 A&E Providers,

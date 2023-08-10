@@ -9,7 +9,6 @@ wales_waits <-
   as_tibble() |>
   mutate(date = my(paste0(Date_ItemName_ENG))) |>
   filter(year(date) >= 2019) |>
-
   select(
     lhb22_code = LHBProvider_Code,
     lhb22_name = LHBProvider_ItemName_ENG,
@@ -19,13 +18,10 @@ wales_waits <-
     Weekswaiting_ItemName_ENG,
     Data
   ) |>
-
   # Extract number from the waiting code
   mutate(Weekswaiting_Code = str_extract(Weekswaiting_Code, "^[0-9]+") |> as.integer()) |>
-
   # Keep only waits >= 18 weeks
   filter(Weekswaiting_Code >= 18) |>
-
   mutate(Data = as.integer(Data))
 
 wales_waits_18 <-

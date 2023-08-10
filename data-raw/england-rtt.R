@@ -1,6 +1,7 @@
 library(tidyverse)
 library(lubridate)
 library(compositr)
+library(sf)
 # library(httr)
 
 # ---- Lookup table for matching old/new NHS Regions ----
@@ -40,45 +41,52 @@ nhs_region_lookup <- tribble(
 # ---- Download waiting list data ----
 # URLs for full waiting list data by month from https://www.england.nhs.uk/statistics/statistical-work-areas/rtt-waiting-times
 urls <- c(
-  sep_22 = "https://www.england.nhs.uk/statistics/wp-content/uploads/sites/2/2022/11/Full-CSV-data-file-Sep22-ZIP-3524K-34691.zip",
-  aug_22 = "https://www.england.nhs.uk/statistics/wp-content/uploads/sites/2/2022/10/Full-CSV-data-file-Aug22-ZIP-3488K-48428.zip",
-  jul_22 = "https://www.england.nhs.uk/statistics/wp-content/uploads/sites/2/2022/09/Full-CSV-data-file-Jul22-ZIP-3643K-11455.zip",
-  jun_22 = "https://www.england.nhs.uk/statistics/wp-content/uploads/sites/2/2022/08/Full-CSV-data-file-Jun22ZIP-3886K-68395.zip",
-  may_22 = "https://www.england.nhs.uk/statistics/wp-content/uploads/sites/2/2022/07/Full-CSV-data-file-May22-ZIP-3611K-16155.zip",
-  apr_22 = "https://www.england.nhs.uk/statistics/wp-content/uploads/sites/2/2022/06/Full-CSV-data-file-Apr22-ZIP-3300K-57873-1.zip",
-  mar_22 = "https://www.england.nhs.uk/statistics/wp-content/uploads/sites/2/2022/05/Full-CSV-data-file-Mar22-ZIP-3416K-48976.zip",
-  feb_22 = "https://www.england.nhs.uk/statistics/wp-content/uploads/sites/2/2022/04/Full-CSV-data-file-Feb22-ZIP-3294K-89824.zip",
-  jan_22 = "https://www.england.nhs.uk/statistics/wp-content/uploads/sites/2/2022/03/Full-CSV-data-file-Jan22-ZIP-3271K-22998.zip",
+  mar_23 = "https://www.england.nhs.uk/statistics/wp-content/uploads/sites/2/2023/05/Full-CSV-data-file-Mar23-ZIP-3823K-53773.zip",
+  feb_23 = "https://www.england.nhs.uk/statistics/wp-content/uploads/sites/2/2023/04/Full-CSV-data-file-Feb23-ZIP-3552K-55444.zip",
+  jan_23 = "https://www.england.nhs.uk/statistics/wp-content/uploads/sites/2/2023/03/Full-CSV-data-file-Jan23-ZIP-3608K-03732.zip",
+  
+  dec_22 = "https://www.england.nhs.uk/statistics/wp-content/uploads/sites/2/2023/02/Full-CSV-data-file-Dec22-ZIP-3407K-58481.zip",
+  nov_22 = "https://www.england.nhs.uk/statistics/wp-content/uploads/sites/2/2023/01/Full-CSV-data-file-Nov22-ZIP-3510K-63230.zip",
+  oct_22 = "https://www.england.nhs.uk/statistics/wp-content/uploads/sites/2/2022/12/Full-CSV-data-file-Oct22-ZIP-3701K-v2.zip",
+  sep_22 = "https://www.england.nhs.uk/statistics/wp-content/uploads/sites/2/2023/03/Full-CSV-data-file-Sep22-revised-ZIP-3542K.zip",
+  aug_22 = "https://www.england.nhs.uk/statistics/wp-content/uploads/sites/2/2023/03/Full-CSV-data-file-Aug22-revised-ZIP-3488K.zip",
+  jul_22 = "https://www.england.nhs.uk/statistics/wp-content/uploads/sites/2/2023/03/Full-CSV-data-file-Jul22-revised-ZIP-3642K.zip",
+  jun_22 = "https://www.england.nhs.uk/statistics/wp-content/uploads/sites/2/2023/03/Full-CSV-data-file-Jun22-revised-ZIP-4253.zip",
+  may_22 = "https://www.england.nhs.uk/statistics/wp-content/uploads/sites/2/2023/03/Full-CSV-data-file-May22-revised-ZIP-4392K.zip",
+  apr_22 = "https://www.england.nhs.uk/statistics/wp-content/uploads/sites/2/2023/03/Full-CSV-data-file-Apr22-revised-ZIP-4253.zip",
+  mar_22 = "https://www.england.nhs.uk/statistics/wp-content/uploads/sites/2/2023/03/Full-CSV-data-file-Mar22-revised-ZIP-111805K.zip",
+  feb_22 = "https://www.england.nhs.uk/statistics/wp-content/uploads/sites/2/2023/03/Full-CSV-data-file-Feb22-revised-ZIP-109268K.zip",
+  jan_22 = "https://www.england.nhs.uk/statistics/wp-content/uploads/sites/2/2023/03/Full-CSV-data-file-Jan22-revised-ZIP-4266K.zip",
 
-  dec_21 = "https://www.england.nhs.uk/statistics/wp-content/uploads/sites/2/2022/02/Full-CSV-data-file-Dec21-ZIP-4190K..zip",
-  nov_21 = "https://www.england.nhs.uk/statistics/wp-content/uploads/sites/2/2022/01/Full-CSV-data-file-Nov21-ZIP-3826K.zip",
-  oct_21 = "https://www.england.nhs.uk/statistics/wp-content/uploads/sites/2/2021/12/Full-CSV-data-file-Oct21-ZIP-3282K-03857.zip",
-  sep_21 = "https://www.england.nhs.uk/statistics/wp-content/uploads/sites/2/2021/11/Full-CSV-data-file-Sep21-ZIP-3265K-87244.zip",
-  aug_21 = "https://www.england.nhs.uk/statistics/wp-content/uploads/sites/2/2021/10/Full-CSV-data-file-Aug21-ZIP-3188K-80241.zip",
-  jul_21 = "https://www.england.nhs.uk/statistics/wp-content/uploads/sites/2/2021/09/Full-CSV-data-file-Jul21-ZIP-3213K-30573.zip",
-  jun_21 = "https://www.england.nhs.uk/statistics/wp-content/uploads/sites/2/2021/08/Full-CSV-data-file-Jun21-ZIP-3240K.zip",
-  may_21 = "https://www.england.nhs.uk/statistics/wp-content/uploads/sites/2/2021/07/Full-CSV-data-file-May21-ZIP-3163K-69343.zip",
-  apr_21 = "https://www.england.nhs.uk/statistics/wp-content/uploads/sites/2/2021/06/Full-CSV-data-file-Apr21-ZIP-3110K-54792.zip",
+  dec_21 = "https://www.england.nhs.uk/statistics/wp-content/uploads/sites/2/2023/03/Full-CSV-data-file-Dec21-revised-ZIP-3744K.zip",
+  nov_21 = "https://www.england.nhs.uk/statistics/wp-content/uploads/sites/2/2023/03/Full-CSV-data-file-Nov21-revised-ZIP-3826K.zip",
+  oct_21 = "https://www.england.nhs.uk/statistics/wp-content/uploads/sites/2/2023/03/Full-CSV-data-file-Oct21-revised-ZIP-3787K.zip",
+  sep_21 = "https://www.england.nhs.uk/statistics/wp-content/uploads/sites/2/2022/01/Full-CSV-data-file-Sep21-revised-ZIP-3768K.zip",
+  aug_21 = "https://www.england.nhs.uk/statistics/wp-content/uploads/sites/2/2022/01/Full-CSV-data-file-Aug21-revised-ZIP-3682K.zip",
+  jul_21 = "https://www.england.nhs.uk/statistics/wp-content/uploads/sites/2/2022/01/Full-CSV-data-file-Jul21-revised-ZIP-3710K.zip",
+  jun_21 = "https://www.england.nhs.uk/statistics/wp-content/uploads/sites/2/2022/01/Full-CSV-data-file-Jun21-revised-ZIP-3739K.zip",
+  may_21 = "https://www.england.nhs.uk/statistics/wp-content/uploads/sites/2/2022/01/Full-CSV-data-file-May21-revised-ZIP-3656K.zip",
+  apr_21 = "https://www.england.nhs.uk/statistics/wp-content/uploads/sites/2/2022/01/Full-CSV-data-file-Apr21-revised-ZIP-3587K.zip",
   mar_21 = "https://www.england.nhs.uk/statistics/wp-content/uploads/sites/2/2021/05/Full-CSV-data-file-Mar21-ZIP-2888K-76325.zip",
   feb_21 = "https://www.england.nhs.uk/statistics/wp-content/uploads/sites/2/2021/04/Full-CSV-data-file-Feb21-ZIP-2739K-25692.zip",
   jan_21 = "https://www.england.nhs.uk/statistics/wp-content/uploads/sites/2/2021/03/Full-CSV-data-file-Jan21-ZIP-2714K-24158.zip",
 
-  dec_20 = "https://www.england.nhs.uk/statistics/wp-content/uploads/sites/2/2021/02/Full-CSV-data-file-Dec20-ZIP-2705K-98040.zip",
+  dec_20 = "https://www.england.nhs.uk/statistics/wp-content/uploads/sites/2/2021/10/Full-CSV-data-file-Dec20-revised-ZIP-2860K.zip",
   nov_20 = "https://www.england.nhs.uk/statistics/wp-content/uploads/sites/2/2021/01/Full-CSV-data-file-Nov20-ZIP-2758K-26885.zip",
-  oct_20 = "https://www.england.nhs.uk/statistics/wp-content/uploads/sites/2/2020/12/Full-CSV-data-file-Oct20-ZIP-2770K-71733.zip",
+  oct_20 = "https://www.england.nhs.uk/statistics/wp-content/uploads/sites/2/2021/10/Full-CSV-data-file-Oct20-revised-ZIP-2772K.zip",
   sep_20 = "https://www.england.nhs.uk/statistics/wp-content/uploads/sites/2/2020/11/Full-CSV-data-file-Sep20-ZIP-2738K-20720.zip",
   aug_20 = "https://www.england.nhs.uk/statistics/wp-content/uploads/sites/2/2020/10/Full-CSV-data-file-Aug20-ZIP-2594K-09869.zip",
   jul_20 = "https://www.england.nhs.uk/statistics/wp-content/uploads/sites/2/2020/09/Full-CSV-data-file-Jul20-ZIP-2546K.zip",
-  jun_20 = "https://www.england.nhs.uk/statistics/wp-content/uploads/sites/2/2020/08/Full-CSV-data-file-Jun20-ZIP-2380K-84459.zip",
-  may_20 = "https://www.england.nhs.uk/statistics/wp-content/uploads/sites/2/2020/07/Full-CSV-data-file-May20-ZIP-2218K-43296.zip",
-  apr_20 = "https://www.england.nhs.uk/statistics/wp-content/uploads/sites/2/2020/06/Full-CSV-data-file-Apr20-ZIP-2171K-195371.zip",
+  jun_20 = "https://www.england.nhs.uk/statistics/wp-content/uploads/sites/2/2021/10/Full-CSV-data-file-Jun20-revised-ZIP-2649K.zip",
+  may_20 = "https://www.england.nhs.uk/statistics/wp-content/uploads/sites/2/2021/10/Full-CSV-data-file-May20-revised-ZIP-2216K.zip",
+  apr_20 = "https://www.england.nhs.uk/statistics/wp-content/uploads/sites/2/2021/10/Full-CSV-data-file-Apr20-revised-ZIP-2295K.zip",
   mar_20 = "https://www.england.nhs.uk/statistics/wp-content/uploads/sites/2/2020/05/Full-CSV-data-file-Mar20-ZIP-2995K-73640.zip",
-  feb_20 = "https://www.england.nhs.uk/statistics/wp-content/uploads/sites/2/2020/04/Full-CSV-data-file-Feb20-ZIP-3174K-20005-1.zip",
-  jan_20 = "https://www.england.nhs.uk/statistics/wp-content/uploads/sites/2/2020/03/Full-CSV-data-file-Jan20-ZIP-3588K-22427.zip",
+  feb_20 = "https://www.england.nhs.uk/statistics/wp-content/uploads/sites/2/2022/01/Full-CSV-data-file-Feb20-revised-ZIP-3171K.zip",
+  jan_20 = "https://www.england.nhs.uk/statistics/wp-content/uploads/sites/2/2022/01/Full-CSV-data-file-Jan20-revised-ZIP-3227K.zip",
 
-  dec_19 = "https://www.england.nhs.uk/statistics/wp-content/uploads/sites/2/2020/02/Full-CSV-data-file-Dec19-ZIP-3455K-41699.zip",
-  nov_19 = "https://www.england.nhs.uk/statistics/wp-content/uploads/sites/2/2020/01/Full-CSV-data-file-Nov19-ZIP-3530K-98977.zip",
-  oct_19 = "https://www.england.nhs.uk/statistics/wp-content/uploads/sites/2/2019/12/Full-CSV-data-file-Oct19-ZIP-3583K-73980.zip",
+  dec_19 = "https://www.england.nhs.uk/statistics/wp-content/uploads/sites/2/2022/01/Full-CSV-data-file-Dec19-revised-ZIP-3109K.zip",
+  nov_19 = "https://www.england.nhs.uk/statistics/wp-content/uploads/sites/2/2022/01/Full-CSV-data-file-Nov19-revised-ZIP-3528K.zip",
+  oct_19 = "https://www.england.nhs.uk/statistics/wp-content/uploads/sites/2/2022/01/Full-CSV-data-file-Oct19-revised-ZIP-3580K.zip",
   sep_19 = "https://www.england.nhs.uk/statistics/wp-content/uploads/sites/2/2019/11/Full-CSV-data-file-Sep19-ZIP-3532K-62303.zip",
   aug_19 = "https://www.england.nhs.uk/statistics/wp-content/uploads/sites/2/2020/01/Full-CSV-data-file-Aug19-ZIP-3493K-revised.zip",
   jul_19 = "https://www.england.nhs.uk/statistics/wp-content/uploads/sites/2/2020/01/Full-CSV-data-file-Jul19-ZIP-3550K-revised.zip",
@@ -99,11 +107,12 @@ for (url in urls) {
   unlink(tf)
 }
 
-# list.files(td)
+# list.files(td, pattern = "*.csv", full.names = TRUE)
 
 # Sustainability Transformation Partnerships and NHS England (Region) (April 2020) Lookup in England
-# Source: https://geoportal.statistics.gov.uk/datasets/sustainability-transformation-partnerships-and-nhs-england-region-april-2020-lookup-in-england/
-stp_region <- read_csv("https://opendata.arcgis.com/datasets/00613813dd4b4f2dba16268720b50bd4_0.csv")
+# Source: https://geoportal.statistics.gov.uk/datasets/ons::sustainability-transformation-partnerships-and-nhs-england-region-april-2020-lookup-in-england-1/about
+stp_region <- read_sf("https://services1.arcgis.com/ESMARspQHYMw9BZ9/arcgis/rest/services/STP20_NHSER20_EN_LU_e268d9cb3626464584f6b988a0aa4e61/FeatureServer/0/query?outFields=*&where=1%3D1&f=geojson") |> 
+  st_drop_geometry()
 
 # ---- Load waiting list data into separate dataframes ----
 # Set up empty dataframes
@@ -124,7 +133,7 @@ for (file in list.files(td, pattern = "*.csv", full.names = TRUE)) {
            Month = month.abb[month(Date)],
            Year = year(Date))
 
-  # Data from April 2020 onward contains STPs/ICSs
+  # Data from April 2021 onward contains STPs/ICSs
   if (d$Date[1] >= dmy("01-04-2021")) {
     # Calculate STP/ICS totals
     d_stp <-

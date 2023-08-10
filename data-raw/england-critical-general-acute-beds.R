@@ -62,9 +62,12 @@ scrape_data <- function(id, sheet, range, date) {
 # Generate a dataframe with function arguments
 df <-
   tibble(
-    id = query_urls |> filter(str_detect(id, "^nhs_critical_general_acute_beds")) |> pull(id),
-    sheet = rep(2, 12),
-    range = c(rep("D26:V163", 7), rep("D26:AB163", 5)),
+    id = query_urls |> 
+      filter(str_detect(id, "^nhs_critical_general_acute_beds")) |> 
+      filter(date != "April 2023") |> 
+      pull(id),
+    sheet = rep(2, 15),
+    range = c(rep("D26:V163", 7), rep("D26:AB163", 8)),
     date = c(
       "April 2022",
       "May 2022",
@@ -77,9 +80,15 @@ df <-
       "December 2022",
       "January 2023",
       "February 2023",
-      "March 2023"
+      "March 2023",
+      "May 2023",
+      "June 2023",
+      "July 2023"
     )
   )
+
+# April 2023 does not have the "Code" column name
+# Create the 
 
 # Build dataframe with all months
 england_critical_general_acute_beds <- pmap_dfr(df, scrape_data)

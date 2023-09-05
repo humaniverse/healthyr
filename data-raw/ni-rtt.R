@@ -45,7 +45,12 @@ ni_inpatient_sum <-
       sum(`> 13 - 21 weeks`, na.rm = TRUE) +
         sum(`> 21 - 26 weeks`, na.rm = TRUE) +
         sum(`>26-52 weeks`, na.rm = TRUE) +
-        sum(`>52 weeks`, na.rm = TRUE)
+        sum(`>52 weeks`, na.rm = TRUE),
+    `Total waiting < 13 weeks` =
+      sum(`0 - 6 weeks`, na.rm = TRUE) +
+        sum(`> 6 - 13 weeks`, na.rm = TRUE),
+    Total =
+      sum(Total, na.rm = TRUE)
   )
 
 ni_outpatient_sum <-
@@ -74,7 +79,16 @@ ni_outpatient_sum <-
         sum(`>52 - 65 weeks`, na.rm = TRUE) +
         sum(`>65 - 78 weeks`, na.rm = TRUE) +
         sum(`>78 - 91 weeks`, na.rm = TRUE) +
-        sum(`>91 - 104 weeks`, na.rm = TRUE)
+        sum(`>91 - 104 weeks`, na.rm = TRUE) +
+        sum(`>104 weeks`, na.rm = TRUE),
+    `Total waiting < 18 weeks` =
+      sum(`0 - 6 weeks`, na.rm = TRUE) +
+        sum(`>6 - 9 weeks`, na.rm = TRUE) +
+        sum(`>9 - 12 weeks`, na.rm = TRUE) +
+        sum(`>12 - 15 weeks`, na.rm = TRUE) +
+        sum(`>15 - 18 weeks`, na.rm = TRUE),
+    Total =
+      sum(`Total Waiting`, na.rm = TRUE)
   )
 
 ni_waits <-
@@ -85,7 +99,8 @@ ni_waits <-
   group_by(`HSC Trust`, Year, Month, Specialty) %>%
   summarise(
     `Total waiting > 52 weeks` = sum(`Total waiting > 52 weeks`, na.rm = TRUE),
-    `Total waiting > 18 weeks` = sum(`Total waiting > 18 weeks`, na.rm = TRUE)
+    `Total waiting > 18 weeks` = sum(`Total waiting > 18 weeks`, na.rm = TRUE),
+    `Total waiting` = sum(Total, na.rm = TRUE)
   )
 
 ni_rtt_hsct <-
@@ -98,7 +113,8 @@ ni_rtt_hsct <-
     month = Month,
     specialty = Specialty,
     waits_over_18_weeks = `Total waiting > 18 weeks`,
-    waits_over_52_weeks = `Total waiting > 52 weeks`
+    waits_over_52_weeks = `Total waiting > 52 weeks`,
+    total_waits = `Total waiting`
   ) |>
   ungroup()
 

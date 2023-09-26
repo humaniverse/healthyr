@@ -172,6 +172,22 @@ NULL
 #' @source \url{https://www.ons.gov.uk/}
 "england_health_index"
 
+#' England Health Index (ONS) - underlying indicators
+#'
+#' A dataset containing underlying indicators for the ONS Health Index for
+#' English lower tier local authorities from 2015-2021.
+#'
+#' @format A data frame with 120,344 rows and 4 variables:
+#' \describe{
+#'   \item{ltla21_code}{2021 Lower tier local authority code}
+#'   \item{year}{Year}
+#'   \item{indicator}{The name of the indicator}
+#'   \item{value}{The value of the indicator}
+#'   ...
+#' }
+#' @source \url{https://www.ons.gov.uk/}
+"england_health_index_indicators"
+
 #' Physchological Therpaies - IAPT
 #'
 #' A dataset containing NHS Sub Integrated Care Board (formerly CCGs) data.

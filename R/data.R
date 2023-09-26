@@ -162,15 +162,46 @@ NULL
 #' A dataset containing overall health index scores for the English lower tier
 #' local authorities from 2015-2021.
 #'
-#' @format A data frame with 2,149 rows and 3 variables:
+#' @format A data frame with 2,149 rows and 6 variables:
 #' \describe{
 #'   \item{ltla21_code}{2021 Lower tier local authority code}
 #'   \item{year}{Year}
 #'   \item{overall_score}{The overall health index score}
+#'   \item{healthy_people_domain_score}{Score for the Healthy People domain}
+#'   \item{healthy_lives_domain_score}{Score for the Healthy Lives domain}
+#'   \item{healthy_places_domain_score}{Score for the Healthy Places domain}
 #'   ...
 #' }
 #' @source \url{https://www.ons.gov.uk/}
 "england_health_index"
+
+#' England Health Index (ONS) - subdomains
+#'
+#' A dataset containing overall health index scores for the English lower tier
+#' local authorities from 2015-2021.
+#'
+#' @format A data frame with 2,149 rows and 16 variables:
+#' \describe{
+#'   \item{ltla21_code}{2021 Lower tier local authority code}
+#'   \item{year}{Year}
+#'   \item{Difficulties in daily life [Pe]}{Difficulties in daily life [Pe]}
+#'   \item{Mental health [Pe]}{Mental health [Pe]}
+#'   \item{Mortality [Pe]}{Mortality [Pe]}
+#'   \item{Personal well-being [Pe]}{Personal well-being [Pe]}
+#'   \item{Physical health conditions [Pe]}{Physical health conditions [Pe]}
+#'   \item{Behavioural risk factors [L]}{Behavioural risk factors [L]}
+#'   \item{Children and young people [L]}{Children and young people [L]}
+#'   \item{Physiological risk factors [L]}{Physiological risk factors [L]}
+#'   \item{Protective measures [L]}{Protective measures [L]}
+#'   \item{Access to green space [Pl]}{Access to green space [Pl]}
+#'   \item{Access to services [Pl]}{Access to services [Pl]}
+#'   \item{Crime [Pl]}{Crime [Pl]}
+#'   \item{Economic and working conditions [Pl]}{Economic and working conditions [Pl]}
+#'   \item{Living conditions [Pl]}{Living conditions [Pl]}
+#'   ...
+#' }
+#' @source \url{https://www.ons.gov.uk/}
+"england_health_index_subdomains"
 
 #' England Health Index (ONS) - underlying indicators
 #'

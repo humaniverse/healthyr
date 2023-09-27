@@ -9,20 +9,20 @@ A data frame with 2,149 rows and 16 variables:
 \describe{
 \item{ltla21_code}{2021 Lower tier local authority code}
 \item{year}{Year}
-\item{Difficulties in daily life \link{Pe}}{Difficulties in daily life \link{Pe}}
-\item{Mental health \link{Pe}}{Mental health \link{Pe}}
-\item{Mortality \link{Pe}}{Mortality \link{Pe}}
-\item{Personal well-being \link{Pe}}{Personal well-being \link{Pe}}
-\item{Physical health conditions \link{Pe}}{Physical health conditions \link{Pe}}
-\item{Behavioural risk factors \link{L}}{Behavioural risk factors \link{L}}
-\item{Children and young people \link{L}}{Children and young people \link{L}}
-\item{Physiological risk factors \link{L}}{Physiological risk factors \link{L}}
-\item{Protective measures \link{L}}{Protective measures \link{L}}
-\item{Access to green space \link{Pl}}{Access to green space \link{Pl}}
-\item{Access to services \link{Pl}}{Access to services \link{Pl}}
-\item{Crime \link{Pl}}{Crime \link{Pl}}
-\item{Economic and working conditions \link{Pl}}{Economic and working conditions \link{Pl}}
-\item{Living conditions \link{Pl}}{Living conditions \link{Pl}}
+\item{Difficulties in daily life}{Difficulties in daily life - Health People domain}
+\item{Mental health}{Mental health - Health People domain}
+\item{Mortality}{Mortality - Health People domain}
+\item{Personal well-being}{Personal well-being - Health People domain}
+\item{Physical health conditions}{Physical health conditions - Health People domain}
+\item{Behavioural risk factors}{Behavioural risk factors - Health Lives domain}
+\item{Children and young people}{Children and young people - Health Lives domain}
+\item{Physiological risk factors}{Physiological risk factors - Health Lives domain}
+\item{Protective measures}{Protective measures - Health Lives domain}
+\item{Access to green space}{Access to green space - Health Places domain}
+\item{Access to services}{Access to services - Health Places domain}
+\item{Crime}{Crime - Health Places domain}
+\item{Economic and working conditions}{Economic and working conditions - Health Places domain}
+\item{Living conditions}{Living conditions - Health Places domain}
 ...
 }
 }

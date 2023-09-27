@@ -276,7 +276,10 @@ subdomains <- bind_rows(
   subdomains_2017,
   subdomains_2016,
   subdomains_2015
-)
+) |>
+  # Remove [Pe], [L], and [Pl] from column names
+  rename_with(~str_remove(.x, "\\s\\[[A-Za-z]+\\]"))
+
 
 # ---- Finalise data ----
 england_health_index <-

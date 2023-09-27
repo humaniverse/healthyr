@@ -184,20 +184,20 @@ NULL
 #' \describe{
 #'   \item{ltla21_code}{2021 Lower tier local authority code}
 #'   \item{year}{Year}
-#'   \item{Difficulties in daily life [Pe]}{Difficulties in daily life [Pe]}
-#'   \item{Mental health [Pe]}{Mental health [Pe]}
-#'   \item{Mortality [Pe]}{Mortality [Pe]}
-#'   \item{Personal well-being [Pe]}{Personal well-being [Pe]}
-#'   \item{Physical health conditions [Pe]}{Physical health conditions [Pe]}
-#'   \item{Behavioural risk factors [L]}{Behavioural risk factors [L]}
-#'   \item{Children and young people [L]}{Children and young people [L]}
-#'   \item{Physiological risk factors [L]}{Physiological risk factors [L]}
-#'   \item{Protective measures [L]}{Protective measures [L]}
-#'   \item{Access to green space [Pl]}{Access to green space [Pl]}
-#'   \item{Access to services [Pl]}{Access to services [Pl]}
-#'   \item{Crime [Pl]}{Crime [Pl]}
-#'   \item{Economic and working conditions [Pl]}{Economic and working conditions [Pl]}
-#'   \item{Living conditions [Pl]}{Living conditions [Pl]}
+#'   \item{Difficulties in daily life}{Difficulties in daily life - Health People domain}
+#'   \item{Mental health}{Mental health - Health People domain}
+#'   \item{Mortality}{Mortality - Health People domain}
+#'   \item{Personal well-being}{Personal well-being - Health People domain}
+#'   \item{Physical health conditions}{Physical health conditions - Health People domain}
+#'   \item{Behavioural risk factors}{Behavioural risk factors - Health Lives domain}
+#'   \item{Children and young people}{Children and young people - Health Lives domain}
+#'   \item{Physiological risk factors}{Physiological risk factors - Health Lives domain}
+#'   \item{Protective measures}{Protective measures - Health Lives domain}
+#'   \item{Access to green space}{Access to green space - Health Places domain}
+#'   \item{Access to services}{Access to services - Health Places domain}
+#'   \item{Crime}{Crime - Health Places domain}
+#'   \item{Economic and working conditions}{Economic and working conditions - Health Places domain}
+#'   \item{Living conditions}{Living conditions - Health Places domain}
 #'   ...
 #' }
 #' @source \url{https://www.ons.gov.uk/}

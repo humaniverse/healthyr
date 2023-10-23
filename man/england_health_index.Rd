@@ -5,11 +5,14 @@
 \alias{england_health_index}
 \title{England Health Index (ONS)}
 \format{
-A data frame with 2,149 rows and 3 variables:
+A data frame with 2,149 rows and 6 variables:
 \describe{
 \item{ltla21_code}{2021 Lower tier local authority code}
 \item{year}{Year}
 \item{overall_score}{The overall health index score}
+\item{healthy_people_domain_score}{Score for the Healthy People domain}
+\item{healthy_lives_domain_score}{Score for the Healthy Lives domain}
+\item{healthy_places_domain_score}{Score for the Healthy Places domain}
 ...
 }
 }

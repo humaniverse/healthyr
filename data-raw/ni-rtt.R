@@ -2,7 +2,7 @@ library(tidyverse)
 library(lubridate)
 
 # Inpatient & Day Case waiting times: https://www.health-ni.gov.uk/publications/northern-ireland-waiting-time-statistics-inpatient-and-day-case-waiting-times-march-2023
-ni_inpatient <- read_csv("https://www.health-ni.gov.uk/sites/default/files/publications/health/hs-niwts-tables-inpatient-and-day-case-waiting-q1-23-24.csv",
+ni_inpatient <- read_csv("https://www.health-ni.gov.uk/sites/default/files/publications/health/hs-niwts-tables-inpatient-and-day-case-waiting-q4-22-23.csv",
   col_types = cols(
     .default = col_double(),
     `Quarter Ending` = col_character(),
@@ -13,7 +13,7 @@ ni_inpatient <- read_csv("https://www.health-ni.gov.uk/sites/default/files/publi
 )
 
 # Statistics by HSC Trust and Outpatients: https://www.health-ni.gov.uk/publications/northern-ireland-waiting-time-statistics-outpatient-waiting-times-march-2023
-ni_outpatient <- read_csv("https://www.health-ni.gov.uk/sites/default/files/publications/health/hs-niwts-tables-outpatients-q1-23-24.csv",
+ni_outpatient <- read_csv("https://www.health-ni.gov.uk/sites/default/files/publications/health/hs-niwts-tables-outpatients-q4-22-23.csv",
   col_types = cols(
     .default = col_character(),
     `Quarter Ending` = col_character(),
@@ -23,7 +23,11 @@ ni_outpatient <- read_csv("https://www.health-ni.gov.uk/sites/default/files/publ
   )
 )
 
-# ---- Wrangle 2019, 2020 and 2021 data ----
+# ---- Wrangle data since 2019 ----
+# Patients waiting for admission to a Day Case Procedure Centre (DPC) are
+# included in these statistics.As these services are managed on a regional
+# basis, patients are not allocated as waiting at a particular HSC Trust, but
+# instead reported separately against DPC's
 ni_inpatient_sum <-
   ni_inpatient |>
   mutate(
@@ -31,6 +35,10 @@ ni_inpatient_sum <-
     Month = month.abb[month(Date)],
     Year = year(Date)
   ) |>
+  mutate(`HSC Trust` = case_when(
+    `HSC Trust` == "DPC" ~ "Day Case Procedure Centre",
+    TRUE ~ `HSC Trust`
+  )) |>
   filter(Year >= 2019) |>
   select_if(~ !all(is.na(.))) |>
   group_by(`HSC Trust`, Year, Month, Specialty) |>

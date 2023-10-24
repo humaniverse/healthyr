@@ -23,7 +23,11 @@ ni_outpatient <- read_csv("https://www.health-ni.gov.uk/sites/default/files/publ
   )
 )
 
-# ---- Wrangle 2019, 2020 and 2021 data ----
+# ---- Wrangle data since 2019 ----
+# Patients waiting for admission to a Day Case Procedure Centre (DPC) are
+# included in these statistics.As these services are managed on a regional
+# basis, patients are not allocated as waiting at a particular HSC Trust, but
+# instead reported separately against DPC's
 ni_inpatient_sum <-
   ni_inpatient |>
   mutate(
@@ -31,6 +35,10 @@ ni_inpatient_sum <-
     Month = month.abb[month(Date)],
     Year = year(Date)
   ) |>
+  mutate(`HSC Trust` = case_when(
+    `HSC Trust` == "DPC" ~ "Day Case Procedure Centre",
+    TRUE ~ `HSC Trust`
+  )) |>
   filter(Year >= 2019) |>
   select_if(~ !all(is.na(.))) |>
   group_by(`HSC Trust`, Year, Month, Specialty) |>

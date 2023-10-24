@@ -14,10 +14,11 @@ A data frame with 1,992 rows and 7 variables:
 \item{specialty}{Specialty}
 \item{waits_over_18_weeks}{Total waiting > 18 weeks}
 \item{waits_over_52_weeks}{Total waiting > 52 weeks}
+\item{total_waits}{Total waits}
 }
 }
 \source{
-\url{https://www.health-ni.gov.uk/}
+\url{https://www.health-ni.gov.uk/topics/doh-statistics-and-research/hospital-waiting-times-statistics}
 }
 \usage{
 ni_rtt_hsct

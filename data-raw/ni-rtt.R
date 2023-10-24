@@ -2,7 +2,7 @@ library(tidyverse)
 library(lubridate)
 
 # Inpatient & Day Case waiting times: https://www.health-ni.gov.uk/publications/northern-ireland-waiting-time-statistics-inpatient-and-day-case-waiting-times-march-2023
-ni_inpatient <- read_csv("https://www.health-ni.gov.uk/sites/default/files/publications/health/hs-niwts-tables-inpatient-and-day-case-waiting-q4-22-23.csv",
+ni_inpatient <- read_csv("https://www.health-ni.gov.uk/sites/default/files/publications/health/hs-niwts-tables-inpatient-and-day-case-waiting-q1-23-24.csv",
   col_types = cols(
     .default = col_double(),
     `Quarter Ending` = col_character(),
@@ -13,7 +13,7 @@ ni_inpatient <- read_csv("https://www.health-ni.gov.uk/sites/default/files/publi
 )
 
 # Statistics by HSC Trust and Outpatients: https://www.health-ni.gov.uk/publications/northern-ireland-waiting-time-statistics-outpatient-waiting-times-march-2023
-ni_outpatient <- read_csv("https://www.health-ni.gov.uk/sites/default/files/publications/health/hs-niwts-tables-outpatients-q4-22-23.csv",
+ni_outpatient <- read_csv("https://www.health-ni.gov.uk/sites/default/files/publications/health/hs-niwts-tables-outpatients-q1-23-24.csv",
   col_types = cols(
     .default = col_character(),
     `Quarter Ending` = col_character(),

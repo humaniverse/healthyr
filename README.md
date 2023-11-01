@@ -48,4 +48,4 @@ when submitting changes.
 
 ## Credits
 
-See [LICESNE](/LICENSE)
+See [LICENSE](/LICENSE)

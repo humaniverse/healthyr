@@ -20,7 +20,7 @@ NULL
 #'
 #' A dataset containing England Accident and Emergency attendances and Emergency Admissions at Integrated Care Board level, by month
 #'
-#' @format A data frame with 546 rows and 8 variables:
+#' @format A data frame with 798 rows and 8 variables:
 #' \describe{
 #'   \item{icb22_code}{Integrated Care Board code}
 #'   \item{total_attendances}{The total number of patients in an A&E service seeking medical attention}
@@ -39,7 +39,7 @@ NULL
 #'
 #' A dataset containing England Accident and Emergency attendances and Emergency Admissions at provider level, by month.
 #'
-#' @format A data frame with 3,828 rows and 8 variables:
+#' @format A data frame with 4,742 rows and 8 variables:
 #' \describe{
 #'   \item{nhs_trust22_code}{NHS Trust (organisational) code}
 #'   \item{total_attendances}{The total number of patients in an A&E service seeking medical attention}
@@ -66,7 +66,7 @@ NULL
 #' daily situation reports. Bed numbers are daily figures averaged over the
 #' month.
 #'
-#' @format A data frame with 1,644 rows and 20 variables:
+#' @format A data frame with 2,594 rows and 20 variables:
 #' \describe{
 #'   \item{nhs_trust22_code}{NHS Trust (organisational) code}
 #'   \item{date}{Date}
@@ -93,12 +93,12 @@ NULL
 #' @source \url{https://www.england.nhs.uk/}
 "england_critical_general_acute_beds"
 
-#' Hosptial ICB Discharge Data - Criteria to Reside
+#' Hospital ICB Discharge Data - Criteria to Reside
 #'
 #' A dataset containing NHS Integrated Care Board discharge data on how many
 #' patients do not meet criteria to reside each day.
 #'
-#' @format A data frame with 17,892 rows and 3 variables:
+#' @format A data frame with 24,239 rows and 3 variables:
 #' \describe{
 #'   \item{icb22_code}{Integrated Care Board code}
 #'   \item{date}{Date}
@@ -108,7 +108,7 @@ NULL
 #' @source \url{https://www.england.nhs.uk/}
 "england_icb_criteria_to_reside"
 
-#' Hosptial Trust Discharge Data - Criteria to Reside
+#' Hospital Trust Discharge Data - Criteria to Reside
 #'
 #' A dataset containing NHS Trust level hopsital discharge data on how many
 #' patients do not meet criteria to reside each day.
@@ -123,12 +123,13 @@ NULL
 #' @source \url{https://www.england.nhs.uk/}
 "england_trust_criteria_to_reside"
 
-#' Hosptial ICB Discharge Data - Discharged Patients
+#' Hospital ICB Discharge Data - Discharged Patients
 #'
 #' A dataset containing NHS Integrated Care Board discharge data on how many
-#' patients were discharged each day.
+#' patients were discharged each day. From June 2023 figures for discharged by
+#' 17:00 and between 17:01 and 23:59 were no longer released.
 #'
-#' @format A data frame with 17,892 rows and 5 variables:
+#' @format A data frame with 24,257 rows and 5 variables:
 #' \describe{
 #'   \item{icb22_code}{Integrated Care Board code}
 #'   \item{date}{Date}

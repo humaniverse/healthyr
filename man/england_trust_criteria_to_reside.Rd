@@ -3,7 +3,7 @@
 \docType{data}
 \name{england_trust_criteria_to_reside}
 \alias{england_trust_criteria_to_reside}
-\title{Hosptial Trust Discharge Data - Criteria to Reside}
+\title{Hospital Trust Discharge Data - Criteria to Reside}
 \format{
 A data frame with 51,515 rows and 3 variables:
 \describe{

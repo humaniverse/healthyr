@@ -28,6 +28,7 @@ scrape_data <- function(id, sheet, range, date) {
       sheet = sheet,
       range = range
     )
+  cat("reading", query_url)
 
   data <-
     raw_trusts |>
@@ -54,7 +55,6 @@ scrape_data <- function(id, sheet, range, date) {
     ) |>
     mutate(date = date) |>
     relocate(date, .after = nhs_trust22_code)
-
   return(data)
 }
 
@@ -65,7 +65,7 @@ df <-
   tibble(
     id = query_urls |>
       filter(str_detect(id, "^nhs_critical_general_acute_beds")) |>
-      filter(date != "April 2023") |>
+      filter(!(date %in% c("April 2023", "August 2023", "September 2023", "October 2023"))) |>
       pull(id),
     sheet = rep(2, 15),
     range = c(rep("D26:V163", 7), rep("D26:AB163", 8)),
@@ -135,11 +135,91 @@ data_april23 <-
   mutate(date = "April 2023") |>
   relocate(date, .after = nhs_trust22_code)
 
-england_critical_general_acute_beds <-
+england_critical_general_acute_beds_april23 <-
   bind_rows(
     england_critical_general_acute_beds_incomplete,
     data_april23
   )
+
+# ---- Data from August 2023 onwards ----
+# Format of data changes from August 2023 onwards. Function updated.
+scrape_data_after_aug23 <- function(id, sheet, range, date) {
+  # Download
+  query_url <-
+    query_urls |>
+    filter(id == {{ id }}) |>
+    pull(query)
+
+  download <- tempfile(fileext = ".xlsx")
+
+  request(query_url) |>
+    req_perform(download)
+
+  # Read
+  raw_trusts <-
+    read_excel(
+      download,
+      sheet = sheet,
+      range = range
+    )
+
+  data <-
+    raw_trusts |>
+    select(
+      nhs_trust22_code = 1,
+      general_acute_beds_available = 3,
+      general_acute_beds_occupied =7,
+      general_acute_beds_occupancy_rate = 8,
+      adult_general_acute_beds_available = 10,
+      adult_general_acute_beds_occupied =14,
+      adult_general_acute_beds_occupancy_rate = 15,
+      paediatric_general_acute_beds_available =17,
+      paediatric_general_acute_beds_occupied = 21,
+      paediatric_general_acute_beds_occupancy_rate =22,
+      adult_critical_care_beds_available = 24,
+      adult_critical_care_beds_occupied = 25,
+      adult_critical_care_occupancy_rate = 26,
+      paediatric_intensive_cared_beds_available = 27,
+      paediatric_intensive_cared_beds_occupied = 28,
+      paediatric_intensive_cared_occupancy_rate = 29,
+      neonatal_intensive_care_bed_avaialble = 30,
+      neonatal_intensive_care_bed_occupied = 31,
+      neonatal_intensive_care_occupancy_rate =32
+    ) |>
+  mutate(date = date) |>
+  relocate(date, .after = nhs_trust22_code) |>
+    mutate_at(vars(3:20), as.double)
+
+
+  return(data)
+}
+
+# ---- Iterate over all data sets and return as a dataframe ----
+# Generate a dataframe with function arguments
+# April 2023 does not have the "Code" column name
+df <-
+  tibble(
+    id = query_urls |>
+      filter(str_detect(id, "^nhs_critical_general_acute_beds")) |>
+      filter(date %in% c("August 2023", "September 2023", "October 2023")) |>
+      pull(id),
+    sheet = rep(2, 3),
+    range = rep("C69:AH203",3),
+    date = c(
+      "August 2023",
+      "September 2023",
+      "October 2023"
+    )
+  )
+
+# Build dataframe
+england_critical_general_acute_beds_afteraug23 <- pmap_dfr(df, scrape_data_after_aug23)
+england_critical_general_acute_beds <-
+  bind_rows(
+    england_critical_general_acute_beds_april23,
+    england_critical_general_acute_beds_afteraug23
+  )
+
 
 # Save output to data/ folder
 usethis::use_data(england_critical_general_acute_beds, overwrite = TRUE)

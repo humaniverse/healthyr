@@ -3,9 +3,9 @@
 \docType{data}
 \name{england_icb_discharged_patients}
 \alias{england_icb_discharged_patients}
-\title{Hosptial ICB Discharge Data - Discharged Patients}
+\title{Hospital ICB Discharge Data - Discharged Patients}
 \format{
-A data frame with 17,892 rows and 5 variables:
+A data frame with 24,257 rows and 5 variables:
 \describe{
 \item{icb22_code}{Integrated Care Board code}
 \item{date}{Date}
@@ -23,6 +23,7 @@ england_icb_discharged_patients
 }
 \description{
 A dataset containing NHS Integrated Care Board discharge data on how many
-patients were discharged each day.
+patients were discharged each day. From June 2023 figures for discharged by
+17:00 and between 17:01 and 23:59 were no longer released.
 }
 \keyword{datasets}

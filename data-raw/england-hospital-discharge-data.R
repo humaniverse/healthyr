@@ -226,6 +226,7 @@ scrape_data_after_may23 <- function(id, sheet, number_of_areas, range, date_star
     raw_trusts |>
     rename(code = 1) |>
     select(-2) |>
+    mutate_at(vars(-1), function(x) ifelse(is.na(as.numeric(x)), NA, as.numeric(x))) |>
     pivot_longer(cols = !code)
 
   # Create a vector of dates and variable names to assign to raw data
@@ -255,6 +256,67 @@ scrape_data_after_may23 <- function(id, sheet, number_of_areas, range, date_star
   return(data)
 }
 
+# ---Trust level data ----
+# - Iterate over all data sets and return as a dataframe
+# Generate a dataframe with function arguments
+# For data after May '23 onwards
+
+trust_df <-
+  tibble(
+    id = query_urls |>
+      filter(str_detect(id, "^nhs_hospital_discharge")) |>
+      slice(15:n()) |> # filter from June '23 onwards
+      pull(id),
+    sheet = rep("Table 2", 7),
+    number_of_areas = c(120, 119,119,119,119,119,119),
+    range = c("C59:CP179","C59:CS178","C59:CS178", "C58:CP177", "C58:CS177","C58:CP177","C58:CS177"  ),
+    date_start = c( "2023-06-01", "2023-07-01", "2023-08-01", "2023-09-01", "2023-10-01", "2023-11-01", "2023-12-01"),
+    date_end = c("2023-06-30", "2023-07-31", "2023-08-31", "2023-09-30", "2023-10-31", "2023-11-30", "2023-12-31"),
+    days = c( 30, 31, 31, 30, 31, 30, 31)
+  )
+
+# Build df after May'23
+england_trust_discharge_data_after_may23 <- pmap_dfr(trust_df, scrape_data_after_may23)
+
+# - Criteria to reside
+trust_criteria_to_reside_after_may23 <-
+  england_trust_discharge_data_after_may23 |>
+  select(
+    nhs_trust22_code = code,
+    date,
+    do_not_meet_criteria_to_reside = `Do not meet criteria to reside`
+  )
+
+
+# Join the data before may'23 with after may'23
+england_trust_criteria_to_reside  <-
+  bind_rows(
+    england_trust_criteria_to_reside_before_may23,
+    trust_criteria_to_reside_after_may23
+  )
+
+# Save output to data/ folder
+usethis::use_data(england_trust_criteria_to_reside, overwrite = TRUE)
+
+# - Number discharged
+england_trust_discharged_patients_after_may23 <-
+  england_trust_discharge_data_after_may23 |>
+  select(
+    nhs_trust22_code = code,
+    date,
+    discharged_total = `Number of patients discharged`,
+  )
+
+# Join the data before may'23 with after may'23
+england_trust_discharged_patients <-
+  bind_rows(
+    england_trust_discharged_patients_before_may23,
+    england_trust_discharged_patients_after_may23
+  )
+
+# Save output to data/ folder
+usethis::use_data(england_trust_discharged_patients, overwrite = TRUE)
+
 # ---- ICB level data ----
 # Older 'h' codes are provided in the data that need replacing with newer ICB
 # codes.
@@ -270,12 +332,12 @@ icb_df <-
       filter(str_detect(id, "^nhs_hospital_discharge")) |>
       slice(15:n()) |> # Filter for after May'23
       pull(id),
-    sheet = rep("Table 2", 5),
-    number_of_areas = c(42, 42, 42, 41, 41),
-    range = c("C15:CP57", "C15:CS57", "C15:CS57", "C15:CP56", "C15:CS56"),
-    date_start = c( "2023-06-01", "2023-07-01", "2023-08-01", "2023-09-01", "2023-10-01"),
-    date_end = c("2023-06-30", "2023-07-31", "2023-08-31", "2023-09-30", "2023-10-31"),
-    days = c( 30, 31, 31, 30, 31)
+    sheet = rep("Table 2", 7),
+    number_of_areas = c(42, 42, 42, 41, 41, 41, 41),
+    range = c("C15:CP57", "C15:CS57", "C15:CS57", "C15:CP56", "C15:CS56", "C15:CP56", "C15:CS56" ),
+    date_start = c( "2023-06-01", "2023-07-01", "2023-08-01", "2023-09-01", "2023-10-01", "2023-11-01", "2023-12-01"),
+    date_end = c("2023-06-30", "2023-07-31", "2023-08-31", "2023-09-30", "2023-10-31", "2023-11-30", "2023-12-31"),
+    days = c( 30, 31, 31, 30, 31, 30, 31)
   )
 
 # Build dataframe with all months

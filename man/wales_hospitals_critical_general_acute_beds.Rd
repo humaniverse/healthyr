@@ -5,7 +5,7 @@
 \alias{wales_hospitals_critical_general_acute_beds}
 \title{Wales hospital bed availability - (2022)}
 \format{
-A data frame with 4171 rows and 7 variables:
+A data frame with 7,517 rows and 7 variables:
 \describe{
 \item{date}{Date}
 \item{hospital_code}{Local health board code}

@@ -2,7 +2,6 @@
 library(statswalesr)
 library(jsonlite)
 library(httr)
-library(RCurl)
 library(dplyr)
 library(readr)
 library(tidyr)

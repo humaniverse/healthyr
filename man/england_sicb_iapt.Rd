@@ -3,7 +3,7 @@
 \docType{data}
 \name{england_sicb_iapt}
 \alias{england_sicb_iapt}
-\title{Physchological Therpaies - IAPT}
+\title{Psychological Therapies - IAPT}
 \format{
 A data frame with 8,162 rows and 4 variables:
 \describe{

@@ -20,7 +20,7 @@ NULL
 #'
 #' A dataset containing England Accident and Emergency attendances and Emergency Admissions at Integrated Care Board level, by month
 #'
-#' @format A data frame with 798 rows and 8 variables:
+#' @format A data frame with 882 rows and 8 variables:
 #' \describe{
 #'   \item{icb22_code}{Integrated Care Board code}
 #'   \item{total_attendances}{The total number of patients in an A&E service seeking medical attention}
@@ -39,7 +39,7 @@ NULL
 #'
 #' A dataset containing England Accident and Emergency attendances and Emergency Admissions at provider level, by month.
 #'
-#' @format A data frame with 4,742 rows and 8 variables:
+#' @format A data frame with 5,044 rows and 8 variables:
 #' \describe{
 #'   \item{nhs_trust22_code}{NHS Trust (organisational) code}
 #'   \item{total_attendances}{The total number of patients in an A&E service seeking medical attention}
@@ -66,7 +66,7 @@ NULL
 #' daily situation reports. Bed numbers are daily figures averaged over the
 #' month.
 #'
-#' @format A data frame with 2,594 rows and 20 variables:
+#' @format A data frame with 2,862 rows and 20 variables:
 #' \describe{
 #'   \item{nhs_trust22_code}{NHS Trust (organisational) code}
 #'   \item{date}{Date}
@@ -98,7 +98,7 @@ NULL
 #' A dataset containing NHS Integrated Care Board discharge data on how many
 #' patients do not meet criteria to reside each day.
 #'
-#' @format A data frame with 24,239 rows and 3 variables:
+#' @format A data frame with 26,758 rows and 3 variables:
 #' \describe{
 #'   \item{icb22_code}{Integrated Care Board code}
 #'   \item{date}{Date}
@@ -113,7 +113,7 @@ NULL
 #' A dataset containing NHS Trust level hopsital discharge data on how many
 #' patients do not meet criteria to reside each day.
 #'
-#' @format A data frame with 51,515 rows and 3 variables:
+#' @format A data frame with 77,011 rows and 3 variables:
 #' \describe{
 #'   \item{nhs_trust22_code}{NHS Trust (organisational) code}
 #'   \item{date}{Date}
@@ -129,7 +129,7 @@ NULL
 #' patients were discharged each day. From June 2023 figures for discharged by
 #' 17:00 and between 17:01 and 23:59 were no longer released.
 #'
-#' @format A data frame with 24,257 rows and 5 variables:
+#' @format A data frame with 26,758 rows and 5 variables:
 #' \describe{
 #'   \item{icb22_code}{Integrated Care Board code}
 #'   \item{date}{Date}
@@ -146,7 +146,7 @@ NULL
 #' A dataset containing NHS Trust level hopsital discharge data on how many
 #' patients were discharged each day.
 #'
-#' @format A data frame with 51,515 rows and 5 variables:
+#' @format A data frame with 77,011 rows and 5 variables:
 #' \describe{
 #'   \item{nhs_trust22_code}{NHS Trust (organisational) code}
 #'   \item{date}{Date}
@@ -220,7 +220,7 @@ NULL
 #' @source \url{https://www.ons.gov.uk/}
 "england_health_index_indicators"
 
-#' Physchological Therpaies - IAPT
+#' Psychological Therapies - IAPT
 #'
 #' A dataset containing NHS Sub Integrated Care Board (formerly CCGs) data.
 #'
@@ -307,7 +307,7 @@ NULL
 #' A dataset containing hospital statistics on bed availability, bed occupancy
 #' and inpatients data.
 #'
-#' @format A data frame with 26,325 rows and 14 variables:
+#' @format A data frame with 13,327 rows and 14 variables:
 #' \describe{
 #'   \item{trust18_code}{Health and Social Care Trust code}
 #'   \item{date}{Quarter ending date}
@@ -347,7 +347,7 @@ NULL
 #'
 #' A dataset containing RTT data for Health & Social Care Trusts in NI.
 #'
-#' @format A data frame with 1,992 rows and 7 variables:
+#' @format A data frame with 2,555 rows and 7 variables:
 #' \describe{
 #'   \item{hsct22_name}{Health & Social Care Trust name}
 #'   \item{date}{Date}
@@ -363,7 +363,7 @@ NULL
 
 #' Bed occupancy/availability in Scotland
 #'
-#' Beds by Board of Treatment and Specialty, 2016-2021.
+#' Beds by Board of Treatment and Specialty, 2016-2022.
 #'
 #' @format A data frame with 11,060 rows and 6 variables:
 #' \describe{
@@ -465,10 +465,10 @@ NULL
 #' A dataset containing Welsh emergency ambulance calls and responses to red
 #' calls, by local health boards (HB) and month
 #'
-#' @format A data frame with 176 rows and 9 variables:
+#' @format A data frame with 288 rows and 9 variables:
 #' \describe{
 #'   \item{date}{Date}
-#'   \item{hb_code}{Local health board coade}
+#'   \item{hb_code}{Local health board code}
 #'   \item{hb}{Name of local health board}
 #'   \item{red_calls}{Number of red calls}
 #'   \item{red_calls_resulting_in_an_emergency_response_at_the_scene}{Number of red call resulting in an emergency response at the scene}
@@ -487,7 +487,7 @@ NULL
 #' A dataset containing Welsh monthly NHS beds data by health board, measure,
 #' and specialty
 #'
-#' @format A data frame with 633 rows and 7 variables:
+#' @format A data frame with 3,103 rows and 7 variables:
 #' \describe{
 #'   \item{date}{Date}
 #'   \item{health_board_code}{Local health board code}
@@ -507,7 +507,7 @@ NULL
 #' A dataset containing Welsh monthly NHS beds data by hospital site, measure,
 #' and specialty
 #'
-#' @format A data frame with 4171 rows and 7 variables:
+#' @format A data frame with 7,517 rows and 7 variables:
 #' \describe{
 #'   \item{date}{Date}
 #'   \item{hospital_code}{Local health board code}

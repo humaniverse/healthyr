@@ -307,7 +307,7 @@ NULL
 #' A dataset containing hospital statistics on bed availability, bed occupancy
 #' and inpatients data.
 #'
-#' @format A data frame with 13,237 rows and 14 variables:
+#' @format A data frame with 26,325 rows and 14 variables:
 #' \describe{
 #'   \item{trust18_code}{Health and Social Care Trust code}
 #'   \item{date}{Quarter ending date}

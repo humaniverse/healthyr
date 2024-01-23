@@ -9,7 +9,7 @@ load_all(".")
 # ---- Delayed Discharge Bed Days by Health Board ----
 query_url <-
   query_urls |>
-  filter(id == "scotland_delayed_discharge_hb") |>
+  filter(id == "scotland_delayed_discharge_hb_23") |>
   pull(query)
 
 scotland_delayed_discharge_hb <- read_csv(query_url)

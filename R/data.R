@@ -382,7 +382,7 @@ NULL
 #'
 #' A dataset containing Delayed Discharge Bed Days by Scottish Health Board.
 #'
-#' @format A data frame with 16,875 rows and 6 variables:
+#' @format A data frame with 20,025 rows and 6 variables:
 #' \describe{
 #'   \item{hb_code}{Scottish Health Board code}
 #'   \item{date}{Date}

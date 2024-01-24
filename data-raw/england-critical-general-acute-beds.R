@@ -61,12 +61,16 @@ scrape_data <- function(id, sheet, range, date) {
 # ---- Iterate over all data sets and return as a dataframe ----
 # Generate a dataframe with function arguments
 # April 2023 does not have the "Code" column name
+# Format of data changes from August '23
 df <-
   tibble(
     id = query_urls |>
-      filter(str_detect(id, "^nhs_critical_general_acute_beds")) |>
-      filter(!(date %in% c("April 2023", "August 2023", "September 2023", "October 2023"))) |>
+      slice(which(
+        query_urls$id == "nhs_critical_general_acute_beds_april_22"):which(query_urls$id == "nhs_critical_general_acute_beds_july_23")
+        ) |>
+      filter(!(date %in% c("April 2023"))) |>
       pull(id),
+
     sheet = rep(2, 15),
     range = c(rep("D26:V163", 7), rep("D26:AB163", 8)),
     date = c(
@@ -201,14 +205,17 @@ df <-
   tibble(
     id = query_urls |>
       filter(str_detect(id, "^nhs_critical_general_acute_beds")) |>
-      filter(date %in% c("August 2023", "September 2023", "October 2023")) |>
+      filter(date %in% c("August 2023", "September 2023", "October 2023", "November 2023", "December 2023")) |>
       pull(id),
-    sheet = rep(2, 3),
-    range = rep("C69:AH203",3),
+    sheet = rep(2, 5),
+    range = rep("C69:AH203",5),
     date = c(
       "August 2023",
       "September 2023",
-      "October 2023"
+      "October 2023",
+      "November 2023",
+      "December 2023"
+
     )
   )
 

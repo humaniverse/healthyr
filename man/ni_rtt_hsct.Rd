@@ -5,7 +5,7 @@
 \alias{ni_rtt_hsct}
 \title{Consultant-led Referral to Treatment (RTT) by Health & Social Care Trust}
 \format{
-A data frame with 1,992 rows and 7 variables:
+A data frame with 2,555 rows and 7 variables:
 \describe{
 \item{hsct22_name}{Health & Social Care Trust name}
 \item{date}{Date}

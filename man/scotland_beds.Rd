@@ -23,6 +23,6 @@ A data frame with 11,060 rows and 6 variables:
 scotland_beds
 }
 \description{
-Beds by Board of Treatment and Specialty, 2016-2021.
+Beds by Board of Treatment and Specialty, 2016-2022.
 }
 \keyword{datasets}

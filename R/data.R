@@ -456,6 +456,7 @@ NULL
 #'   \item{pathway_stage}{Stage of the treatment pathway}
 #'   \item{waits_over_18_weeks}{Total waiting > 18 weeks}
 #'   \item{waits_over_53_weeks}{Total waiting > 53 weeks}
+#'   \item{total_waits}{Total waiting}
 #' }
 #' @source \url{https://statswales.gov.wales/}
 "wales_rtt_lhb"

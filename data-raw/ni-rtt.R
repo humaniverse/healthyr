@@ -1,9 +1,17 @@
 library(tidyverse)
 library(lubridate)
+library(devtools)
 
-# Inpatient & Day Case waiting times: https://www.health-ni.gov.uk/publications/northern-ireland-waiting-time-statistics-inpatient-and-day-case-waiting-times-march-2023
-# Previous Q: "https://www.health-ni.gov.uk/sites/default/files/publications/health/hs-niwts-tables-inpatient-and-day-case-waiting-q1-23-24.csv"
-ni_inpatient <- read_csv("https://www.health-ni.gov.uk/sites/default/files/publications/health/hs-niwts-tables-inpatient-and-day-case-waiting-q2-23-24.csv",
+# ---- Load internal sysdata.rda file with URLs ----
+load_all(".")
+
+# ---- Inpatient and Day Case waiting times ----
+query_url_inpatient <-
+  query_urls |>
+  filter(id == "ni_inpatient") |> # Each data release is cumulative
+  pull(query)
+
+ni_inpatient <- read_csv(query_url_inpatient,
   col_types = cols(
     .default = col_double(),
     `Quarter Ending` = col_character(),
@@ -13,9 +21,15 @@ ni_inpatient <- read_csv("https://www.health-ni.gov.uk/sites/default/files/publi
   )
 )
 
+# ---- Outpatient waiting times ----
+query_url_outpatient <-
+  query_urls |>
+  filter(id == "ni_outpatient") |> # Each data release is cumulative
+  pull(query)
+
 # Statistics by HSC Trust and Outpatients: https://www.health-ni.gov.uk/publications/northern-ireland-waiting-time-statistics-outpatient-waiting-times-march-2023
 # Previous Q: "https://www.health-ni.gov.uk/sites/default/files/publications/health/hs-niwts-tables-outpatients-q1-23-24.csv"
-ni_outpatient <- read_csv("https://www.health-ni.gov.uk/sites/default/files/publications/health/hs-niwts-tables-outpatients-q2-23-24.csv",
+ni_outpatient <- read_csv(query_url_outpatient,
   col_types = cols(
     .default = col_character(),
     `Quarter Ending` = col_character(),

@@ -416,7 +416,7 @@ NULL
 #'
 #' A dataset containing RTT data for Scotland.
 #'
-#' @format A data frame with 144 rows and 5 variables:
+#' @format A data frame with 153 rows and 5 variables:
 #' \describe{
 #'   \item{date}{Date}
 #'   \item{year}{Year}
@@ -431,7 +431,7 @@ NULL
 #'
 #' A dataset containing RTT data for Scottish Health Boards.
 #'
-#' @format A data frame with 2,160 rows and 7 variables:
+#' @format A data frame with 2,295 rows and 7 variables:
 #' \describe{
 #'   \item{hb19_code}{Scottish Health Board code}
 #'   \item{date}{Date}

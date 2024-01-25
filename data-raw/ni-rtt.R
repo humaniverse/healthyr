@@ -2,7 +2,8 @@ library(tidyverse)
 library(lubridate)
 
 # Inpatient & Day Case waiting times: https://www.health-ni.gov.uk/publications/northern-ireland-waiting-time-statistics-inpatient-and-day-case-waiting-times-march-2023
-ni_inpatient <- read_csv("https://www.health-ni.gov.uk/sites/default/files/publications/health/hs-niwts-tables-inpatient-and-day-case-waiting-q1-23-24.csv",
+# Previous Q: "https://www.health-ni.gov.uk/sites/default/files/publications/health/hs-niwts-tables-inpatient-and-day-case-waiting-q1-23-24.csv"
+ni_inpatient <- read_csv("https://www.health-ni.gov.uk/sites/default/files/publications/health/hs-niwts-tables-inpatient-and-day-case-waiting-q2-23-24.csv",
   col_types = cols(
     .default = col_double(),
     `Quarter Ending` = col_character(),
@@ -13,7 +14,8 @@ ni_inpatient <- read_csv("https://www.health-ni.gov.uk/sites/default/files/publi
 )
 
 # Statistics by HSC Trust and Outpatients: https://www.health-ni.gov.uk/publications/northern-ireland-waiting-time-statistics-outpatient-waiting-times-march-2023
-ni_outpatient <- read_csv("https://www.health-ni.gov.uk/sites/default/files/publications/health/hs-niwts-tables-outpatients-q1-23-24.csv",
+# Previous Q: "https://www.health-ni.gov.uk/sites/default/files/publications/health/hs-niwts-tables-outpatients-q1-23-24.csv"
+ni_outpatient <- read_csv("https://www.health-ni.gov.uk/sites/default/files/publications/health/hs-niwts-tables-outpatients-q2-23-24.csv",
   col_types = cols(
     .default = col_character(),
     `Quarter Ending` = col_character(),
@@ -44,19 +46,31 @@ ni_inpatient_sum <-
   group_by(`HSC Trust`, Year, Month, Specialty) |>
   summarise(
     `Total waiting > 52 weeks` =
-      sum(`>52 weeks`, na.rm = TRUE),
+      sum(`> 52 - 65 weeks`, na.rm = TRUE) +
+        sum(`> 65 - 78 weeks`, na.rm = TRUE) +
+        sum(`> 78 - 91 weeks`, na.rm = TRUE) +
+        sum(`> 91 - 104 weeks`, na.rm = TRUE) +
+        sum(`> 104 weeks`, na.rm = TRUE),
     `Total waiting > 21 weeks` =
-      sum(`> 21 - 26 weeks`, na.rm = TRUE) +
-        sum(`>26-52 weeks`, na.rm = TRUE) +
-        sum(`>52 weeks`, na.rm = TRUE),
+      sum(`>  21 - 26 weeks`, na.rm = TRUE) +
+        sum(`> 26-52 weeks`, na.rm = TRUE) +
+        sum(`> 52 - 65 weeks`, na.rm = TRUE) +
+        sum(`> 65 - 78 weeks`, na.rm = TRUE) +
+        sum(`> 78 - 91 weeks`, na.rm = TRUE) +
+        sum(`> 91 - 104 weeks`, na.rm = TRUE) +
+        sum(`> 104 weeks`, na.rm = TRUE),
     `Total waiting > 13 weeks` =
-      sum(`> 13 - 21 weeks`, na.rm = TRUE) +
-        sum(`> 21 - 26 weeks`, na.rm = TRUE) +
-        sum(`>26-52 weeks`, na.rm = TRUE) +
-        sum(`>52 weeks`, na.rm = TRUE),
+      sum(`>  13 - 21 weeks`, na.rm = TRUE) +
+        sum(`>  21 - 26 weeks`, na.rm = TRUE) +
+        sum(`> 26-52 weeks`, na.rm = TRUE) +
+        sum(`> 52 - 65 weeks`, na.rm = TRUE) +
+        sum(`> 65 - 78 weeks`, na.rm = TRUE) +
+        sum(`> 78 - 91 weeks`, na.rm = TRUE) +
+        sum(`> 91 - 104 weeks`, na.rm = TRUE) +
+        sum(`> 104 weeks`, na.rm = TRUE),
     `Total waiting < 13 weeks` =
       sum(`0 - 6 weeks`, na.rm = TRUE) +
-        sum(`> 6 - 13 weeks`, na.rm = TRUE),
+        sum(`>  6 - 13 weeks`, na.rm = TRUE),
     Total =
       sum(Total, na.rm = TRUE)
   )

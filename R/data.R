@@ -347,7 +347,7 @@ NULL
 #'
 #' A dataset containing RTT data for Health & Social Care Trusts in NI.
 #'
-#' @format A data frame with 2,555 rows and 7 variables:
+#' @format A data frame with 2,706 rows and 7 variables:
 #' \describe{
 #'   \item{hsct22_name}{Health & Social Care Trust name}
 #'   \item{date}{Date}

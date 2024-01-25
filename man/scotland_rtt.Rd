@@ -5,7 +5,7 @@
 \alias{scotland_rtt}
 \title{Consultant-led Referral to Treatment (RTT) in Scotland}
 \format{
-A data frame with 144 rows and 5 variables:
+A data frame with 153 rows and 5 variables:
 \describe{
 \item{date}{Date}
 \item{year}{Year}

@@ -102,7 +102,8 @@ query_urls <-
     # Wales
     # Data from statswales.gov.wales is accessed via API
     "Wales ambulance waiting times", "wales_ambulance_waiting_times", "December 2023", "OGLv3", "http://open.statswales.gov.wales/dataset/hlth1308", "https://statswales.gov.wales/Catalogue/Health-and-Social-Care/NHS-Performance/Ambulance-Services",
-    "Wales beds by specialty, organisation and month", "wales_critical_general_acute_beds", "March 2023", "OGLv3", "http://open.statswales.gov.wales/dataset/hlth0310", "https://statswales.gov.wales/Catalogue/Health-and-Social-Care/NHS-Hospital-Activity/NHS-Beds/nhsbeds-by-organisation-specialty-month"
+    "Wales beds by specialty, organisation and month", "wales_critical_general_acute_beds", "March 2023", "OGLv3", "http://open.statswales.gov.wales/dataset/hlth0310", "https://statswales.gov.wales/Catalogue/Health-and-Social-Care/NHS-Hospital-Activity/NHS-Beds/nhsbeds-by-organisation-specialty-month",
+    "Wales referral to Treatment", "wales_rtt", "2012 - ", "OGLv3", "http://open.statswales.gov.wales/dataset/hlth0079", "https://statswales.gov.wales/Catalogue/Health-and-Social-Care/NHS-Hospital-Waiting-Times/Referral-to-Treatment/patientpathwayswaitingtostarttreatment-by-month-groupedweeks"
   )
 
 usethis::use_data(query_urls, internal = TRUE, overwrite = TRUE)

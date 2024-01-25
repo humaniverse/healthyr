@@ -448,7 +448,7 @@ NULL
 #'
 #' A dataset containing RTT data for Wales.
 #'
-#' @format A data frame with 1,260 rows and 6 variables:
+#' @format A data frame with 1,652 rows and 6 variables:
 #' \describe{
 #'   \item{lhb22_code}{Local Health Board code}
 #'   \item{lhb22_name}{Local Health Board name}

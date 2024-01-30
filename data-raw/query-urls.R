@@ -88,6 +88,8 @@ query_urls <-
     "Bed availability", "ni_beds_pre22", "2013 - 2022", "OGLv3", "https://www.health-ni.gov.uk/sites/default/files/publications/health/hs-inpatient-hts-tables-21-22.csv", "https://www.health-ni.gov.uk/publications/hospital-statistics-inpatient-and-day-case-activity-202122",
     "Bed availability", "ni_beds_23", "2022 - 2023", "OGLv3", "https://www.health-ni.gov.uk/sites/default/files/publications/health/hs-inpatient-hts-tables-22-23.csv", "https://www.health-ni.gov.uk/publications/hospital-statistics-inpatient-and-day-case-activity-202223",
     "Provision of unpaid care (delayed discharge)", "ni_unpaid_care_21", "2021", "OGLv3", "https://www.nisra.gov.uk/system/files/statistics/census-2021-ms-d17.xlsx", "https://www.nisra.gov.uk/publications/census-2021-main-statistics-health-disability-and-unpaid-care-tables",
+    "Referral to Treatment", "ni_inpatient", "September 2023", "OGLv3", "https://www.health-ni.gov.uk/sites/default/files/publications/health/hs-niwts-tables-inpatient-and-day-case-waiting-q2-23-24.csv", "https://www.health-ni.gov.uk/articles/inpatient-waiting-times",
+    "Referral to Treatment", "ni_outpatient", "September 2023", "OGLv3", "https://www.health-ni.gov.uk/sites/default/files/publications/health/hs-niwts-tables-outpatients-q2-23-24.csv", "https://www.health-ni.gov.uk/articles/outpatient-waiting-times",
 
     # Scotland
     "Beds by Board of Treatment and Specialty", "scotland_beds", "2016 - 2021", "OGLv3", "https://www.opendata.nhs.scot/dataset/554b0e7a-ccac-4bb6-82db-1a8b306fcb36/resource/f272bb7d-5320-4491-84c1-614a2c064007/download/beds_by_nhs_board_of_treatment_and_specialty.csv", "https://www.opendata.nhs.scot/dataset/hospital-beds-information/resource/f272bb7d-5320-4491-84c1-614a2c064007",
@@ -95,11 +97,13 @@ query_urls <-
     "Delayed Discharge Bed Days by Health Board", "scotland_delayed_discharge_hb_23", "2016 - 2023", "OGLv3", "https://www.opendata.nhs.scot/dataset/52591cba-fd71-48b2-bac3-e71ac108dfee/resource/fd354e4b-6211-48ba-8e4f-8356a5ed4215/download/2023-11_delayed-discharge-beddays-health-board.csv", "https://www.opendata.nhs.scot/dataset/delayed-discharges-in-nhsscotland/resource/fd354e4b-6211-48ba-8e4f-8356a5ed4215",
     "Delayed Discharge Bed Days by Council Area", "scotland_delayed_discharge_ltla_22", "2016 - 2022", "OGLv3", "https://www.opendata.nhs.scot/dataset/52591cba-fd71-48b2-bac3-e71ac108dfee/resource/513d2d71-cf73-458e-8b44-4fa9bccbf50a/download/2023-03_delayed-discharge-beddays-council-area.csv", "https://www.opendata.nhs.scot/dataset/delayed-discharges-in-nhsscotland/resource/fd354e4b-6211-48ba-8e4f-8356a5ed4215",
     "Delayed Discharge Bed Days by Council Area", "scotland_delayed_discharge_ltla_23", "2016 - 2023", "OGLv3", "https://www.opendata.nhs.scot/dataset/52591cba-fd71-48b2-bac3-e71ac108dfee/resource/513d2d71-cf73-458e-8b44-4fa9bccbf50a/download/2023-11_delayed-discharge-beddays-council-area.csv", "https://www.opendata.nhs.scot/dataset/delayed-discharges-in-nhsscotland/resource/fd354e4b-6211-48ba-8e4f-8356a5ed4215",
+    "Referral to Treatment", "scotland_rtt", "2011 - ", "OGLv3", "https://www.opendata.nhs.scot/dataset/aa8b22e8-8a02-484d-a6c8-0a0154a6249d/resource/f2598c24-bf00-4171-b7ef-a469bbacbf6c/download/open_data_18_weeks_rtt.csv", "https://www.opendata.nhs.scot/dataset/18-weeks-referral-to-treatment", # File rewritten when updated monthly
 
     # Wales
     # Data from statswales.gov.wales is accessed via API
     "Wales ambulance waiting times", "wales_ambulance_waiting_times", "December 2023", "OGLv3", "http://open.statswales.gov.wales/dataset/hlth1308", "https://statswales.gov.wales/Catalogue/Health-and-Social-Care/NHS-Performance/Ambulance-Services",
-    "Wales beds by specialty, organisation and month", "wales_critical_general_acute_beds", "March 2023", "OGLv3", "http://open.statswales.gov.wales/dataset/hlth0310", "https://statswales.gov.wales/Catalogue/Health-and-Social-Care/NHS-Hospital-Activity/NHS-Beds/nhsbeds-by-organisation-specialty-month"
+    "Wales beds by specialty, organisation and month", "wales_critical_general_acute_beds", "March 2023", "OGLv3", "http://open.statswales.gov.wales/dataset/hlth0310", "https://statswales.gov.wales/Catalogue/Health-and-Social-Care/NHS-Hospital-Activity/NHS-Beds/nhsbeds-by-organisation-specialty-month",
+    "Wales referral to Treatment", "wales_rtt", "2012 - ", "OGLv3", "http://open.statswales.gov.wales/dataset/hlth0079", "https://statswales.gov.wales/Catalogue/Health-and-Social-Care/NHS-Hospital-Waiting-Times/Referral-to-Treatment/patientpathwayswaitingtostarttreatment-by-month-groupedweeks"
   )
 
 usethis::use_data(query_urls, internal = TRUE, overwrite = TRUE)

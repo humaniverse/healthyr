@@ -5,7 +5,7 @@
 \alias{wales_rtt_lhb}
 \title{Consultant-led Referral to Treatment (RTT) by Local Health Board}
 \format{
-A data frame with 1,260 rows and 6 variables:
+A data frame with 1,652 rows and 6 variables:
 \describe{
 \item{lhb22_code}{Local Health Board code}
 \item{lhb22_name}{Local Health Board name}
@@ -13,6 +13,7 @@ A data frame with 1,260 rows and 6 variables:
 \item{pathway_stage}{Stage of the treatment pathway}
 \item{waits_over_18_weeks}{Total waiting > 18 weeks}
 \item{waits_over_53_weeks}{Total waiting > 53 weeks}
+\item{total_waits}{Total waiting}
 }
 }
 \source{

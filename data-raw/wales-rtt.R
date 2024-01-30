@@ -21,11 +21,12 @@ wales_waits <-
   # Extract number from the waiting code
   mutate(Weekswaiting_Code = str_extract(Weekswaiting_Code, "^[0-9]+") |> as.integer()) |>
   # Keep only waits >= 18 weeks
-  filter(Weekswaiting_Code >= 18) |>
+  # filter(Weekswaiting_Code >= 18) |>
   mutate(Data = as.integer(Data))
 
 wales_waits_18 <-
   wales_waits |>
+  filter(Weekswaiting_Code >= 18) |>
   group_by(lhb22_code, lhb22_name, date, pathway_stage) |>
   summarise(waits_over_18_weeks = sum(Data, na.rm = TRUE)) |>
   ungroup()
@@ -37,6 +38,12 @@ wales_waits_53 <-
   summarise(waits_over_53_weeks = sum(Data, na.rm = TRUE)) |>
   ungroup()
 
+wales_waits_total <- # All waits
+  wales_waits |>
+  group_by(lhb22_code, lhb22_name, date, pathway_stage) |>
+  summarise(total_waits = sum(Data, na.rm = TRUE)) |>
+  ungroup()
+
 # Make dataframe for joining
 wales_rtt_lhb <-
   wales_waits |>
@@ -45,7 +52,8 @@ wales_rtt_lhb <-
 wales_rtt_lhb <-
   wales_rtt_lhb |>
   left_join(wales_waits_18) |>
-  left_join(wales_waits_53)
+  left_join(wales_waits_53) |>
+  left_join(wales_waits_total)
 
 # Save output to data/ folder
 usethis::use_data(wales_rtt_lhb, overwrite = TRUE)

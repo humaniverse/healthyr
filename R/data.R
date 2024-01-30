@@ -347,7 +347,7 @@ NULL
 #'
 #' A dataset containing RTT data for Health & Social Care Trusts in NI.
 #'
-#' @format A data frame with 2,555 rows and 7 variables:
+#' @format A data frame with 2,706 rows and 7 variables:
 #' \describe{
 #'   \item{hsct22_name}{Health & Social Care Trust name}
 #'   \item{date}{Date}
@@ -416,7 +416,7 @@ NULL
 #'
 #' A dataset containing RTT data for Scotland.
 #'
-#' @format A data frame with 144 rows and 5 variables:
+#' @format A data frame with 153 rows and 5 variables:
 #' \describe{
 #'   \item{date}{Date}
 #'   \item{year}{Year}
@@ -431,7 +431,7 @@ NULL
 #'
 #' A dataset containing RTT data for Scottish Health Boards.
 #'
-#' @format A data frame with 2,160 rows and 7 variables:
+#' @format A data frame with 2,295 rows and 7 variables:
 #' \describe{
 #'   \item{hb19_code}{Scottish Health Board code}
 #'   \item{date}{Date}
@@ -448,7 +448,7 @@ NULL
 #'
 #' A dataset containing RTT data for Wales.
 #'
-#' @format A data frame with 1,260 rows and 6 variables:
+#' @format A data frame with 1,652 rows and 6 variables:
 #' \describe{
 #'   \item{lhb22_code}{Local Health Board code}
 #'   \item{lhb22_name}{Local Health Board name}
@@ -456,6 +456,7 @@ NULL
 #'   \item{pathway_stage}{Stage of the treatment pathway}
 #'   \item{waits_over_18_weeks}{Total waiting > 18 weeks}
 #'   \item{waits_over_53_weeks}{Total waiting > 53 weeks}
+#'   \item{total_waits}{Total waiting}
 #' }
 #' @source \url{https://statswales.gov.wales/}
 "wales_rtt_lhb"

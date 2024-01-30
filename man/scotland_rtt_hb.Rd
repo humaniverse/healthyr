@@ -5,7 +5,7 @@
 \alias{scotland_rtt_hb}
 \title{Consultant-led Referral to Treatment (RTT) by Scottish Health Board}
 \format{
-A data frame with 2,160 rows and 7 variables:
+A data frame with 2,295 rows and 7 variables:
 \describe{
 \item{hb19_code}{Scottish Health Board code}
 \item{date}{Date}

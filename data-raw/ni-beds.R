@@ -3,6 +3,7 @@ library(tidyverse)
 library(devtools)
 library(geographr)
 library(sf)
+library(httr2)
 
 # ---- Load internal sysdata.rda file with URL's ----
 load_all(".")

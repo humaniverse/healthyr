@@ -16,9 +16,7 @@ scotland_delayed_discharge_hb <- read_csv(query_url)
 
 scotland_delayed_discharge_hb <-
   scotland_delayed_discharge_hb |>
-
   mutate(date = ym(MonthOfDelay)) |>
-
   select(
     hb_code = HBT,
     date,

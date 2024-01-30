@@ -200,7 +200,7 @@ scrape_data_after_aug23 <- function(id, sheet, range, date) {
 
 # ---- Iterate over all data sets and return as a dataframe ----
 # Generate a dataframe with function arguments
-# April 2023 does not have the "Code" column name
+
 df <-
   tibble(
     id = query_urls |>
@@ -208,7 +208,7 @@ df <-
       filter(date %in% c("August 2023", "September 2023", "October 2023", "November 2023", "December 2023")) |>
       pull(id),
     sheet = rep(2, 5),
-    range = rep("C69:AH203",5),
+    range = rep("C69:AH204",5),
     date = c(
       "August 2023",
       "September 2023",
@@ -221,6 +221,7 @@ df <-
 
 # Build dataframe
 england_critical_general_acute_beds_afteraug23 <- pmap_dfr(df, scrape_data_after_aug23)
+
 england_critical_general_acute_beds <-
   bind_rows(
     england_critical_general_acute_beds_april23,

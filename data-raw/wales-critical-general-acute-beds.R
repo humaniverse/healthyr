@@ -34,7 +34,7 @@ wales_beds <-
     specialty_name = Specialty_ItemName_ENG,
     measure, Data
   ) |>
-  pivot_wider(names_from = c(specialty_name, measure), values_from = Data) |>
+  pivot_wider(names_from = c(specialty_name, measure), values_from = Data, values_fn = mean) |> # handle duplication using mean
   clean_names()
 
 # Select certain specialisms only
@@ -52,7 +52,7 @@ wales_hospitals_critical_general_acute_beds <- wales_critical_general_acute_beds
     values_to = c("value"),
     values_drop_na = TRUE
   ) |>
-  pivot_wider(names_from = "measure", values_from = "value") |>
+  pivot_wider(names_from = "measure")  |>
   arrange(hospital_name, specialism)
 
 # Save output to data/ folder

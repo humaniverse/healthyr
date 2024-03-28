@@ -248,45 +248,45 @@
 "Belfast",2020-06-01,2020,"Jun","Thoracic Surgery",268,198,398
 "Belfast",2020-06-01,2020,"Jun","Urology",4661,2901,6383
 "Belfast",2020-03-01,2020,"Mar","Cardiac Surgery",25,0,275
-"Belfast",2020-03-01,2020,"Mar","Cardiology",1668,303,4005
+"Belfast",2020-03-01,2020,"Mar","Cardiology",1666,302,4005
 "Belfast",2020-03-01,2020,"Mar","Chemical Pathology",2,1,13
 "Belfast",2020-03-01,2020,"Mar","Clinical Genetics",789,146,1275
 "Belfast",2020-03-01,2020,"Mar","Clinical Oncology",0,0,232
 "Belfast",2020-03-01,2020,"Mar","Dental Medicine Specialties",409,1,842
 "Belfast",2020-03-01,2020,"Mar","Dermatology",4742,3203,6536
-"Belfast",2020-03-01,2020,"Mar","ENT",10979,7270,13950
+"Belfast",2020-03-01,2020,"Mar","ENT",10968,7263,13950
 "Belfast",2020-03-01,2020,"Mar","Endocrinology",307,113,924
-"Belfast",2020-03-01,2020,"Mar","Gastroenterology",2805,1380,5503
+"Belfast",2020-03-01,2020,"Mar","Gastroenterology",2794,1376,5503
 "Belfast",2020-03-01,2020,"Mar","General Medicine",3863,2971,4662
-"Belfast",2020-03-01,2020,"Mar","General Surgery",7707,4248,12224
+"Belfast",2020-03-01,2020,"Mar","General Surgery",7687,4240,12224
 "Belfast",2020-03-01,2020,"Mar","Geriatric Medicine",55,10,454
-"Belfast",2020-03-01,2020,"Mar","Gynaecology",4847,2470,7928
+"Belfast",2020-03-01,2020,"Mar","Gynaecology",4839,2468,7928
 "Belfast",2020-03-01,2020,"Mar","Haematology (Clinical)",23,9,189
 "Belfast",2020-03-01,2020,"Mar","Infectious Diseases",114,32,166
 "Belfast",2020-03-01,2020,"Mar","Learning Disability",0,0,17
 "Belfast",2020-03-01,2020,"Mar","Medical Oncology",3,1,83
-"Belfast",2020-03-01,2020,"Mar","Nephrology",55,3,357
-"Belfast",2020-03-01,2020,"Mar","Neurology",3738,2450,5383
-"Belfast",2020-03-01,2020,"Mar","Neurosurgery",521,163,1154
+"Belfast",2020-03-01,2020,"Mar","Nephrology",54,3,357
+"Belfast",2020-03-01,2020,"Mar","Neurology",3736,2450,5383
+"Belfast",2020-03-01,2020,"Mar","Neurosurgery",521,162,1154
 "Belfast",2020-03-01,2020,"Mar","Old Age Psychiatry",0,0,223
-"Belfast",2020-03-01,2020,"Mar","Ophthalmology",22289,14014,30729
+"Belfast",2020-03-01,2020,"Mar","Ophthalmology",22273,14010,30729
 "Belfast",2020-03-01,2020,"Mar","Oral Surgery",17,0,512
 "Belfast",2020-03-01,2020,"Mar","Orthodontics",5,0,128
-"Belfast",2020-03-01,2020,"Mar","Paediatric Dentistry",327,22,665
+"Belfast",2020-03-01,2020,"Mar","Paediatric Dentistry",326,22,665
 "Belfast",2020-03-01,2020,"Mar","Paediatric Neurology",91,2,248
-"Belfast",2020-03-01,2020,"Mar","Paediatric Surgery",519,203,1094
-"Belfast",2020-03-01,2020,"Mar","Paediatrics",4183,1780,7092
+"Belfast",2020-03-01,2020,"Mar","Paediatric Surgery",519,202,1094
+"Belfast",2020-03-01,2020,"Mar","Paediatrics",4179,1780,7092
 "Belfast",2020-03-01,2020,"Mar","Pain Management",1470,777,1936
 "Belfast",2020-03-01,2020,"Mar","Palliative Medicine",0,0,6
-"Belfast",2020-03-01,2020,"Mar","Plastic Surgery",1073,702,1460
+"Belfast",2020-03-01,2020,"Mar","Plastic Surgery",1067,701,1460
 "Belfast",2020-03-01,2020,"Mar","Radiology",40,21,99
 "Belfast",2020-03-01,2020,"Mar","Rehabilitation",36,19,78
 "Belfast",2020-03-01,2020,"Mar","Restorative Dentistry",693,10,1410
 "Belfast",2020-03-01,2020,"Mar","Rheumatology",4310,3543,5121
-"Belfast",2020-03-01,2020,"Mar","T & O Surgery",15757,9075,21951
+"Belfast",2020-03-01,2020,"Mar","T & O Surgery",15714,9058,21951
 "Belfast",2020-03-01,2020,"Mar","Thoracic Medicine",557,144,1722
-"Belfast",2020-03-01,2020,"Mar","Thoracic Surgery",238,169,381
-"Belfast",2020-03-01,2020,"Mar","Urology",4017,2503,6330
+"Belfast",2020-03-01,2020,"Mar","Thoracic Surgery",237,168,381
+"Belfast",2020-03-01,2020,"Mar","Urology",4010,2500,6330
 "Belfast",2020-09-01,2020,"Sep","Cardiac Surgery",83,0,262
 "Belfast",2020-09-01,2020,"Sep","Cardiology",2374,645,3922
 "Belfast",2020-09-01,2020,"Sep","Chemical Pathology",7,2,7
@@ -744,6 +744,48 @@
 "Belfast",2023-03-01,2023,"Mar","Thoracic Medicine",1738,641,2988
 "Belfast",2023-03-01,2023,"Mar","Thoracic Surgery",259,228,410
 "Belfast",2023-03-01,2023,"Mar","Urology",4689,3521,7084
+"Belfast",2023-09-01,2023,"Sep","Cardiac Surgery",82,5,323
+"Belfast",2023-09-01,2023,"Sep","Cardiology",3611,2084,5808
+"Belfast",2023-09-01,2023,"Sep","Chemical Pathology",5,5,77
+"Belfast",2023-09-01,2023,"Sep","Clinical Genetics",163,0,653
+"Belfast",2023-09-01,2023,"Sep","Clinical Neuro-Physiology",48,22,76
+"Belfast",2023-09-01,2023,"Sep","Clinical Oncology",0,0,234
+"Belfast",2023-09-01,2023,"Sep","Dental Medicine Specialties",867,334,1344
+"Belfast",2023-09-01,2023,"Sep","Dermatology",8031,5975,10827
+"Belfast",2023-09-01,2023,"Sep","ENT",9241,7204,11216
+"Belfast",2023-09-01,2023,"Sep","Endocrinology",1272,702,2053
+"Belfast",2023-09-01,2023,"Sep","Gastroenterology",5226,3372,7793
+"Belfast",2023-09-01,2023,"Sep","General Medicine",3197,2567,3702
+"Belfast",2023-09-01,2023,"Sep","General Surgery",15646,11720,20496
+"Belfast",2023-09-01,2023,"Sep","Geriatric Medicine",152,12,821
+"Belfast",2023-09-01,2023,"Sep","Gynaecology",4347,1674,7744
+"Belfast",2023-09-01,2023,"Sep","Haematology (Clinical)",31,0,239
+"Belfast",2023-09-01,2023,"Sep","Infectious Diseases",34,18,66
+"Belfast",2023-09-01,2023,"Sep","Learning Disability",1,0,33
+"Belfast",2023-09-01,2023,"Sep","Medical Oncology",0,0,77
+"Belfast",2023-09-01,2023,"Sep","Nephrology",77,18,351
+"Belfast",2023-09-01,2023,"Sep","Neurology",6472,5011,7703
+"Belfast",2023-09-01,2023,"Sep","Neurosurgery",1098,637,1658
+"Belfast",2023-09-01,2023,"Sep","Obstetrics",3,0,4
+"Belfast",2023-09-01,2023,"Sep","Old Age Psychiatry",16,0,108
+"Belfast",2023-09-01,2023,"Sep","Ophthalmology",16807,11655,22577
+"Belfast",2023-09-01,2023,"Sep","Oral Surgery",28,2,351
+"Belfast",2023-09-01,2023,"Sep","Orthodontics",248,87,339
+"Belfast",2023-09-01,2023,"Sep","Paediatric Dentistry",334,72,605
+"Belfast",2023-09-01,2023,"Sep","Paediatric Neurology",10,1,195
+"Belfast",2023-09-01,2023,"Sep","Paediatric Surgery",486,311,1008
+"Belfast",2023-09-01,2023,"Sep","Paediatrics",7473,4716,10161
+"Belfast",2023-09-01,2023,"Sep","Pain Management",455,149,786
+"Belfast",2023-09-01,2023,"Sep","Palliative Medicine",0,0,5
+"Belfast",2023-09-01,2023,"Sep","Plastic Surgery",1170,866,1479
+"Belfast",2023-09-01,2023,"Sep","Radiology",33,29,75
+"Belfast",2023-09-01,2023,"Sep","Rehabilitation",114,66,180
+"Belfast",2023-09-01,2023,"Sep","Restorative Dentistry",699,229,1195
+"Belfast",2023-09-01,2023,"Sep","Rheumatology",4937,4113,5553
+"Belfast",2023-09-01,2023,"Sep","T & O Surgery",16879,11358,23647
+"Belfast",2023-09-01,2023,"Sep","Thoracic Medicine",1941,866,3144
+"Belfast",2023-09-01,2023,"Sep","Thoracic Surgery",261,218,403
+"Belfast",2023-09-01,2023,"Sep","Urology",4683,3387,6763
 "Day Case Procedure Centre",2019-12-01,2019,"Dec","General Surgery",551,60,1002
 "Day Case Procedure Centre",2019-12-01,2019,"Dec","Ophthalmology",1959,329,4017
 "Day Case Procedure Centre",2019-06-01,2019,"Jun","General Surgery",235,97,782
@@ -754,8 +796,8 @@
 "Day Case Procedure Centre",2020-12-01,2020,"Dec","Ophthalmology",12699,9142,16063
 "Day Case Procedure Centre",2020-06-01,2020,"Jun","General Surgery",741,219,934
 "Day Case Procedure Centre",2020-06-01,2020,"Jun","Ophthalmology",3378,609,4187
-"Day Case Procedure Centre",2020-03-01,2020,"Mar","General Surgery",566,119,932
-"Day Case Procedure Centre",2020-03-01,2020,"Mar","Ophthalmology",1956,260,3865
+"Day Case Procedure Centre",2020-03-01,2020,"Mar","General Surgery",557,115,932
+"Day Case Procedure Centre",2020-03-01,2020,"Mar","Ophthalmology",1940,257,3865
 "Day Case Procedure Centre",2020-09-01,2020,"Sep","General Surgery",860,415,961
 "Day Case Procedure Centre",2020-09-01,2020,"Sep","Ophthalmology",3595,1382,4796
 "Day Case Procedure Centre",2021-12-01,2021,"Dec","General Surgery",811,693,983
@@ -792,6 +834,16 @@
 "Day Case Procedure Centre",2023-03-01,2023,"Mar","Paediatric Surgery",346,192,452
 "Day Case Procedure Centre",2023-03-01,2023,"Mar","Plastic Surgery",18,10,130
 "Day Case Procedure Centre",2023-03-01,2023,"Mar","Urology",653,527,958
+"Day Case Procedure Centre",2023-09-01,2023,"Sep","Cardiology",0,0,2
+"Day Case Procedure Centre",2023-09-01,2023,"Sep","ENT",794,675,889
+"Day Case Procedure Centre",2023-09-01,2023,"Sep","Gastroenterology",0,0,20
+"Day Case Procedure Centre",2023-09-01,2023,"Sep","General Medicine",0,0,1
+"Day Case Procedure Centre",2023-09-01,2023,"Sep","General Surgery",672,424,946
+"Day Case Procedure Centre",2023-09-01,2023,"Sep","Gynaecology",16,13,60
+"Day Case Procedure Centre",2023-09-01,2023,"Sep","Ophthalmology",17447,11584,22342
+"Day Case Procedure Centre",2023-09-01,2023,"Sep","Paediatric Surgery",327,205,409
+"Day Case Procedure Centre",2023-09-01,2023,"Sep","Plastic Surgery",11,6,316
+"Day Case Procedure Centre",2023-09-01,2023,"Sep","Urology",728,465,1079
 "Northern",2019-12-01,2019,"Dec","Cardiology",1233,128,2468
 "Northern",2019-12-01,2019,"Dec","Chemical Pathology",19,0,67
 "Northern",2019-12-01,2019,"Dec","Dermatology",4751,3210,6391
@@ -912,20 +964,20 @@
 "Northern",2020-03-01,2020,"Mar","Cardiology",1183,172,2310
 "Northern",2020-03-01,2020,"Mar","Chemical Pathology",30,0,79
 "Northern",2020-03-01,2020,"Mar","Dermatology",4740,3225,6046
-"Northern",2020-03-01,2020,"Mar","ENT",8867,5307,11830
-"Northern",2020-03-01,2020,"Mar","GP Other",52,1,276
-"Northern",2020-03-01,2020,"Mar","Gastroenterology",4030,2273,6278
+"Northern",2020-03-01,2020,"Mar","ENT",8863,5300,11830
+"Northern",2020-03-01,2020,"Mar","GP Other",48,1,276
+"Northern",2020-03-01,2020,"Mar","Gastroenterology",4022,2273,6278
 "Northern",2020-03-01,2020,"Mar","General Medicine",750,311,1338
-"Northern",2020-03-01,2020,"Mar","General Surgery",4528,841,9907
+"Northern",2020-03-01,2020,"Mar","General Surgery",4511,834,9907
 "Northern",2020-03-01,2020,"Mar","Geriatric Medicine",62,0,296
-"Northern",2020-03-01,2020,"Mar","Gynaecology",2189,105,5102
+"Northern",2020-03-01,2020,"Mar","Gynaecology",2185,103,5102
 "Northern",2020-03-01,2020,"Mar","Haematology (Clinical)",342,202,526
 "Northern",2020-03-01,2020,"Mar","Joint Consultant Clinics",0,0,8
 "Northern",2020-03-01,2020,"Mar","Nephrology",0,0,56
 "Northern",2020-03-01,2020,"Mar","Neurology",1740,1423,2005
 "Northern",2020-03-01,2020,"Mar","Orthodontics",116,0,211
 "Northern",2020-03-01,2020,"Mar","Paediatrics",470,0,2026
-"Northern",2020-03-01,2020,"Mar","Pain Management",2439,1398,3078
+"Northern",2020-03-01,2020,"Mar","Pain Management",2435,1395,3078
 "Northern",2020-03-01,2020,"Mar","Rheumatology",2187,1608,2745
 "Northern",2020-03-01,2020,"Mar","Thoracic Medicine",2800,1759,3735
 "Northern",2020-09-01,2020,"Sep","Cardiology",1103,199,1807
@@ -1141,6 +1193,26 @@
 "Northern",2023-03-01,2023,"Mar","Palliative Medicine",0,0,1
 "Northern",2023-03-01,2023,"Mar","Rheumatology",1729,721,2515
 "Northern",2023-03-01,2023,"Mar","Thoracic Medicine",3506,2394,4487
+"Northern",2023-09-01,2023,"Sep","Cardiology",387,0,1476
+"Northern",2023-09-01,2023,"Sep","Chemical Pathology",137,56,233
+"Northern",2023-09-01,2023,"Sep","Dermatology",4515,3367,6948
+"Northern",2023-09-01,2023,"Sep","ENT",5882,2440,8929
+"Northern",2023-09-01,2023,"Sep","GP Other",31,14,353
+"Northern",2023-09-01,2023,"Sep","Gastroenterology",3942,2595,7020
+"Northern",2023-09-01,2023,"Sep","General Medicine",845,275,1402
+"Northern",2023-09-01,2023,"Sep","General Surgery",8695,5975,13436
+"Northern",2023-09-01,2023,"Sep","Geriatric Medicine",177,43,395
+"Northern",2023-09-01,2023,"Sep","Gynaecology",5747,3170,8314
+"Northern",2023-09-01,2023,"Sep","Haematology (Clinical)",730,388,924
+"Northern",2023-09-01,2023,"Sep","Joint Consultant Clinics",3,0,13
+"Northern",2023-09-01,2023,"Sep","Nephrology",1,0,40
+"Northern",2023-09-01,2023,"Sep","Neurology",1434,584,2109
+"Northern",2023-09-01,2023,"Sep","Oral Surgery",2595,2206,2733
+"Northern",2023-09-01,2023,"Sep","Orthodontics",52,2,119
+"Northern",2023-09-01,2023,"Sep","Paediatrics",1891,61,3626
+"Northern",2023-09-01,2023,"Sep","Pain Management",2872,1811,3491
+"Northern",2023-09-01,2023,"Sep","Rheumatology",1763,717,2453
+"Northern",2023-09-01,2023,"Sep","Thoracic Medicine",3352,2147,4327
 "South Eastern",2019-12-01,2019,"Dec","Anaesthetics",1,1,1
 "South Eastern",2019-12-01,2019,"Dec","Cardiology",706,226,2019
 "South Eastern",2019-12-01,2019,"Dec","Clinical Oncology",0,0,5
@@ -1296,29 +1368,29 @@
 "South Eastern",2020-03-01,2020,"Mar","Anaesthetics",1,1,1
 "South Eastern",2020-03-01,2020,"Mar","Cardiology",729,244,2020
 "South Eastern",2020-03-01,2020,"Mar","Clinical Oncology",0,0,11
-"South Eastern",2020-03-01,2020,"Mar","Dermatology",4573,2631,6158
+"South Eastern",2020-03-01,2020,"Mar","Dermatology",4571,2631,6158
 "South Eastern",2020-03-01,2020,"Mar","ENT",8682,6101,10741
 "South Eastern",2020-03-01,2020,"Mar","Endocrinology",7,0,34
 "South Eastern",2020-03-01,2020,"Mar","Gastroenterology",2463,1578,3280
-"South Eastern",2020-03-01,2020,"Mar","General Medicine",468,131,1855
-"South Eastern",2020-03-01,2020,"Mar","General Surgery",3450,1278,6498
+"South Eastern",2020-03-01,2020,"Mar","General Medicine",467,131,1855
+"South Eastern",2020-03-01,2020,"Mar","General Surgery",3442,1275,6498
 "South Eastern",2020-03-01,2020,"Mar","Geriatric Medicine",187,32,490
-"South Eastern",2020-03-01,2020,"Mar","Gynaecology",5671,3898,7453
+"South Eastern",2020-03-01,2020,"Mar","Gynaecology",5668,3895,7453
 "South Eastern",2020-03-01,2020,"Mar","Haematology (Clinical)",140,0,406
 "South Eastern",2020-03-01,2020,"Mar","Nephrology",3,0,46
 "South Eastern",2020-03-01,2020,"Mar","Neurology",3642,2801,4157
 "South Eastern",2020-03-01,2020,"Mar","Old Age Psychiatry",341,8,737
-"South Eastern",2020-03-01,2020,"Mar","Ophthalmology",1706,1057,2103
-"South Eastern",2020-03-01,2020,"Mar","Oral Surgery",7949,5438,9401
-"South Eastern",2020-03-01,2020,"Mar","Paediatric Surgery",62,4,291
+"South Eastern",2020-03-01,2020,"Mar","Ophthalmology",1706,1055,2103
+"South Eastern",2020-03-01,2020,"Mar","Oral Surgery",7948,5437,9401
+"South Eastern",2020-03-01,2020,"Mar","Paediatric Surgery",60,4,291
 "South Eastern",2020-03-01,2020,"Mar","Paediatrics",2387,1557,3268
-"South Eastern",2020-03-01,2020,"Mar","Pain Management",1861,1049,2445
+"South Eastern",2020-03-01,2020,"Mar","Pain Management",1860,1049,2445
 "South Eastern",2020-03-01,2020,"Mar","Palliative Medicine",0,0,9
-"South Eastern",2020-03-01,2020,"Mar","Plastic Surgery",3412,2102,5370
+"South Eastern",2020-03-01,2020,"Mar","Plastic Surgery",3410,2101,5370
 "South Eastern",2020-03-01,2020,"Mar","Rheumatology",2951,2086,3543
 "South Eastern",2020-03-01,2020,"Mar","T & O Surgery",10,6,120
 "South Eastern",2020-03-01,2020,"Mar","Thoracic Medicine",1075,423,1716
-"South Eastern",2020-03-01,2020,"Mar","Urology",1770,1024,3116
+"South Eastern",2020-03-01,2020,"Mar","Urology",1768,1024,3116
 "South Eastern",2020-09-01,2020,"Sep","Anaesthetics",1,1,1
 "South Eastern",2020-09-01,2020,"Sep","Cardiology",1626,460,2504
 "South Eastern",2020-09-01,2020,"Sep","Dermatology",5402,3486,6639
@@ -1583,6 +1655,31 @@
 "South Eastern",2023-03-01,2023,"Mar","T & O Surgery",67,39,313
 "South Eastern",2023-03-01,2023,"Mar","Thoracic Medicine",1903,1010,2701
 "South Eastern",2023-03-01,2023,"Mar","Urology",2477,1660,3746
+"South Eastern",2023-09-01,2023,"Sep","Anaesthetics",0,0,2
+"South Eastern",2023-09-01,2023,"Sep","Cardiology",2998,1807,4675
+"South Eastern",2023-09-01,2023,"Sep","Clinical Oncology",1,1,25
+"South Eastern",2023-09-01,2023,"Sep","Dermatology",6551,4892,9063
+"South Eastern",2023-09-01,2023,"Sep","ENT",11167,8714,13241
+"South Eastern",2023-09-01,2023,"Sep","Endocrinology",58,21,203
+"South Eastern",2023-09-01,2023,"Sep","Gastroenterology",4274,3303,5322
+"South Eastern",2023-09-01,2023,"Sep","General Medicine",2746,1589,4299
+"South Eastern",2023-09-01,2023,"Sep","General Surgery",9118,6435,12328
+"South Eastern",2023-09-01,2023,"Sep","Geriatric Medicine",50,7,378
+"South Eastern",2023-09-01,2023,"Sep","Gynaecology",9515,7453,12046
+"South Eastern",2023-09-01,2023,"Sep","Haematology (Clinical)",996,671,1295
+"South Eastern",2023-09-01,2023,"Sep","Nephrology",1,0,31
+"South Eastern",2023-09-01,2023,"Sep","Neurology",359,65,1080
+"South Eastern",2023-09-01,2023,"Sep","Old Age Psychiatry",349,27,855
+"South Eastern",2023-09-01,2023,"Sep","Ophthalmology",0,0,3
+"South Eastern",2023-09-01,2023,"Sep","Oral Surgery",6664,5833,7476
+"South Eastern",2023-09-01,2023,"Sep","Paediatric Surgery",28,6,216
+"South Eastern",2023-09-01,2023,"Sep","Paediatrics",3384,1749,4500
+"South Eastern",2023-09-01,2023,"Sep","Pain Management",1769,1178,2266
+"South Eastern",2023-09-01,2023,"Sep","Plastic Surgery",8066,6131,9956
+"South Eastern",2023-09-01,2023,"Sep","Rheumatology",4750,4046,5350
+"South Eastern",2023-09-01,2023,"Sep","T & O Surgery",52,34,246
+"South Eastern",2023-09-01,2023,"Sep","Thoracic Medicine",2176,1190,2947
+"South Eastern",2023-09-01,2023,"Sep","Urology",2762,1929,3932
 "Southern",2019-12-01,2019,"Dec","Cardiology",1630,437,3218
 "Southern",2019-12-01,2019,"Dec","Chemical Pathology",11,0,66
 "Southern",2019-12-01,2019,"Dec","Clinical Oncology",0,0,18
@@ -1771,19 +1868,19 @@
 "Southern",2020-06-01,2020,"Jun","T & O Surgery",6474,3754,7616
 "Southern",2020-06-01,2020,"Jun","Thoracic Medicine",1814,1018,2167
 "Southern",2020-06-01,2020,"Jun","Urology",5028,3362,5985
-"Southern",2020-03-01,2020,"Mar","Cardiology",1993,555,3373
+"Southern",2020-03-01,2020,"Mar","Cardiology",1990,555,3373
 "Southern",2020-03-01,2020,"Mar","Chemical Pathology",14,0,78
 "Southern",2020-03-01,2020,"Mar","Clinical Oncology",0,0,20
-"Southern",2020-03-01,2020,"Mar","Dermatology",2508,70,4445
-"Southern",2020-03-01,2020,"Mar","ENT",4979,1331,7914
+"Southern",2020-03-01,2020,"Mar","Dermatology",2507,70,4445
+"Southern",2020-03-01,2020,"Mar","ENT",4975,1329,7914
 "Southern",2020-03-01,2020,"Mar","Endocrinology",60,0,455
 "Southern",2020-03-01,2020,"Mar","GP Other",13,0,256
-"Southern",2020-03-01,2020,"Mar","Gastroenterology",1984,839,3465
+"Southern",2020-03-01,2020,"Mar","Gastroenterology",1979,837,3465
 "Southern",2020-03-01,2020,"Mar","General Medicine",1,0,93
-"Southern",2020-03-01,2020,"Mar","General Surgery",7408,2891,12303
+"Southern",2020-03-01,2020,"Mar","General Surgery",7390,2889,12303
 "Southern",2020-03-01,2020,"Mar","Genito-Urinary Medicine",0,0,2
 "Southern",2020-03-01,2020,"Mar","Geriatric Medicine",259,161,464
-"Southern",2020-03-01,2020,"Mar","Gynaecology",335,71,2224
+"Southern",2020-03-01,2020,"Mar","Gynaecology",333,71,2224
 "Southern",2020-03-01,2020,"Mar","Haematology (Clinical)",171,72,395
 "Southern",2020-03-01,2020,"Mar","Infectious Diseases",0,0,1
 "Southern",2020-03-01,2020,"Mar","Joint Consultant Clinics",4,1,10
@@ -1797,12 +1894,12 @@
 "Southern",2020-03-01,2020,"Mar","Orthodontics",86,0,161
 "Southern",2020-03-01,2020,"Mar","Paediatric Dentistry",1,1,7
 "Southern",2020-03-01,2020,"Mar","Paediatrics",369,9,1971
-"Southern",2020-03-01,2020,"Mar","Pain Management",629,216,1146
+"Southern",2020-03-01,2020,"Mar","Pain Management",629,215,1146
 "Southern",2020-03-01,2020,"Mar","Palliative Medicine",0,0,12
 "Southern",2020-03-01,2020,"Mar","Rheumatology",1188,882,1879
-"Southern",2020-03-01,2020,"Mar","T & O Surgery",5273,3046,7173
+"Southern",2020-03-01,2020,"Mar","T & O Surgery",5265,3037,7173
 "Southern",2020-03-01,2020,"Mar","Thoracic Medicine",1424,784,1999
-"Southern",2020-03-01,2020,"Mar","Urology",4318,2996,5737
+"Southern",2020-03-01,2020,"Mar","Urology",4311,2995,5737
 "Southern",2020-09-01,2020,"Sep","Anaesthetics",0,0,5
 "Southern",2020-09-01,2020,"Sep","Cardiology",2844,1452,3755
 "Southern",2020-09-01,2020,"Sep","Chemical Pathology",3,0,11
@@ -2132,6 +2229,37 @@
 "Southern",2023-03-01,2023,"Mar","T & O Surgery",9384,7034,11291
 "Southern",2023-03-01,2023,"Mar","Thoracic Medicine",3324,2350,3993
 "Southern",2023-03-01,2023,"Mar","Urology",4291,3520,5755
+"Southern",2023-09-01,2023,"Sep","Anaesthetics",15,0,87
+"Southern",2023-09-01,2023,"Sep","Cardiology",2219,1391,3214
+"Southern",2023-09-01,2023,"Sep","Chemical Pathology",63,6,143
+"Southern",2023-09-01,2023,"Sep","Clinical Oncology",0,0,33
+"Southern",2023-09-01,2023,"Sep","Dermatology",7137,5959,9416
+"Southern",2023-09-01,2023,"Sep","ENT",10599,7779,13501
+"Southern",2023-09-01,2023,"Sep","Endocrinology",1048,630,1527
+"Southern",2023-09-01,2023,"Sep","GP Other",335,44,653
+"Southern",2023-09-01,2023,"Sep","Gastroenterology",4412,3025,6007
+"Southern",2023-09-01,2023,"Sep","General Medicine",62,51,85
+"Southern",2023-09-01,2023,"Sep","General Surgery",14244,10477,18401
+"Southern",2023-09-01,2023,"Sep","Genito-Urinary Medicine",0,0,30
+"Southern",2023-09-01,2023,"Sep","Geriatric Medicine",325,274,547
+"Southern",2023-09-01,2023,"Sep","Gynaecology",7268,4466,9353
+"Southern",2023-09-01,2023,"Sep","Haematology (Clinical)",245,170,387
+"Southern",2023-09-01,2023,"Sep","Infectious Diseases",0,0,3
+"Southern",2023-09-01,2023,"Sep","Learning Disability",0,0,11
+"Southern",2023-09-01,2023,"Sep","Nephrology",3,0,78
+"Southern",2023-09-01,2023,"Sep","Neurology",3256,2155,4092
+"Southern",2023-09-01,2023,"Sep","Old Age Psychiatry",1,0,23
+"Southern",2023-09-01,2023,"Sep","Oral Surgery",292,211,455
+"Southern",2023-09-01,2023,"Sep","Orthodontics",1,0,42
+"Southern",2023-09-01,2023,"Sep","Other",0,0,1
+"Southern",2023-09-01,2023,"Sep","Paediatric Dentistry",0,0,5
+"Southern",2023-09-01,2023,"Sep","Paediatrics",1612,325,3326
+"Southern",2023-09-01,2023,"Sep","Pain Management",1160,543,1571
+"Southern",2023-09-01,2023,"Sep","Palliative Medicine",0,0,4
+"Southern",2023-09-01,2023,"Sep","Rheumatology",3020,2490,3576
+"Southern",2023-09-01,2023,"Sep","T & O Surgery",9670,7390,11681
+"Southern",2023-09-01,2023,"Sep","Thoracic Medicine",3612,2614,4236
+"Southern",2023-09-01,2023,"Sep","Urology",3837,2773,5140
 "Western",2019-12-01,2019,"Dec","Cardiology",110,12,845
 "Western",2019-12-01,2019,"Dec","Chemical Pathology",0,0,30
 "Western",2019-12-01,2019,"Dec","Clinical Oncology",0,0,71
@@ -2273,31 +2401,31 @@
 "Western",2020-06-01,2020,"Jun","Rheumatology",1383,775,1705
 "Western",2020-06-01,2020,"Jun","T & O Surgery",9736,6709,11429
 "Western",2020-06-01,2020,"Jun","Urology",1556,567,2577
-"Western",2020-03-01,2020,"Mar","Cardiology",137,6,790
+"Western",2020-03-01,2020,"Mar","Cardiology",135,6,790
 "Western",2020-03-01,2020,"Mar","Chemical Pathology",3,0,39
 "Western",2020-03-01,2020,"Mar","Clinical Oncology",0,0,62
 "Western",2020-03-01,2020,"Mar","Dermatology",655,343,1162
-"Western",2020-03-01,2020,"Mar","ENT",2356,1316,4582
+"Western",2020-03-01,2020,"Mar","ENT",2353,1310,4582
 "Western",2020-03-01,2020,"Mar","GP Other",8,0,180
-"Western",2020-03-01,2020,"Mar","General Medicine",4378,1876,7792
-"Western",2020-03-01,2020,"Mar","General Surgery",6308,3628,8660
+"Western",2020-03-01,2020,"Mar","General Medicine",4370,1873,7792
+"Western",2020-03-01,2020,"Mar","General Surgery",6303,3626,8660
 "Western",2020-03-01,2020,"Mar","Geriatric Medicine",66,0,239
-"Western",2020-03-01,2020,"Mar","Gynaecology",1328,160,3205
+"Western",2020-03-01,2020,"Mar","Gynaecology",1324,159,3205
 "Western",2020-03-01,2020,"Mar","Haematology (Clinical)",0,0,58
 "Western",2020-03-01,2020,"Mar","Learning Disability",36,11,54
 "Western",2020-03-01,2020,"Mar","Nephrology",26,0,136
 "Western",2020-03-01,2020,"Mar","Neurology",3951,3213,4366
 "Western",2020-03-01,2020,"Mar","Obstetrics",0,0,1
-"Western",2020-03-01,2020,"Mar","Ophthalmology",4042,1147,6587
-"Western",2020-03-01,2020,"Mar","Oral Surgery",3658,2438,4544
+"Western",2020-03-01,2020,"Mar","Ophthalmology",4029,1138,6587
+"Western",2020-03-01,2020,"Mar","Oral Surgery",3652,2437,4544
 "Western",2020-03-01,2020,"Mar","Orthodontics",131,0,250
 "Western",2020-03-01,2020,"Mar","Paediatrics",961,303,1822
 "Western",2020-03-01,2020,"Mar","Pain Management",396,71,724
 "Western",2020-03-01,2020,"Mar","Palliative Medicine",0,0,5
 "Western",2020-03-01,2020,"Mar","Rheumatology",1080,613,1543
-"Western",2020-03-01,2020,"Mar","T & O Surgery",8827,5995,11224
+"Western",2020-03-01,2020,"Mar","T & O Surgery",8819,5991,11224
 "Western",2020-03-01,2020,"Mar","Thoracic Medicine",0,0,15
-"Western",2020-03-01,2020,"Mar","Urology",1066,425,2505
+"Western",2020-03-01,2020,"Mar","Urology",1062,421,2505
 "Western",2020-09-01,2020,"Sep","Cardiology",28,7,277
 "Western",2020-09-01,2020,"Sep","Chemical Pathology",31,0,56
 "Western",2020-09-01,2020,"Sep","Clinical Oncology",0,0,73
@@ -2554,3 +2682,26 @@
 "Western",2023-03-01,2023,"Mar","Rheumatology",2046,1418,2624
 "Western",2023-03-01,2023,"Mar","T & O Surgery",7758,4349,10612
 "Western",2023-03-01,2023,"Mar","Urology",1723,971,3478
+"Western",2023-09-01,2023,"Sep","Cardiology",278,56,896
+"Western",2023-09-01,2023,"Sep","Chemical Pathology",0,0,21
+"Western",2023-09-01,2023,"Sep","Clinical Oncology",1,0,98
+"Western",2023-09-01,2023,"Sep","Dermatology",1330,475,2624
+"Western",2023-09-01,2023,"Sep","ENT",8027,4620,10264
+"Western",2023-09-01,2023,"Sep","GP Other",472,250,757
+"Western",2023-09-01,2023,"Sep","General Medicine",8794,6426,12897
+"Western",2023-09-01,2023,"Sep","General Surgery",12806,9955,15773
+"Western",2023-09-01,2023,"Sep","Geriatric Medicine",538,334,778
+"Western",2023-09-01,2023,"Sep","Gynaecology",6959,4753,8822
+"Western",2023-09-01,2023,"Sep","Haematology (Clinical)",0,0,76
+"Western",2023-09-01,2023,"Sep","Learning Disability",1,0,26
+"Western",2023-09-01,2023,"Sep","Nephrology",25,0,112
+"Western",2023-09-01,2023,"Sep","Neurology",4432,3737,4968
+"Western",2023-09-01,2023,"Sep","Ophthalmology",5153,3458,7521
+"Western",2023-09-01,2023,"Sep","Oral Surgery",3097,2345,4091
+"Western",2023-09-01,2023,"Sep","Orthodontics",80,3,187
+"Western",2023-09-01,2023,"Sep","Paediatrics",557,321,1235
+"Western",2023-09-01,2023,"Sep","Pain Management",107,7,318
+"Western",2023-09-01,2023,"Sep","Palliative Medicine",2,2,2
+"Western",2023-09-01,2023,"Sep","Rheumatology",2208,1638,2782
+"Western",2023-09-01,2023,"Sep","T & O Surgery",8043,4502,11071
+"Western",2023-09-01,2023,"Sep","Urology",2094,1091,3828

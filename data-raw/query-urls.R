@@ -63,6 +63,7 @@ query_urls <-
     "Hospital discharge (criteria to reside)", "nhs_hospital_discharge_data_may_23", "May 2023", "OGLv3", "https://www.england.nhs.uk/statistics/wp-content/uploads/sites/2/2023/06/Daily-discharge-sitrep-monthly-data-webfile-May2023-1.xlsx", "https://www.england.nhs.uk/statistics/statistical-work-areas/discharge-delays-acute-data/",
     "Psychologoical Therapies (IAPT)", "nhs_iapt_22_23", "January 2022-23", "OGLv3", "https://files.digital.nhs.uk/89/B4C209/iapt_time_series_Jan_22_Jan_23_key_measures.zip", "https://digital.nhs.uk/data-and-information/publications/statistical/psychological-therapies-report-on-the-use-of-iapt-services",
     "GP practices in England", "england_gp", "23 February 2024", "", "https://files.digital.nhs.uk/assets/ods/current/epraccur.zip", "https://digital.nhs.uk/services/organisation-data-service/file-downloads/gp-and-gp-practice-related-data",
+    "General Practice Workforce: Practice-level CSVs", "england_gp_patients", "March 2024", "", "https://files.digital.nhs.uk/14/AE345C/GPWPracticeCSV.032024.zip", "https://digital.nhs.uk/data-and-information/publications/statistical/general-and-personal-medical-services/",
 
     # Northern Ireland
     "Bed availability", "ni_beds", "2013 - 2022", "OGLv3", "https://www.health-ni.gov.uk/sites/default/files/publications/health/hs-inpatient-hts-tables-21-22.csv", "https://www.health-ni.gov.uk/publications/hospital-statistics-inpatient-and-day-case-activity-202122",

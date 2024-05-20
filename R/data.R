@@ -409,6 +409,20 @@ NULL
 #' @source \url{https://www.opendata.nhs.scot/}
 "scotland_rtt_hb"
 
+#' Underdoctored areas in Scotland
+#'
+#' A dataset containing the ratio of patients to GP workforce, by Local Authority
+#'
+#' @format A data frame with 5 variables:
+#' \describe{
+#'   \item{ltla21_code}{Local Authority code (2021)}
+#'   \item{total_gp}{Number of full-time equivalent GPs}
+#'   \item{total_patients}{Number of registered patients}
+#'   \item{patients_per_gp}{Number of patients per GP}
+#'   \item{underdoctored_decile}{Decile of number of patients per GP (10 = highest number of patients)}
+#' }
+"scotland_underdoctored_areas"
+
 #' Consultant-led Referral to Treatment (RTT) by Local Health Board
 #'
 #' A dataset containing RTT data for Wales.

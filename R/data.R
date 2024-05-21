@@ -93,6 +93,23 @@ NULL
 #' @source \url{https://www.england.nhs.uk/}
 "england_critical_general_acute_beds"
 
+#' Disability by LTLA England, 2021
+#'
+#' A dataset containing LTLA data on numbers disabled under the Equality Act.
+#'
+#' @format A data frame with 662 rows and 5 variables:
+#' \describe{
+#'   \item{ltla21_code}{LTLA code}
+#'   \item{total_residents}{Total residents in the local authority}
+#'   \item{disability level}{Disabled or Not disabled under the Equality Act}
+#'   \item{n}{number of people}
+#'   \item{prop}{proportion of people}
+
+#'   ...
+#' }
+#' @source \url{https://www.nomisweb.co.uk/sources/census_2021_bulk}
+"england_disability_21"
+
 #' Hospital ICB Discharge Data - Criteria to Reside
 #'
 #' A dataset containing NHS Integrated Care Board discharge data on how many

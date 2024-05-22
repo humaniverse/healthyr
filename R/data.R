@@ -302,6 +302,20 @@ NULL
 #' @source \url{https://www.england.nhs.uk/}
 "england_rtt_flow_stp"
 
+#' Statutory homelessness in England
+#'
+#' A dataset containing statistics on households assessed as homeless and
+#' households in temporary accommodation, by Local Authority.
+#'
+#' @format A data frame with 3 variables:
+#' \describe{
+#'   \item{ltla23_code}
+#'   \item{Households assessed as homeless per (000s)}{Households assessed as homeless per 1,000 households in the Local Authority}
+#'   \item{Households in temporary accommodation per 1,000}{Households in temporary accommodation per 1,000 households in the Local Authority}
+#' }
+#' @source \url{https://www.gov.uk/government/statistical-data-sets/live-tables-on-homelessness}
+"england_homelessness"
+
 #' Bed Availability in Northern Ireland
 #'
 #' A dataset containing hospital statistics on bed availability, bed occupancy

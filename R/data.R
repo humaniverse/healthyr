@@ -93,7 +93,7 @@ NULL
 #' @source \url{https://www.england.nhs.uk/}
 "england_critical_general_acute_beds"
 
-#' Disability by LTLA England, 2021
+#' Disability by LTLA for England and Wales, 2021
 #'
 #' A dataset containing LTLA data on numbers disabled under the Equality Act.
 #'
@@ -236,6 +236,22 @@ NULL
 #' }
 #' @source \url{https://www.ons.gov.uk/}
 "england_health_index_indicators"
+
+#' Legal Partnership Status, England and Wales, 2021
+#'
+#' A dataset containing legal partnership status data at LTLA level
+#'
+#' @format A data frame with 5,627 rows and 5 variables:
+#' \describe{
+#'   \item{ltla21_code}{LTLA code}
+#'   \item{total_population}{Population in the LTLA}
+#'   \item{legal_partnership}{Type of legal partnership}
+#'   \item{n}{Number of people}
+#'   \item{prop}{Percentage}
+#' }
+#' @source \url{https://www.nomisweb.co.uk/sources/census_2021_bulk}
+"england_legal_partnership_21"
+
 
 #' Psychological Therapies - IAPT
 #'

@@ -22,6 +22,6 @@ A data frame with 662 rows and 5 variables:
 england_disability_21
 }
 \description{
-A dataset containing LTLA data on number disabled under the Equality Act.
+A dataset containing LTLA data on numbers disabled under the Equality Act.
 }
 \keyword{datasets}

@@ -316,6 +316,20 @@ NULL
 #' @source \url{https://www.gov.uk/government/statistical-data-sets/live-tables-on-homelessness}
 "england_homelessness"
 
+#' Crime severity score in England
+#'
+#' Crime severity score is based on sentencing data, community order and fines.
+#' Higher scores mean greater severity within an area.
+#'
+#' @format A data frame containing 2 columns.
+#' \describe{
+#'   \item{ltla23_code}{Local Authority code}
+#'   \item{crime_severity_score}{Crime severity score (higher = more severe)}
+#' }
+#' @source \url{https://www.ons.gov.uk/peoplepopulationandcommunity/crimeandjustice/datasets/crimeseverityscoreexperimentalstatistics}
+"england_crime_severity"
+
+
 #' Bed Availability in Northern Ireland
 #'
 #' A dataset containing hospital statistics on bed availability, bed occupancy
@@ -564,3 +578,16 @@ NULL
 #' }
 #' @source \url{https://statswales.gov.wales/}
 "wales_homelessness"
+
+#' Crime severity score in Wales
+#'
+#' Crime severity score is based on sentencing data, community order and fines.
+#' Higher scores mean greater severity within an area.
+#'
+#' @format A data frame containing 2 columns.
+#' \describe{
+#'   \item{ltla23_code}{Local Authority code}
+#'   \item{crime_severity_score}{Crime severity score (higher = more severe)}
+#' }
+#' @source \url{https://www.ons.gov.uk/peoplepopulationandcommunity/crimeandjustice/datasets/crimeseverityscoreexperimentalstatistics}
+"wales_crime_severity"

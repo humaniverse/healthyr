@@ -309,7 +309,7 @@ NULL
 #'
 #' @format A data frame with 3 variables:
 #' \describe{
-#'   \item{ltla23_code}
+#'   \item{ltla23_code}{Local Authority code}
 #'   \item{Households assessed as homeless per (000s)}{Households assessed as homeless per 1,000 households in the Local Authority}
 #'   \item{Households in temporary accommodation per 1,000}{Households in temporary accommodation per 1,000 households in the Local Authority}
 #' }
@@ -457,6 +457,20 @@ NULL
 #' }
 #' @source \url{https://www.opendata.nhs.scot/}
 "scotland_rtt_hb"
+
+#' Homelessness in Scotland
+#'
+#' A dataset containing statistics on households assessed as homeless and
+#' households in temporary accommodation, by Local Authority.
+#'
+#' @format A data frame with 3 variables:
+#' \describe{
+#'   \item{ltla21_code}{Local Authority code}
+#'   \item{Assessed as homeless or threatened with homelessness per 1,000}{Households assessed as homeless per 1,000 households in the Local Authority}
+#'   \item{Households in temporary accommodation per 1,000}{Households in temporary accommodation per 1,000 households in the Local Authority}
+#' }
+#' @source \url{https://www.gov.scot/collections/homelessness-statistics/}
+"scotland_homelessness"
 
 #' Consultant-led Referral to Treatment (RTT) by Local Health Board
 #'

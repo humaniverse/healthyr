@@ -252,6 +252,21 @@ NULL
 #' @source \url{https://www.nomisweb.co.uk/sources/census_2021_bulk}
 "england_legal_partnership_21"
 
+#' Sexual orientation, England and Wales, 2021
+#'
+#' A dataset containing sexual orientation data at LTLA level
+#'
+#' @format A data frame with 1,655 rows and 5 variables:
+#' \describe{
+#'   \item{ltla21_code}{LTLA code}
+#'   \item{total_residents}{Residents in the LTLA}
+#'   \item{sexual_orientation}{Sexual orientation}
+#'   \item{n}{Number of people}
+#'   \item{prop}{Percentage}
+#' }
+#' @source \url{https://www.nomisweb.co.uk/sources/census_2021_bulk}
+"england_sexual_orientation_21"
+
 
 #' Psychological Therapies - IAPT
 #'

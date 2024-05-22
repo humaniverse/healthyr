@@ -3,7 +3,7 @@
 \docType{data}
 \name{england_disability_21}
 \alias{england_disability_21}
-\title{Disability by LTLA England, 2021}
+\title{Disability by LTLA for England and Wales, 2021}
 \format{
 A data frame with 662 rows and 5 variables:
 \describe{

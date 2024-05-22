@@ -85,6 +85,7 @@ query_urls <-
     "Hospital discharge (criteria to reside)", "nhs_hospital_discharge_data_december_23", "December 2023", "OGLv3", "https://www.england.nhs.uk/statistics/wp-content/uploads/sites/2/2024/01/Daily-discharge-sitrep-monthly-data-webfile-December2023.xlsx", "https://www.england.nhs.uk/statistics/statistical-work-areas/discharge-delays-acute-data/",
     "Legal partnership status", "legal_partnership_status_2021", "2021", "OGLv3", "https://www.nomisweb.co.uk/output/census/2021/census2021-ts002.zip", "https://www.nomisweb.co.uk/sources/census_2021_bulk",
     "Psychological Therapies (IAPT)", "nhs_iapt_22_23", "January 2022-23", "OGLv3", "https://files.digital.nhs.uk/89/B4C209/iapt_time_series_Jan_22_Jan_23_key_measures.zip", "https://digital.nhs.uk/data-and-information/publications/statistical/psychological-therapies-report-on-the-use-of-iapt-services",
+    "Sexual orientation", "sexual_orientation_2021", "2021", "OGLv3", "https://www.nomisweb.co.uk/output/census/2021/census2021-ts077.zip", "https://www.nomisweb.co.uk/sources/census_2021_bulk",
 
     # Northern Ireland
     "Bed availability", "ni_beds_pre22", "2013 - 2022", "OGLv3", "https://www.health-ni.gov.uk/sites/default/files/publications/health/hs-inpatient-hts-tables-21-22.csv", "https://www.health-ni.gov.uk/publications/hospital-statistics-inpatient-and-day-case-activity-202122",

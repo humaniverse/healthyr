@@ -27,13 +27,21 @@ raw <- read_csv(file.path(tempdir(), "census2021-ts038-ltla.csv"))
 names(raw) <- str_remove(names(raw), "Disability: ")
 
 # ---- Detailed ethnic categories ----
-england_disability_21 <-
+disability_21 <-
   raw |>
-  select(ltla21_code = `geography code`,
-         total_residents = `Total: All usual residents`, !contains(":"), -date, -geography) |>
+  select(
+    ltla21_code = `geography code`,
+    total_residents = `Total: All usual residents`, !contains(":"), -date, -geography
+  ) |>
   pivot_longer(cols = -c(ltla21_code, total_residents), names_to = "disability_level", values_to = "n") |>
   mutate(prop = n / total_residents)
 
+england_disability_21 <- disability_21 |>
+  filter(str_detect(ltla21_code, "^E"))
+
+wales_disability_21 <- disability_21 |>
+  filter(str_detect(ltla21_code, "^W"))
 
 # ---- Save output to data/ folder ----
 usethis::use_data(england_disability_21, overwrite = TRUE)
+usethis::use_data(wales_disability_21, overwrite = TRUE)

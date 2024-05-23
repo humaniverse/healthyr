@@ -93,7 +93,7 @@ NULL
 #' @source \url{https://www.england.nhs.uk/}
 "england_critical_general_acute_beds"
 
-#' Disability by LTLA for England and Wales, 2021
+#' Disability by LTLA for England, 2021
 #'
 #' A dataset containing LTLA data on numbers disabled under the Equality Act.
 #'
@@ -101,7 +101,7 @@ NULL
 #' \describe{
 #'   \item{ltla21_code}{LTLA code}
 #'   \item{total_residents}{Total residents in the local authority}
-#'   \item{disability level}{Disabled or Not disabled under the Equality Act}
+#'   \item{disability_level}{Disabled or Not disabled under the Equality Act}
 #'   \item{n}{number of people}
 #'   \item{prop}{proportion of people}
 
@@ -237,7 +237,7 @@ NULL
 #' @source \url{https://www.ons.gov.uk/}
 "england_health_index_indicators"
 
-#' Legal Partnership Status, England and Wales, 2021
+#' Legal Partnership Status, England, 2021
 #'
 #' A dataset containing legal partnership status data at LTLA level
 #'
@@ -252,7 +252,7 @@ NULL
 #' @source \url{https://www.nomisweb.co.uk/sources/census_2021_bulk}
 "england_legal_partnership_21"
 
-#' Sexual orientation, England and Wales, 2021
+#' Sexual orientation, England, 2021
 #'
 #' A dataset containing sexual orientation data at LTLA level
 #'
@@ -492,6 +492,24 @@ NULL
 #' @source \url{https://www.opendata.nhs.scot/}
 "scotland_rtt_hb"
 
+
+#' Disability by LTLA for Wales, 2021
+#'
+#' A dataset containing LTLA data on numbers disabled under the Equality Act.
+#'
+#' @format A data frame:
+#' \describe{
+#'   \item{ltla21_code}{LTLA code}
+#'   \item{total_residents}{Total residents in the local authority}
+#'   \item{disability_level}{Disabled or Not disabled under the Equality Act}
+#'   \item{n}{number of people}
+#'   \item{prop}{proportion of people}
+
+#'   ...
+#' }
+#' @source \url{https://www.nomisweb.co.uk/sources/census_2021_bulk}
+"wales_disability_21"
+
 #' Consultant-led Referral to Treatment (RTT) by Local Health Board
 #'
 #' A dataset containing RTT data for Wales.
@@ -570,3 +588,33 @@ NULL
 #' }
 #' @source \url{https://statswales.gov.wales/}
 "wales_hospitals_critical_general_acute_beds"
+
+#' Legal Partnership Status, Wales, 2021
+#'
+#' A dataset containing legal partnership status data at LTLA level
+#'
+#' @format A data frame:
+#' \describe{
+#'   \item{ltla21_code}{LTLA code}
+#'   \item{total_population}{Population in the LTLA}
+#'   \item{legal_partnership}{Type of legal partnership}
+#'   \item{n}{Number of people}
+#'   \item{prop}{Percentage}
+#' }
+#' @source \url{https://www.nomisweb.co.uk/sources/census_2021_bulk}
+"wales_legal_partnership_21"
+
+#' Sexual orientation, Wales, 2021
+#'
+#' A dataset containing sexual orientation data at LTLA level
+#'
+#' @format A data frame:
+#' \describe{
+#'   \item{ltla21_code}{LTLA code}
+#'   \item{total_residents}{Residents in the LTLA}
+#'   \item{sexual_orientation}{Sexual orientation}
+#'   \item{n}{Number of people}
+#'   \item{prop}{Percentage}
+#' }
+#' @source \url{https://www.nomisweb.co.uk/sources/census_2021_bulk}
+"wales_sexual_orientation_21"

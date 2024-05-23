@@ -93,6 +93,23 @@ NULL
 #' @source \url{https://www.england.nhs.uk/}
 "england_critical_general_acute_beds"
 
+#' Disability by LTLA for England, 2021
+#'
+#' A dataset containing LTLA data on numbers disabled under the Equality Act.
+#'
+#' @format A data frame with 662 rows and 5 variables:
+#' \describe{
+#'   \item{ltla21_code}{LTLA code}
+#'   \item{total_residents}{Total residents in the local authority}
+#'   \item{disability_level}{Disabled or Not disabled under the Equality Act}
+#'   \item{n}{number of people}
+#'   \item{prop}{proportion of people}
+
+#'   ...
+#' }
+#' @source \url{https://www.nomisweb.co.uk/sources/census_2021_bulk}
+"england_disability_21"
+
 #' Hospital ICB Discharge Data - Criteria to Reside
 #'
 #' A dataset containing NHS Integrated Care Board discharge data on how many
@@ -219,6 +236,37 @@ NULL
 #' }
 #' @source \url{https://www.ons.gov.uk/}
 "england_health_index_indicators"
+
+#' Legal Partnership Status, England, 2021
+#'
+#' A dataset containing legal partnership status data at LTLA level
+#'
+#' @format A data frame with 5,627 rows and 5 variables:
+#' \describe{
+#'   \item{ltla21_code}{LTLA code}
+#'   \item{total_population}{Population in the LTLA}
+#'   \item{legal_partnership}{Type of legal partnership}
+#'   \item{n}{Number of people}
+#'   \item{prop}{Percentage}
+#' }
+#' @source \url{https://www.nomisweb.co.uk/sources/census_2021_bulk}
+"england_legal_partnership_21"
+
+#' Sexual orientation, England, 2021
+#'
+#' A dataset containing sexual orientation data at LTLA level
+#'
+#' @format A data frame with 1,655 rows and 5 variables:
+#' \describe{
+#'   \item{ltla21_code}{LTLA code}
+#'   \item{total_residents}{Residents in the LTLA}
+#'   \item{sexual_orientation}{Sexual orientation}
+#'   \item{n}{Number of people}
+#'   \item{prop}{Percentage}
+#' }
+#' @source \url{https://www.nomisweb.co.uk/sources/census_2021_bulk}
+"england_sexual_orientation_21"
+
 
 #' Psychological Therapies - IAPT
 #'
@@ -472,6 +520,23 @@ NULL
 #' @source \url{https://www.opendata.nhs.scot/}
 "scotland_rtt_hb"
 
+
+#' Disability by LTLA for Wales, 2021
+#'
+#' A dataset containing LTLA data on numbers disabled under the Equality Act.
+#'
+#' @format A data frame:
+#' \describe{
+#'   \item{ltla21_code}{LTLA code}
+#'   \item{total_residents}{Total residents in the local authority}
+#'   \item{disability_level}{Disabled or Not disabled under the Equality Act}
+#'   \item{n}{number of people}
+#'   \item{prop}{proportion of people}
+
+#'   ...
+#' }
+#' @source \url{https://www.nomisweb.co.uk/sources/census_2021_bulk}
+"wales_disability_21"
 #' Homelessness in Scotland
 #'
 #' A dataset containing statistics on households assessed as homeless and
@@ -565,6 +630,35 @@ NULL
 #' @source \url{https://statswales.gov.wales/}
 "wales_hospitals_critical_general_acute_beds"
 
+#' Legal Partnership Status, Wales, 2021
+#'
+#' A dataset containing legal partnership status data at LTLA level
+#'
+#' @format A data frame:
+#' \describe{
+#'   \item{ltla21_code}{LTLA code}
+#'   \item{total_population}{Population in the LTLA}
+#'   \item{legal_partnership}{Type of legal partnership}
+#'   \item{n}{Number of people}
+#'   \item{prop}{Percentage}
+#' }
+#' @source \url{https://www.nomisweb.co.uk/sources/census_2021_bulk}
+"wales_legal_partnership_21"
+
+#' Sexual orientation, Wales, 2021
+#'
+#' A dataset containing sexual orientation data at LTLA level
+#'
+#' @format A data frame:
+#' \describe{
+#'   \item{ltla21_code}{LTLA code}
+#'   \item{total_residents}{Residents in the LTLA}
+#'   \item{sexual_orientation}{Sexual orientation}
+#'   \item{n}{Number of people}
+#'   \item{prop}{Percentage}
+#' }
+#' @source \url{https://www.nomisweb.co.uk/sources/census_2021_bulk}
+"wales_sexual_orientation_21"
 #' Homelessness in Wales
 #'
 #' A dataset containing statistics on households assessed as homeless and

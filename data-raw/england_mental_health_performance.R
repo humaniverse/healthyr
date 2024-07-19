@@ -35,6 +35,7 @@ raw_historical <- read_csv(file.path(tempdir(), "MHSDS Time_Series_data_Apr_2016
 
 mh_historical <-
   raw_historical |>
+  filter(BREAKDOWN == "England") |>
   filter(MEASURE_NAME %in% measures_to_keep) |>
   select(
     date = REPORTING_PERIOD_END,
@@ -54,6 +55,7 @@ raw_2023 <- read_csv(file.path(tempdir(), "MHSDS Time_Series_data_Apr_2023_MarFi
 
 mh_2023 <-
   raw_2023 |>
+  filter(BREAKDOWN == "England") |>
   filter(MEASURE_NAME %in% measures_to_keep) |>
   select(
     date = REPORTING_PERIOD_END,
@@ -72,6 +74,7 @@ raw_2024 <- read_csv(file.path(tempdir(), "MHSDS Time_Series_data_Apr_2024.csv")
 
 mh_2024 <-
   raw_2024 |>
+  filter(BREAKDOWN == "England") |>
   filter(MEASURE_NAME %in% measures_to_keep) |>
   select(
     date = REPORTING_PERIOD_END,

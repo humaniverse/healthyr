@@ -28,11 +28,7 @@ datasets <- function(dataset) {
 
 #' List available datasets in the healthyr package. This function servers the
 #' `/datasets_available` API endpoint in `inst/plumber/plumber.R` and is an
-#' internal function only. Note, the use of `package = character(0)` below,
-#' instead of `package = "healthyr"` ensures that the function checks the
-#' current working directory, instead of relying on healthyr being installed on
-#' the machine. This prevents any deployment of the API being dependent upon
-#' healthyr being installed for the function to work.
+#' internal function only.
 datasets_available <- function() {
   data(package = "healthyr")$results[, "Item"]
 }

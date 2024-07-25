@@ -4,3 +4,6 @@
 ^\.github$
 
 ^\.broadcast$
+^_pkgdown\.yml$
+^docs$
+^pkgdown$

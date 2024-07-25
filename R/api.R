@@ -29,6 +29,9 @@ datasets <- function(dataset) {
 #' List available datasets in the healthyr package. This function servers the
 #' `/datasets_available` API endpoint in `inst/plumber/plumber.R` and is an
 #' internal function only.
+#'
+#' @noRd
+#' @keywords internal
 datasets_available <- function() {
   data(package = "healthyr")$results[, "Item"]
 }

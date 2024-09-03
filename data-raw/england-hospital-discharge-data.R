@@ -109,7 +109,7 @@ england_trust_criteria_to_reside_before_may23 <-
   fill(do_not_meet_criteria_to_reside)
 
 # Save output to data/ folder
-#usethis::use_data(england_trust_criteria_to_reside, overwrite = TRUE)
+# usethis::use_data(england_trust_criteria_to_reside, overwrite = TRUE)
 
 # - Number discharged
 trust_discharged_patients_before_may23 <-
@@ -128,7 +128,7 @@ england_trust_discharged_patients_before_may23 <-
   ungroup()
 
 # Save output to data/ folder
-#usethis::use_data(england_trust_discharged_patients, overwrite = TRUE)
+# usethis::use_data(england_trust_discharged_patients, overwrite = TRUE)
 
 # ---- ICB level data ----
 # Older 'h' codes are provided in the data that need replacing with newer ICB
@@ -173,7 +173,7 @@ england_icb_criteria_to_reside_before_may23 <- icb_criteria_to_reside_before_may
   select(-icb22_code_h)
 
 # Save output to data/ folder
-#usethis::use_data(england_icb_criteria_to_reside, overwrite = TRUE)
+# usethis::use_data(england_icb_criteria_to_reside, overwrite = TRUE)
 
 # - Number discharged
 icb_discharged_patients_before_may23 <-
@@ -267,12 +267,24 @@ trust_df <-
       filter(str_detect(id, "^nhs_hospital_discharge")) |>
       slice(15:n()) |> # filter from June '23 onwards
       pull(id),
-    sheet = rep("Table 2", 7),
-    number_of_areas = c(120, 119,119,119,119,119,119),
-    range = c("C59:CP179","C59:CS178","C59:CS178", "C58:CP177", "C58:CS177","C58:CP177","C58:CS177"  ),
-    date_start = c( "2023-06-01", "2023-07-01", "2023-08-01", "2023-09-01", "2023-10-01", "2023-11-01", "2023-12-01"),
-    date_end = c("2023-06-30", "2023-07-31", "2023-08-31", "2023-09-30", "2023-10-31", "2023-11-30", "2023-12-31"),
-    days = c( 30, 31, 31, 30, 31, 30, 31)
+    sheet = rep("Table 2", 14),
+    number_of_areas = c(120, 119, 119, 119, 119, 119, 119, 119, 119, 119, 119, 119, 119, 119),
+    range = c(
+      "C59:CP179", "C59:CS178", "C59:CS178", "C58:CP177", "C58:CS177", "C58:CP177",
+      "C58:CS177", "C58:CS177", "C58:CM177", "C58:CS177", "C58:CP177", "C58:CS177",
+      "C58:CP177", "C58:CS177"
+    ),
+    date_start = c(
+      "2023-06-01", "2023-07-01", "2023-08-01", "2023-09-01", "2023-10-01",
+      "2023-11-01", "2023-12-01", "2024-01-01", "2024-02-01", "2024-03-01",
+      "2024-04-01", "2024-05-01", "2024-06-01", "2024-07-01"
+    ),
+    date_end = c(
+      "2023-06-30", "2023-07-31", "2023-08-31", "2023-09-30", "2023-10-31",
+      "2023-11-30", "2023-12-31", "2024-01-31", "2024-02-29", "2024-03-31",
+      "2024-04-30", "2024-05-31", "2024-06-30", "2024-07-31"
+    ),
+    days = c(30, 31, 31, 30, 31, 30, 31, 31, 29, 31, 30, 31, 30, 31)
   )
 
 # Build df after May'23
@@ -289,7 +301,7 @@ trust_criteria_to_reside_after_may23 <-
 
 
 # Join the data before may'23 with after may'23
-england_trust_criteria_to_reside  <-
+england_trust_criteria_to_reside <-
   bind_rows(
     england_trust_criteria_to_reside_before_may23,
     trust_criteria_to_reside_after_may23
@@ -332,12 +344,24 @@ icb_df <-
       filter(str_detect(id, "^nhs_hospital_discharge")) |>
       slice(15:n()) |> # Filter for after May'23
       pull(id),
-    sheet = rep("Table 2", 7),
-    number_of_areas = c(42, 42, 42, 41, 41, 41, 41),
-    range = c("C15:CP57", "C15:CS57", "C15:CS57", "C15:CP56", "C15:CS56", "C15:CP56", "C15:CS56" ),
-    date_start = c( "2023-06-01", "2023-07-01", "2023-08-01", "2023-09-01", "2023-10-01", "2023-11-01", "2023-12-01"),
-    date_end = c("2023-06-30", "2023-07-31", "2023-08-31", "2023-09-30", "2023-10-31", "2023-11-30", "2023-12-31"),
-    days = c( 30, 31, 31, 30, 31, 30, 31)
+    sheet = rep("Table 2", 14),
+    number_of_areas = c(42, 42, 42, 41, 41, 41, 41, 41, 41, 41, 41, 41, 41, 41),
+    range = c(
+      "C15:CP57", "C15:CS57", "C15:CS57", "C15:CP56", "C15:CS56", "C15:CP56", "C15:CS56",
+      "C15:CS56", "C15:CM56", "C15:CS56", "C15:CP56", "C15:CS56",
+      "C15:CP56", "C15:CS56"
+    ),
+    date_start = c(
+      "2023-06-01", "2023-07-01", "2023-08-01", "2023-09-01", "2023-10-01",
+      "2023-11-01", "2023-12-01", "2024-01-01", "2024-02-01", "2024-03-01",
+      "2024-04-01", "2024-05-01", "2024-06-01", "2024-07-01"
+    ),
+    date_end = c(
+      "2023-06-30", "2023-07-31", "2023-08-31", "2023-09-30", "2023-10-31",
+      "2023-11-30", "2023-12-31", "2024-01-31", "2024-02-29", "2024-03-31",
+      "2024-04-30", "2024-05-31", "2024-06-30", "2024-07-31"
+    ),
+    days = c(30, 31, 31, 30, 31, 30, 31, 31, 29, 31, 30, 31, 30, 31)
   )
 
 # Build dataframe with all months
@@ -359,7 +383,7 @@ england_icb_criteria_to_reside_after_may23 <- icb_criteria_to_reside_after_may23
   select(-icb22_code_h)
 
 # Join the data before may'23 with after may'23
-england_icb_criteria_to_reside  <-
+england_icb_criteria_to_reside <-
   bind_rows(
     england_icb_criteria_to_reside_before_may23,
     england_icb_criteria_to_reside_after_may23
@@ -381,7 +405,7 @@ icb_discharged_patients_after_may23 <-
   select(-icb22_code_h)
 
 # Join the data before may'23 with after may'23
-england_icb_discharged_patients  <-
+england_icb_discharged_patients <-
   bind_rows(
     england_icb_discharged_patients_before_may23,
     icb_discharged_patients_after_may23

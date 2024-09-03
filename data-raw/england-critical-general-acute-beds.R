@@ -66,11 +66,10 @@ df <-
   tibble(
     id = query_urls |>
       slice(which(
-        query_urls$id == "nhs_critical_general_acute_beds_april_22"):which(query_urls$id == "nhs_critical_general_acute_beds_july_23")
-        ) |>
+        query_urls$id == "nhs_critical_general_acute_beds_april_22"
+      ):which(query_urls$id == "nhs_critical_general_acute_beds_july_23")) |>
       filter(!(date %in% c("April 2023"))) |>
       pull(id),
-
     sheet = rep(2, 15),
     range = c(rep("D26:V163", 7), rep("D26:AB163", 8)),
     date = c(
@@ -172,14 +171,14 @@ scrape_data_after_aug23 <- function(id, sheet, range, date) {
     select(
       nhs_trust22_code = 1,
       general_acute_beds_available = 3,
-      general_acute_beds_occupied =7,
+      general_acute_beds_occupied = 7,
       general_acute_beds_occupancy_rate = 8,
       adult_general_acute_beds_available = 10,
-      adult_general_acute_beds_occupied =14,
+      adult_general_acute_beds_occupied = 14,
       adult_general_acute_beds_occupancy_rate = 15,
-      paediatric_general_acute_beds_available =17,
+      paediatric_general_acute_beds_available = 17,
       paediatric_general_acute_beds_occupied = 21,
-      paediatric_general_acute_beds_occupancy_rate =22,
+      paediatric_general_acute_beds_occupancy_rate = 22,
       adult_critical_care_beds_available = 24,
       adult_critical_care_beds_occupied = 25,
       adult_critical_care_occupancy_rate = 26,
@@ -188,10 +187,10 @@ scrape_data_after_aug23 <- function(id, sheet, range, date) {
       paediatric_intensive_cared_occupancy_rate = 29,
       neonatal_intensive_care_bed_avaialble = 30,
       neonatal_intensive_care_bed_occupied = 31,
-      neonatal_intensive_care_occupancy_rate =32
+      neonatal_intensive_care_occupancy_rate = 32
     ) |>
-  mutate(date = date) |>
-  relocate(date, .after = nhs_trust22_code) |>
+    mutate(date = date) |>
+    relocate(date, .after = nhs_trust22_code) |>
     mutate_at(vars(3:20), as.double)
 
 
@@ -205,17 +204,22 @@ df <-
   tibble(
     id = query_urls |>
       filter(str_detect(id, "^nhs_critical_general_acute_beds")) |>
-      filter(date %in% c("August 2023", "September 2023", "October 2023", "November 2023", "December 2023")) |>
+      filter(date %in% c(
+        "August 2023", "September 2023", "October 2023", "November 2023", "December 2023",
+        "January 2024", "February 2024", "March 2024"
+      )) |>
       pull(id),
-    sheet = rep(2, 5),
-    range = rep("C69:AH204",5),
+    sheet = rep(2, 8),
+    range = rep("C69:AH204", 8),
     date = c(
       "August 2023",
       "September 2023",
       "October 2023",
       "November 2023",
-      "December 2023"
-
+      "December 2023",
+      "January 2024",
+      "February 2024",
+      "March 2024"
     )
   )
 
@@ -226,7 +230,8 @@ england_critical_general_acute_beds <-
   bind_rows(
     england_critical_general_acute_beds_april23,
     england_critical_general_acute_beds_afteraug23
-  )
+  ) |>
+  drop_na(nhs_trust22_code)
 
 
 # Save output to data/ folder

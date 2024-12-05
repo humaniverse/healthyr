@@ -33,7 +33,7 @@ A data frame with 2,149 rows and 16 variables:
 england_health_index_subdomains
 }
 \description{
-A dataset containing overall health index scores for the English lower tier
+A dataset containing subdomain health index scores for the English lower tier
 local authorities from 2015-2021.
 }
 \keyword{datasets}

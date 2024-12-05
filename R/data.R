@@ -195,7 +195,7 @@ NULL
 
 #' England Health Index (ONS) - subdomains
 #'
-#' A dataset containing overall health index scores for the English lower tier
+#' A dataset containing subdomain health index scores for the English lower tier
 #' local authorities from 2015-2021.
 #'
 #' @format A data frame with 2,149 rows and 16 variables:
@@ -236,6 +236,59 @@ NULL
 #' }
 #' @source \url{https://www.ons.gov.uk/}
 "england_health_index_indicators"
+
+#' England Health Index (ONS)
+#'
+#' A dataset containing overall health index scores for the English Integrated
+#' Care Boards from 2015-2021.
+#'
+#' @format A data frame with 294 rows and 7 variables:
+#' \describe{
+#'   \item{icb22_code}{2022 Integrated Care Board code}
+#'   \item{icb22_name}{2022 Integrated Care Board name}
+#'   \item{year}{Year}
+#'   \item{overall_score}{The overall health index score}
+#'   \item{healthy_people_domain_score}{Score for the Healthy People domain}
+#'   \item{healthy_lives_domain_score}{Score for the Healthy Lives domain}
+#'   \item{healthy_places_domain_score}{Score for the Healthy Places domain}
+#'   ...
+#' }
+#' @source \url{https://www.ons.gov.uk/}
+"england_health_index_ics"
+
+#' England Health Index (ONS) - subdomains
+#'
+#' A dataset containing subdomain health index scores for the English Integrated
+#' Care Boards from 2015-2021.
+#'
+#' @format A data frame with 4,116 rows and 5 variables:
+#' \describe{
+#'   \item{icb22_code}{2022 Integrated Care Board code}
+#'   \item{icb22_name}{2022 Integrated Care Board name}
+#'   \item{year}{Year}
+#'   \item{sub_domain}{The name of the subdomain}
+#'   \item{value}{The value of the indicator}
+#'   ...
+#' }
+#' @source \url{https://www.ons.gov.uk/}
+"england_health_index_ics_indicators"
+
+#' England Health Index (ONS) - underlying indicators
+#'
+#' A dataset containing underlying indicators for the ONS Health Index for
+#' English Integrated Care Boards from 2015-2021.
+#'
+#' @format A data frame with 16,464 rows and 5 variables:
+#' \describe{
+#'   \item{icb22_code}{2022 Integrated Care Board code}
+#'   \item{icb22_name}{2022 Integrated Care Board name}
+#'   \item{year}{Year}
+#'   \item{indicator}{The name of the indicator}
+#'   \item{value}{The value of the indicator}
+#'   ...
+#' }
+#' @source \url{https://www.ons.gov.uk/}
+"england_health_index_ics_indicators"
 
 #' Legal Partnership Status, England, 2021
 #'

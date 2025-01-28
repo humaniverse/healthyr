@@ -114,7 +114,7 @@ query_urls <-
     "Hospital discharge (criteria to reside)", "nhs_hospital_discharge_data_october_24", "October 2024", "OGLv3", "https://www.england.nhs.uk/statistics/wp-content/uploads/sites/2/2024/11/Daily-discharge-sitrep-monthly-data-webfile-October2024.xlsx", "https://www.england.nhs.uk/statistics/statistical-work-areas/discharge-delays-acute-data/",
     "Legal partnership status", "legal_partnership_status_2021", "2021", "OGLv3", "https://www.nomisweb.co.uk/output/census/2021/census2021-ts002.zip", "https://www.nomisweb.co.uk/sources/census_2021_bulk",
     "Mental Health Services Monthly Statistics, Performance", "mental_health_monthly", "April 2024", "OGLv3", "https://files.digital.nhs.uk/0F/A8A88A/MHSDS%20Time_Series_data_Apr_2016_Apr_2024.zip", "https://digital.nhs.uk/data-and-information/publications/statistical/mental-health-services-monthly-statistics/performance-april-2024",
-    "Psychological Therapies (IAPT)", "nhs_iapt_22_23", "January 2022-23", "OGLv3", "https://files.digital.nhs.uk/89/B4C209/iapt_time_series_Jan_22_Jan_23_key_measures.zip", "https://digital.nhs.uk/data-and-information/publications/statistical/psychological-therapies-report-on-the-use-of-iapt-services",
+    "Psychological Therapies (IAPT)", "nhs_iapt_22_23", "May 2022-23", "OGLv3", "https://files.digital.nhs.uk/8C/93D666/nhstalkingtherapies_time_series_may_2022_may_2023_key_measures.csv", "https://digital.nhs.uk/data-and-information/publications/statistical/psychological-therapies-report-on-the-use-of-iapt-services",
     "Sexual orientation", "sexual_orientation_2021", "2021", "OGLv3", "https://www.nomisweb.co.uk/output/census/2021/census2021-ts077.zip", "https://www.nomisweb.co.uk/sources/census_2021_bulk",
 
     # Northern Ireland

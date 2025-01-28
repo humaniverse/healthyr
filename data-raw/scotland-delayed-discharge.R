@@ -9,7 +9,7 @@ load_all(".")
 # ---- Delayed Discharge Bed Days by Health Board ----
 query_url <-
   query_urls |>
-  filter(id == "scotland_delayed_discharge_hb_23") |> # Each data release is cumulative
+  filter(id == "scotland_delayed_discharge_hb_24") |> # Each data release is cumulative
   pull(query)
 
 scotland_delayed_discharge_hb <- read_csv(query_url)
@@ -32,7 +32,7 @@ usethis::use_data(scotland_delayed_discharge_hb, overwrite = TRUE)
 # ---- Delayed Discharge Bed Days by Council Area ----
 query_url <-
   query_urls |>
-  filter(id == "scotland_delayed_discharge_ltla_23") |> # Each data release is cumulative
+  filter(id == "scotland_delayed_discharge_ltla_24") |> # Each data release is cumulative
   pull(query)
 
 scotland_delayed_discharge_ltla <- read_csv(query_url)

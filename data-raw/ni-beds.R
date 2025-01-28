@@ -4,29 +4,30 @@ library(devtools)
 library(geographr)
 library(sf)
 library(httr2)
+library(readxl)
 
 # ---- Load internal sysdata.rda file with URL's ----
 load_all(".")
 
 # ---- Function to scrape and clean data ----
-scrape_data <- function(id, skip_rows) {
+scrape_data <- function(id, sheet, skip_rows) {
   # Download
   query_url <-
     query_urls |>
     filter(id == {{ id }}) |>
     pull(query)
 
-  download <- tempfile(fileext = ".csv")
+  download <- tempfile()
 
   request(query_url) |>
     req_perform(download)
 
   # Read
-  raw <-
-    read_csv(
-      download,
-      skip = skip_rows
-    )
+  if (endsWith(query_url, ".csv")) {
+    raw <- read_csv(download, skip = skip_rows)
+  } else {
+    raw <- read_excel(download, sheet = sheet, skip = skip_rows)
+  }
 
   lookup_trusts <- geographr::boundaries_trusts_ni18 |>
     st_drop_geometry()
@@ -51,7 +52,7 @@ scrape_data <- function(id, skip_rows) {
       non_elective_inpatient = "Non Elective Inpatient",
       regular_attenders = "Regular Attenders"
     ) |>
-    mutate(date = as_date(date, format = "%d/%m/%Y"))
+    mutate(date = as_date(as.character(date), format = c("%d/%m/%Y", "%Y-%m-%d")))
 
   return(data)
 }
@@ -61,11 +62,13 @@ df <-
   tibble(
     id = query_urls |>
       filter(str_detect(id, "^ni_beds")) |> pull(id),
-    skip_rows = c(2, 0)
+    sheet = c(1, 1, 2),
+    skip_rows = c(2, 0, 0)
   )
 
 #---- Build data table ----
-ni_beds <- pmap_dfr(df, scrape_data)
+ni_beds <- pmap_dfr(df, scrape_data) |>
+  unique()  # NOTE: data tables overlap, so removing duplicated rows
 
 # Save output to data/ folder
 usethis::use_data(ni_beds, overwrite = TRUE)

@@ -1,6 +1,7 @@
 library(tidyverse)
 library(lubridate)
 library(devtools)
+library(readxl)
 
 # ---- Load internal sysdata.rda file with URLs ----
 load_all(".")
@@ -11,15 +12,9 @@ query_url_inpatient <-
   filter(id == "ni_inpatient") |> # Each data release is cumulative
   pull(query)
 
-ni_inpatient <- read_csv(query_url_inpatient,
-  col_types = cols(
-    .default = col_double(),
-    `Quarter Ending` = col_character(),
-    `HSC Trust` = col_character(),
-    Specialty = col_character(),
-    `Programme Of Care` = col_character()
-  )
-)
+tf <- tempfile()
+download.file(query_url_inpatient, tf)
+ni_inpatient <- read_excel(tf, sheet = "pre-encompass", guess_max = 10000)
 
 # ---- Outpatient waiting times ----
 query_url_outpatient <-
@@ -27,17 +22,9 @@ query_url_outpatient <-
   filter(id == "ni_outpatient") |> # Each data release is cumulative
   pull(query)
 
-# Statistics by HSC Trust and Outpatients: https://www.health-ni.gov.uk/publications/northern-ireland-waiting-time-statistics-outpatient-waiting-times-march-2023
-# Previous Q: "https://www.health-ni.gov.uk/sites/default/files/publications/health/hs-niwts-tables-outpatients-q1-23-24.csv"
-ni_outpatient <- read_csv(query_url_outpatient,
-  col_types = cols(
-    .default = col_character(),
-    `Quarter Ending` = col_character(),
-    `HSC Trust` = col_character(),
-    Specialty = col_character(),
-    `Programme of Care` = col_character()
-  )
-)
+tf <- tempfile()
+download.file(query_url_outpatient, tf)
+ni_outpatient <- read_excel(tf, sheet = "pre-encompass", guess_max = 10000)
 
 # ---- Wrangle data since 2019 ----
 # Patients waiting for admission to a Day Case Procedure Centre (DPC) are
@@ -47,7 +34,7 @@ ni_outpatient <- read_csv(query_url_outpatient,
 ni_inpatient_sum <-
   ni_inpatient |>
   mutate(
-    Date = dmy(`Quarter Ending`),
+    Date = ymd(`Quarter Ending`),
     Month = month.abb[month(Date)],
     Year = year(Date)
   ) |>
@@ -66,7 +53,7 @@ ni_inpatient_sum <-
         sum(`> 91 - 104 weeks`, na.rm = TRUE) +
         sum(`> 104 weeks`, na.rm = TRUE),
     `Total waiting > 21 weeks` =
-      sum(`>  21 - 26 weeks`, na.rm = TRUE) +
+      sum(`> 21 - 26 weeks`, na.rm = TRUE) +
         sum(`> 26-52 weeks`, na.rm = TRUE) +
         sum(`> 52 - 65 weeks`, na.rm = TRUE) +
         sum(`> 65 - 78 weeks`, na.rm = TRUE) +
@@ -74,8 +61,8 @@ ni_inpatient_sum <-
         sum(`> 91 - 104 weeks`, na.rm = TRUE) +
         sum(`> 104 weeks`, na.rm = TRUE),
     `Total waiting > 13 weeks` =
-      sum(`>  13 - 21 weeks`, na.rm = TRUE) +
-        sum(`>  21 - 26 weeks`, na.rm = TRUE) +
+      sum(`> 13 - 21 weeks`, na.rm = TRUE) +
+        sum(`> 21 - 26 weeks`, na.rm = TRUE) +
         sum(`> 26-52 weeks`, na.rm = TRUE) +
         sum(`> 52 - 65 weeks`, na.rm = TRUE) +
         sum(`> 65 - 78 weeks`, na.rm = TRUE) +
@@ -84,7 +71,7 @@ ni_inpatient_sum <-
         sum(`> 104 weeks`, na.rm = TRUE),
     `Total waiting < 13 weeks` =
       sum(`0 - 6 weeks`, na.rm = TRUE) +
-        sum(`>  6 - 13 weeks`, na.rm = TRUE),
+        sum(`> 6 - 13 weeks`, na.rm = TRUE),
     Total =
       sum(Total, na.rm = TRUE)
   )
@@ -94,7 +81,7 @@ ni_outpatient_sum <-
   # Remove commas from the data columns
   mutate(across(`0 - 6 weeks`:`Total Waiting`, ~ as.numeric(str_remove(.x, ",")))) %>%
   mutate(
-    Date = dmy(`Quarter Ending`),
+    Date = ymd(`Quarter Ending`),
     Month = month.abb[month(Date)],
     Year = year(Date)
   ) |>

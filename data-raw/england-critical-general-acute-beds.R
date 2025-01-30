@@ -9,7 +9,7 @@ library(lubridate)
 load_all(".")
 
 # ---- Function to download and clean ----
-scrape_data <- function(id, sheet, range, date) {
+scrape_data <- function(id, sheet, header1, header2, range, date) {
   # Download
   query_url <-
     query_urls |>
@@ -22,13 +22,18 @@ scrape_data <- function(id, sheet, range, date) {
     req_perform(download)
 
   # Read
+  colnames1 <- as.character(read_excel(download, sheet = sheet, range = header1, col_names = FALSE))
+  colnames2 <- as.character(read_excel(download, sheet = sheet, range = header2, col_names = FALSE))
+  colnames  <- if_else(colnames2 == "NA", colnames1, colnames2)
+  colnames[colnames == "Org Code"] <- "Code"
   raw_trusts <-
     read_excel(
       download,
       sheet = sheet,
-      range = range
+      range = range,
+      col_names = colnames
     )
-  cat("reading", query_url)
+  cat("reading", query_url, "\n")
 
   data <-
     raw_trusts |>
@@ -49,12 +54,13 @@ scrape_data <- function(id, sheet, range, date) {
       paediatric_intensive_cared_beds_available = "Paediatric intensive care beds available",
       paediatric_intensive_cared_beds_occupied = "Paediatric intensive care beds occupied",
       paediatric_intensive_cared_occupancy_rate = "Paediatric intensive care occupancy rate",
-      neonatal_intensive_care_bed_avaialble = "Neonatal intensive care beds available",
+      neonatal_intensive_care_bed_available = "Neonatal intensive care beds available",
       neonatal_intensive_care_bed_occupied = "Neonatal intensive care beds occupied",
       neonatal_intensive_care_occupancy_rate = "Neonatal intensive care occupancy rate"
     ) |>
     mutate(date = date) |>
-    relocate(date, .after = nhs_trust22_code)
+    relocate(date, .after = nhs_trust22_code) |>
+    mutate_at(c(3:20), as.numeric)
   return(data)
 }
 
@@ -65,13 +71,14 @@ scrape_data <- function(id, sheet, range, date) {
 df <-
   tibble(
     id = query_urls |>
-      slice(which(
-        query_urls$id == "nhs_critical_general_acute_beds_april_22"
-      ):which(query_urls$id == "nhs_critical_general_acute_beds_july_23")) |>
+      slice(which(query_urls$id == "nhs_critical_general_acute_beds_april_22"):
+            which(query_urls$id == "nhs_critical_general_acute_beds_december_24")) |>
       filter(!(date %in% c("April 2023"))) |>
       pull(id),
-    sheet = rep(2, 15),
-    range = c(rep("D26:V163", 7), rep("D26:AB163", 8)),
+    sheet = if_else(1:32 == 21, 3, 2),  # NOTE: January 2023 had 3 sheets
+    header1 = c(rep("B15:V15", 7), rep("B15:AB15", 8), rep("B15:AI15", 17)),
+    header2 = c(rep("B26:V26", 7), rep("B26:AB26", 8), rep("B69:AI69", 17)),
+    range = c(rep("B27:V163", 7), rep("B27:AB163", 8), rep("B70:AI205", 17)),
     date = c(
       "April 2022",
       "May 2022",
@@ -87,7 +94,24 @@ df <-
       "March 2023",
       "May 2023",
       "June 2023",
-      "July 2023"
+      "July 2023",
+      "August 2023",
+      "September 2023",
+      "October 2023",
+      "November 2023",
+      "December 2023",
+      "January 2024",
+      "February 2024",
+      "March 2024",
+      "April 2024",
+      "May 2024",
+      "June 2024",
+      "July 2024",
+      "August 2024",
+      "September 2024",
+      "October 2024",
+      "November 2024",
+      "December 2024"
     )
   )
 
@@ -131,107 +155,20 @@ data_april23 <-
     paediatric_intensive_cared_beds_available = "Paediatric intensive care beds available",
     paediatric_intensive_cared_beds_occupied = "Paediatric intensive care beds occupied",
     paediatric_intensive_cared_occupancy_rate = "Paediatric intensive care occupancy rate",
-    neonatal_intensive_care_bed_avaialble = "Neonatal intensive care beds available",
+    neonatal_intensive_care_bed_available = "Neonatal intensive care beds available",
     neonatal_intensive_care_bed_occupied = "Neonatal intensive care beds occupied",
     neonatal_intensive_care_occupancy_rate = "Neonatal intensive care occupancy rate"
   ) |>
   mutate(date = "April 2023") |>
   relocate(date, .after = nhs_trust22_code)
 
-england_critical_general_acute_beds_april23 <-
+england_critical_general_acute_beds <-
   bind_rows(
     england_critical_general_acute_beds_incomplete,
     data_april23
-  )
-
-# ---- Data from August 2023 onwards ----
-# Format of data changes from August 2023 onwards. Function updated.
-scrape_data_after_aug23 <- function(id, sheet, range, date) {
-  # Download
-  query_url <-
-    query_urls |>
-    filter(id == {{ id }}) |>
-    pull(query)
-
-  download <- tempfile(fileext = ".xlsx")
-
-  request(query_url) |>
-    req_perform(download)
-
-  # Read
-  raw_trusts <-
-    read_excel(
-      download,
-      sheet = sheet,
-      range = range
-    )
-
-  data <-
-    raw_trusts |>
-    select(
-      nhs_trust22_code = 1,
-      general_acute_beds_available = 3,
-      general_acute_beds_occupied = 7,
-      general_acute_beds_occupancy_rate = 8,
-      adult_general_acute_beds_available = 10,
-      adult_general_acute_beds_occupied = 14,
-      adult_general_acute_beds_occupancy_rate = 15,
-      paediatric_general_acute_beds_available = 17,
-      paediatric_general_acute_beds_occupied = 21,
-      paediatric_general_acute_beds_occupancy_rate = 22,
-      adult_critical_care_beds_available = 24,
-      adult_critical_care_beds_occupied = 25,
-      adult_critical_care_occupancy_rate = 26,
-      paediatric_intensive_cared_beds_available = 27,
-      paediatric_intensive_cared_beds_occupied = 28,
-      paediatric_intensive_cared_occupancy_rate = 29,
-      neonatal_intensive_care_bed_avaialble = 30,
-      neonatal_intensive_care_bed_occupied = 31,
-      neonatal_intensive_care_occupancy_rate = 32
-    ) |>
-    mutate(date = date) |>
-    relocate(date, .after = nhs_trust22_code) |>
-    mutate_at(vars(3:20), as.double)
-
-
-  return(data)
-}
-
-# ---- Iterate over all data sets and return as a dataframe ----
-# Generate a dataframe with function arguments
-
-df <-
-  tibble(
-    id = query_urls |>
-      filter(str_detect(id, "^nhs_critical_general_acute_beds")) |>
-      filter(date %in% c(
-        "August 2023", "September 2023", "October 2023", "November 2023", "December 2023",
-        "January 2024", "February 2024", "March 2024"
-      )) |>
-      pull(id),
-    sheet = rep(2, 8),
-    range = rep("C69:AH204", 8),
-    date = c(
-      "August 2023",
-      "September 2023",
-      "October 2023",
-      "November 2023",
-      "December 2023",
-      "January 2024",
-      "February 2024",
-      "March 2024"
-    )
-  )
-
-# Build dataframe
-england_critical_general_acute_beds_afteraug23 <- pmap_dfr(df, scrape_data_after_aug23)
-
-england_critical_general_acute_beds <-
-  bind_rows(
-    england_critical_general_acute_beds_april23,
-    england_critical_general_acute_beds_afteraug23
   ) |>
-  drop_na(nhs_trust22_code)
+  drop_na(nhs_trust22_code) |>
+  arrange(my(date), nhs_trust22_code)
 
 
 # Save output to data/ folder

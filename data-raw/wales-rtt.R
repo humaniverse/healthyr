@@ -4,6 +4,8 @@ library(statswalesr)
 
 wales_raw <- statswales_get_dataset("hlth0079")
 
+colnames(wales_raw) <- sub("_STR$|_INT$", "", colnames(wales_raw))
+
 wales_waits <-
   wales_raw |>
   as_tibble() |>

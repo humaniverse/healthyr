@@ -10,14 +10,12 @@ library(janitor)
 
 # ---- Function to download data from Stats Wales website ----
 raw <- statswales_get_dataset("hlth0310")
+colnames(raw) <- sub("_STR$|_DEC$", "", colnames(raw))
 
 # Clean the data
-wales_beds <-
-  raw |>
-  as_tibble() |>
+wales_beds <- raw |>
   # Filter to only include data from Jan 2021 and only include high level specialty categories
-  filter(Month_Code >= "202101" &
-    Specialty_Hierarchy == "0") |>
+  filter(Month_Code >= "202101" & (Specialty_Hierarchy == "0" | is.na(Specialty_Hierarchy))) |>
   # Renaming measure variable names
   mutate(
     measure = case_when(
@@ -43,7 +41,7 @@ wales_critical_general_acute_beds <- wales_beds |>
 
 # Select hospitals and wales only
 wales_hospitals_critical_general_acute_beds <- wales_critical_general_acute_beds |>
-  filter(hospital_sortcode == "0") |>
+  filter(is.na(hospital_sortcode) | hospital_sortcode == "0") |>
   select(-hospital_sortcode) |>
   pivot_longer(
     cols = c(ends_with("average_daily_beds_available"), ends_with("average_daily_beds_occupied"), ends_with("average_beds_occupancy_rate")),
@@ -60,7 +58,7 @@ usethis::use_data(wales_hospitals_critical_general_acute_beds, overwrite = TRUE)
 
 # Select health boards only
 wales_health_board_critical_general_acute_beds <- wales_critical_general_acute_beds |>
-  filter(hospital_sortcode != "0") |>
+  filter(hospital_sortcode %in% 1:9) |>
   select(-hospital_sortcode) |>
   rename(health_board_code = hospital_code, health_board_name = hospital_name) |>
   pivot_longer(

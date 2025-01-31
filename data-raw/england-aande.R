@@ -63,19 +63,22 @@ lookup_icb_codes <- geographr::lookup_lsoa11_sicbl22_icb22_ltla22 |>
 # Generate a dataframe with function arguments
 icb_df <-
   tibble(
-    id = query_urls |> slice(which(query_urls$id == "nhs_accident_emergency_april_22"):which(query_urls$id == "nhs_accident_emergency_march_24")) |>
+    id = query_urls |> slice(which(query_urls$id == "nhs_accident_emergency_april_22"):which(query_urls$id == "nhs_accident_emergency_december_24")) |>
       pull(id),
-    sheet = rep("System Level Data", 24),
-    range = rep("B16:AB63", 24),
+    sheet = rep("System Level Data", 33),
+    range = rep("B16:AB63", 33),
     date = c(
-      "April 2022", "May 2022", "June 2022", "July 2022", "August 2022", "September 2022", "October 2022", "November 2022", "December 2022",
-      "January 2023", "February 2023", "March 2023", "April 2023", "May 2023", "June 2023", "July 2023", "August 2023", "September 2023", "October 2023",
-      "November 2023", "December 2023", "January 2024", "February 2024", "March 2024"
+      "April 2022", "May 2022", "June 2022",
+      "July 2022", "August 2022", "September 2022", "October 2022", "November 2022", "December 2022",
+      "January 2023", "February 2023", "March 2023", "April 2023", "May 2023", "June 2023",
+      "July 2023", "August 2023", "September 2023", "October 2023", "November 2023", "December 2023",
+      "January 2024", "February 2024", "March 2024", "April 2024", "May 2024", "June 2024",
+      "July 2024", "August 2024", "September 2024", "October 2024", "November 2024", "December 2024"
     ),
     col_index = c(
       rep(list(c(1, 6, 14, 24, 25)), 4),
       list(c(1, 7, 15, 25, 26)),
-      rep(list(c(1, 6, 14, 24, 25)), 19)
+      rep(list(c(1, 6, 14, 24, 25)), 28)
     )
   )
 
@@ -99,19 +102,19 @@ usethis::use_data(england_icb_accidents_emergency, overwrite = TRUE)
 trust_df <-
   tibble(
     id = query_urls |> filter(str_detect(id, "^nhs_accident_emergency")) |> pull(id),
-    sheet = rep("Provider Level Data", 36),
-    range = rep("B16:AB223", 36),
+    sheet = rep("Provider Level Data", 45),
+    range = rep("B16:AB223", 45),
     date = c(
-      "April 2021", "May 2021", "June 2021", "July 2021", "August 2021",
-      "September 2021", "October 2021", "November 2021", "December 2021",
-      "January 2022", "February 2022", "March 2022", "April 2022", "May 2022",
-      "June 2022", "July 2022", "August 2022", "September 2022", "October 2022",
-      "November 2022", "December 2022", "January 2023", "February 2023", "March 2023",
-      "April 2023", "May 2023", "June 2023", "July 2023", "August 2023",
-      "September 2023", "October 2023", "November 2023", "December 2023",
-      "January 2024", "February 2024", "March 2024"
+      "April 2021", "May 2021", "June 2021",
+      "July 2021", "August 2021", "September 2021", "October 2021", "November 2021", "December 2021",
+      "January 2022", "February 2022", "March 2022", "April 2022", "May 2022", "June 2022",
+      "July 2022", "August 2022", "September 2022", "October 2022", "November 2022", "December 2022",
+      "January 2023", "February 2023", "March 2023", "April 2023", "May 2023", "June 2023",
+      "July 2023", "August 2023", "September 2023", "October 2023", "November 2023", "December 2023",
+      "January 2024", "February 2024", "March 2024", "April 2024", "May 2024", "June 2024",
+      "July 2024", "August 2024", "September 2024", "October 2024", "November 2024", "December 2024"
     ),
-    col_index = rep(list(c(1, 7, 15, 25, 26)), 36)
+    col_index = rep(list(c(1, 7, 15, 25, 26)), 45)
   )
 
 # Build dataframe with all months

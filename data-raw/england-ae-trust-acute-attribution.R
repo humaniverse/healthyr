@@ -27,7 +27,7 @@ raw <-
   read_excel(
     download,
     sheet = "Attribution",
-    range = "B9:G227"
+    range = "B9:G224"
   )
 
 # Clean the df

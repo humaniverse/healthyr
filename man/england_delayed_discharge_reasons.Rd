@@ -5,7 +5,7 @@
 \alias{england_delayed_discharge_reasons}
 \title{Disability by LTLA for England, 2021}
 \format{
-A data frame with 45,220 rows and 5 variables:
+A data frame with 45,106 rows and 5 variables:
 \describe{
 \item{nhs_trust22_name}{NHS Trust name}
 \item{nhs_trust22_code}{NHS Trust code}

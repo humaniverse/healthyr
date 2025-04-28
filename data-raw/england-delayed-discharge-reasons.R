@@ -18,7 +18,7 @@ raw <- urls |>
   map(
     \(x)
       read_csv(
-        urls[[1]],
+        x,
         col_types = "cccccccccd",
         locale = locale(encoding = "windows-1252")
       )

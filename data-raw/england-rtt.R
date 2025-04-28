@@ -144,14 +144,37 @@ urls <- c(
   jan_19 = "https://www.england.nhs.uk/statistics/wp-content/uploads/sites/2/2019/07/Full-CSV-data-file-Jan19-revised-ZIP-3634K.zip"
 )
 
+process_single_url <- function(url, target_dir) {
+  tf <- tempfile(fileext = ".zip")
+  tryCatch(
+    {
+      cat("\nAttempting download:", url, "to", tf, "\n")
+      download.file(url, destfile = tf, mode = "wb", quiet = TRUE)
+      cat("Download complete:", tf, "\n")
+      cat("Unzipping:", tf, "to", target_dir, "\n")
+      unzip(tf, exdir = target_dir)
+      cat("Unzip complete for file from:", url, "\n")
+    },
+    error = function(e) {
+      warning("Failed to process URL: ", url, "\nError: ", conditionMessage(e))
+    },
+    finally = {
+      if (file.exists(tf)) {
+        cat("Cleaning up temporary file:", tf, "\n")
+        unlink(tf)
+      }
+    }
+  )
+  invisible(NULL)
+}
+
 td <- tempdir()
 
-for (url in urls) {
-  # GET(url, write_disk(tf <- tempfile(fileext = ".zip")))
-  tf <- download_file(url, ".zip")
-  unzip(tf, exdir = td)
-  unlink(tf)
-}
+results <- purrr::walk(
+  .x = urls,
+  .f = ~ process_single_url(url = .x, target_dir = td),
+  .progress = "Downloading and Unzipping Files" # Custom progress bar message
+)
 
 # list.files(td, pattern = "*.csv", full.names = TRUE)
 

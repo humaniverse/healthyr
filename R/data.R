@@ -97,6 +97,22 @@ NULL
 #'
 #' A dataset containing LTLA data on numbers disabled under the Equality Act.
 #'
+#' @format A data frame with 45,220 rows and 5 variables:
+#' \describe{
+#'   \item{nhs_trust22_name}{NHS Trust name}
+#'   \item{nhs_trust22_code}{NHS Trust code}
+#'   \item{date}{Date in the format year-month-day}
+#'   \item{delay_reason}{The reason for the delayed discharge}
+#'   \item{delay_count}{The number of delays}
+#'   ...
+#' }
+#' @source \url{https://www.england.nhs.uk/statistics/statistical-work-areas/discharge-delays/acute-discharge-situation-report/}
+"england_delayed_discharge_reasons"
+
+#' Disability by LTLA for England, 2021
+#'
+#' A dataset containing LTLA data on numbers disabled under the Equality Act.
+#'
 #' @format A data frame with 662 rows and 5 variables:
 #' \describe{
 #'   \item{ltla21_code}{LTLA code}
@@ -104,7 +120,6 @@ NULL
 #'   \item{disability_level}{Disabled or Not disabled under the Equality Act}
 #'   \item{n}{number of people}
 #'   \item{prop}{proportion of people}
-
 #'   ...
 #' }
 #' @source \url{https://www.nomisweb.co.uk/sources/census_2021_bulk}

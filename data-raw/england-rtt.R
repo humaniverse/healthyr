@@ -169,13 +169,12 @@ process_single_url <- function(url, target_dir) {
 
 td <- tempdir()
 
+# Called for its side-effect: `list.files(td, pattern = "*.csv", full.names = TRUE)`
 results <- purrr::walk(
   .x = urls,
   .f = ~ process_single_url(url = .x, target_dir = td),
   .progress = "Downloading and Unzipping Files" # Custom progress bar message
 )
-
-# list.files(td, pattern = "*.csv", full.names = TRUE)
 
 # Sustainability Transformation Partnerships and NHS England (Region) (April 2020) Lookup in England
 # Source: https://geoportal.statistics.gov.uk/datasets/ons::sustainability-transformation-partnerships-and-nhs-england-region-april-2020-lookup-in-england-1/about

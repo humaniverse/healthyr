@@ -5,7 +5,7 @@
 \alias{england_rtt_region}
 \title{Consultant-led Referral to Treatment (RTT) by NHS Region}
 \format{
-A data frame with 6,804 rows and 7 variables:
+A data frame with 11,676 rows and 7 variables:
 \describe{
 \item{nhs_region20_name}{Name of NHS England region}
 \item{date}{Date}
@@ -23,6 +23,7 @@ A data frame with 6,804 rows and 7 variables:
 england_rtt_region
 }
 \description{
-A dataset containing ICS/STP-level RTT data.
+A dataset containing ICS/STP-level RTT data spanning from Jan 2019 to Feb
+2025.
 }
 \keyword{datasets}

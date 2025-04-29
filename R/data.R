@@ -368,9 +368,10 @@ NULL
 
 #' Consultant-led Referral to Treatment (RTT) by ICS/STP
 #'
-#' A dataset containing ICS/STP-level RTT data.
+#' A dataset containing ICS/STP-level RTT data spanning from Apr 2020 to Feb
+#' 2025.
 #'
-#' @format A data frame with 27,196 rows and 7 variables:
+#' @format A data frame with 55,73 rows and 7 variables:
 #' \describe{
 #'   \item{stp20_nhs_code}{NHS code for the ICS/STP}
 #'   \item{stp20_name}{Name of the ICS/STP}
@@ -386,9 +387,10 @@ NULL
 
 #' Consultant-led Referral to Treatment (RTT) by NHS Region
 #'
-#' A dataset containing ICS/STP-level RTT data.
+#' A dataset containing ICS/STP-level RTT data spanning from Jan 2019 to Feb
+#' 2025.
 #'
-#' @format A data frame with 6,804 rows and 7 variables:
+#' @format A data frame with 11,676 rows and 7 variables:
 #' \describe{
 #'   \item{nhs_region20_name}{Name of NHS England region}
 #'   \item{date}{Date}
@@ -403,9 +405,10 @@ NULL
 
 #' Consultant-led Referral to Treatment (RTT) pathway flow by ICS/STP
 #'
-#' A dataset containing ICS/STP-level RTT data.
+#' A dataset containing ICS/STP-level RTT data spanning from Apr 2020 to Feb
+#' 2025.
 #'
-#' @format A data frame with 1,260 rows and 7 variables:
+#' @format A data frame with 2,478 rows and 7 variables:
 #' \describe{
 #'   \item{stp20_nhs_code}{NHS code for the ICS/STP}
 #'   \item{date}{Date}

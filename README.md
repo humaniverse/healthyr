@@ -32,9 +32,8 @@ Make sure to build and export the tibble.
 2. Add a file to `data-raw/`. See other files for template.
 3. Document the data set in `R/data.R`. Keep to alphabetical ordering.
 4. Run `devtools::document()` to export documentation.
-5. Run `broadcast::broadcast()` to export the file to `.broadcast` as a `.csv`.
-6. Run `devtools::check()` to check for errors/warnings/notes.
-7. Update `LICENSE` by adding the license of the new data set if not already
+5. Run `devtools::check()` to check for errors/warnings/notes.
+6. Update `LICENSE` by adding the license of the new data set if not already
 covered.
 
 <img src='man/figures/file-structure.png' align="centre"/>

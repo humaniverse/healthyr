@@ -771,3 +771,19 @@ NULL
 #' }
 #' @source \url{https://www.ons.gov.uk/peoplepopulationandcommunity/crimeandjustice/datasets/crimeseverityscoreexperimentalstatistics}
 "wales_crime_severity"
+
+#' Delayed discharge reasons for Wales, 2023 April - 2025 March
+#'
+#' A dataset containing delayed discharge data stratified by local health board and the reason for delay.
+#'
+#' @format A data frame with 5,239 rows and 5 variables:
+#' \describe{
+#'   \item{healthboard_code}{Health Board code}
+#'   \item{healthboard_name}{Health Board name}
+#'   \item{date}{Date in the format year-month-day}
+#'   \item{delay_reason}{The reason for the delayed discharge}
+#'   \item{delay_count}{The number of delays}
+#'   ...
+#' }
+#' @source \url{https://statswales.gov.wales/Catalogue/Health-and-Social-Care/NHS-Performance/pathway-of-care-delays/pathwayofcaredelays-by-localhealthboardprovider-date}
+"wales_delayed_discharge_reasons"

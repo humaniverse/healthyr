@@ -776,7 +776,7 @@ NULL
 #'
 #' A dataset containing Scotland hospital-level admission outcomes stratified by age group (from 2018-01 to 2025-02)
 #'
-#' @format A data frame with 86,678 rows and 6 variables:
+#' @format A data frame with 86,688 rows and 6 variables:
 #' \describe{
 #'   \item{hospital_code}{Hospital code}
 #'   \item{hospital_name}{Hospital name}

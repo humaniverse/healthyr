@@ -5,7 +5,7 @@
 \alias{scotland_ae_admission}
 \title{Scotland A&E Admission Outcomes}
 \format{
-A data frame with 86,678 rows and 6 variables:
+A data frame with 86,688 rows and 6 variables:
 \describe{
 \item{hospital_code}{Hospital code}
 \item{hospital_name}{Hospital name}

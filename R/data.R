@@ -771,3 +771,16 @@ NULL
 #' }
 #' @source \url{https://www.ons.gov.uk/peoplepopulationandcommunity/crimeandjustice/datasets/crimeseverityscoreexperimentalstatistics}
 "wales_crime_severity"
+
+#' Care at Home in Scotland
+#'
+#' Scotland Health-Board level data for the number of people (per 1,000 population) supported by care at home (from 2018-Q1 to 2024-Q1).
+#'
+#' @format A data frame containing 800 rows and 3 columns.
+#' \describe{
+#'   \item{healthboard_name}{Health-Board name}
+#'   \item{date}{Date}
+#'   \item{care_at_home_per_1000}{Number of people (per 1,000 population) receiving care at home}
+#' }
+#' @source \url{https://publichealthscotland.scot/publications/care-at-home-statistics-for-scotland/care-at-home-statistics-for-scotland-support-and-services-funded-by-health-and-social-care-partnerships-in-scotland-20232024/dashboard/}
+"scotland_care_at_home"

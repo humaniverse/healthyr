@@ -1,18 +1,12 @@
 #--- init ----------------------------------------------------------------------
 
 library(tidyverse)
-library(httr2)
+library(statswalesr)
 
 
 #--- download ------------------------------------------------------------------
 
-url <- "https://statswales.gov.wales/Download/File?fileName=HLTH0820.zip"
-tf  <- tempfile(fileext = ".zip")
-
-req_perform(request(url), tf)
-unzip(tf, exdir = tempdir())
-
-raw <- read_csv(file.path(tempdir(), "HLTH0820.csv"))
+raw <- statswales_get_dataset("HLTH0820")
 
 
 #--- prepare -------------------------------------------------------------------

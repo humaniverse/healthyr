@@ -605,6 +605,23 @@ NULL
 #' @source \url{https://www.gov.scot/collections/homelessness-statistics/}
 "scotland_homelessness"
 
+#' Welsh Delayed Discharges
+#'
+#' A dataset containing the count and reason of delayed discharges in Welsh
+#' Health Boards from April 2023 to March 2025.
+#'
+#' @format A data frame with 50,400 rows and 5 variables:
+#' \describe{
+#'   \item{lhb22_name}{Local Health Board name}
+#'   \item{lhb22_code}{Local Health Board code}
+#'   \item{date}{Date}
+#'   \item{delay_reason}{Reason for the delayed discharge}
+#'   \item{delay_count}{Count of the delayed discharge}
+#'   ...
+#' }
+#' @source \url{https://www.nomisweb.co.uk/sources/census_2021_bulk}
+"wales_delayed_discharges"
+
 #' Disability by LTLA for Wales, 2021
 #'
 #' A dataset containing LTLA data on numbers disabled under the Equality Act.

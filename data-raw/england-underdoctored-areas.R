@@ -1,10 +1,9 @@
 library(tidyverse)
 library(geographr)
-# library(readxl)
-library(compositr)
+library(httr2)
 
 # ---- Load internal sysdata.rda file with URL's ----
-load_all(".")
+pkgload::load_all()
 
 # ---- Load GP practice locations ----
 query_url <-
@@ -12,9 +11,12 @@ query_url <-
   filter(id == "england_gp") |>
   pull(query)
 
-tf <- download_file(query_url, ".zip")
+temp_path <- tempfile(fileext = ".zip")
 
-unzip(tf, exdir = tempdir())
+request(query_url) |>
+  req_perform(path = temp_path)
+
+unzip(temp_path, exdir = tempdir())
 
 gp_locations <-
   read_csv(
@@ -33,7 +35,7 @@ gp_locations <-
   gp_locations |>
   mutate(postcode = str_remove(postcode, " ")) |>
   left_join(
-    geographr::lookup_postcode_oa11_lsoa11_msoa11_ltla20 |> select(-oa11_code)
+    geographr::lookup_postcode_oa_lsoa_msoa_ltla_2025 |> select(-oa11_code)
   ) |>
   select(-postcode)
 
@@ -43,33 +45,35 @@ query_url <-
   filter(id == "england_gp_patients") |>
   pull(query)
 
-tf <- download_file(query_url, ".zip")
+temp_path <- tempfile(fileext = ".zip")
 
-unzip(tf, exdir = tempdir())
+request(query_url) |>
+  req_perform(path = temp_path)
 
-gp <- read_csv(file.path(tempdir(), "1 General Practice – March 2024 Practice Level - Detailed.csv"))
+unzip(temp_path, exdir = tempdir())
+
+gp <- read_csv(file.path(
+  tempdir(),
+  "1 General Practice – March 2024 Practice Level - Detailed.csv"
+))
 
 # Tidy up the data
-gp <-
-  gp |>
+gp <- gp |>
   select(
     gp_code = PRAC_CODE,
     total_patients = TOTAL_PATIENTS,
-    gp_fte = TOTAL_GP_FTE  # Total GPs Full Time Equivalents
+    gp_fte = TOTAL_GP_FTE # Total GPs Full Time Equivalents
   ) |>
-
   mutate(gp_fte = as.double(gp_fte)) |>
-
   # Practices where gp_fte is zero or NA have missing data, so exclude them
   filter(gp_fte > 0)
 
 # ---- Calculate patients per GP in English Local Authorities ----
 # Aggregate into Local Authorities
-gp_lad <-
+gp_ltla <-
   gp |>
   left_join(gp_locations) |>
-
-  group_by(ltla20_code) |>
+  group_by(ltla24_code) |>
   summarise(
     total_patients = sum(total_patients, na.rm = TRUE),
     total_gp_fte = sum(gp_fte, na.rm = TRUE)
@@ -78,9 +82,11 @@ gp_lad <-
   mutate(patients_per_gp = total_patients / total_gp_fte)
 
 # Calculate deciles
-gp_lad <-
-  gp_lad |>
-  mutate(underdoctored_decile = as.integer(Hmisc::cut2(patients_per_gp, g = 10)))
+gp_ltla <-
+  gp_ltla |>
+  mutate(
+    underdoctored_decile = as.integer(Hmisc::cut2(patients_per_gp, g = 10))
+  )
 
 # Rename
 england_underdoctored_areas <- gp_lad

@@ -591,23 +591,6 @@ NULL
 #' @source \url{https://www.opendata.nhs.scot/}
 "scotland_rtt_hb"
 
-
-#' Disability by LTLA for Wales, 2021
-#'
-#' A dataset containing LTLA data on numbers disabled under the Equality Act.
-#'
-#' @format A data frame:
-#' \describe{
-#'   \item{ltla21_code}{LTLA code}
-#'   \item{total_residents}{Total residents in the local authority}
-#'   \item{disability_level}{Disabled or Not disabled under the Equality Act}
-#'   \item{n}{number of people}
-#'   \item{prop}{proportion of people}
-
-#'   ...
-#' }
-#' @source \url{https://www.nomisweb.co.uk/sources/census_2021_bulk}
-"wales_disability_21"
 #' Homelessness in Scotland
 #'
 #' A dataset containing statistics on households assessed as homeless and
@@ -621,6 +604,22 @@ NULL
 #' }
 #' @source \url{https://www.gov.scot/collections/homelessness-statistics/}
 "scotland_homelessness"
+
+#' Disability by LTLA for Wales, 2021
+#'
+#' A dataset containing LTLA data on numbers disabled under the Equality Act.
+#'
+#' @format A data frame:
+#' \describe{
+#'   \item{ltla21_code}{LTLA code}
+#'   \item{total_residents}{Total residents in the local authority}
+#'   \item{disability_level}{Disabled or Not disabled under the Equality Act}
+#'   \item{n}{number of people}
+#'   \item{prop}{proportion of people}
+#'   ...
+#' }
+#' @source \url{https://www.nomisweb.co.uk/sources/census_2021_bulk}
+"wales_disability_21"
 
 #' Emergency department performance statistics
 #'

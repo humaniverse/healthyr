@@ -776,10 +776,10 @@ NULL
 #'
 #' A dataset containing delayed discharge data stratified by local health board and the reason for delay.
 #'
-#' @format A data frame with 5,239 rows and 5 variables:
+#' @format A data frame with 5,220 rows and 5 variables:
 #' \describe{
-#'   \item{healthboard_code}{Health Board code}
-#'   \item{healthboard_name}{Health Board name}
+#'   \item{lhb22_code}{Health Board code}
+#'   \item{lhb22_name}{Health Board name}
 #'   \item{date}{Date in the format year-month-day}
 #'   \item{delay_reason}{The reason for the delayed discharge}
 #'   \item{delay_count}{The number of delays}

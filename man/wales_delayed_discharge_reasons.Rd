@@ -5,10 +5,10 @@
 \alias{wales_delayed_discharge_reasons}
 \title{Delayed discharge reasons for Wales, 2023 April - 2025 March}
 \format{
-A data frame with 5,239 rows and 5 variables:
+A data frame with 5,220 rows and 5 variables:
 \describe{
-\item{healthboard_code}{Health Board code}
-\item{healthboard_name}{Health Board name}
+\item{lhb22_code}{Health Board code}
+\item{lhb22_name}{Health Board name}
 \item{date}{Date in the format year-month-day}
 \item{delay_reason}{The reason for the delayed discharge}
 \item{delay_count}{The number of delays}

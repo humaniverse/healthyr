@@ -771,3 +771,19 @@ NULL
 #' }
 #' @source \url{https://www.ons.gov.uk/peoplepopulationandcommunity/crimeandjustice/datasets/crimeseverityscoreexperimentalstatistics}
 "wales_crime_severity"
+
+#' Northern Ireland Emergency Care Waiting Times
+#'
+#' Emergency care waiting times for departments (hospitals) in Norther Ireland Health & Social Care Trusts.
+#'
+#' @format A data frame containing 6 columns.
+#' \describe{
+#'   \item{healthboard_name}{Department name}
+#'   \item{date}{Date}
+#'   \item{total}{Total attendances}
+#'   \item{under_4_hours}{Attendances with waiting times under 4 hours}
+#'   \item{between_4_12_hours}{Attendances with waiting times between 4 and 12 hours}
+#'   \item{over_12_hours}{Attendances with waiting times over 12 hours}
+#' }
+#' @source \url{https://datavis.nisra.gov.uk/health/ni-emergency-care-waiting-times-data-oct-dec-24.html#table}
+"ni_waiting_times"

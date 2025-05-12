@@ -776,9 +776,11 @@ NULL
 #'
 #' Emergency care waiting times for departments (hospitals) in Norther Ireland Health & Social Care Trusts.
 #'
-#' @format A data frame containing 6 columns.
+#' @format A data frame containing 8 columns.
 #' \describe{
-#'   \item{healthboard_name}{Department name}
+#'   \item{trust18_code}{Health and Social Care Trust code}
+#'   \item{trust18_name}{Health and Social Care Trust name}
+#'   \item{department}{Department name}
 #'   \item{date}{Date}
 #'   \item{total}{Total attendances}
 #'   \item{under_4_hours}{Attendances with waiting times under 4 hours}

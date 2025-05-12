@@ -776,9 +776,10 @@ NULL
 #'
 #' Scotland Health-Board level data for the number of people (per 1,000 population) supported by care at home (from 2018-Q1 to 2024-Q1).
 #'
-#' @format A data frame containing 800 rows and 3 columns.
+#' @format A data frame containing 800 rows and 4 columns.
 #' \describe{
-#'   \item{healthboard_name}{Health-Board name}
+#'   \item{ltla24_code}{2024 Lower tier local authority code}
+#'   \item{ltla24_name}{2024 Lower tier local authority name}
 #'   \item{date}{Date}
 #'   \item{care_at_home_per_1000}{Number of people (per 1,000 population) receiving care at home}
 #' }

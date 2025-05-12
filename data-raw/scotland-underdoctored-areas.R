@@ -1,11 +1,11 @@
 library(tidyverse)
 library(geographr)
 library(readxl)
-library(compositr)
+library(httr2)
 library(sf)
 
 # ---- Load internal sysdata.rda file with URL's ----
-load_all(".")
+pkgload::load_all()
 
 # ---- Load number of GPs ----
 query_url <-
@@ -13,32 +13,35 @@ query_url <-
   filter(id == "scotland_gp") |>
   pull(query)
 
-tf <- download_file(query_url, ".xlsx")
+temp_path <- tempfile(fileext = ".xlsx")
+
+request(query_url) |>
+  req_perform(path = temp_path)
 
 # Number of GPs by Local Authority
-gp_scotland <- read_excel(tf, sheet = "Data", skip = 2)
+gp_scotland <- read_excel(temp_path, sheet = "Data", skip = 2)
 
 # ---- Load number of patients ----
-query_url <-
-  query_urls |>
+query_url <- query_urls |>
   filter(id == "scotland_gp_patients") |>
   pull(query)
 
-tf <- download_file(query_url, ".xlsx")
+temp_path <- tempfile(fileext = ".xlsx")
 
-gp_patients_scotland <- read_excel(tf, sheet = "Data", skip = 2)
+request(query_url) |>
+  req_perform(path = temp_path)
+
+gp_patients_scotland <- read_excel(temp_path, sheet = "Data", skip = 2)
 
 # ---- Calculate underdoctored areas ----
-gp_scotland <-
-  gp_scotland |>
+gp_scotland <- gp_scotland |>
   filter(Gender == "All" & Designation == "All GPs") |>
   select(
     ltla21_name = `Local Authority`,
     total_gp = `2022`
   )
 
-gp_patients_scotland <-
-  gp_patients_scotland |>
+gp_patients_scotland <- gp_patients_scotland |>
   filter(Year == max(Year) & `Practice type` == "All") |>
   select(
     ltla21_name = `Local Authority`,
@@ -46,8 +49,7 @@ gp_patients_scotland <-
   )
 
 # Calculate patients per GP
-gp_scotland <-
-  gp_scotland |>
+gp_scotland <- gp_scotland |>
   left_join(gp_patients_scotland) |>
   mutate(patients_per_gp = total_patients / total_gp)
 
@@ -64,11 +66,6 @@ lad_codes_scotland <-
 gp_scotland <-
   gp_scotland |>
   left_join(lad_codes_scotland)
-
-# Calculate deciles
-gp_scotland <-
-  gp_scotland |>
-  mutate(underdoctored_decile = as.integer(Hmisc::cut2(patients_per_gp, g = 10)))
 
 # Rename
 scotland_underdoctored_areas <- gp_scotland |>

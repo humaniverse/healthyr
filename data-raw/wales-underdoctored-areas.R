@@ -36,7 +36,8 @@ wales_underdoctored_areas <- gp_wales |>
     total_gp = sum(CurrentRegisteredGPsInPractice, na.rm = TRUE)
   ) |>
   ungroup() |>
-  mutate(patients_per_gp = total_patients / total_gp)
+  mutate(patients_per_gp = total_patients / total_gp) |>
+  filter(str_starts(ltla24_code, "W"))
 
 # ---- Save output to data/ folder ----
 usethis::use_data(wales_underdoctored_areas, overwrite = TRUE)

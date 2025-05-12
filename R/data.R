@@ -268,6 +268,20 @@ NULL
 #' }
 "england_underdoctored_areas"
 
+#' Underdoctored areas in Wales
+#'
+#' A dataset containing the ratio of patients to GP workforce, by Local Authority
+#'
+#' @format A data frame with 4 variables:
+#' \describe{
+#'   \item{ltla24_code}{Local Authority code (2024)}
+#'   \item{total_patients}{Number of registered patients}
+#'   \item{total_gp}{Number of GPs}
+#'   \item{patients_per_gp}{Number of patients per GP}
+#' }
+"wales_underdoctored_areas"
+
+
 #' Bed Availability in Northern Ireland
 #'
 #' A dataset containing hospital statistics on bed availability, bed occupancy

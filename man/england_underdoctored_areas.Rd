@@ -5,13 +5,12 @@
 \alias{england_underdoctored_areas}
 \title{Underdoctored areas in England}
 \format{
-A data frame with 5 variables:
+A data frame with 4 variables:
 \describe{
 \item{ltla20_code}{Local Authority code (2021)}
 \item{total_patients}{Number of registered patients}
 \item{total_gp_fte}{Number of full-time equivalent GPs}
 \item{patients_per_gp}{Number of patients per GP}
-\item{underdoctored_decile}{Decile of number of patients per GP (10 = highest number of patients)}
 }
 }
 \usage{

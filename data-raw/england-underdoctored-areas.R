@@ -70,8 +70,7 @@ gp <- gp |>
 
 # ---- Calculate patients per GP in English Local Authorities ----
 # Aggregate into Local Authorities
-gp_ltla <-
-  gp |>
+england_underdoctored_areas <- gp |>
   left_join(gp_locations) |>
   group_by(ltla24_code) |>
   summarise(
@@ -80,16 +79,6 @@ gp_ltla <-
   ) |>
   ungroup() |>
   mutate(patients_per_gp = total_patients / total_gp_fte)
-
-# Calculate deciles
-gp_ltla <-
-  gp_ltla |>
-  mutate(
-    underdoctored_decile = as.integer(Hmisc::cut2(patients_per_gp, g = 10))
-  )
-
-# Rename
-england_underdoctored_areas <- gp_lad
 
 # ---- Save output to data/ folder ----
 usethis::use_data(england_underdoctored_areas, overwrite = TRUE)

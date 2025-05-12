@@ -11,9 +11,9 @@ Description: A package to distribute and summarise on UK health data.
 License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.2.3
+RoxygenNote: 7.3.2
 Imports:
     tibble
 Depends: 
-    R (>= 2.10)
+    R (>= 3.5)
 LazyData: true

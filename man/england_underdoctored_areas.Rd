@@ -7,7 +7,7 @@
 \format{
 A data frame with 4 variables:
 \describe{
-\item{ltla20_code}{Local Authority code (2021)}
+\item{ltla24_code}{Local Authority code (2024)}
 \item{total_patients}{Number of registered patients}
 \item{total_gp_fte}{Number of full-time equivalent GPs}
 \item{patients_per_gp}{Number of patients per GP}

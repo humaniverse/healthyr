@@ -1,59 +1,41 @@
 library(tidyverse)
 library(geographr)
 library(readxl)
-library(compositr)
 
-# ---- Load internal sysdata.rda file with URL's ----
-load_all(".")
-
-# ---- Download data ----
-query_url <-
-  query_urls |>
-  filter(id == "ni_gp") |>
-  pull(query)
-
-tf <- download_file(query_url, ".xlsx")
+# NOTE: seems like original data url has changed.
+# the data file is downloaded and saved in data-raw/ni-underdoctored-areas.xlsx
 
 # ---- Load number of GPs per Local Authority ----
-# Table 1.2b: GPs by Gender, Age Group and Local Government District by year
-gp_ni <- read_excel(tf, sheet = "1.2", range = "A108:V119")
+# Table 4.2: GPs per 100,000 registered patients by Local Government District by year
+raw <- list("2017" = read_excel("data-raw/ni-underdoctored-areas.xlsx", sheet = "4.2", range = "A5:D16"),
+            "2018" = read_excel("data-raw/ni-underdoctored-areas.xlsx", sheet = "4.2", range = "A20:D31"),
+            "2019" = read_excel("data-raw/ni-underdoctored-areas.xlsx", sheet = "4.2", range = "A35:D46"),
+            "2020" = read_excel("data-raw/ni-underdoctored-areas.xlsx", sheet = "4.2", range = "A50:D61"),
+            "2021" = read_excel("data-raw/ni-underdoctored-areas.xlsx", sheet = "4.2", range = "A65:D76"),
+            "2022" = read_excel("data-raw/ni-underdoctored-areas.xlsx", sheet = "4.2", range = "A80:D91"),
+            "2023" = read_excel("data-raw/ni-underdoctored-areas.xlsx", sheet = "4.2", range = "A95:D106"),
+            "2024" = read_excel("data-raw/ni-underdoctored-areas.xlsx", sheet = "4.2", range = "A110:D121")
+            )
 
-# Load number of registered patients per Local Authority
-# Table 1.1b: Registered Patients by Gender, Age Group and Local Government District by year
-gp_patients_ni <- read_excel(tf, sheet = "1.1b", range = "A108:Y119")
+# add years as separate column
+raw <- Map(function(x,y) {x$year <- y; x}, raw, names(raw))
+raw <- do.call(rbind, raw)
 
-# Wrangle data
-gp_ni <-
-  gp_ni |>
-  select(
-    ltla21_name = `2022`,
-    total_gp = `All GPs Total`
-  )
-
-gp_patients_ni <-
-  gp_patients_ni |>
-  select(
-    ltla21_name = `2022`,
-    total_patients = `All Persons Total`
-  )
-
-# Calculate patients per GP
-gp_ni <-
-  gp_ni |>
-  left_join(gp_patients_ni) |>
-  mutate(patients_per_gp = total_patients / total_gp)
-
-# Calculate deciles
-gp_ni <-
-  gp_ni |>
-  mutate(underdoctored_decile = as.integer(Hmisc::cut2(patients_per_gp, g = 10)))
-
-# Lookup LA codes
-lad_codes_ni <-
-  geographr::boundaries_ltla21 |>
-  st_drop_geometry() |>
+# lookup LA codes
+lad_codes_ni <- as_tibble(geographr::boundaries_ltla21) |>
+  select(-geometry) |>
   filter(str_detect(ltla21_code, "^N"))
 
-gp_ni <-
-  gp_ni |>
-  left_join(lad_codes_ni)
+# prepare data
+ni_underdoctored_areas <- raw |>
+  select(ltla21_name = LGD,
+         date = year,
+         total_patients = "Registered patients",
+         total_gp = GPs,
+         ) |>
+  mutate(patients_per_gp = total_patients / total_gp) |>
+  left_join(lad_codes_ni) |>
+  relocate(ltla21_code)
+
+# ---- Save output to data/ folder ----
+usethis::use_data(ni_underdoctored_areas, overwrite = TRUE)

@@ -500,3 +500,19 @@ NULL
 #' }
 #' @source \url{https://statswales.gov.wales/}
 "wales_hospitals_critical_general_acute_beds"
+
+#' Underdoctored areas in Northern Ireland
+#'
+#' A dataset containing the ratio of patients to GP workforce, by Local Authority
+#'
+#' @format A data frame with 6 variables:
+#' \describe{
+#'   \item{ltla21_code}{Local Authority code (2021)}
+#'   \item{ltla21_name}{Local Authority name (2021)}
+#'   \item{date}{year}
+#'   \item{total_patients}{Number of registered patients}
+#'   \item{total_gp}{Number of GPs}
+#'   \item{patients_per_gp}{Number of patients per GP}
+#' }
+"ni_underdoctored_areas"
+

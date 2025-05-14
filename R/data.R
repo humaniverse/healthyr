@@ -772,6 +772,24 @@ NULL
 #' @source \url{https://www.ons.gov.uk/peoplepopulationandcommunity/crimeandjustice/datasets/crimeseverityscoreexperimentalstatistics}
 "wales_crime_severity"
 
+#' Northern Ireland Emergency Care Waiting Times
+#'
+#' Emergency care waiting times for departments (hospitals) in Norther Ireland Health & Social Care Trusts.
+#'
+#' @format A data frame containing 8 columns.
+#' \describe{
+#'   \item{trust18_code}{Health and Social Care Trust code}
+#'   \item{trust18_name}{Health and Social Care Trust name}
+#'   \item{department}{Department name}
+#'   \item{date}{Date}
+#'   \item{total}{Total attendances}
+#'   \item{under_4_hours}{Attendances with waiting times under 4 hours}
+#'   \item{between_4_12_hours}{Attendances with waiting times between 4 and 12 hours}
+#'   \item{over_12_hours}{Attendances with waiting times over 12 hours}
+#' }
+#' @source \url{https://datavis.nisra.gov.uk/health/ni-emergency-care-waiting-times-data-oct-dec-24.html#table}
+"ni_waiting_times"
+
 #' Care at Home in Scotland
 #'
 #' Scotland Health-Board level data for the number of people (per 1,000 population) supported by care at home (from 2018-Q1 to 2024-Q1).

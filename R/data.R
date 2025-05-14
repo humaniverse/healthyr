@@ -772,6 +772,23 @@ NULL
 #' @source \url{https://www.ons.gov.uk/peoplepopulationandcommunity/crimeandjustice/datasets/crimeseverityscoreexperimentalstatistics}
 "wales_crime_severity"
 
+#' Scotland A&E Admission Outcomes
+#'
+#' A dataset containing Scotland hospital-level admission outcomes stratified by age group (from 2018-01 to 2025-02)
+#'
+#' @format A data frame with 86,688 rows and 6 variables:
+#' \describe{
+#'   \item{hospital_code}{Hospital code}
+#'   \item{hospital_name}{Hospital name}
+#'   \item{date}{Date}
+#'   \item{admission}{Admission outcome}
+#'   \item{age}{Age group}
+#'   \item{attendances}{Total number of attendances falling into each category}
+#'   ...
+#' }
+#' @source \url{https://publichealthscotland.scot/healthcare-system/urgent-and-unscheduled-care/accident-and-emergency/downloads-and-open-data/our-downloads/}
+"scotland_ae_admission"
+
 #' Scotland A&E attendances
 #'
 #' A dataset of hospital-level A&E attendances and waiting times for Scotland (from 2007-07 to 2025-02).

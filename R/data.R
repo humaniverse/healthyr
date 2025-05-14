@@ -789,3 +789,67 @@ NULL
 #' @source \url{https://publichealthscotland.scot/healthcare-system/urgent-and-unscheduled-care/accident-and-emergency/downloads-and-open-data/our-downloads/}
 "scotland_ae_admission"
 
+#' Scotland A&E attendances
+#'
+#' A dataset of hospital-level A&E attendances and waiting times for Scotland (from 2007-07 to 2025-02).
+#'
+#' @format A data frame with 17,844 rows and 6 variables:
+#' \describe{
+#'   \item{hospital_code}{Hospital code}
+#'   \item{hospital_name}{Hospital name}
+#'   \item{date}{Date}
+#'   \item{attendances}{Number of total attendances}
+#'   \item{within_4_hours}{Number of attendances lasting less than 4 hours}
+#'   \item{over_4_hours}{Number of attendances lasting more than 4 hours}
+#'   ...
+#' }
+#' @source \url{https://publichealthscotland.scot/healthcare-system/urgent-and-unscheduled-care/accident-and-emergency/downloads-and-open-data/our-downloads/}
+"scotland_ae_attendance"
+
+#' Delayed discharge reasons for Wales, 2023 April - 2025 March
+#'
+#' A dataset containing delayed discharge data stratified by local health board and the reason for delay.
+#'
+#' @format A data frame with 5,220 rows and 5 variables:
+#' \describe{
+#'   \item{lhb22_code}{Health Board code}
+#'   \item{lhb22_name}{Health Board name}
+#'   \item{date}{Date in the format year-month-day}
+#'   \item{delay_reason}{The reason for the delayed discharge}
+#'   \item{delay_count}{The number of delays}
+#'   ...
+#' }
+#' @source \url{https://statswales.gov.wales/Catalogue/Health-and-Social-Care/NHS-Performance/pathway-of-care-delays/pathwayofcaredelays-by-localhealthboardprovider-date}
+"wales_delayed_discharge_reasons"
+
+#' Northern Ireland Emergency Care Waiting Times
+#'
+#' Emergency care waiting times for departments (hospitals) in Norther Ireland Health & Social Care Trusts.
+#'
+#' @format A data frame containing 8 columns.
+#' \describe{
+#'   \item{trust18_code}{Health and Social Care Trust code}
+#'   \item{trust18_name}{Health and Social Care Trust name}
+#'   \item{department}{Department name}
+#'   \item{date}{Date}
+#'   \item{total}{Total attendances}
+#'   \item{under_4_hours}{Attendances with waiting times under 4 hours}
+#'   \item{between_4_12_hours}{Attendances with waiting times between 4 and 12 hours}
+#'   \item{over_12_hours}{Attendances with waiting times over 12 hours}
+#' }
+#' @source \url{https://datavis.nisra.gov.uk/health/ni-emergency-care-waiting-times-data-oct-dec-24.html#table}
+"ni_waiting_times"
+
+#' Care at Home in Scotland
+#'
+#' Scotland Health-Board level data for the number of people (per 1,000 population) supported by care at home (from 2018-Q1 to 2024-Q1).
+#'
+#' @format A data frame containing 800 rows and 4 columns.
+#' \describe{
+#'   \item{ltla24_code}{2024 Lower tier local authority code}
+#'   \item{ltla24_name}{2024 Lower tier local authority name}
+#'   \item{date}{Date}
+#'   \item{care_at_home_per_1000}{Number of people (per 1,000 population) receiving care at home}
+#' }
+#' @source \url{https://publichealthscotland.scot/publications/care-at-home-statistics-for-scotland/care-at-home-statistics-for-scotland-support-and-services-funded-by-health-and-social-care-partnerships-in-scotland-20232024/dashboard/}
+"scotland_care_at_home"

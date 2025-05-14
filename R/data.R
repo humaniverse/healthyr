@@ -772,6 +772,23 @@ NULL
 #' @source \url{https://www.ons.gov.uk/peoplepopulationandcommunity/crimeandjustice/datasets/crimeseverityscoreexperimentalstatistics}
 "wales_crime_severity"
 
+#' Scotland A&E attendances
+#'
+#' A dataset of hospital-level A&E attendances and waiting times for Scotland (from 2007-07 to 2025-02).
+#'
+#' @format A data frame with 17,844 rows and 6 variables:
+#' \describe{
+#'   \item{hospital_code}{Hospital code}
+#'   \item{hospital_name}{Hospital name}
+#'   \item{date}{Date}
+#'   \item{attendances}{Number of total attendances}
+#'   \item{within_4_hours}{Number of attendances lasting less than 4 hours}
+#'   \item{over_4_hours}{Number of attendances lasting more than 4 hours}
+#'   ...
+#' }
+#' @source \url{https://publichealthscotland.scot/healthcare-system/urgent-and-unscheduled-care/accident-and-emergency/downloads-and-open-data/our-downloads/}
+"scotland_ae_attendance"
+
 #' Delayed discharge reasons for Wales, 2023 April - 2025 March
 #'
 #' A dataset containing delayed discharge data stratified by local health board and the reason for delay.

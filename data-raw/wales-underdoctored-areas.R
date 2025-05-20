@@ -32,7 +32,10 @@ gp_wales <-
 wales_underdoctored_areas <- gp_wales |>
   group_by(ltla24_code) |>
   summarise(
-    total_patients = sum(`Total Number of Patients (Including Temporary Residents)`, na.rm = TRUE),
+    total_patients = sum(
+      `Total Number of Patients (Including Temporary Residents)`,
+      na.rm = TRUE
+    ),
     total_gp = sum(CurrentRegisteredGPsInPractice, na.rm = TRUE)
   ) |>
   ungroup() |>
@@ -41,4 +44,3 @@ wales_underdoctored_areas <- gp_wales |>
 
 # ---- Save output to data/ folder ----
 usethis::use_data(wales_underdoctored_areas, overwrite = TRUE)
-

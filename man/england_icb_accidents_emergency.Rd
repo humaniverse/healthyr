@@ -5,7 +5,7 @@
 \alias{england_icb_accidents_emergency}
 \title{England Accident and Emergency Admissions by Integrated Care Board  - (2022-23)}
 \format{
-A data frame with 546 rows and 8 variables:
+A data frame with 882 rows and 8 variables:
 \describe{
 \item{icb22_code}{Integrated Care Board code}
 \item{total_attendances}{The total number of patients in an A&E service seeking medical attention}

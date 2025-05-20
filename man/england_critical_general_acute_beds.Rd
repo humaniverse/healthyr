@@ -5,7 +5,7 @@
 \alias{england_critical_general_acute_beds}
 \title{Critical care and General & Acute Beds}
 \format{
-A data frame with 1,644 rows and 20 variables:
+A data frame with 2,862 rows and 20 variables:
 \describe{
 \item{nhs_trust22_code}{NHS Trust (organisational) code}
 \item{date}{Date}

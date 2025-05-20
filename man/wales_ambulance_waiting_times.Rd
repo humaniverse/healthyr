@@ -5,10 +5,10 @@
 \alias{wales_ambulance_waiting_times}
 \title{Wales ambulance waiting times - (2022)}
 \format{
-A data frame with 176 rows and 9 variables:
+A data frame with 288 rows and 9 variables:
 \describe{
 \item{date}{Date}
-\item{hb_code}{Local health board coade}
+\item{hb_code}{Local health board code}
 \item{hb}{Name of local health board}
 \item{red_calls}{Number of red calls}
 \item{red_calls_resulting_in_an_emergency_response_at_the_scene}{Number of red call resulting in an emergency response at the scene}

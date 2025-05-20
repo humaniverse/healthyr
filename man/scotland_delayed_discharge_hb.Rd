@@ -5,7 +5,7 @@
 \alias{scotland_delayed_discharge_hb}
 \title{Delayed Discharge Bed Days by Health Board in Scotland}
 \format{
-A data frame with 16,875 rows and 6 variables:
+A data frame with 20,025 rows and 6 variables:
 \describe{
 \item{hb_code}{Scottish Health Board code}
 \item{date}{Date}

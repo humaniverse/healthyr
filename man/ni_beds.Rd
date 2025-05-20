@@ -5,7 +5,7 @@
 \alias{ni_beds}
 \title{Bed Availability in Northern Ireland}
 \format{
-A data frame with 13,237 rows and 14 variables:
+A data frame with 13,327 rows and 14 variables:
 \describe{
 \item{trust18_code}{Health and Social Care Trust code}
 \item{date}{Quarter ending date}

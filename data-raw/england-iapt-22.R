@@ -16,12 +16,10 @@ query_url <-
   filter(id == "nhs_iapt_22_23") |>
   pull(query)
 
-tf <- download_file(query_url, ".zip")
-unzip(tf, exdir = tempdir())
+tf <- tempfile()
+download.file(query_url, tf)
 
-file <- paste0(tempdir(), "/iapt_time_series_Jan_22_Jan_23_key_measures.csv")
-
-raw <- read_csv(file)
+raw <- read_csv(tf)
 
 # ---- Clean ----
 iapt_raw <- raw |>

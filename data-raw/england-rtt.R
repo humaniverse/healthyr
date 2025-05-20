@@ -1,50 +1,98 @@
 library(tidyverse)
 library(lubridate)
-library(compositr)
 library(sf)
 # library(httr)
 
 # ---- Lookup table for matching old/new NHS Regions ----
 nhs_region_lookup <- tribble(
-  ~`Provider Parent Name`, ~NHSER20NM,
-  "NHS ENGLAND LONDON", "London",
-  "NHS ENGLAND NORTH EAST AND YORKSHIRE (YORKSHIRE AND HUMBER)", "North East and Yorkshire",
-  "NHS ENGLAND NORTH EAST AND YORKSHIRE (CUMBRIA AND NORTH EAST)", "North East and Yorkshire",
-  "NHS ENGLAND NORTH WEST (CHESHIRE AND MERSEYSIDE)", "North West",
-  "NHS ENGLAND MIDLANDS (NORTH MIDLANDS)", "Midlands",
-  "NHS ENGLAND MIDLANDS (WEST MIDLANDS)", "Midlands",
-  "NHS ENGLAND MIDLANDS (CENTRAL MIDLANDS)", "Midlands",
-  "NHS ENGLAND EAST OF ENGLAND (EAST)", "East of England",
-  "NHS ENGLAND NORTH WEST (GREATER MANCHESTER)", "North West",
-  "NHS ENGLAND NORTH WEST (LANCASHIRE AND SOUTH CUMBRIA)", "North West",
-  "NHS ENGLAND SOUTH WEST (SOUTH WEST SOUTH)", "South West",
-  "NHS ENGLAND SOUTH WEST (SOUTH WEST NORTH)", "South West",
-  "NHS ENGLAND SOUTH EAST (HAMPSHIRE, ISLE OF WIGHT AND THAMES VALLEY)", "South East",
-  "NHS ENGLAND SOUTH EAST (KENT, SURREY AND SUSSEX)", "South East",
-
-  "NHS ENGLAND NORTH (YORKSHIRE AND HUMBER)", "North East and Yorkshire",
-  "NHS ENGLAND NORTH (CUMBRIA AND NORTH EAST)", "North East and Yorkshire",
-  "NHS ENGLAND NORTH (CHESHIRE AND MERSEYSIDE)", "North West",
-  "NHS ENGLAND MIDLANDS AND EAST (NORTH MIDLANDS)", "Midlands",
-  "NHS ENGLAND MIDLANDS AND EAST (WEST MIDLANDS)", "Midlands",
-  "NHS ENGLAND MIDLANDS AND EAST (CENTRAL MIDLANDS)", "Midlands",
-  "NHS ENGLAND MIDLANDS AND EAST (EAST)", "East of England",
-  "NHS ENGLAND NORTH (GREATER MANCHESTER)", "North West",
-  "NHS ENGLAND NORTH (LANCASHIRE AND SOUTH CUMBRIA)", "North West",
-  "NHS ENGLAND SOUTH WEST (SOUTH WEST SOUTH)", "South West",
-  "NHS ENGLAND SOUTH WEST (SOUTH WEST NORTH)", "South West",
-  "NHS ENGLAND SOUTH EAST (HAMPSHIRE, ISLE OF WIGHT AND THAMES VALLEY)", "South East",
-  "NHS ENGLAND SOUTH EAST (KENT, SURREY AND SUSSEX)", "South East"
+  ~`Provider Parent Name`,
+  ~NHSER20NM,
+  "NHS ENGLAND LONDON",
+  "London",
+  "NHS ENGLAND NORTH EAST AND YORKSHIRE (YORKSHIRE AND HUMBER)",
+  "North East and Yorkshire",
+  "NHS ENGLAND NORTH EAST AND YORKSHIRE (CUMBRIA AND NORTH EAST)",
+  "North East and Yorkshire",
+  "NHS ENGLAND NORTH WEST (CHESHIRE AND MERSEYSIDE)",
+  "North West",
+  "NHS ENGLAND MIDLANDS (NORTH MIDLANDS)",
+  "Midlands",
+  "NHS ENGLAND MIDLANDS (WEST MIDLANDS)",
+  "Midlands",
+  "NHS ENGLAND MIDLANDS (CENTRAL MIDLANDS)",
+  "Midlands",
+  "NHS ENGLAND EAST OF ENGLAND (EAST)",
+  "East of England",
+  "NHS ENGLAND NORTH WEST (GREATER MANCHESTER)",
+  "North West",
+  "NHS ENGLAND NORTH WEST (LANCASHIRE AND SOUTH CUMBRIA)",
+  "North West",
+  "NHS ENGLAND SOUTH WEST (SOUTH WEST SOUTH)",
+  "South West",
+  "NHS ENGLAND SOUTH WEST (SOUTH WEST NORTH)",
+  "South West",
+  "NHS ENGLAND SOUTH EAST (HAMPSHIRE, ISLE OF WIGHT AND THAMES VALLEY)",
+  "South East",
+  "NHS ENGLAND SOUTH EAST (KENT, SURREY AND SUSSEX)",
+  "South East",
+  "NHS ENGLAND NORTH (YORKSHIRE AND HUMBER)",
+  "North East and Yorkshire",
+  "NHS ENGLAND NORTH (CUMBRIA AND NORTH EAST)",
+  "North East and Yorkshire",
+  "NHS ENGLAND NORTH (CHESHIRE AND MERSEYSIDE)",
+  "North West",
+  "NHS ENGLAND MIDLANDS AND EAST (NORTH MIDLANDS)",
+  "Midlands",
+  "NHS ENGLAND MIDLANDS AND EAST (WEST MIDLANDS)",
+  "Midlands",
+  "NHS ENGLAND MIDLANDS AND EAST (CENTRAL MIDLANDS)",
+  "Midlands",
+  "NHS ENGLAND MIDLANDS AND EAST (EAST)",
+  "East of England",
+  "NHS ENGLAND NORTH (GREATER MANCHESTER)",
+  "North West",
+  "NHS ENGLAND NORTH (LANCASHIRE AND SOUTH CUMBRIA)",
+  "North West",
+  "NHS ENGLAND SOUTH WEST (SOUTH WEST SOUTH)",
+  "South West",
+  "NHS ENGLAND SOUTH WEST (SOUTH WEST NORTH)",
+  "South West",
+  "NHS ENGLAND SOUTH EAST (HAMPSHIRE, ISLE OF WIGHT AND THAMES VALLEY)",
+  "South East",
+  "NHS ENGLAND SOUTH EAST (KENT, SURREY AND SUSSEX)",
+  "South East"
 )
 
 
 # ---- Download waiting list data ----
 # URLs for full waiting list data by month from https://www.england.nhs.uk/statistics/statistical-work-areas/rtt-waiting-times
 urls <- c(
+  feb_25 = "https://www.england.nhs.uk/statistics/wp-content/uploads/sites/2/2025/04/Full-CSV-data-file-Feb25-ZIP-4M-76538.zip",
+  jan_25 = "https://www.england.nhs.uk/statistics/wp-content/uploads/sites/2/2025/03/Full-CSV-data-file-Jan25-ZIP-4M-53275.zip",
+  dec_24 = "https://www.england.nhs.uk/statistics/wp-content/uploads/sites/2/2025/02/Full-CSV-data-file-Dec24-ZIP-3M-69130.zip",
+  nov_24 = "https://www.england.nhs.uk/statistics/wp-content/uploads/sites/2/2025/01/Full-CSV-data-file-Nov24-ZIP-4M-37212.zip",
+  oct_24 = "https://www.england.nhs.uk/statistics/wp-content/uploads/sites/2/2024/12/Full-CSV-data-file-Oct24-ZIP-4M-60893.zip",
+  sep_24 = "https://www.england.nhs.uk/statistics/wp-content/uploads/sites/2/2025/02/Full-CSV-data-file-Sep24-ZIP-4M-revised.zip",
+  aug_24 = "https://www.england.nhs.uk/statistics/wp-content/uploads/sites/2/2025/02/Full-CSV-data-file-Aug24-ZIP-4M-revised.zip",
+  jul_24 = "https://www.england.nhs.uk/statistics/wp-content/uploads/sites/2/2025/02/Full-CSV-data-file-Jul24-ZIP-4M-revised.zip",
+  jun_24 = "https://www.england.nhs.uk/statistics/wp-content/uploads/sites/2/2025/02/Full-CSV-data-file-Jun24-ZIP-4M-revised.zip",
+  may_24 = "https://www.england.nhs.uk/statistics/wp-content/uploads/sites/2/2025/02/Full-CSV-data-file-May24-ZIP-4M-revised.zip",
+  apr_24 = "https://www.england.nhs.uk/statistics/wp-content/uploads/sites/2/2025/02/Full-CSV-data-file-Apr24-ZIP-4M-revised.zip",
+  mar_24 = "https://www.england.nhs.uk/statistics/wp-content/uploads/sites/2/2024/07/Full-CSV-data-file-Mar24-ZIP-3832K-revised.zip",
+  feb_24 = "https://www.england.nhs.uk/statistics/wp-content/uploads/sites/2/2024/07/Full-CSV-data-file-Feb24-ZIP-3881K-revised.zip",
+  jan_24 = "https://www.england.nhs.uk/statistics/wp-content/uploads/sites/2/2024/07/Full-CSV-data-file-Jan24-ZIP-3943K-revised.zip",
+  dec_23 = "https://www.england.nhs.uk/statistics/wp-content/uploads/sites/2/2024/07/Full-CSV-data-file-Dec23-ZIP-3800K-revised.zip",
+  nov_23 = "https://www.england.nhs.uk/statistics/wp-content/uploads/sites/2/2024/07/Full-CSV-data-file-Nov23-ZIP-3952K-revised.zip",
+  oct_23 = "https://www.england.nhs.uk/statistics/wp-content/uploads/sites/2/2024/07/Full-CSV-data-file-Oct23-ZIP-3928K-revised.zip",
+  sep_23 = "https://www.england.nhs.uk/statistics/wp-content/uploads/sites/2/2024/01/Full-CSV-data-file-Sep23-ZIP-3654K-revised.zip",
+  aug_23 = "https://www.england.nhs.uk/statistics/wp-content/uploads/sites/2/2024/01/Full-CSV-data-file-Aug23-ZIP-3646K-revised.zip",
+  jul_23 = "https://www.england.nhs.uk/statistics/wp-content/uploads/sites/2/2024/01/Full-CSV-data-file-Jul23-ZIP-3623K-revised.zip",
+  jun_23 = "https://www.england.nhs.uk/statistics/wp-content/uploads/sites/2/2023/08/Full-CSV-data-file-Jun23-ZIP-3659K-64970.zip",
+  may_23 = "https://www.england.nhs.uk/statistics/wp-content/uploads/sites/2/2024/01/Full-CSV-data-file-May23-ZIP-3627K-revised.zip",
+  apr_23 = "https://www.england.nhs.uk/statistics/wp-content/uploads/sites/2/2023/06/Full-CSV-data-file-Apr23-ZIP-3528K-36960.zip",
   mar_23 = "https://www.england.nhs.uk/statistics/wp-content/uploads/sites/2/2023/05/Full-CSV-data-file-Mar23-ZIP-3823K-53773.zip",
   feb_23 = "https://www.england.nhs.uk/statistics/wp-content/uploads/sites/2/2023/04/Full-CSV-data-file-Feb23-ZIP-3552K-55444.zip",
   jan_23 = "https://www.england.nhs.uk/statistics/wp-content/uploads/sites/2/2023/03/Full-CSV-data-file-Jan23-ZIP-3608K-03732.zip",
-  
   dec_22 = "https://www.england.nhs.uk/statistics/wp-content/uploads/sites/2/2023/02/Full-CSV-data-file-Dec22-ZIP-3407K-58481.zip",
   nov_22 = "https://www.england.nhs.uk/statistics/wp-content/uploads/sites/2/2023/01/Full-CSV-data-file-Nov22-ZIP-3510K-63230.zip",
   oct_22 = "https://www.england.nhs.uk/statistics/wp-content/uploads/sites/2/2022/12/Full-CSV-data-file-Oct22-ZIP-3701K-v2.zip",
@@ -57,7 +105,6 @@ urls <- c(
   mar_22 = "https://www.england.nhs.uk/statistics/wp-content/uploads/sites/2/2023/03/Full-CSV-data-file-Mar22-revised-ZIP-111805K.zip",
   feb_22 = "https://www.england.nhs.uk/statistics/wp-content/uploads/sites/2/2023/03/Full-CSV-data-file-Feb22-revised-ZIP-109268K.zip",
   jan_22 = "https://www.england.nhs.uk/statistics/wp-content/uploads/sites/2/2023/03/Full-CSV-data-file-Jan22-revised-ZIP-4266K.zip",
-
   dec_21 = "https://www.england.nhs.uk/statistics/wp-content/uploads/sites/2/2023/03/Full-CSV-data-file-Dec21-revised-ZIP-3744K.zip",
   nov_21 = "https://www.england.nhs.uk/statistics/wp-content/uploads/sites/2/2023/03/Full-CSV-data-file-Nov21-revised-ZIP-3826K.zip",
   oct_21 = "https://www.england.nhs.uk/statistics/wp-content/uploads/sites/2/2023/03/Full-CSV-data-file-Oct21-revised-ZIP-3787K.zip",
@@ -70,7 +117,6 @@ urls <- c(
   mar_21 = "https://www.england.nhs.uk/statistics/wp-content/uploads/sites/2/2021/05/Full-CSV-data-file-Mar21-ZIP-2888K-76325.zip",
   feb_21 = "https://www.england.nhs.uk/statistics/wp-content/uploads/sites/2/2021/04/Full-CSV-data-file-Feb21-ZIP-2739K-25692.zip",
   jan_21 = "https://www.england.nhs.uk/statistics/wp-content/uploads/sites/2/2021/03/Full-CSV-data-file-Jan21-ZIP-2714K-24158.zip",
-
   dec_20 = "https://www.england.nhs.uk/statistics/wp-content/uploads/sites/2/2021/10/Full-CSV-data-file-Dec20-revised-ZIP-2860K.zip",
   nov_20 = "https://www.england.nhs.uk/statistics/wp-content/uploads/sites/2/2021/01/Full-CSV-data-file-Nov20-ZIP-2758K-26885.zip",
   oct_20 = "https://www.england.nhs.uk/statistics/wp-content/uploads/sites/2/2021/10/Full-CSV-data-file-Oct20-revised-ZIP-2772K.zip",
@@ -83,7 +129,6 @@ urls <- c(
   mar_20 = "https://www.england.nhs.uk/statistics/wp-content/uploads/sites/2/2020/05/Full-CSV-data-file-Mar20-ZIP-2995K-73640.zip",
   feb_20 = "https://www.england.nhs.uk/statistics/wp-content/uploads/sites/2/2022/01/Full-CSV-data-file-Feb20-revised-ZIP-3171K.zip",
   jan_20 = "https://www.england.nhs.uk/statistics/wp-content/uploads/sites/2/2022/01/Full-CSV-data-file-Jan20-revised-ZIP-3227K.zip",
-
   dec_19 = "https://www.england.nhs.uk/statistics/wp-content/uploads/sites/2/2022/01/Full-CSV-data-file-Dec19-revised-ZIP-3109K.zip",
   nov_19 = "https://www.england.nhs.uk/statistics/wp-content/uploads/sites/2/2022/01/Full-CSV-data-file-Nov19-revised-ZIP-3528K.zip",
   oct_19 = "https://www.england.nhs.uk/statistics/wp-content/uploads/sites/2/2022/01/Full-CSV-data-file-Oct19-revised-ZIP-3580K.zip",
@@ -98,20 +143,44 @@ urls <- c(
   jan_19 = "https://www.england.nhs.uk/statistics/wp-content/uploads/sites/2/2019/07/Full-CSV-data-file-Jan19-revised-ZIP-3634K.zip"
 )
 
-td <- tempdir()
-
-for (url in urls) {
-  # GET(url, write_disk(tf <- tempfile(fileext = ".zip")))
-  tf <- download_file(url, ".zip")
-  unzip(tf, exdir = td)
-  unlink(tf)
+process_single_url <- function(url, target_dir) {
+  tf <- tempfile(fileext = ".zip")
+  tryCatch(
+    {
+      cat("\nAttempting download:", url, "to", tf, "\n")
+      download.file(url, destfile = tf, mode = "wb", quiet = TRUE)
+      cat("Download complete:", tf, "\n")
+      cat("Unzipping:", tf, "to", target_dir, "\n")
+      unzip(tf, exdir = target_dir)
+      cat("Unzip complete for file from:", url, "\n")
+    },
+    error = function(e) {
+      warning("Failed to process URL: ", url, "\nError: ", conditionMessage(e))
+    },
+    finally = {
+      if (file.exists(tf)) {
+        cat("Cleaning up temporary file:", tf, "\n")
+        unlink(tf)
+      }
+    }
+  )
+  invisible(NULL)
 }
 
-# list.files(td, pattern = "*.csv", full.names = TRUE)
+td <- tempdir()
+
+# Called for its side-effect: `list.files(td, pattern = "*.csv", full.names = TRUE)`
+results <- purrr::walk(
+  .x = urls,
+  .f = ~ process_single_url(url = .x, target_dir = td),
+  .progress = "Downloading and Unzipping Files" # Custom progress bar message
+)
 
 # Sustainability Transformation Partnerships and NHS England (Region) (April 2020) Lookup in England
 # Source: https://geoportal.statistics.gov.uk/datasets/ons::sustainability-transformation-partnerships-and-nhs-england-region-april-2020-lookup-in-england-1/about
-stp_region <- read_sf("https://services1.arcgis.com/ESMARspQHYMw9BZ9/arcgis/rest/services/STP20_NHSER20_EN_LU_e268d9cb3626464584f6b988a0aa4e61/FeatureServer/0/query?outFields=*&where=1%3D1&f=geojson") |> 
+stp_region <- read_sf(
+  "https://services1.arcgis.com/ESMARspQHYMw9BZ9/arcgis/rest/services/STP20_NHSER20_EN_LU_e268d9cb3626464584f6b988a0aa4e61/FeatureServer/0/query?outFields=*&where=1%3D1&f=geojson"
+) |>
   st_drop_geometry()
 
 # ---- Load waiting list data into separate dataframes ----
@@ -129,9 +198,11 @@ for (file in list.files(td, pattern = "*.csv", full.names = TRUE)) {
   # Add date columns
   d <-
     d %>%
-    mutate(Date = dmy(str_replace(Period, "RTT", "01")),
-           Month = month.abb[month(Date)],
-           Year = year(Date))
+    mutate(
+      Date = dmy(str_replace(Period, "RTT", "01")),
+      Month = month.abb[month(Date)],
+      Year = year(Date)
+    )
 
   # Data from April 2021 onward contains STPs/ICSs
   if (d$Date[1] >= dmy("01-04-2021")) {
@@ -139,28 +210,53 @@ for (file in list.files(td, pattern = "*.csv", full.names = TRUE)) {
     d_stp <-
       d %>%
       mutate(
-        `Total waiting > 18 weeks` = rowSums(across(`Gt 18 To 19 Weeks SUM 1`:`Gt 104 Weeks SUM 1`), na.rm = TRUE),
-        `Total waiting > 52 weeks` = rowSums(across(`Gt 52 To 53 Weeks SUM 1`:`Gt 104 Weeks SUM 1`), na.rm = TRUE)
+        `Total waiting > 18 weeks` = rowSums(
+          across(`Gt 18 To 19 Weeks SUM 1`:`Gt 104 Weeks SUM 1`),
+          na.rm = TRUE
+        ),
+        `Total waiting > 52 weeks` = rowSums(
+          across(`Gt 52 To 53 Weeks SUM 1`:`Gt 104 Weeks SUM 1`),
+          na.rm = TRUE
+        )
       ) %>%
-
-      group_by(Year, Month, `Provider Parent Org Code`, `Provider Parent Name`, `Treatment Function Name`) %>%
-      summarise(`Total waiting > 52 weeks` = sum(`Total waiting > 52 weeks`, na.rm = TRUE),
-                `Total waiting > 18 weeks` = sum(`Total waiting > 18 weeks`, na.rm = TRUE))
+      group_by(
+        Year,
+        Month,
+        `Provider Parent Org Code`,
+        `Provider Parent Name`,
+        `Treatment Function Name`
+      ) %>%
+      summarise(
+        `Total waiting > 52 weeks` = sum(
+          `Total waiting > 52 weeks`,
+          na.rm = TRUE
+        ),
+        `Total waiting > 18 weeks` = sum(
+          `Total waiting > 18 weeks`,
+          na.rm = TRUE
+        )
+      )
 
     d_flow <-
       d %>%
       filter(`Treatment Function Name` == "Total") %>%
-      select(Year, Month, `Provider Parent Org Code`, `RTT Part Description`, `Total All`) %>%
-      mutate(Pathway = case_when(
-        str_detect(`RTT Part Description`, "^Completed") ~ "Completed",
-        str_detect(`RTT Part Description`, "^Incomplete") ~ "Incomplete",
-        str_detect(`RTT Part Description`, "^New") ~ "New"
-      )) %>%
-
+      select(
+        Year,
+        Month,
+        `Provider Parent Org Code`,
+        `RTT Part Description`,
+        `Total All`
+      ) %>%
+      mutate(
+        Pathway = case_when(
+          str_detect(`RTT Part Description`, "^Completed") ~ "Completed",
+          str_detect(`RTT Part Description`, "^Incomplete") ~ "Incomplete",
+          str_detect(`RTT Part Description`, "^New") ~ "New"
+        )
+      ) %>%
       group_by(Year, Month, `Provider Parent Org Code`, Pathway) %>%
       summarise(`Total All` = sum(`Total All`, na.rm = TRUE)) %>%
       ungroup() %>%
-
       pivot_wider(names_from = Pathway, values_from = `Total All`)
 
     # Bind to main STP dataframe
@@ -171,31 +267,51 @@ for (file in list.files(td, pattern = "*.csv", full.names = TRUE)) {
     d <-
       d %>%
       left_join(stp_region, by = c("Provider Parent Org Code" = "STP20CDH"))
-
   } else if (d$Date[1] >= dmy("01-04-2020")) {
     # Calculate STP/ICS totals
     d_stp <-
       d %>%
-      mutate(`Total waiting > 18 weeks` = rowSums(across(`Gt 18 To 19 Weeks SUM 1`:`Gt 52 Weeks SUM 1`), na.rm = TRUE)) %>%
-
-      group_by(Year, Month, `Provider Parent Org Code`, `Provider Parent Name`, `Treatment Function Name`) %>%
-      summarise(`Total waiting > 52 weeks` = sum(`Gt 52 Weeks SUM 1`, na.rm = TRUE),
-                `Total waiting > 18 weeks` = sum(`Total waiting > 18 weeks`, na.rm = TRUE))
+      mutate(
+        `Total waiting > 18 weeks` = rowSums(
+          across(`Gt 18 To 19 Weeks SUM 1`:`Gt 52 Weeks SUM 1`),
+          na.rm = TRUE
+        )
+      ) %>%
+      group_by(
+        Year,
+        Month,
+        `Provider Parent Org Code`,
+        `Provider Parent Name`,
+        `Treatment Function Name`
+      ) %>%
+      summarise(
+        `Total waiting > 52 weeks` = sum(`Gt 52 Weeks SUM 1`, na.rm = TRUE),
+        `Total waiting > 18 weeks` = sum(
+          `Total waiting > 18 weeks`,
+          na.rm = TRUE
+        )
+      )
 
     d_flow <-
       d %>%
       filter(`Treatment Function Name` == "Total") %>%
-      select(Year, Month, `Provider Parent Org Code`, `RTT Part Description`, `Total All`) %>%
-      mutate(Pathway = case_when(
-        str_detect(`RTT Part Description`, "^Completed") ~ "Completed",
-        str_detect(`RTT Part Description`, "^Incomplete") ~ "Incomplete",
-        str_detect(`RTT Part Description`, "^New") ~ "New"
-      )) %>%
-
+      select(
+        Year,
+        Month,
+        `Provider Parent Org Code`,
+        `RTT Part Description`,
+        `Total All`
+      ) %>%
+      mutate(
+        Pathway = case_when(
+          str_detect(`RTT Part Description`, "^Completed") ~ "Completed",
+          str_detect(`RTT Part Description`, "^Incomplete") ~ "Incomplete",
+          str_detect(`RTT Part Description`, "^New") ~ "New"
+        )
+      ) %>%
       group_by(Year, Month, `Provider Parent Org Code`, Pathway) %>%
       summarise(`Total All` = sum(`Total All`, na.rm = TRUE)) %>%
       ungroup() %>%
-
       pivot_wider(names_from = Pathway, values_from = `Total All`)
 
     # Bind to main STP dataframe
@@ -206,9 +322,7 @@ for (file in list.files(td, pattern = "*.csv", full.names = TRUE)) {
     d <-
       d %>%
       left_join(stp_region, by = c("Provider Parent Org Code" = "STP20CDH"))
-
   } else {
-
     # Data before April 2020 already contains NHS Regions, so use lookup table at the top of this script to sanitise the names
     d <-
       d %>%
@@ -220,28 +334,46 @@ for (file in list.files(td, pattern = "*.csv", full.names = TRUE)) {
   }
 
   if (d$Date[1] >= dmy("01-04-2021")) {
-
     d_region <-
       d %>%
       mutate(
-        `Total waiting > 18 weeks` = rowSums(across(`Gt 18 To 19 Weeks SUM 1`:`Gt 104 Weeks SUM 1`), na.rm = TRUE),
-        `Total waiting > 52 weeks` = rowSums(across(`Gt 52 To 53 Weeks SUM 1`:`Gt 104 Weeks SUM 1`), na.rm = TRUE)
+        `Total waiting > 18 weeks` = rowSums(
+          across(`Gt 18 To 19 Weeks SUM 1`:`Gt 104 Weeks SUM 1`),
+          na.rm = TRUE
+        ),
+        `Total waiting > 52 weeks` = rowSums(
+          across(`Gt 52 To 53 Weeks SUM 1`:`Gt 104 Weeks SUM 1`),
+          na.rm = TRUE
+        )
       ) %>%
-
       group_by(Year, Month, NHSER20NM, `Treatment Function Name`) %>%
-      summarise(`Total waiting > 52 weeks` = sum(`Total waiting > 52 weeks`, na.rm = TRUE),
-                `Total waiting > 18 weeks` = sum(`Total waiting > 18 weeks`, na.rm = TRUE))
-
+      summarise(
+        `Total waiting > 52 weeks` = sum(
+          `Total waiting > 52 weeks`,
+          na.rm = TRUE
+        ),
+        `Total waiting > 18 weeks` = sum(
+          `Total waiting > 18 weeks`,
+          na.rm = TRUE
+        )
+      )
   } else {
-
     d_region <-
       d %>%
-      mutate(`Total waiting > 18 weeks` = rowSums(across(`Gt 18 To 19 Weeks SUM 1`:`Gt 52 Weeks SUM 1`), na.rm = TRUE)) %>%
-
+      mutate(
+        `Total waiting > 18 weeks` = rowSums(
+          across(`Gt 18 To 19 Weeks SUM 1`:`Gt 52 Weeks SUM 1`),
+          na.rm = TRUE
+        )
+      ) %>%
       group_by(Year, Month, NHSER20NM, `Treatment Function Name`) %>%
-      summarise(`Total waiting > 52 weeks` = sum(`Gt 52 Weeks SUM 1`, na.rm = TRUE),
-                `Total waiting > 18 weeks` = sum(`Total waiting > 18 weeks`, na.rm = TRUE))
-
+      summarise(
+        `Total waiting > 52 weeks` = sum(`Gt 52 Weeks SUM 1`, na.rm = TRUE),
+        `Total waiting > 18 weeks` = sum(
+          `Total waiting > 18 weeks`,
+          na.rm = TRUE
+        )
+      )
   }
 
   # Add regional data to main dataframe

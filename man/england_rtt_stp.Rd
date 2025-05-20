@@ -5,7 +5,7 @@
 \alias{england_rtt_stp}
 \title{Consultant-led Referral to Treatment (RTT) by ICS/STP}
 \format{
-A data frame with 27,196 rows and 7 variables:
+A data frame with 55,73 rows and 7 variables:
 \describe{
 \item{stp20_nhs_code}{NHS code for the ICS/STP}
 \item{stp20_name}{Name of the ICS/STP}
@@ -24,6 +24,7 @@ A data frame with 27,196 rows and 7 variables:
 england_rtt_stp
 }
 \description{
-A dataset containing ICS/STP-level RTT data.
+A dataset containing ICS/STP-level RTT data spanning from Apr 2020 to Feb
+2025.
 }
 \keyword{datasets}

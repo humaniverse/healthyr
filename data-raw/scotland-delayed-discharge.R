@@ -9,16 +9,14 @@ load_all(".")
 # ---- Delayed Discharge Bed Days by Health Board ----
 query_url <-
   query_urls |>
-  filter(id == "scotland_delayed_discharge_hb") |>
+  filter(id == "scotland_delayed_discharge_hb") |> # Each data release is cumulative
   pull(query)
 
 scotland_delayed_discharge_hb <- read_csv(query_url)
 
 scotland_delayed_discharge_hb <-
   scotland_delayed_discharge_hb |>
-
   mutate(date = ym(MonthOfDelay)) |>
-
   select(
     hb_code = HBT,
     date,
@@ -34,7 +32,7 @@ usethis::use_data(scotland_delayed_discharge_hb, overwrite = TRUE)
 # ---- Delayed Discharge Bed Days by Council Area ----
 query_url <-
   query_urls |>
-  filter(id == "scotland_delayed_discharge_ltla") |>
+  filter(id == "scotland_delayed_discharge_ltla") |> # Each data release is cumulative
   pull(query)
 
 scotland_delayed_discharge_ltla <- read_csv(query_url)

@@ -449,6 +449,33 @@ NULL
 "england_crime_severity"
 
 
+#' Underdoctored areas in England
+#'
+#' A dataset containing the ratio of patients to GP workforce, by Local Authority
+#'
+#' @format A data frame with 4 variables:
+#' \describe{
+#'   \item{ltla24_code}{Local Authority code (2024)}
+#'   \item{total_patients}{Number of registered patients}
+#'   \item{total_gp_fte}{Number of full-time equivalent GPs}
+#'   \item{patients_per_gp}{Number of patients per GP}
+#' }
+"england_underdoctored_areas"
+
+#' Underdoctored areas in Wales
+#'
+#' A dataset containing the ratio of patients to GP workforce, by Local Authority
+#'
+#' @format A data frame with 4 variables:
+#' \describe{
+#'   \item{ltla24_code}{Local Authority code (2024)}
+#'   \item{total_patients}{Number of registered patients}
+#'   \item{total_gp}{Number of GPs}
+#'   \item{patients_per_gp}{Number of patients per GP}
+#' }
+"wales_underdoctored_areas"
+
+
 #' Bed Availability in Northern Ireland
 #'
 #' A dataset containing hospital statistics on bed availability, bed occupancy
@@ -636,6 +663,19 @@ NULL
 #' }
 #' @source \url{https://statswales.gov.wales/}
 "wales_ae_performance"
+
+#' Underdoctored areas in Scotland
+#'
+#' A dataset containing the ratio of patients to GP workforce, by Local Authority
+#'
+#' @format A data frame with 4 variables:
+#' \describe{
+#'   \item{ltla21_code}{Local Authority code (2021)}
+#'   \item{total_gp}{Number of full-time equivalent GPs}
+#'   \item{total_patients}{Number of registered patients}
+#'   \item{patients_per_gp}{Number of patients per GP}
+#' }
+"scotland_underdoctored_areas"
 
 #' Consultant-led Referral to Treatment (RTT) by Local Health Board
 #'
@@ -853,3 +893,18 @@ NULL
 #' }
 #' @source \url{https://publichealthscotland.scot/publications/care-at-home-statistics-for-scotland/care-at-home-statistics-for-scotland-support-and-services-funded-by-health-and-social-care-partnerships-in-scotland-20232024/dashboard/}
 "scotland_care_at_home"
+
+#' Underdoctored areas in Northern Ireland
+#'
+#' A dataset containing the ratio of patients to GP workforce, by Local Authority
+#'
+#' @format A data frame with 6 variables:
+#' \describe{
+#'   \item{ltla21_code}{Local Authority code (2021)}
+#'   \item{ltla21_name}{Local Authority name (2021)}
+#'   \item{date}{year}
+#'   \item{total_patients}{Number of registered patients}
+#'   \item{total_gp}{Number of GPs}
+#'   \item{patients_per_gp}{Number of patients per GP}
+#' }
+"ni_underdoctored_areas"

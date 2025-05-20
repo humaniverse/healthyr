@@ -62,8 +62,8 @@ raw <- Map(
 raw <- do.call(rbind, raw)
 
 # lookup LA codes
-lad_codes_ni <- as_tibble(geographr::boundaries_ltla21) |>
-  select(-geometry) |>
+lad_codes_ni <- geographr::boundaries_ltla21 |>
+  sf::st_drop_geometry() |>
   filter(str_detect(ltla21_code, "^N"))
 
 # prepare data

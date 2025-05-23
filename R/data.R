@@ -403,6 +403,25 @@ NULL
 #' @source \url{https://www.england.nhs.uk/}
 "england_rtt_region"
 
+#' Consultant-led Referral to Treatment (RTT) by NHS Trust
+#'
+#' A dataset containing ICS/STP-level RTT data spanning from Jan 2019 to Feb
+#' 2025.
+#'
+#' @format A data frame with 11,676 rows and 7 variables:
+#' \describe{
+#'   \item{nhs_trust22_code}{Code of NHS England trust}
+#'   \item{nhs_trust22_name}{Name of NHS England trust}
+#'   \item{date}{Date}
+#'   \item{year}{Year}
+#'   \item{month}{Month}
+#'   \item{treatment}{Treatment function name}
+#'   \item{waits_over_18_weeks}{Total waiting > 18 weeks}
+#'   \item{waits_over_52_weeks}{Total waiting > 52 weeks}
+#' }
+#' @source \url{https://www.england.nhs.uk/}
+"england_rtt_region"
+
 #' Consultant-led Referral to Treatment (RTT) pathway flow by ICS/STP
 #'
 #' A dataset containing ICS/STP-level RTT data spanning from Apr 2020 to Feb

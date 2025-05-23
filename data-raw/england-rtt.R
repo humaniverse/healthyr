@@ -188,6 +188,7 @@ stp_region <- read_sf(
 stp_waits <- tibble()
 stp_flow <- tibble()
 region_waits <- tibble()
+trust_waits <- tibble()
 
 # Debugging:
 # file <- list.files(td, pattern = "*.csv", full.names = TRUE)[11]
@@ -379,6 +380,53 @@ for (file in list.files(td, pattern = "*.csv", full.names = TRUE)) {
   # Add regional data to main dataframe
   region_waits <- bind_rows(region_waits, d_region)
 
+
+  if (d$Date[1] >= dmy("01-04-2021")) {
+    d_trust <-
+      d %>%
+      mutate(
+        `Total waiting > 18 weeks` = rowSums(
+          across(`Gt 18 To 19 Weeks SUM 1`:`Gt 104 Weeks SUM 1`),
+          na.rm = TRUE
+        ),
+        `Total waiting > 52 weeks` = rowSums(
+          across(`Gt 52 To 53 Weeks SUM 1`:`Gt 104 Weeks SUM 1`),
+          na.rm = TRUE
+        )
+      ) %>%
+      group_by(Year, Month, `Provider Org Code`, `Provider Org Name`, `Treatment Function Name`) %>%
+      summarise(
+        `Total waiting > 52 weeks` = sum(
+          `Total waiting > 52 weeks`,
+          na.rm = TRUE
+        ),
+        `Total waiting > 18 weeks` = sum(
+          `Total waiting > 18 weeks`,
+          na.rm = TRUE
+        )
+      )
+  } else {
+    d_trust <-
+      d %>%
+      mutate(
+        `Total waiting > 18 weeks` = rowSums(
+          across(`Gt 18 To 19 Weeks SUM 1`:`Gt 52 Weeks SUM 1`),
+          na.rm = TRUE
+        )
+      ) %>%
+      group_by(Year, Month, `Provider Org Code`, `Provider Org Name`, `Treatment Function Name`) %>%
+      summarise(
+        `Total waiting > 52 weeks` = sum(`Gt 52 Weeks SUM 1`, na.rm = TRUE),
+        `Total waiting > 18 weeks` = sum(
+          `Total waiting > 18 weeks`,
+          na.rm = TRUE
+        )
+      )
+  }
+
+  # Add regional data to main dataframe
+  trust_waits <- bind_rows(trust_waits, d_trust)
+
   print(paste0("Finished ", d$Month[1], " ", d$Year[1]))
 }
 
@@ -426,7 +474,24 @@ england_rtt_region <-
     waits_over_52_weeks = `Total waiting > 52 weeks`
   )
 
+england_rtt_trust <-
+  trust_waits %>%
+  mutate(Month = factor(Month, levels = month.abb)) |>
+  mutate(date = ym(paste0(Year, "-", Month))) |>
+  select(
+    nhs_trust22_code = `Provider Org Code`,
+    nhs_trust22_name = `Provider Org Name`,
+    date,
+    year = Year,
+    month = Month,
+    treatment = `Treatment Function Name`,
+    waits_over_18_weeks = `Total waiting > 18 weeks`,
+    waits_over_52_weeks = `Total waiting > 52 weeks`
+  )
+
+
 # Save output to data/ folder
 usethis::use_data(england_rtt_stp, overwrite = TRUE)
 usethis::use_data(england_rtt_flow_stp, overwrite = TRUE)
 usethis::use_data(england_rtt_region, overwrite = TRUE)
+usethis::use_data(england_rtt_trust, overwrite = TRUE)

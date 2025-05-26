@@ -420,7 +420,7 @@ NULL
 #'   \item{waits_over_52_weeks}{Total waiting > 52 weeks}
 #' }
 #' @source \url{https://www.england.nhs.uk/}
-"england_rtt_region"
+"england_rtt_trust"
 
 #' Consultant-led Referral to Treatment (RTT) pathway flow by ICS/STP
 #'

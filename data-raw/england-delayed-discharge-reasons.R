@@ -11,7 +11,9 @@ urls <- c(
   "https://www.england.nhs.uk/statistics/wp-content/uploads/sites/2/2025/02/Daily-discharge-sitrep-monthly-data-CSV-webfile-December2024.csv",
   "https://www.england.nhs.uk/statistics/wp-content/uploads/sites/2/2025/02/Daily-discharge-sitrep-monthly-data-CSV-webfile-January2025-1.csv",
   "https://www.england.nhs.uk/statistics/wp-content/uploads/sites/2/2025/04/Daily-discharge-sitrep-monthly-data-CSV-webfile-February2025-revised.csv",
-  "https://www.england.nhs.uk/statistics/wp-content/uploads/sites/2/2025/04/Daily-discharge-sitrep-monthly-data-CSV-webfile-March2025-1.csv"
+  "https://www.england.nhs.uk/statistics/wp-content/uploads/sites/2/2025/04/Daily-discharge-sitrep-monthly-data-CSV-webfile-March2025-1.csv",
+  "https://www.england.nhs.uk/statistics/wp-content/uploads/sites/2/2025/05/Daily-discharge-sitrep-monthly-data-CSV-webfile-April2025-1.csv",
+  "https://www.england.nhs.uk/statistics/wp-content/uploads/sites/2/2025/06/Daily-discharge-sitrep-monthly-data-CSV-webfile-May2025.csv"
 )
 
 raw <- urls |>
@@ -37,6 +39,7 @@ england_delayed_discharge_reasons <- raw |>
     date = Period,
     delay_reason = Metric,
     delay_count = Value
-  )
+  ) |>
+  unique()
 
 usethis::use_data(england_delayed_discharge_reasons, overwrite = TRUE)

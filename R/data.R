@@ -672,13 +672,13 @@ NULL
 #'
 #' A dataset containing performance against waiting times targets by hospital.
 #'
-#' @format A data frame with 72,171 rows and 5 variables:
+#' @format A data frame with 73,863 rows and 5 variables:
 #' \describe{
 #'   \item{hospital_code}{Hospital code}
 #'   \item{hospital_department}{Hospital or department name}
 #'   \item{date}{Date}
 #'   \item{performance_measure}{Performance measure}
-#'   \item{performance_target}{Performance taget}
+#'   \item{performance_target}{Performance target}
 #' }
 #' @source \url{https://statswales.gov.wales/}
 "wales_ae_performance"

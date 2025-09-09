@@ -679,6 +679,7 @@ NULL
 #'   \item{date}{Date}
 #'   \item{performance_measure}{Performance measure}
 #'   \item{performance_target}{Performance target}
+#'   \item{data}{Data}
 #' }
 #' @source \url{https://statswales.gov.wales/}
 "wales_ae_performance"

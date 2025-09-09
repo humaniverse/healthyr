@@ -5,13 +5,14 @@
 \alias{wales_ae_performance}
 \title{Emergency department performance statistics}
 \format{
-A data frame with 72,171 rows and 5 variables:
+A data frame with 73,863 rows and 5 variables:
 \describe{
 \item{hospital_code}{Hospital code}
 \item{hospital_department}{Hospital or department name}
 \item{date}{Date}
 \item{performance_measure}{Performance measure}
-\item{performance_target}{Performance taget}
+\item{performance_target}{Performance target}
+\item{data}{Data}
 }
 }
 \source{

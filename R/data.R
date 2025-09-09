@@ -16,11 +16,11 @@ NULL
 #' @source \url{https://www.england.nhs.uk/}
 "england_ae_acute_trust_attribution"
 
-#' England Accident and Emergency Admissions by Integrated Care Board  - (2022-23)
+#' England Accident and Emergency Admissions by Integrated Care Board  - (2022-25)
 #'
 #' A dataset containing England Accident and Emergency attendances and Emergency Admissions at Integrated Care Board level, by month
 #'
-#' @format A data frame with 882 rows and 8 variables:
+#' @format A data frame with 1,680 rows and 8 variables:
 #' \describe{
 #'   \item{icb22_code}{Integrated Care Board code}
 #'   \item{total_attendances}{The total number of patients in an A&E service seeking medical attention}
@@ -35,11 +35,11 @@ NULL
 #' @source \url{https://www.england.nhs.uk/}
 "england_icb_accidents_emergency"
 
-#' England Accident and Emergency Admissions by Trust - (2021-23)
+#' England Accident and Emergency Admissions by Trust - (2021-25)
 #'
 #' A dataset containing England Accident and Emergency attendances and Emergency Admissions at provider level, by month.
 #'
-#' @format A data frame with 5,044 rows and 8 variables:
+#' @format A data frame with 7,895 rows and 8 variables:
 #' \describe{
 #'   \item{nhs_trust22_code}{NHS Trust (organisational) code}
 #'   \item{total_attendances}{The total number of patients in an A&E service seeking medical attention}
@@ -448,8 +448,8 @@ NULL
 #' @format A data frame with 3 variables:
 #' \describe{
 #'   \item{ltla23_code}{Local Authority code}
-#'   \item{Households assessed as homeless per (000s)}{Households assessed as homeless per 1,000 households in the Local Authority}
-#'   \item{Households in temporary accommodation per 1,000}{Households in temporary accommodation per 1,000 households in the Local Authority}
+#'   \item{`Households assessed as homeless per (000s)`}{Households assessed as homeless per 1,000 households in the Local Authority}
+#'   \item{`Households in temporary accommodation per 1,000`}{Households in temporary accommodation per 1,000 households in the Local Authority}
 #' }
 #' @source \url{https://www.gov.uk/government/statistical-data-sets/live-tables-on-homelessness}
 "england_homelessness"
@@ -662,8 +662,8 @@ NULL
 #' @format A data frame with 3 variables:
 #' \describe{
 #'   \item{ltla21_code}{Local Authority code}
-#'   \item{Assessed as homeless or threatened with homelessness per 1,000}{Households assessed as homeless per 1,000 households in the Local Authority}
-#'   \item{Households in temporary accommodation per 1,000}{Households in temporary accommodation per 1,000 households in the Local Authority}
+#'   \item{`Assessed as homeless or threatened with homelessness per 1,000`}{Households assessed as homeless per 1,000 households in the Local Authority}
+#'   \item{`Households in temporary accommodation per 1,000`}{Households in temporary accommodation per 1,000 households in the Local Authority}
 #' }
 #' @source \url{https://www.gov.scot/collections/homelessness-statistics/}
 "scotland_homelessness"
@@ -679,6 +679,7 @@ NULL
 #'   \item{date}{Date}
 #'   \item{performance_measure}{Performance measure}
 #'   \item{performance_target}{Performance target}
+#'   \item{data}{Data}
 #' }
 #' @source \url{https://statswales.gov.wales/}
 "wales_ae_performance"
@@ -804,6 +805,7 @@ NULL
 #' }
 #' @source \url{https://www.nomisweb.co.uk/sources/census_2021_bulk}
 "wales_sexual_orientation_21"
+
 #' Homelessness in Wales
 #'
 #' A dataset containing statistics on households assessed as homeless and
@@ -812,8 +814,8 @@ NULL
 #' @format A data frame with 3 variables:
 #' \describe{
 #'   \item{ltla21_code}{Local Authority code}
-#'   \item{Homeless or threatened with homelessness per 1,000}{Households assessed as homeless per 1,000 households in the Local Authority}
-#'   \item{Households in temporary accommodation per 1,000}{Households in temporary accommodation per 1,000 households in the Local Authority}
+#'   \item{`Homeless or threatened with homelessness per 1,000`}{Households assessed as homeless per 1k households in the Local Authority}
+#'   \item{`Households in temporary accommodation per 1,000`}{Households in temporary accommodation per 1k households in the Local Authority}
 #' }
 #' @source \url{https://statswales.gov.wales/}
 "wales_homelessness"

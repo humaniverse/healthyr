@@ -24,7 +24,8 @@ wales_ae_performance <- raw |>
     hospital_department = Hospital_ItemName_ENG_STR,
     date = Date_Code_STR,
     performance_measure = Measure_ItemName_ENG_STR,
-    performance_target = Target_Code_STR
+    performance_target = Target_Code_STR,
+    data = Data_DEC
   ) |>
   mutate(date = ym(str_remove_all(date, "m")))
 

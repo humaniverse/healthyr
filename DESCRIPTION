@@ -17,4 +17,5 @@ Imports:
 Depends: 
     R (>= 3.5)
 LazyData: true
+LazyDataCompression: xz
 URL: https://humaniverse.github.io/healthyr/

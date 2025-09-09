@@ -8,8 +8,8 @@
 A data frame with 3 variables:
 \describe{
 \item{ltla23_code}{Local Authority code}
-\item{Households assessed as homeless per (000s)}{Households assessed as homeless per 1,000 households in the Local Authority}
-\item{Households in temporary accommodation per 1,000}{Households in temporary accommodation per 1,000 households in the Local Authority}
+\item{\verb{Households assessed as homeless per (000s)}}{Households assessed as homeless per 1,000 households in the Local Authority}
+\item{\verb{Households in temporary accommodation per 1,000}}{Households in temporary accommodation per 1,000 households in the Local Authority}
 }
 }
 \source{

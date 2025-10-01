@@ -130,7 +130,7 @@ NULL
 #' A dataset containing NHS Integrated Care Board discharge data on how many
 #' patients do not meet criteria to reside each day.
 #'
-#' @format A data frame with 26,758 rows and 3 variables:
+#' @format A data frame with 51,727 rows and 3 variables:
 #' \describe{
 #'   \item{icb22_code}{Integrated Care Board code}
 #'   \item{date}{Date}
@@ -145,7 +145,7 @@ NULL
 #' A dataset containing NHS Trust level hopsital discharge data on how many
 #' patients do not meet criteria to reside each day.
 #'
-#' @format A data frame with 77,011 rows and 3 variables:
+#' @format A data frame with 149,482 rows and 3 variables:
 #' \describe{
 #'   \item{nhs_trust22_code}{NHS Trust (organisational) code}
 #'   \item{date}{Date}
@@ -161,7 +161,7 @@ NULL
 #' patients were discharged each day. From June 2023 figures for discharged by
 #' 17:00 and between 17:01 and 23:59 were no longer released.
 #'
-#' @format A data frame with 26,758 rows and 5 variables:
+#' @format A data frame with 51,727 rows and 5 variables:
 #' \describe{
 #'   \item{icb22_code}{Integrated Care Board code}
 #'   \item{date}{Date}
@@ -173,12 +173,12 @@ NULL
 #' @source \url{https://www.england.nhs.uk/}
 "england_icb_discharged_patients"
 
-#' Hosptial Trust Discharge Data - Discharged Patients
+#' Hospital Trust Discharge Data - Discharged Patients
 #'
 #' A dataset containing NHS Trust level hopsital discharge data on how many
 #' patients were discharged each day.
 #'
-#' @format A data frame with 77,011 rows and 5 variables:
+#' @format A data frame with 149,482 rows and 5 variables:
 #' \describe{
 #'   \item{nhs_trust22_code}{NHS Trust (organisational) code}
 #'   \item{date}{Date}

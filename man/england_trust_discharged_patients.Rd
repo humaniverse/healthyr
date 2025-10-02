@@ -3,9 +3,9 @@
 \docType{data}
 \name{england_trust_discharged_patients}
 \alias{england_trust_discharged_patients}
-\title{Hosptial Trust Discharge Data - Discharged Patients}
+\title{Hospital Trust Discharge Data - Discharged Patients}
 \format{
-A data frame with 77,011 rows and 5 variables:
+A data frame with 149,482 rows and 5 variables:
 \describe{
 \item{nhs_trust22_code}{NHS Trust (organisational) code}
 \item{date}{Date}

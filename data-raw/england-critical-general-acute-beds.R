@@ -72,13 +72,13 @@ df <-
   tibble(
     id = query_urls |>
       slice(which(query_urls$id == "nhs_critical_general_acute_beds_april_22"):
-            which(query_urls$id == "nhs_critical_general_acute_beds_december_24")) |>
+            which(query_urls$id == "nhs_critical_general_acute_beds_august_25")) |>
       filter(!(date %in% c("April 2023"))) |>
       pull(id),
-    sheet = if_else(1:32 == 21, 3, 2),  # NOTE: January 2023 had 3 sheets
-    header1 = c(rep("B15:V15", 7), rep("B15:AB15", 8), rep("B15:AI15", 17)),
-    header2 = c(rep("B26:V26", 7), rep("B26:AB26", 8), rep("B69:AI69", 17)),
-    range = c(rep("B27:V163", 7), rep("B27:AB163", 8), rep("B70:AI205", 17)),
+    sheet = if_else(1:40 == 21, 3, 2),  # NOTE: January 2023 had 3 sheets
+    header1 = c(rep("B15:V15", 7), rep("B15:AB15", 8), rep("B15:AI15", 25)),
+    header2 = c(rep("B26:V26", 7), rep("B26:AB26", 8), rep("B69:AI69", 25)),
+    range = c(rep("B27:V163", 7), rep("B27:AB163", 8), rep("B70:AI205", 25)),
     date = c(
       "April 2022",
       "May 2022",
@@ -111,7 +111,15 @@ df <-
       "September 2024",
       "October 2024",
       "November 2024",
-      "December 2024"
+      "December 2024",
+      "January 2025",
+      "February 2025",
+      "March 2025",
+      "April 2025",
+      "May 2025",
+      "June 2025",
+      "July 2025",
+      "August 2025"
     )
   )
 

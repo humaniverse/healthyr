@@ -5,7 +5,7 @@
 \alias{england_icb_criteria_to_reside}
 \title{Hospital ICB Discharge Data - Criteria to Reside}
 \format{
-A data frame with 26,758 rows and 3 variables:
+A data frame with 51,727 rows and 3 variables:
 \describe{
 \item{icb22_code}{Integrated Care Board code}
 \item{date}{Date}

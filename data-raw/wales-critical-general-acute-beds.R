@@ -1,22 +1,32 @@
 # ---- Load ----
-library(statswalesr)
-library(jsonlite)
-library(httr)
+library(httr2)
 library(dplyr)
 library(readr)
 library(tidyr)
 library(lubridate)
 library(janitor)
 
-# ---- Function to download data from Stats Wales website ----
-raw <- statswales_get_dataset("hlth0310")
+# ---- Load internal sysdata.rda file with URL's ----
+devtools::load_all()
+
+# ---- Download and read ----
+query_url <-
+  query_urls |>
+  filter(id == "wales_critical_general_acute_beds") |>
+  pull(query)
+
+download <- tempfile(fileext = ".zip")
+request(query_url) |> req_perform(download)
+unzip(download, exdir = tempdir())
+
+raw <- read_csv(file.path(tempdir(), "HLTH0310.csv"))
+
+# ---- Clean the data ----
 colnames(raw) <- sub("_STR$|_DEC$", "", colnames(raw))
 
-# Clean the data
 wales_beds <- raw |>
   # Filter to only include data from Jan 2021 and only include high level specialty categories
   filter(Month_Code >= "202101" & (Specialty_Hierarchy == "0" | is.na(Specialty_Hierarchy))) |>
-  # Renaming measure variable names
   mutate(
     measure = case_when(
       Measure_ItemName_ENG == "Average daily occupied beds" ~ "average_daily_beds_occupied",

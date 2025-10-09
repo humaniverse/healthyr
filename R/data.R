@@ -556,9 +556,9 @@ NULL
 
 #' Bed occupancy/availability in Scotland
 #'
-#' Beds by Board of Treatment and Specialty, 2016-2022.
+#' Beds by Board of Treatment and Specialty, 2016-2024.
 #'
-#' @format A data frame with 11,060 rows and 6 variables:
+#' @format A data frame with 11,029 rows and 6 variables:
 #' \describe{
 #'   \item{hb19_code}{Scottish Health Board code}
 #'   \item{date}{Date, representing the start of the quarter}
@@ -575,7 +575,7 @@ NULL
 #'
 #' A dataset containing Delayed Discharge Bed Days by Scottish Health Board.
 #'
-#' @format A data frame with 20,025 rows and 6 variables:
+#' @format A data frame with 24,750 rows and 6 variables:
 #' \describe{
 #'   \item{hb_code}{Scottish Health Board code}
 #'   \item{date}{Date}
@@ -592,7 +592,7 @@ NULL
 #'
 #' A dataset containing Delayed Discharge Bed Days by Scottish Council Area
 #'
-#' @format A data frame with 41,310 rows and 6 variables:
+#' @format A data frame with 56,100 rows and 6 variables:
 #' \describe{
 #'   \item{ltla_code}{Scottish Council Area code}
 #'   \item{date}{Date}
@@ -624,7 +624,7 @@ NULL
 #'
 #' A dataset containing RTT data for Scottish Health Boards.
 #'
-#' @format A data frame with 2,295 rows and 7 variables:
+#' @format A data frame with 2,370 rows and 7 variables:
 #' \describe{
 #'   \item{hb19_code}{Scottish Health Board code}
 #'   \item{date}{Date}
@@ -701,7 +701,7 @@ NULL
 #'
 #' A dataset containing RTT data for Wales.
 #'
-#' @format A data frame with 1,652 rows and 6 variables:
+#' @format A data frame with 2,212 rows and 7 variables:
 #' \describe{
 #'   \item{lhb22_code}{Local Health Board code}
 #'   \item{lhb22_name}{Local Health Board name}
@@ -736,12 +736,12 @@ NULL
 #' @source \url{https://statswales.gov.wales/}
 "wales_ambulance_waiting_times"
 
-#' Wales health board bed availability - (2022)
+#' Wales health board bed availability - (2022 - )
 #'
 #' A dataset containing Welsh monthly NHS beds data by health board, measure,
 #' and specialty
 #'
-#' @format A data frame with 3,103 rows and 7 variables:
+#' @format A data frame with 1,595 rows and 7 variables:
 #' \describe{
 #'   \item{date}{Date}
 #'   \item{health_board_code}{Local health board code}
@@ -761,7 +761,7 @@ NULL
 #' A dataset containing Welsh monthly NHS beds data by hospital site, measure,
 #' and specialty
 #'
-#' @format A data frame with 7,517 rows and 7 variables:
+#' @format A data frame with 10,815 rows and 7 variables:
 #' \describe{
 #'   \item{date}{Date}
 #'   \item{hospital_code}{Local health board code}

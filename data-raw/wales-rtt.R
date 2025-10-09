@@ -1,9 +1,23 @@
 library(tidyverse)
 library(lubridate)
-library(statswalesr)
+library(httr2)
 
-wales_raw <- statswales_get_dataset("hlth0079")
+# ---- Load internal sysdata.rda file with URL's ----
+devtools::load_all()
 
+# ---- Download and read ----
+query_url <-
+  query_urls |>
+  filter(id == "wales_rtt") |>
+  pull(query)
+
+download <- tempfile(fileext = ".zip")
+request(query_url) |> req_perform(download)
+unzip(download, exdir = tempdir())
+
+wales_raw <- read_csv(file.path(tempdir(), "HLTH0079.csv"))
+
+# ---- Clean ----
 colnames(wales_raw) <- sub("_STR$|_INT$", "", colnames(wales_raw))
 
 wales_waits <-
@@ -57,5 +71,5 @@ wales_rtt_lhb <-
   left_join(wales_waits_53) |>
   left_join(wales_waits_total)
 
-# Save output to data/ folder
+# ---- Save output to data/ folder ----
 usethis::use_data(wales_rtt_lhb, overwrite = TRUE)

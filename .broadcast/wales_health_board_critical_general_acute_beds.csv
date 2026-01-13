@@ -1,0 +1,1596 @@
+"date","health_board_code","health_board_name","specialism","daily_beds_available","daily_beds_occupied","beds_occupancy_rate"
+"Jan-21","7A6","Aneurin Bevan University Health Board","all_specialties",1835.919998,1365.389997,74.3709
+"Feb-21","7A6","Aneurin Bevan University Health Board","all_specialties",1673.900005,1242.589997,74.2332
+"Mar-21","7A6","Aneurin Bevan University Health Board","all_specialties",1855.889997,1318.299987,71.0333
+"Apr-21","7A6","Aneurin Bevan University Health Board","all_specialties",1815.390019,1306.419996,71.9636
+"May-21","7A6","Aneurin Bevan University Health Board","all_specialties",1836.240008,1354.490008,73.7643
+"Jun-21","7A6","Aneurin Bevan University Health Board","all_specialties",1871.440007,1332.200011,71.1858
+"Jul-21","7A6","Aneurin Bevan University Health Board","all_specialties",1940.500002,1393.280005,71.8001
+"Aug-21","7A6","Aneurin Bevan University Health Board","all_specialties",1799.729993,1311.569991,72.8759
+"Sep-21","7A6","Aneurin Bevan University Health Board","all_specialties",1922.879995,1345.599991,69.9784
+"Oct-21","7A6","Aneurin Bevan University Health Board","all_specialties",1842.150011,1406.089998,76.3287
+"Nov-21","7A6","Aneurin Bevan University Health Board","all_specialties",1841.129997,1436.760003,78.0369
+"Dec-21","7A6","Aneurin Bevan University Health Board","all_specialties",1819.219998,1392.530007,76.5454
+"Jan-22","7A6","Aneurin Bevan University Health Board","all_specialties",1825.620005,1442.859999,79.034
+"Feb-22","7A6","Aneurin Bevan University Health Board","all_specialties",1813.490007,1406.660009,77.5665
+"Mar-22","7A6","Aneurin Bevan University Health Board","all_specialties",1788.710008,1407.819993,78.7059
+"Apr-22","7A6","Aneurin Bevan University Health Board","all_specialties",1801.88,1433.89,79.5774
+"May-22","7A6","Aneurin Bevan University Health Board","all_specialties",1790.75,1436.2,80.201
+"Jun-22","7A6","Aneurin Bevan University Health Board","all_specialties",1838.22,1479.34,80.4768
+"Jul-22","7A6","Aneurin Bevan University Health Board","all_specialties",1812.45,1501.81,82.8608
+"Aug-22","7A6","Aneurin Bevan University Health Board","all_specialties",1772.42,1500.79,84.6746
+"Sep-22","7A6","Aneurin Bevan University Health Board","all_specialties",1724.64,1280.04,74.2207
+"Oct-22","7A6","Aneurin Bevan University Health Board","all_specialties",1760.3,1514.98,86.0637
+"Nov-22","7A6","Aneurin Bevan University Health Board","all_specialties",1768.62,1504.24,85.0516
+"Dec-22","7A6","Aneurin Bevan University Health Board","all_specialties",1754.47,1499.76,85.4822
+"Jan-23","7A6","Aneurin Bevan University Health Board","all_specialties",1806.97,1580.42,87.4624
+"Feb-23","7A6","Aneurin Bevan University Health Board","all_specialties",1794.77,1558.77,86.8507
+"Mar-23","7A6","Aneurin Bevan University Health Board","all_specialties",1886.66,1653.97,87.6666
+"Apr-23","7A6","Aneurin Bevan University Health Board","all_specialties",1877.99,1604.9,85.4584
+"May-23","7A6","Aneurin Bevan University Health Board","all_specialties",1808.84,1502.35,83.056
+"Jun-23","7A6","Aneurin Bevan University Health Board","all_specialties",1894.46,1606.22,84.7851
+"Jul-23","7A6","Aneurin Bevan University Health Board","all_specialties",2019.38,1729.78,85.659
+"Aug-23","7A6","Aneurin Bevan University Health Board","all_specialties",1795.23,1518.49,84.5847
+"Sep-23","7A6","Aneurin Bevan University Health Board","all_specialties",1796.92,1536.75,85.5213
+"Oct-23","7A6","Aneurin Bevan University Health Board","all_specialties",1777.66,1503.28,84.5651
+"Nov-23","7A6","Aneurin Bevan University Health Board","all_specialties",1798.7,1566.6,87.0962
+"Dec-23","7A6","Aneurin Bevan University Health Board","all_specialties",1795.41,1531.25,85.2869
+"Jan-24","7A6","Aneurin Bevan University Health Board","all_specialties",1860.46,1569.81,84.3775
+"Feb-24","7A6","Aneurin Bevan University Health Board","all_specialties",1780.9,1503.13,84.4028
+"Mar-24","7A6","Aneurin Bevan University Health Board","all_specialties",1749.52,1500.49,85.7658
+"Jan-21","7A6","Aneurin Bevan University Health Board","geriatric_medicine",423.650008,354.090004,83.5808
+"Feb-21","7A6","Aneurin Bevan University Health Board","geriatric_medicine",402.520005,334.960004,83.2157
+"Mar-21","7A6","Aneurin Bevan University Health Board","geriatric_medicine",449.96,365.649993,81.2628
+"Apr-21","7A6","Aneurin Bevan University Health Board","geriatric_medicine",462.340011,355.430003,76.8763
+"May-21","7A6","Aneurin Bevan University Health Board","geriatric_medicine",463.579998,372.360005,80.3227
+"Jun-21","7A6","Aneurin Bevan University Health Board","geriatric_medicine",452.440002,369.970004,81.7722
+"Jul-21","7A6","Aneurin Bevan University Health Board","geriatric_medicine",467.370008,383.340003,82.0207
+"Aug-21","7A6","Aneurin Bevan University Health Board","geriatric_medicine",426.869997,350.029988,81.9992
+"Sep-21","7A6","Aneurin Bevan University Health Board","geriatric_medicine",442.939999,357.869997,80.7942
+"Oct-21","7A6","Aneurin Bevan University Health Board","geriatric_medicine",468.330005,399.220002,85.2433
+"Nov-21","7A6","Aneurin Bevan University Health Board","geriatric_medicine",487.909996,432.030004,88.5471
+"Dec-21","7A6","Aneurin Bevan University Health Board","geriatric_medicine",477.910007,414.480001,86.7276
+"Jan-22","7A6","Aneurin Bevan University Health Board","geriatric_medicine",533.420005,472.520003,88.5831
+"Feb-22","7A6","Aneurin Bevan University Health Board","geriatric_medicine",505.950005,452.560005,89.4476
+"Mar-22","7A6","Aneurin Bevan University Health Board","geriatric_medicine",493.250015,434.549994,88.0993
+"Apr-22","7A6","Aneurin Bevan University Health Board","geriatric_medicine",509.29,437.63,85.9294
+"May-22","7A6","Aneurin Bevan University Health Board","geriatric_medicine",485.07,436.56,89.9994
+"Jun-22","7A6","Aneurin Bevan University Health Board","geriatric_medicine",516.66,450.24,87.1444
+"Jul-22","7A6","Aneurin Bevan University Health Board","geriatric_medicine",499.46,451.79,90.4557
+"Aug-22","7A6","Aneurin Bevan University Health Board","geriatric_medicine",463.1,433.1,93.5219
+"Sep-22","7A6","Aneurin Bevan University Health Board","geriatric_medicine",444.76,405.12,91.0873
+"Oct-22","7A6","Aneurin Bevan University Health Board","geriatric_medicine",443.62,425.72,95.965
+"Nov-22","7A6","Aneurin Bevan University Health Board","geriatric_medicine",483.04,463.77,96.0107
+"Dec-22","7A6","Aneurin Bevan University Health Board","geriatric_medicine",487.81,460.87,94.4774
+"Jan-23","7A6","Aneurin Bevan University Health Board","geriatric_medicine",516.71,508.58,98.4266
+"Feb-23","7A6","Aneurin Bevan University Health Board","geriatric_medicine",490.74,479.84,97.7789
+"Mar-23","7A6","Aneurin Bevan University Health Board","geriatric_medicine",487.49,474.45,97.3251
+"Apr-23","7A6","Aneurin Bevan University Health Board","geriatric_medicine",501.77,461.4,91.9545
+"May-23","7A6","Aneurin Bevan University Health Board","geriatric_medicine",496.32,448.42,90.349
+"Jun-23","7A6","Aneurin Bevan University Health Board","geriatric_medicine",489.7,447.63,91.409
+"Jul-23","7A6","Aneurin Bevan University Health Board","geriatric_medicine",488.3,434.83,89.0498
+"Aug-23","7A6","Aneurin Bevan University Health Board","geriatric_medicine",505.62,448.94,88.79
+"Sep-23","7A6","Aneurin Bevan University Health Board","geriatric_medicine",483.7,438.77,90.7112
+"Oct-23","7A6","Aneurin Bevan University Health Board","geriatric_medicine",455.38,407.84,89.5604
+"Nov-23","7A6","Aneurin Bevan University Health Board","geriatric_medicine",460.46,434.02,94.2579
+"Dec-23","7A6","Aneurin Bevan University Health Board","geriatric_medicine",496.5,475.04,95.6777
+"Jan-24","7A6","Aneurin Bevan University Health Board","geriatric_medicine",562.31,510.06,90.708
+"Feb-24","7A6","Aneurin Bevan University Health Board","geriatric_medicine",537.8,488.07,90.7531
+"Mar-24","7A6","Aneurin Bevan University Health Board","geriatric_medicine",499.72,486.23,97.3005
+"Jan-21","7A6","Aneurin Bevan University Health Board","maternity",89.709999,32.67,36.4173
+"Feb-21","7A6","Aneurin Bevan University Health Board","maternity",79.63,31.199999,39.1812
+"Mar-21","7A6","Aneurin Bevan University Health Board","maternity",89.97,32.100001,35.6786
+"Apr-21","7A6","Aneurin Bevan University Health Board","maternity",86.36,28.790001,33.3372
+"May-21","7A6","Aneurin Bevan University Health Board","maternity",83.840001,24.99,29.8068
+"Jun-21","7A6","Aneurin Bevan University Health Board","maternity",82.73,28.259999,34.1593
+"Jul-21","7A6","Aneurin Bevan University Health Board","maternity",88.329998,29.900001,33.8503
+"Aug-21","7A6","Aneurin Bevan University Health Board","maternity",82.780001,25.550001,30.8649
+"Sep-21","7A6","Aneurin Bevan University Health Board","maternity",81.8,25.91,31.6748
+"Oct-21","7A6","Aneurin Bevan University Health Board","maternity",63.159999,28.6,45.2818
+"Nov-21","7A6","Aneurin Bevan University Health Board","maternity",58.260002,26.730001,45.8805
+"Dec-21","7A6","Aneurin Bevan University Health Board","maternity",55.939999,31.29,55.9349
+"Jan-22","7A6","Aneurin Bevan University Health Board","maternity",58.159999,26.609999,45.7531
+"Feb-22","7A6","Aneurin Bevan University Health Board","maternity",57.96,30.85,53.2264
+"Mar-22","7A6","Aneurin Bevan University Health Board","maternity",56.160001,24.9,44.3376
+"Apr-22","7A6","Aneurin Bevan University Health Board","maternity",56.77,24.5,43.1566
+"May-22","7A6","Aneurin Bevan University Health Board","maternity",56.74,24.29,42.8093
+"Jun-22","7A6","Aneurin Bevan University Health Board","maternity",58.46,26.26,44.9196
+"Jul-22","7A6","Aneurin Bevan University Health Board","maternity",53.54,25.2,47.0676
+"Aug-22","7A6","Aneurin Bevan University Health Board","maternity",51.9,27.99,53.9306
+"Sep-22","7A6","Aneurin Bevan University Health Board","maternity",50.63,26.5,52.3405
+"Oct-22","7A6","Aneurin Bevan University Health Board","maternity",54.13,28.03,51.7827
+"Nov-22","7A6","Aneurin Bevan University Health Board","maternity",53.73,28.97,53.9177
+"Dec-22","7A6","Aneurin Bevan University Health Board","maternity",55.61,30.25,54.3967
+"Jan-23","7A6","Aneurin Bevan University Health Board","maternity",53.55,25.42,47.4697
+"Feb-23","7A6","Aneurin Bevan University Health Board","maternity",54.58,26.33,48.2411
+"Mar-23","7A6","Aneurin Bevan University Health Board","maternity",50.78,23.94,47.1445
+"Apr-23","7A6","Aneurin Bevan University Health Board","maternity",53.37,24.6,46.0933
+"May-23","7A6","Aneurin Bevan University Health Board","maternity",53.26,24.36,45.7379
+"Jun-23","7A6","Aneurin Bevan University Health Board","maternity",58.66,32.13,54.7733
+"Jul-23","7A6","Aneurin Bevan University Health Board","maternity",69.1,44.93,65.0217
+"Aug-23","7A6","Aneurin Bevan University Health Board","maternity",57.84,32.97,57.0021
+"Sep-23","7A6","Aneurin Bevan University Health Board","maternity",62.97,37.97,60.2986
+"Oct-23","7A6","Aneurin Bevan University Health Board","maternity",64.62,38.17,59.0684
+"Nov-23","7A6","Aneurin Bevan University Health Board","maternity",64.43,39.34,61.0585
+"Dec-23","7A6","Aneurin Bevan University Health Board","maternity",68.44,34.57,50.5114
+"Jan-24","7A6","Aneurin Bevan University Health Board","maternity",65.61,34.1,51.9738
+"Feb-24","7A6","Aneurin Bevan University Health Board","maternity",53.27,34.61,64.9709
+"Mar-24","7A6","Aneurin Bevan University Health Board","maternity",66.16,32.07,48.4734
+"Jan-21","7A6","Aneurin Bevan University Health Board","medical_acute",791.999993,599.629995,75.7109
+"Feb-21","7A6","Aneurin Bevan University Health Board","medical_acute",692.010002,507.999995,73.4093
+"Mar-21","7A6","Aneurin Bevan University Health Board","medical_acute",752.339996,530.989997,70.5785
+"Apr-21","7A6","Aneurin Bevan University Health Board","medical_acute",720.190009,542.599994,75.3412
+"May-21","7A6","Aneurin Bevan University Health Board","medical_acute",738.210007,562.040003,76.1355
+"Jun-21","7A6","Aneurin Bevan University Health Board","medical_acute",737.150005,534.190005,72.4669
+"Jul-21","7A6","Aneurin Bevan University Health Board","medical_acute",762.989994,553.219996,72.5068
+"Aug-21","7A6","Aneurin Bevan University Health Board","medical_acute",748.559991,543.380003,72.59
+"Sep-21","7A6","Aneurin Bevan University Health Board","medical_acute",769.249999,553.599995,71.9662
+"Oct-21","7A6","Aneurin Bevan University Health Board","medical_acute",737.620008,579.729997,78.5947
+"Nov-21","7A6","Aneurin Bevan University Health Board","medical_acute",721.450002,578.289999,80.1566
+"Dec-21","7A6","Aneurin Bevan University Health Board","medical_acute",720.739993,561.590006,77.9185
+"Jan-22","7A6","Aneurin Bevan University Health Board","medical_acute",683.899997,565.96,82.7548
+"Feb-22","7A6","Aneurin Bevan University Health Board","medical_acute",695.660001,562.200006,80.8153
+"Mar-22","7A6","Aneurin Bevan University Health Board","medical_acute",692.479993,553.330001,79.9056
+"Apr-22","7A6","Aneurin Bevan University Health Board","medical_acute",693.73,573.48,82.6662
+"May-22","7A6","Aneurin Bevan University Health Board","medical_acute",701.05,573.9,81.8629
+"Jun-22","7A6","Aneurin Bevan University Health Board","medical_acute",677.61,553.62,81.7019
+"Jul-22","7A6","Aneurin Bevan University Health Board","medical_acute",665.7,600.59,90.2193
+"Aug-22","7A6","Aneurin Bevan University Health Board","medical_acute",661.63,599.09,90.5476
+"Sep-22","7A6","Aneurin Bevan University Health Board","medical_acute",663.24,610.56,92.0572
+"Oct-22","7A6","Aneurin Bevan University Health Board","medical_acute",668.24,613.68,91.8353
+"Nov-22","7A6","Aneurin Bevan University Health Board","medical_acute",657.87,597.75,90.8614
+"Dec-22","7A6","Aneurin Bevan University Health Board","medical_acute",654.1,592.73,90.6176
+"Jan-23","7A6","Aneurin Bevan University Health Board","medical_acute",665.29,623.14,93.6644
+"Feb-23","7A6","Aneurin Bevan University Health Board","medical_acute",650.11,601.41,92.509
+"Mar-23","7A6","Aneurin Bevan University Health Board","medical_acute",658.84,613.35,93.0954
+"Apr-23","7A6","Aneurin Bevan University Health Board","medical_acute",647.59,599.89,92.6342
+"May-23","7A6","Aneurin Bevan University Health Board","medical_acute",647.57,574.03,88.6437
+"Jun-23","7A6","Aneurin Bevan University Health Board","medical_acute",680.22,607.58,89.3211
+"Jul-23","7A6","Aneurin Bevan University Health Board","medical_acute",782.78,717.75,91.6924
+"Aug-23","7A6","Aneurin Bevan University Health Board","medical_acute",612.48,562.71,91.874
+"Sep-23","7A6","Aneurin Bevan University Health Board","medical_acute",660.94,611.24,92.4804
+"Oct-23","7A6","Aneurin Bevan University Health Board","medical_acute",665.4,621.93,93.4671
+"Nov-23","7A6","Aneurin Bevan University Health Board","medical_acute",668.8,631.82,94.4707
+"Dec-23","7A6","Aneurin Bevan University Health Board","medical_acute",636.34,584.56,91.8628
+"Jan-24","7A6","Aneurin Bevan University Health Board","medical_acute",630.88,595.66,94.4173
+"Feb-24","7A6","Aneurin Bevan University Health Board","medical_acute",648.32,590.46,91.0754
+"Mar-24","7A6","Aneurin Bevan University Health Board","medical_acute",622.05,588.22,94.5615
+"Jan-21","7A6","Aneurin Bevan University Health Board","mental_illness",188,142.139998,75.6064
+"Feb-21","7A6","Aneurin Bevan University Health Board","mental_illness",188,151.860001,80.7766
+"Mar-21","7A6","Aneurin Bevan University Health Board","mental_illness",188.03,142.999999,76.0517
+"Apr-21","7A6","Aneurin Bevan University Health Board","mental_illness",188,135.689998,72.1755
+"May-21","7A6","Aneurin Bevan University Health Board","mental_illness",188,147.900002,78.6702
+"Jun-21","7A6","Aneurin Bevan University Health Board","mental_illness",188.030001,145.690001,77.4823
+"Jul-21","7A6","Aneurin Bevan University Health Board","mental_illness",188,149.770002,79.6649
+"Aug-21","7A6","Aneurin Bevan University Health Board","mental_illness",188.06,157.000002,83.484
+"Sep-21","7A6","Aneurin Bevan University Health Board","mental_illness",188.200001,156.229999,83.0128
+"Oct-21","7A6","Aneurin Bevan University Health Board","mental_illness",188,157.090001,83.5585
+"Nov-21","7A6","Aneurin Bevan University Health Board","mental_illness",188,152.799998,81.2766
+"Dec-21","7A6","Aneurin Bevan University Health Board","mental_illness",188.1,151.730001,80.6645
+"Jan-22","7A6","Aneurin Bevan University Health Board","mental_illness",188.03,144.869998,77.0462
+"Feb-22","7A6","Aneurin Bevan University Health Board","mental_illness",188,137.53,73.1543
+"Mar-22","7A6","Aneurin Bevan University Health Board","mental_illness",188,145.199999,77.234
+"Apr-22","7A6","Aneurin Bevan University Health Board","mental_illness",188,144.7,76.9681
+"May-22","7A6","Aneurin Bevan University Health Board","mental_illness",188,149.52,79.5319
+"Jun-22","7A6","Aneurin Bevan University Health Board","mental_illness",189.2,153.68,81.2262
+"Jul-22","7A6","Aneurin Bevan University Health Board","mental_illness",190.1,155.58,81.8411
+"Aug-22","7A6","Aneurin Bevan University Health Board","mental_illness",192,158.12,82.3542
+"Sep-22","7A6","Aneurin Bevan University Health Board","mental_illness",190,0,0
+"Oct-22","7A6","Aneurin Bevan University Health Board","mental_illness",194.46,163.43,84.043
+"Nov-22","7A6","Aneurin Bevan University Health Board","mental_illness",192,156.4,81.4583
+"Dec-22","7A6","Aneurin Bevan University Health Board","mental_illness",192,160.89,83.7969
+"Jan-23","7A6","Aneurin Bevan University Health Board","mental_illness",196.61,152.83,77.7326
+"Feb-23","7A6","Aneurin Bevan University Health Board","mental_illness",196.43,157.21,80.0336
+"Mar-23","7A6","Aneurin Bevan University Health Board","mental_illness",198.23,159.81,80.6185
+"Apr-23","7A6","Aneurin Bevan University Health Board","mental_illness",197.33,155.38,78.7412
+"May-23","7A6","Aneurin Bevan University Health Board","mental_illness",197.77,153.81,77.7722
+"Jun-23","7A6","Aneurin Bevan University Health Board","mental_illness",198.87,149.34,75.0943
+"Jul-23","7A6","Aneurin Bevan University Health Board","mental_illness",199.84,152.92,76.5212
+"Aug-23","7A6","Aneurin Bevan University Health Board","mental_illness",200,166.8,83.4
+"Sep-23","7A6","Aneurin Bevan University Health Board","mental_illness",199.93,172.67,86.3652
+"Oct-23","7A6","Aneurin Bevan University Health Board","mental_illness",200.48,161.53,80.5716
+"Nov-23","7A6","Aneurin Bevan University Health Board","mental_illness",201,161.37,80.2836
+"Dec-23","7A6","Aneurin Bevan University Health Board","mental_illness",201,163.74,81.4627
+"Jan-24","7A6","Aneurin Bevan University Health Board","mental_illness",200.9,158.65,78.9696
+"Feb-24","7A6","Aneurin Bevan University Health Board","mental_illness",198.62,158.89,79.997
+"Mar-24","7A6","Aneurin Bevan University Health Board","mental_illness",201,156.63,77.9254
+"Jan-21","7A6","Aneurin Bevan University Health Board","surgical_acute",272.499998,188,68.9908
+"Feb-21","7A6","Aneurin Bevan University Health Board","surgical_acute",249.619997,173.729999,69.5978
+"Mar-21","7A6","Aneurin Bevan University Health Board","surgical_acute",310.830003,197.599999,63.5717
+"Apr-21","7A6","Aneurin Bevan University Health Board","surgical_acute",293.979999,193.460001,65.8072
+"May-21","7A6","Aneurin Bevan University Health Board","surgical_acute",295.180001,190.680001,64.5979
+"Jun-21","7A6","Aneurin Bevan University Health Board","surgical_acute",336.45,189.630003,56.362
+"Jul-21","7A6","Aneurin Bevan University Health Board","surgical_acute",356.780002,211.850003,59.3783
+"Aug-21","7A6","Aneurin Bevan University Health Board","surgical_acute",284.900003,178.559998,62.6746
+"Sep-21","7A6","Aneurin Bevan University Health Board","surgical_acute",372.409998,195.999999,52.6302
+"Oct-21","7A6","Aneurin Bevan University Health Board","surgical_acute",317.259998,185.959999,58.6144
+"Nov-21","7A6","Aneurin Bevan University Health Board","surgical_acute",318.789997,189.670001,59.4968
+"Dec-21","7A6","Aneurin Bevan University Health Board","surgical_acute",307.439999,171.52,55.7897
+"Jan-22","7A6","Aneurin Bevan University Health Board","surgical_acute",293.890003,170.519999,58.0217
+"Feb-22","7A6","Aneurin Bevan University Health Board","surgical_acute",301.380001,164.479998,54.5756
+"Mar-22","7A6","Aneurin Bevan University Health Board","surgical_acute",291.399999,189.799998,65.1338
+"Apr-22","7A6","Aneurin Bevan University Health Board","surgical_acute",284.14,190.27,66.9635
+"May-22","7A6","Aneurin Bevan University Health Board","surgical_acute",285.69,186.39,65.242
+"Jun-22","7A6","Aneurin Bevan University Health Board","surgical_acute",329.89,236.7,71.7512
+"Jul-22","7A6","Aneurin Bevan University Health Board","surgical_acute",331.45,202.72,61.1616
+"Aug-22","7A6","Aneurin Bevan University Health Board","surgical_acute",332.57,218.11,65.5832
+"Sep-22","7A6","Aneurin Bevan University Health Board","surgical_acute",314.63,195.01,61.9807
+"Oct-22","7A6","Aneurin Bevan University Health Board","surgical_acute",340.25,230.09,67.6238
+"Nov-22","7A6","Aneurin Bevan University Health Board","surgical_acute",321.47,203.97,63.4492
+"Dec-22","7A6","Aneurin Bevan University Health Board","surgical_acute",305.98,201.41,65.8246
+"Jan-23","7A6","Aneurin Bevan University Health Board","surgical_acute",305.38,215.54,70.5809
+"Feb-23","7A6","Aneurin Bevan University Health Board","surgical_acute",329.87,235.41,71.3645
+"Mar-23","7A6","Aneurin Bevan University Health Board","surgical_acute",419.52,325.45,77.5768
+"Apr-23","7A6","Aneurin Bevan University Health Board","surgical_acute",401.69,302.53,75.3143
+"May-23","7A6","Aneurin Bevan University Health Board","surgical_acute",344.24,247.5,71.8975
+"Jun-23","7A6","Aneurin Bevan University Health Board","surgical_acute",388.23,306.37,78.9146
+"Jul-23","7A6","Aneurin Bevan University Health Board","surgical_acute",406.16,321.94,79.2643
+"Aug-23","7A6","Aneurin Bevan University Health Board","surgical_acute",347.88,253.56,72.8872
+"Sep-23","7A6","Aneurin Bevan University Health Board","surgical_acute",317.11,223.46,70.4677
+"Oct-23","7A6","Aneurin Bevan University Health Board","surgical_acute",317.59,218.82,68.9002
+"Nov-23","7A6","Aneurin Bevan University Health Board","surgical_acute",330.68,244.36,73.8962
+"Dec-23","7A6","Aneurin Bevan University Health Board","surgical_acute",320.45,218.96,68.3289
+"Jan-24","7A6","Aneurin Bevan University Health Board","surgical_acute",330.76,215.89,65.2709
+"Feb-24","7A6","Aneurin Bevan University Health Board","surgical_acute",304.76,207.61,68.1225
+"Mar-24","7A6","Aneurin Bevan University Health Board","surgical_acute",316.81,214.02,67.5547
+"Jan-21","7A1","Betsi Cadwaladr University Health Board","all_specialties",1980.479995,1641.449997,82.8814
+"Feb-21","7A1","Betsi Cadwaladr University Health Board","all_specialties",2030.60001,1650.290019,81.2711
+"Mar-21","7A1","Betsi Cadwaladr University Health Board","all_specialties",1954.500005,1669.210006,85.4034
+"Apr-21","7A1","Betsi Cadwaladr University Health Board","all_specialties",1988.199983,1670.249998,84.0081
+"May-21","7A1","Betsi Cadwaladr University Health Board","all_specialties",1965.590003,1720.679998,87.5401
+"Jun-21","7A1","Betsi Cadwaladr University Health Board","all_specialties",1967.099999,1723.899997,87.6366
+"Jul-21","7A1","Betsi Cadwaladr University Health Board","all_specialties",2014.900004,1718.110005,85.2702
+"Aug-21","7A1","Betsi Cadwaladr University Health Board","all_specialties",2013.299993,1768.399993,87.8359
+"Sep-21","7A1","Betsi Cadwaladr University Health Board","all_specialties",2014.700004,1745.510006,86.6387
+"Oct-21","7A1","Betsi Cadwaladr University Health Board","all_specialties",2025.850002,1764.299994,87.0894
+"Nov-21","7A1","Betsi Cadwaladr University Health Board","all_specialties",2017.420008,1780.620002,88.2622
+"Dec-21","7A1","Betsi Cadwaladr University Health Board","all_specialties",2084.499989,1758.319995,84.3521
+"Jan-22","7A1","Betsi Cadwaladr University Health Board","all_specialties",2084.20001,1788.900005,85.8315
+"Feb-22","7A1","Betsi Cadwaladr University Health Board","all_specialties",2100.199994,1698.39999,80.8685
+"Mar-22","7A1","Betsi Cadwaladr University Health Board","all_specialties",2107.329995,1833.199996,86.9916
+"Apr-22","7A1","Betsi Cadwaladr University Health Board","all_specialties",2101.8,1764.7,83.9614
+"May-22","7A1","Betsi Cadwaladr University Health Board","all_specialties",2065.55,1833.92,88.786
+"Jun-22","7A1","Betsi Cadwaladr University Health Board","all_specialties",2071,1810.3,87.4119
+"Jul-22","7A1","Betsi Cadwaladr University Health Board","all_specialties",2113.65,1865.22,88.2464
+"Aug-22","7A1","Betsi Cadwaladr University Health Board","all_specialties",2112.16,1896.4,89.7849
+"Sep-22","7A1","Betsi Cadwaladr University Health Board","all_specialties",2120.13,1794.38,84.6354
+"Oct-22","7A1","Betsi Cadwaladr University Health Board","all_specialties",2157.7,1903.2,88.205
+"Nov-22","7A1","Betsi Cadwaladr University Health Board","all_specialties",2139.42,1828.14,85.4503
+"Dec-22","7A1","Betsi Cadwaladr University Health Board","all_specialties",2185.3,1869.66,85.5562
+"Jan-23","7A1","Betsi Cadwaladr University Health Board","all_specialties",2184.7,1924.3,88.0807
+"Feb-23","7A1","Betsi Cadwaladr University Health Board","all_specialties",2086.2,1692.9,81.1475
+"Mar-23","7A1","Betsi Cadwaladr University Health Board","all_specialties",2144.99,1850.85,86.2871
+"Apr-23","7A1","Betsi Cadwaladr University Health Board","all_specialties",2155.3,1847.01,85.6962
+"May-23","7A1","Betsi Cadwaladr University Health Board","all_specialties",2068.5,1866.6,90.2393
+"Jun-23","7A1","Betsi Cadwaladr University Health Board","all_specialties",2165.86,1867.1,86.2059
+"Jul-23","7A1","Betsi Cadwaladr University Health Board","all_specialties",2122.9,1887.26,88.9001
+"Aug-23","7A1","Betsi Cadwaladr University Health Board","all_specialties",2120.7,1899,89.5459
+"Sep-23","7A1","Betsi Cadwaladr University Health Board","all_specialties",2169.6,1916.6,88.3389
+"Oct-23","7A1","Betsi Cadwaladr University Health Board","all_specialties",2359.42,1931.3,81.8549
+"Nov-23","7A1","Betsi Cadwaladr University Health Board","all_specialties",2188.82,1938.19,88.5495
+"Dec-23","7A1","Betsi Cadwaladr University Health Board","all_specialties",2173.3,1905.7,87.6869
+"Jan-24","7A1","Betsi Cadwaladr University Health Board","all_specialties",2196.5,1961.44,89.2984
+"Feb-24","7A1","Betsi Cadwaladr University Health Board","all_specialties",2165.2,1833.19,84.6661
+"Mar-24","7A1","Betsi Cadwaladr University Health Board","all_specialties",2169.28,1958.1,90.265
+"Jan-21","7A1","Betsi Cadwaladr University Health Board","geriatric_medicine",378.009996,298.399998,78.9397
+"Feb-21","7A1","Betsi Cadwaladr University Health Board","geriatric_medicine",368.700001,308.200005,83.591
+"Mar-21","7A1","Betsi Cadwaladr University Health Board","geriatric_medicine",382.300001,350.300002,91.6296
+"Apr-21","7A1","Betsi Cadwaladr University Health Board","geriatric_medicine",390.100002,361.8,92.7454
+"May-21","7A1","Betsi Cadwaladr University Health Board","geriatric_medicine",372.790002,359.900003,96.5423
+"Jun-21","7A1","Betsi Cadwaladr University Health Board","geriatric_medicine",375.999998,362.499996,96.4096
+"Jul-21","7A1","Betsi Cadwaladr University Health Board","geriatric_medicine",379.199999,362.199999,95.5169
+"Aug-21","7A1","Betsi Cadwaladr University Health Board","geriatric_medicine",392.399998,372.9,95.0306
+"Sep-21","7A1","Betsi Cadwaladr University Health Board","geriatric_medicine",369.7,336.799999,91.1009
+"Oct-21","7A1","Betsi Cadwaladr University Health Board","geriatric_medicine",411.749997,380.199996,92.3376
+"Nov-21","7A1","Betsi Cadwaladr University Health Board","geriatric_medicine",411.500001,384.700003,93.4872
+"Dec-21","7A1","Betsi Cadwaladr University Health Board","geriatric_medicine",433,393.299996,90.8314
+"Jan-22","7A1","Betsi Cadwaladr University Health Board","geriatric_medicine",418.6,399.600001,95.4611
+"Feb-22","7A1","Betsi Cadwaladr University Health Board","geriatric_medicine",386.499998,347.499996,89.9094
+"Mar-22","7A1","Betsi Cadwaladr University Health Board","geriatric_medicine",396.829999,373.800003,94.1965
+"Apr-22","7A1","Betsi Cadwaladr University Health Board","geriatric_medicine",397.8,368.4,92.6094
+"May-22","7A1","Betsi Cadwaladr University Health Board","geriatric_medicine",370.23,343.7,92.8342
+"Jun-22","7A1","Betsi Cadwaladr University Health Board","geriatric_medicine",314.8,297.6,94.5362
+"Jul-22","7A1","Betsi Cadwaladr University Health Board","geriatric_medicine",365.65,337.4,92.274
+"Aug-22","7A1","Betsi Cadwaladr University Health Board","geriatric_medicine",371.36,342.6,92.2555
+"Sep-22","7A1","Betsi Cadwaladr University Health Board","geriatric_medicine",360.1,296.8,82.4215
+"Oct-22","7A1","Betsi Cadwaladr University Health Board","geriatric_medicine",393.2,348.2,88.5554
+"Nov-22","7A1","Betsi Cadwaladr University Health Board","geriatric_medicine",418.5,350.9,83.8471
+"Dec-22","7A1","Betsi Cadwaladr University Health Board","geriatric_medicine",400.2,324.2,81.0095
+"Jan-23","7A1","Betsi Cadwaladr University Health Board","geriatric_medicine",393.1,356.7,90.7403
+"Feb-23","7A1","Betsi Cadwaladr University Health Board","geriatric_medicine",396.5,332.4,83.8335
+"Mar-23","7A1","Betsi Cadwaladr University Health Board","geriatric_medicine",371.6,320.5,86.2487
+"Apr-23","7A1","Betsi Cadwaladr University Health Board","geriatric_medicine",378.2,326.3,86.2771
+"May-23","7A1","Betsi Cadwaladr University Health Board","geriatric_medicine",368.1,359.7,97.718
+"Jun-23","7A1","Betsi Cadwaladr University Health Board","geriatric_medicine",388.88,365.3,93.9364
+"Jul-23","7A1","Betsi Cadwaladr University Health Board","geriatric_medicine",373,363.4,97.4263
+"Aug-23","7A1","Betsi Cadwaladr University Health Board","geriatric_medicine",433.4,423.2,97.6465
+"Sep-23","7A1","Betsi Cadwaladr University Health Board","geriatric_medicine",449.6,429.2,95.4626
+"Oct-23","7A1","Betsi Cadwaladr University Health Board","geriatric_medicine",435.42,415.9,95.517
+"Nov-23","7A1","Betsi Cadwaladr University Health Board","geriatric_medicine",435.2,410.1,94.2325
+"Dec-23","7A1","Betsi Cadwaladr University Health Board","geriatric_medicine",428.3,407.4,95.1202
+"Jan-24","7A1","Betsi Cadwaladr University Health Board","geriatric_medicine",454.3,434.7,95.6857
+"Feb-24","7A1","Betsi Cadwaladr University Health Board","geriatric_medicine",439.6,400.9,91.1965
+"Mar-24","7A1","Betsi Cadwaladr University Health Board","geriatric_medicine",440.5,431.2,97.8888
+"Jan-21","7A1","Betsi Cadwaladr University Health Board","maternity",63.220002,34.3,54.255
+"Feb-21","7A1","Betsi Cadwaladr University Health Board","maternity",75.200001,40.4,53.7234
+"Mar-21","7A1","Betsi Cadwaladr University Health Board","maternity",74.699999,46.070001,61.6734
+"Apr-21","7A1","Betsi Cadwaladr University Health Board","maternity",76.599999,36.699999,47.9112
+"May-21","7A1","Betsi Cadwaladr University Health Board","maternity",76.400001,44.199999,57.8534
+"Jun-21","7A1","Betsi Cadwaladr University Health Board","maternity",75.6,46.6,61.6402
+"Jul-21","7A1","Betsi Cadwaladr University Health Board","maternity",73.9,46.1,62.3816
+"Aug-21","7A1","Betsi Cadwaladr University Health Board","maternity",72.3,46.5,64.3154
+"Sep-21","7A1","Betsi Cadwaladr University Health Board","maternity",75.9,49.200001,64.8221
+"Oct-21","7A1","Betsi Cadwaladr University Health Board","maternity",73.999999,46.5,62.8378
+"Nov-21","7A1","Betsi Cadwaladr University Health Board","maternity",75.400002,44,58.3554
+"Dec-21","7A1","Betsi Cadwaladr University Health Board","maternity",72.300001,44.27,61.231
+"Jan-22","7A1","Betsi Cadwaladr University Health Board","maternity",78.400002,48.4,61.7347
+"Feb-22","7A1","Betsi Cadwaladr University Health Board","maternity",73.999999,43.799999,59.1892
+"Mar-22","7A1","Betsi Cadwaladr University Health Board","maternity",70.5,40.200001,57.0213
+"Apr-22","7A1","Betsi Cadwaladr University Health Board","maternity",73.8,41.8,56.6396
+"May-22","7A1","Betsi Cadwaladr University Health Board","maternity",73,42.7,58.4932
+"Jun-22","7A1","Betsi Cadwaladr University Health Board","maternity",75.8,54.3,71.6359
+"Jul-22","7A1","Betsi Cadwaladr University Health Board","maternity",72.3,48.1,66.5284
+"Aug-22","7A1","Betsi Cadwaladr University Health Board","maternity",79.6,58.5,73.4925
+"Sep-22","7A1","Betsi Cadwaladr University Health Board","maternity",83.15,65.1,78.2922
+"Oct-22","7A1","Betsi Cadwaladr University Health Board","maternity",91.8,75.2,81.9172
+"Nov-22","7A1","Betsi Cadwaladr University Health Board","maternity",92.7,70.1,75.6203
+"Dec-22","7A1","Betsi Cadwaladr University Health Board","maternity",99.7,82.5,82.7482
+"Jan-23","7A1","Betsi Cadwaladr University Health Board","maternity",103.6,83.2,80.3089
+"Feb-23","7A1","Betsi Cadwaladr University Health Board","maternity",74,44.9,60.6757
+"Mar-23","7A1","Betsi Cadwaladr University Health Board","maternity",76.8,51.3,66.7969
+"Apr-23","7A1","Betsi Cadwaladr University Health Board","maternity",74.5,45.1,60.5369
+"May-23","7A1","Betsi Cadwaladr University Health Board","maternity",74.2,43.4,58.4906
+"Jun-23","7A1","Betsi Cadwaladr University Health Board","maternity",75.4,47.5,62.9973
+"Jul-23","7A1","Betsi Cadwaladr University Health Board","maternity",78.1,55.2,70.6786
+"Aug-23","7A1","Betsi Cadwaladr University Health Board","maternity",73,52.2,71.5068
+"Sep-23","7A1","Betsi Cadwaladr University Health Board","maternity",74.5,48.4,64.9664
+"Oct-23","7A1","Betsi Cadwaladr University Health Board","maternity",250.9,48.1,19.171
+"Nov-23","7A1","Betsi Cadwaladr University Health Board","maternity",74.6,47.2,63.2708
+"Dec-23","7A1","Betsi Cadwaladr University Health Board","maternity",83.6,45,53.8278
+"Jan-24","7A1","Betsi Cadwaladr University Health Board","maternity",88.8,49.2,55.4054
+"Feb-24","7A1","Betsi Cadwaladr University Health Board","maternity",90.8,44.9,49.4493
+"Mar-24","7A1","Betsi Cadwaladr University Health Board","maternity",89.8,47.9,53.3408
+"Jan-21","7A1","Betsi Cadwaladr University Health Board","medical_acute",857.599993,753.199997,87.8265
+"Feb-21","7A1","Betsi Cadwaladr University Health Board","medical_acute",915.700004,751.300009,82.0465
+"Mar-21","7A1","Betsi Cadwaladr University Health Board","medical_acute",891.500005,720.400001,80.8076
+"Apr-21","7A1","Betsi Cadwaladr University Health Board","medical_acute",856.499989,705.599999,82.3818
+"May-21","7A1","Betsi Cadwaladr University Health Board","medical_acute",827.599994,732.299996,88.4848
+"Jun-21","7A1","Betsi Cadwaladr University Health Board","medical_acute",838.399997,721.099994,86.0091
+"Jul-21","7A1","Betsi Cadwaladr University Health Board","medical_acute",867.900001,726.880003,83.7516
+"Aug-21","7A1","Betsi Cadwaladr University Health Board","medical_acute",837.299997,756.6,90.3619
+"Sep-21","7A1","Betsi Cadwaladr University Health Board","medical_acute",882.000003,761.710004,86.3617
+"Oct-21","7A1","Betsi Cadwaladr University Health Board","medical_acute",824.4,736.799994,89.3741
+"Nov-21","7A1","Betsi Cadwaladr University Health Board","medical_acute",845.120004,749.099995,88.6383
+"Dec-21","7A1","Betsi Cadwaladr University Health Board","medical_acute",886.79999,747.949997,84.3426
+"Jan-22","7A1","Betsi Cadwaladr University Health Board","medical_acute",902.100009,758.200003,84.0483
+"Feb-22","7A1","Betsi Cadwaladr University Health Board","medical_acute",925.100003,757.499998,81.883
+"Mar-22","7A1","Betsi Cadwaladr University Health Board","medical_acute",937.299997,819.299994,87.4106
+"Apr-22","7A1","Betsi Cadwaladr University Health Board","medical_acute",912.8,770.2,84.3777
+"May-22","7A1","Betsi Cadwaladr University Health Board","medical_acute",938.6,852,90.7735
+"Jun-22","7A1","Betsi Cadwaladr University Health Board","medical_acute",999.3,893.6,89.4226
+"Jul-22","7A1","Betsi Cadwaladr University Health Board","medical_acute",989.9,901.6,91.0799
+"Aug-22","7A1","Betsi Cadwaladr University Health Board","medical_acute",974.5,890.9,91.4212
+"Sep-22","7A1","Betsi Cadwaladr University Health Board","medical_acute",983.6,851.8,86.6002
+"Oct-22","7A1","Betsi Cadwaladr University Health Board","medical_acute",976.3,873.6,89.4807
+"Nov-22","7A1","Betsi Cadwaladr University Health Board","medical_acute",940.02,827.84,88.0662
+"Dec-22","7A1","Betsi Cadwaladr University Health Board","medical_acute",1022.4,893.73,87.4149
+"Jan-23","7A1","Betsi Cadwaladr University Health Board","medical_acute",1017.6,894.9,87.9422
+"Feb-23","7A1","Betsi Cadwaladr University Health Board","medical_acute",931.8,778.8,83.5802
+"Mar-23","7A1","Betsi Cadwaladr University Health Board","medical_acute",1014.4,906.1,89.3237
+"Apr-23","7A1","Betsi Cadwaladr University Health Board","medical_acute",1015.9,918.9,90.4518
+"May-23","7A1","Betsi Cadwaladr University Health Board","medical_acute",926.3,850.9,91.8601
+"Jun-23","7A1","Betsi Cadwaladr University Health Board","medical_acute",925.5,801,86.5478
+"Jul-23","7A1","Betsi Cadwaladr University Health Board","medical_acute",898.9,783.06,87.1131
+"Aug-23","7A1","Betsi Cadwaladr University Health Board","medical_acute",903.3,798.7,88.4202
+"Sep-23","7A1","Betsi Cadwaladr University Health Board","medical_acute",926.3,818.5,88.3623
+"Oct-23","7A1","Betsi Cadwaladr University Health Board","medical_acute",999.2,888.5,88.9211
+"Nov-23","7A1","Betsi Cadwaladr University Health Board","medical_acute",990,883.03,89.1949
+"Dec-23","7A1","Betsi Cadwaladr University Health Board","medical_acute",968.6,847.2,87.4664
+"Jan-24","7A1","Betsi Cadwaladr University Health Board","medical_acute",945.3,850.5,89.9714
+"Feb-24","7A1","Betsi Cadwaladr University Health Board","medical_acute",923.1,804.42,87.1433
+"Mar-24","7A1","Betsi Cadwaladr University Health Board","medical_acute",888.8,816.1,91.8204
+"Jan-21","7A1","Betsi Cadwaladr University Health Board","mental_illness",232.500004,206.6,88.8602
+"Feb-21","7A1","Betsi Cadwaladr University Health Board","mental_illness",239.799998,212.900002,88.7823
+"Mar-21","7A1","Betsi Cadwaladr University Health Board","mental_illness",232,215.300001,92.8017
+"Apr-21","7A1","Betsi Cadwaladr University Health Board","mental_illness",243.699996,216.500002,88.8387
+"May-21","7A1","Betsi Cadwaladr University Health Board","mental_illness",234.900001,211.900001,90.2086
+"Jun-21","7A1","Betsi Cadwaladr University Health Board","mental_illness",232.4,216.2,93.0293
+"Jul-21","7A1","Betsi Cadwaladr University Health Board","mental_illness",240.400001,208.800002,86.8552
+"Aug-21","7A1","Betsi Cadwaladr University Health Board","mental_illness",250.000001,209.399997,83.76
+"Sep-21","7A1","Betsi Cadwaladr University Health Board","mental_illness",242.899998,207.7,85.5084
+"Oct-21","7A1","Betsi Cadwaladr University Health Board","mental_illness",236.8,206.599999,87.2466
+"Nov-21","7A1","Betsi Cadwaladr University Health Board","mental_illness",244.7,210.900001,86.1872
+"Dec-21","7A1","Betsi Cadwaladr University Health Board","mental_illness",240.099998,209.4,87.2137
+"Jan-22","7A1","Betsi Cadwaladr University Health Board","mental_illness",245.100001,208.1,84.9041
+"Feb-22","7A1","Betsi Cadwaladr University Health Board","mental_illness",244.199998,199.699999,81.7772
+"Mar-22","7A1","Betsi Cadwaladr University Health Board","mental_illness",243,218.199999,89.7942
+"Apr-22","7A1","Betsi Cadwaladr University Health Board","mental_illness",248.7,203.6,81.8657
+"May-22","7A1","Betsi Cadwaladr University Health Board","mental_illness",233.5,205.1,87.8373
+"Jun-22","7A1","Betsi Cadwaladr University Health Board","mental_illness",247.6,204.5,82.5929
+"Jul-22","7A1","Betsi Cadwaladr University Health Board","mental_illness",246.9,201.9,81.774
+"Aug-22","7A1","Betsi Cadwaladr University Health Board","mental_illness",245.4,217.8,88.7531
+"Sep-22","7A1","Betsi Cadwaladr University Health Board","mental_illness",239.78,208.08,86.7795
+"Oct-22","7A1","Betsi Cadwaladr University Health Board","mental_illness",242.3,220.4,90.9616
+"Nov-22","7A1","Betsi Cadwaladr University Health Board","mental_illness",253.7,223,87.8991
+"Dec-22","7A1","Betsi Cadwaladr University Health Board","mental_illness",248.4,227.3,91.5056
+"Jan-23","7A1","Betsi Cadwaladr University Health Board","mental_illness",240.3,217.6,90.5535
+"Feb-23","7A1","Betsi Cadwaladr University Health Board","mental_illness",240.4,195.2,81.198
+"Mar-23","7A1","Betsi Cadwaladr University Health Board","mental_illness",241.9,214.6,88.7143
+"Apr-23","7A1","Betsi Cadwaladr University Health Board","mental_illness",241.6,221.7,91.7632
+"May-23","7A1","Betsi Cadwaladr University Health Board","mental_illness",242.5,220.8,91.0515
+"Jun-23","7A1","Betsi Cadwaladr University Health Board","mental_illness",243.98,215.5,88.3269
+"Jul-23","7A1","Betsi Cadwaladr University Health Board","mental_illness",245.4,229,93.317
+"Aug-23","7A1","Betsi Cadwaladr University Health Board","mental_illness",248.1,232.7,93.7928
+"Sep-23","7A1","Betsi Cadwaladr University Health Board","mental_illness",248.7,230.6,92.7222
+"Oct-23","7A1","Betsi Cadwaladr University Health Board","mental_illness",246.8,225.8,91.4911
+"Nov-23","7A1","Betsi Cadwaladr University Health Board","mental_illness",247.8,228.2,92.0904
+"Dec-23","7A1","Betsi Cadwaladr University Health Board","mental_illness",237.1,218.8,92.2817
+"Jan-24","7A1","Betsi Cadwaladr University Health Board","mental_illness",238.1,216.3,90.8442
+"Feb-24","7A1","Betsi Cadwaladr University Health Board","mental_illness",244.4,210.4,86.0884
+"Mar-24","7A1","Betsi Cadwaladr University Health Board","mental_illness",247.2,223.6,90.4531
+"Jan-21","7A1","Betsi Cadwaladr University Health Board","surgical_acute",299.649998,234.75,78.3414
+"Feb-21","7A1","Betsi Cadwaladr University Health Board","surgical_acute",291.300004,214.890002,73.7693
+"Mar-21","7A1","Betsi Cadwaladr University Health Board","surgical_acute",240.600001,216.300002,89.9002
+"Apr-21","7A1","Betsi Cadwaladr University Health Board","surgical_acute",270.499996,228.549997,84.4917
+"May-21","7A1","Betsi Cadwaladr University Health Board","surgical_acute",310.200005,251.4,81.0445
+"Jun-21","7A1","Betsi Cadwaladr University Health Board","surgical_acute",304.800003,258.900007,84.9409
+"Jul-21","7A1","Betsi Cadwaladr University Health Board","surgical_acute",297.100001,244.630001,82.3393
+"Aug-21","7A1","Betsi Cadwaladr University Health Board","surgical_acute",311.399996,252.999995,81.246
+"Sep-21","7A1","Betsi Cadwaladr University Health Board","surgical_acute",293.000002,257.300001,87.8157
+"Oct-21","7A1","Betsi Cadwaladr University Health Board","surgical_acute",323.200005,257.200004,79.5792
+"Nov-21","7A1","Betsi Cadwaladr University Health Board","surgical_acute",286.2,256.420002,89.5947
+"Dec-21","7A1","Betsi Cadwaladr University Health Board","surgical_acute",304.299999,239.8,78.8038
+"Jan-22","7A1","Betsi Cadwaladr University Health Board","surgical_acute",279.3,233.400002,83.5661
+"Feb-22","7A1","Betsi Cadwaladr University Health Board","surgical_acute",312.699998,218.299998,69.8113
+"Mar-22","7A1","Betsi Cadwaladr University Health Board","surgical_acute",295.699999,238.799999,80.7575
+"Apr-22","7A1","Betsi Cadwaladr University Health Board","surgical_acute",305.7,244,79.8168
+"May-22","7A1","Betsi Cadwaladr University Health Board","surgical_acute",297.12,255.12,85.8643
+"Jun-22","7A1","Betsi Cadwaladr University Health Board","surgical_acute",305.8,255.7,83.6167
+"Jul-22","7A1","Betsi Cadwaladr University Health Board","surgical_acute",307.6,268.12,87.1651
+"Aug-22","7A1","Betsi Cadwaladr University Health Board","surgical_acute",297.7,259.7,87.2355
+"Sep-22","7A1","Betsi Cadwaladr University Health Board","surgical_acute",314.9,258.2,81.9943
+"Oct-22","7A1","Betsi Cadwaladr University Health Board","surgical_acute",309.9,255.8,82.5428
+"Nov-22","7A1","Betsi Cadwaladr University Health Board","surgical_acute",302.8,243.4,80.3831
+"Dec-22","7A1","Betsi Cadwaladr University Health Board","surgical_acute",284.5,226.83,79.7293
+"Jan-23","7A1","Betsi Cadwaladr University Health Board","surgical_acute",291.9,241,82.5625
+"Feb-23","7A1","Betsi Cadwaladr University Health Board","surgical_acute",309,235.8,76.3107
+"Mar-23","7A1","Betsi Cadwaladr University Health Board","surgical_acute",298.85,237.35,79.4211
+"Apr-23","7A1","Betsi Cadwaladr University Health Board","surgical_acute",319.3,249.71,78.2054
+"May-23","7A1","Betsi Cadwaladr University Health Board","surgical_acute",332.1,280.3,84.4023
+"Jun-23","7A1","Betsi Cadwaladr University Health Board","surgical_acute",369.2,290.6,78.7107
+"Jul-23","7A1","Betsi Cadwaladr University Health Board","surgical_acute",359.7,300.4,83.514
+"Aug-23","7A1","Betsi Cadwaladr University Health Board","surgical_acute",329,270.1,82.0973
+"Sep-23","7A1","Betsi Cadwaladr University Health Board","surgical_acute",341.8,277.2,81.1001
+"Oct-23","7A1","Betsi Cadwaladr University Health Board","surgical_acute",315.2,257.7,81.7576
+"Nov-23","7A1","Betsi Cadwaladr University Health Board","surgical_acute",315.82,256.06,81.0778
+"Dec-23","7A1","Betsi Cadwaladr University Health Board","surgical_acute",330.1,275.5,83.4596
+"Jan-24","7A1","Betsi Cadwaladr University Health Board","surgical_acute",346,293.44,84.8092
+"Feb-24","7A1","Betsi Cadwaladr University Health Board","surgical_acute",337.8,271.17,80.2753
+"Mar-24","7A1","Betsi Cadwaladr University Health Board","surgical_acute",362.88,321,88.459
+"Jan-21","7A4","Cardiff and Vale University Health Board","all_specialties",1936.890008,1290.309993,66.6176
+"Feb-21","7A4","Cardiff and Vale University Health Board","all_specialties",1992.800024,1304.380011,65.4546
+"Mar-21","7A4","Cardiff and Vale University Health Board","all_specialties",1962.359985,1310.570013,66.7854
+"Apr-21","7A4","Cardiff and Vale University Health Board","all_specialties",1907.759992,1331.979998,69.8191
+"May-21","7A4","Cardiff and Vale University Health Board","all_specialties",1702.419998,1342.849992,78.8789
+"Jun-21","7A4","Cardiff and Vale University Health Board","all_specialties",1702.369991,1375.839994,80.8191
+"Jul-21","7A4","Cardiff and Vale University Health Board","all_specialties",1708.24,1400.46,81.9826
+"Aug-21","7A4","Cardiff and Vale University Health Board","all_specialties",1730.719993,1383.24,79.9228
+"Sep-21","7A4","Cardiff and Vale University Health Board","all_specialties",1726.220018,1418.100012,82.1506
+"Oct-21","7A4","Cardiff and Vale University Health Board","all_specialties",1743.010009,1437.449992,82.4694
+"Nov-21","7A4","Cardiff and Vale University Health Board","all_specialties",1781.829992,1484.539986,83.3155
+"Dec-21","7A4","Cardiff and Vale University Health Board","all_specialties",1774.460027,1464.989997,82.5598
+"Jan-22","7A4","Cardiff and Vale University Health Board","all_specialties",1836.460006,1511.229992,82.2904
+"Feb-22","7A4","Cardiff and Vale University Health Board","all_specialties",1829.610002,1542.269987,84.295
+"Mar-22","7A4","Cardiff and Vale University Health Board","all_specialties",1819.850005,1510.209987,82.9854
+"Apr-22","7A4","Cardiff and Vale University Health Board","all_specialties",1789.77,1492.26,83.3772
+"May-22","7A4","Cardiff and Vale University Health Board","all_specialties",1783.65,1503.14,84.2733
+"Jun-22","7A4","Cardiff and Vale University Health Board","all_specialties",1768.33,1521.96,86.0676
+"Jul-22","7A4","Cardiff and Vale University Health Board","all_specialties",1784.04,1543.34,86.5082
+"Aug-22","7A4","Cardiff and Vale University Health Board","all_specialties",1800.47,1580.17,87.7643
+"Sep-22","7A4","Cardiff and Vale University Health Board","all_specialties",1841.48,1593.18,86.5163
+"Oct-22","7A4","Cardiff and Vale University Health Board","all_specialties",1856.9,1626.42,87.5879
+"Nov-22","7A4","Cardiff and Vale University Health Board","all_specialties",1794.73,1560.92,86.9724
+"Dec-22","7A4","Cardiff and Vale University Health Board","all_specialties",1768.55,1526.87,86.3346
+"Jan-23","7A4","Cardiff and Vale University Health Board","all_specialties",1777.67,1564.11,87.9865
+"Feb-23","7A4","Cardiff and Vale University Health Board","all_specialties",1780.74,1561.18,87.6703
+"Mar-23","7A4","Cardiff and Vale University Health Board","all_specialties",1604.25,1408.05,87.77
+"Apr-23","7A4","Cardiff and Vale University Health Board","all_specialties",1812.55,1599.28,88.2337
+"May-23","7A4","Cardiff and Vale University Health Board","all_specialties",1810.67,1608.08,88.8113
+"Jun-23","7A4","Cardiff and Vale University Health Board","all_specialties",1755.88,1529.48,87.1062
+"Jul-23","7A4","Cardiff and Vale University Health Board","all_specialties",1794.06,1559.18,86.9079
+"Aug-23","7A4","Cardiff and Vale University Health Board","all_specialties",1767.5,1471.57,83.2571
+"Sep-23","7A4","Cardiff and Vale University Health Board","all_specialties",1761.79,1515.24,86.0057
+"Oct-23","7A4","Cardiff and Vale University Health Board","all_specialties",1782.65,1537.96,86.2738
+"Nov-23","7A4","Cardiff and Vale University Health Board","all_specialties",1782.46,1557.48,87.3781
+"Dec-23","7A4","Cardiff and Vale University Health Board","all_specialties",1806.67,1511.96,83.6877
+"Jan-24","7A4","Cardiff and Vale University Health Board","all_specialties",1820.37,1543.94,84.8146
+"Feb-24","7A4","Cardiff and Vale University Health Board","all_specialties",1817.54,1560,85.8303
+"Mar-24","7A4","Cardiff and Vale University Health Board","all_specialties",1816.97,1552.46,85.4422
+"Jan-21","7A4","Cardiff and Vale University Health Board","geriatric_medicine",66.569999,47.830001,71.8492
+"Feb-21","7A4","Cardiff and Vale University Health Board","geriatric_medicine",79.68,58.18,73.0171
+"Mar-21","7A4","Cardiff and Vale University Health Board","geriatric_medicine",70.300001,63.619998,90.4979
+"Apr-21","7A4","Cardiff and Vale University Health Board","geriatric_medicine",70.73,61.299998,86.6676
+"May-21","7A4","Cardiff and Vale University Health Board","geriatric_medicine",67.870001,59.130001,87.1224
+"Jun-21","7A4","Cardiff and Vale University Health Board","geriatric_medicine",70.76,67.93,96.0006
+"Jul-21","7A4","Cardiff and Vale University Health Board","geriatric_medicine",64.51,64.51,100
+"Aug-21","7A4","Cardiff and Vale University Health Board","geriatric_medicine",62.059998,60.929999,98.1792
+"Sep-21","7A4","Cardiff and Vale University Health Board","geriatric_medicine",67.660002,67.200001,99.3201
+"Oct-21","7A4","Cardiff and Vale University Health Board","geriatric_medicine",77.639999,76.45,98.4673
+"Nov-21","7A4","Cardiff and Vale University Health Board","geriatric_medicine",76.67,76.269999,99.4783
+"Dec-21","7A4","Cardiff and Vale University Health Board","geriatric_medicine",73.609998,73.029998,99.2121
+"Jan-22","7A4","Cardiff and Vale University Health Board","geriatric_medicine",67.26,66.35,98.647
+"Feb-22","7A4","Cardiff and Vale University Health Board","geriatric_medicine",68.830002,68.400002,99.3753
+"Mar-22","7A4","Cardiff and Vale University Health Board","geriatric_medicine",63.770001,62.870001,98.5887
+"Apr-22","7A4","Cardiff and Vale University Health Board","geriatric_medicine",49.8,48.5,97.3896
+"May-22","7A4","Cardiff and Vale University Health Board","geriatric_medicine",47.8,47.8,100
+"Jun-22","7A4","Cardiff and Vale University Health Board","geriatric_medicine",46.33,46.33,100
+"Jul-22","7A4","Cardiff and Vale University Health Board","geriatric_medicine",46.16,46.16,100
+"Aug-22","7A4","Cardiff and Vale University Health Board","geriatric_medicine",51.78,51.78,100
+"Sep-22","7A4","Cardiff and Vale University Health Board","geriatric_medicine",59.23,58.6,98.9363
+"Oct-22","7A4","Cardiff and Vale University Health Board","geriatric_medicine",61.15,60.54,99.0025
+"Nov-22","7A4","Cardiff and Vale University Health Board","geriatric_medicine",70.97,70.73,99.6618
+"Dec-22","7A4","Cardiff and Vale University Health Board","geriatric_medicine",104.16,102.58,98.4831
+"Jan-23","7A4","Cardiff and Vale University Health Board","geriatric_medicine",124.51,124.51,100
+"Feb-23","7A4","Cardiff and Vale University Health Board","geriatric_medicine",118.96,118.96,100
+"Mar-23","7A4","Cardiff and Vale University Health Board","geriatric_medicine",109.49,109.26,99.7899
+"Apr-23","7A4","Cardiff and Vale University Health Board","geriatric_medicine",118.13,115.96,98.163
+"May-23","7A4","Cardiff and Vale University Health Board","geriatric_medicine",121.91,115.94,95.1029
+"Jun-23","7A4","Cardiff and Vale University Health Board","geriatric_medicine",110.54,108.5,98.1545
+"Jul-23","7A4","Cardiff and Vale University Health Board","geriatric_medicine",101.62,99.68,98.0909
+"Aug-23","7A4","Cardiff and Vale University Health Board","geriatric_medicine",97,78.64,81.0722
+"Sep-23","7A4","Cardiff and Vale University Health Board","geriatric_medicine",99.66,97.93,98.2641
+"Oct-23","7A4","Cardiff and Vale University Health Board","geriatric_medicine",106.99,100.57,93.9994
+"Nov-23","7A4","Cardiff and Vale University Health Board","geriatric_medicine",124.93,120.16,96.1819
+"Dec-23","7A4","Cardiff and Vale University Health Board","geriatric_medicine",144.71,137.97,95.3424
+"Jan-24","7A4","Cardiff and Vale University Health Board","geriatric_medicine",141.96,139.61,98.3446
+"Feb-24","7A4","Cardiff and Vale University Health Board","geriatric_medicine",141.45,137.28,97.052
+"Mar-24","7A4","Cardiff and Vale University Health Board","geriatric_medicine",135.07,130.62,96.7054
+"Jan-21","7A4","Cardiff and Vale University Health Board","maternity",84.1,32.870001,39.0844
+"Feb-21","7A4","Cardiff and Vale University Health Board","maternity",82.709999,38.61,46.6812
+"Mar-21","7A4","Cardiff and Vale University Health Board","maternity",82.030001,33.16,40.4242
+"Apr-21","7A4","Cardiff and Vale University Health Board","maternity",81.400002,37.26,45.774
+"May-21","7A4","Cardiff and Vale University Health Board","maternity",63.319999,38.29,60.4706
+"Jun-21","7A4","Cardiff and Vale University Health Board","maternity",64.169999,39.019999,60.8072
+"Jul-21","7A4","Cardiff and Vale University Health Board","maternity",68.33,38.910001,56.9442
+"Aug-21","7A4","Cardiff and Vale University Health Board","maternity",77.030001,37.710001,48.955
+"Sep-21","7A4","Cardiff and Vale University Health Board","maternity",64.000001,37.260002,58.2188
+"Oct-21","7A4","Cardiff and Vale University Health Board","maternity",65.87,40.8,61.9402
+"Nov-21","7A4","Cardiff and Vale University Health Board","maternity",75.300001,42.200001,56.0425
+"Dec-21","7A4","Cardiff and Vale University Health Board","maternity",76.419998,42.679998,55.8493
+"Jan-22","7A4","Cardiff and Vale University Health Board","maternity",74.840002,37.870001,50.6013
+"Feb-22","7A4","Cardiff and Vale University Health Board","maternity",77.529999,34.680001,44.7311
+"Mar-22","7A4","Cardiff and Vale University Health Board","maternity",75.250002,41.87,55.6412
+"Apr-22","7A4","Cardiff and Vale University Health Board","maternity",70.57,40.2,56.9647
+"May-22","7A4","Cardiff and Vale University Health Board","maternity",75.9,38.23,50.3689
+"Jun-22","7A4","Cardiff and Vale University Health Board","maternity",74.43,37.3,50.1142
+"Jul-22","7A4","Cardiff and Vale University Health Board","maternity",75.87,43,56.6759
+"Aug-22","7A4","Cardiff and Vale University Health Board","maternity",76.16,38.03,49.9343
+"Sep-22","7A4","Cardiff and Vale University Health Board","maternity",72.3,43.4,60.0277
+"Oct-22","7A4","Cardiff and Vale University Health Board","maternity",70.1,45.58,65.0214
+"Nov-22","7A4","Cardiff and Vale University Health Board","maternity",77.4,36.13,46.6796
+"Dec-22","7A4","Cardiff and Vale University Health Board","maternity",75.42,35.71,47.3482
+"Jan-23","7A4","Cardiff and Vale University Health Board","maternity",77.74,35.52,45.6908
+"Feb-23","7A4","Cardiff and Vale University Health Board","maternity",75.81,36.6,48.2786
+"Mar-23","7A4","Cardiff and Vale University Health Board","maternity",68.48,33.06,48.2769
+"Apr-23","7A4","Cardiff and Vale University Health Board","maternity",76.44,41.34,54.0816
+"May-23","7A4","Cardiff and Vale University Health Board","maternity",81.84,41.13,50.2566
+"Jun-23","7A4","Cardiff and Vale University Health Board","maternity",83.4,36.93,44.2806
+"Jul-23","7A4","Cardiff and Vale University Health Board","maternity",79.91,38.16,47.7537
+"Aug-23","7A4","Cardiff and Vale University Health Board","maternity",83.77,34.68,41.3991
+"Sep-23","7A4","Cardiff and Vale University Health Board","maternity",77.83,32.97,42.3616
+"Oct-23","7A4","Cardiff and Vale University Health Board","maternity",76.48,35.71,46.6919
+"Nov-23","7A4","Cardiff and Vale University Health Board","maternity",79.27,41.46,52.3023
+"Dec-23","7A4","Cardiff and Vale University Health Board","maternity",79.36,37.51,47.2656
+"Jan-24","7A4","Cardiff and Vale University Health Board","maternity",80.35,35.71,44.4431
+"Feb-24","7A4","Cardiff and Vale University Health Board","maternity",81.38,38.17,46.9034
+"Mar-24","7A4","Cardiff and Vale University Health Board","maternity",81.32,34.54,42.4742
+"Jan-21","7A4","Cardiff and Vale University Health Board","medical_acute",1048.079997,766.319994,73.1166
+"Feb-21","7A4","Cardiff and Vale University Health Board","medical_acute",1098.680015,764.100008,69.5471
+"Mar-21","7A4","Cardiff and Vale University Health Board","medical_acute",1044.509996,684.610017,65.5437
+"Apr-21","7A4","Cardiff and Vale University Health Board","medical_acute",965.48999,652.319991,67.5636
+"May-21","7A4","Cardiff and Vale University Health Board","medical_acute",873.940004,674.269997,77.1529
+"Jun-21","7A4","Cardiff and Vale University Health Board","medical_acute",878.059993,687.619997,78.3113
+"Jul-21","7A4","Cardiff and Vale University Health Board","medical_acute",887.289997,723.95999,81.5923
+"Aug-21","7A4","Cardiff and Vale University Health Board","medical_acute",892.589994,718.809996,80.5308
+"Sep-21","7A4","Cardiff and Vale University Health Board","medical_acute",886.890021,735.650007,82.9472
+"Oct-21","7A4","Cardiff and Vale University Health Board","medical_acute",887.950006,754.899989,85.016
+"Nov-21","7A4","Cardiff and Vale University Health Board","medical_acute",937.989985,814.479988,86.8325
+"Dec-21","7A4","Cardiff and Vale University Health Board","medical_acute",926.310021,792.620006,85.5675
+"Jan-22","7A4","Cardiff and Vale University Health Board","medical_acute",989.700001,846.019992,85.4825
+"Feb-22","7A4","Cardiff and Vale University Health Board","medical_acute",992.739999,856.739982,86.3005
+"Mar-22","7A4","Cardiff and Vale University Health Board","medical_acute",987.640003,835.229988,84.5683
+"Apr-22","7A4","Cardiff and Vale University Health Board","medical_acute",974.06,841.01,86.3407
+"May-22","7A4","Cardiff and Vale University Health Board","medical_acute",952.84,842.96,88.4682
+"Jun-22","7A4","Cardiff and Vale University Health Board","medical_acute",947.21,866.2,91.4475
+"Jul-22","7A4","Cardiff and Vale University Health Board","medical_acute",954.71,859.32,90.0085
+"Aug-22","7A4","Cardiff and Vale University Health Board","medical_acute",922.35,828.68,89.8444
+"Sep-22","7A4","Cardiff and Vale University Health Board","medical_acute",917.57,800.62,87.2544
+"Oct-22","7A4","Cardiff and Vale University Health Board","medical_acute",928.09,833.27,89.7833
+"Nov-22","7A4","Cardiff and Vale University Health Board","medical_acute",906.87,822.62,90.7098
+"Dec-22","7A4","Cardiff and Vale University Health Board","medical_acute",889.48,794.59,89.332
+"Jan-23","7A4","Cardiff and Vale University Health Board","medical_acute",842.08,766.61,91.0377
+"Feb-23","7A4","Cardiff and Vale University Health Board","medical_acute",841.6,763.66,90.7391
+"Mar-23","7A4","Cardiff and Vale University Health Board","medical_acute",757.74,688.17,90.8188
+"Apr-23","7A4","Cardiff and Vale University Health Board","medical_acute",866.37,790.48,91.2405
+"May-23","7A4","Cardiff and Vale University Health Board","medical_acute",860.07,799.46,92.9529
+"Jun-23","7A4","Cardiff and Vale University Health Board","medical_acute",823.57,741.93,90.0871
+"Jul-23","7A4","Cardiff and Vale University Health Board","medical_acute",879.47,776.82,88.3282
+"Aug-23","7A4","Cardiff and Vale University Health Board","medical_acute",873.57,761.21,87.1378
+"Sep-23","7A4","Cardiff and Vale University Health Board","medical_acute",884.69,795.73,89.9445
+"Oct-23","7A4","Cardiff and Vale University Health Board","medical_acute",877.62,784.94,89.4396
+"Nov-23","7A4","Cardiff and Vale University Health Board","medical_acute",848.83,765.55,90.1888
+"Dec-23","7A4","Cardiff and Vale University Health Board","medical_acute",846.61,742.13,87.659
+"Jan-24","7A4","Cardiff and Vale University Health Board","medical_acute",874.04,796.18,91.0919
+"Feb-24","7A4","Cardiff and Vale University Health Board","medical_acute",880.16,803.93,91.3391
+"Mar-24","7A4","Cardiff and Vale University Health Board","medical_acute",866.16,783.55,90.4625
+"Jan-21","7A4","Cardiff and Vale University Health Board","mental_illness",280.000006,195.03,69.6536
+"Feb-21","7A4","Cardiff and Vale University Health Board","mental_illness",280.220001,196.230002,70.0271
+"Mar-21","7A4","Cardiff and Vale University Health Board","mental_illness",280.929993,210.930002,75.0828
+"Apr-21","7A4","Cardiff and Vale University Health Board","mental_illness",287.999996,217.260003,75.4375
+"May-21","7A4","Cardiff and Vale University Health Board","mental_illness",250.739998,221.089996,88.175
+"Jun-21","7A4","Cardiff and Vale University Health Board","mental_illness",250.000002,226.869999,90.748
+"Jul-21","7A4","Cardiff and Vale University Health Board","mental_illness",251.420002,220.030001,87.5149
+"Aug-21","7A4","Cardiff and Vale University Health Board","mental_illness",251.920002,228.310004,90.628
+"Sep-21","7A4","Cardiff and Vale University Health Board","mental_illness",253.999998,239.129998,94.1457
+"Oct-21","7A4","Cardiff and Vale University Health Board","mental_illness",258.449997,224.020001,86.6783
+"Nov-21","7A4","Cardiff and Vale University Health Board","mental_illness",254.539997,228.89,89.923
+"Dec-21","7A4","Cardiff and Vale University Health Board","mental_illness",254.940005,234.379994,91.9354
+"Jan-22","7A4","Cardiff and Vale University Health Board","mental_illness",248.330004,212.879997,85.7246
+"Feb-22","7A4","Cardiff and Vale University Health Board","mental_illness",238.070001,217.93,91.5403
+"Mar-22","7A4","Cardiff and Vale University Health Board","mental_illness",236.580001,214.79,90.7896
+"Apr-22","7A4","Cardiff and Vale University Health Board","mental_illness",232.81,215.08,92.3843
+"May-22","7A4","Cardiff and Vale University Health Board","mental_illness",243.77,220.78,90.569
+"Jun-22","7A4","Cardiff and Vale University Health Board","mental_illness",239.01,225,94.1383
+"Jul-22","7A4","Cardiff and Vale University Health Board","mental_illness",241.97,235.97,97.5204
+"Aug-22","7A4","Cardiff and Vale University Health Board","mental_illness",247.11,240.52,97.3332
+"Sep-22","7A4","Cardiff and Vale University Health Board","mental_illness",250.67,246.43,98.3085
+"Oct-22","7A4","Cardiff and Vale University Health Board","mental_illness",252.24,243.31,96.4597
+"Nov-22","7A4","Cardiff and Vale University Health Board","mental_illness",253.96,250.46,98.6218
+"Dec-22","7A4","Cardiff and Vale University Health Board","mental_illness",250,241.71,96.684
+"Jan-23","7A4","Cardiff and Vale University Health Board","mental_illness",249.84,240.58,96.2936
+"Feb-23","7A4","Cardiff and Vale University Health Board","mental_illness",246.07,239.72,97.4194
+"Mar-23","7A4","Cardiff and Vale University Health Board","mental_illness",222.26,216.52,97.4174
+"Apr-23","7A4","Cardiff and Vale University Health Board","mental_illness",247.67,237.43,95.8655
+"May-23","7A4","Cardiff and Vale University Health Board","mental_illness",248.36,239.97,96.6218
+"Jun-23","7A4","Cardiff and Vale University Health Board","mental_illness",249.11,246.55,98.9723
+"Jul-23","7A4","Cardiff and Vale University Health Board","mental_illness",252.14,251.33,99.6787
+"Aug-23","7A4","Cardiff and Vale University Health Board","mental_illness",237.88,231.71,97.4063
+"Sep-23","7A4","Cardiff and Vale University Health Board","mental_illness",236.01,233.17,98.7967
+"Oct-23","7A4","Cardiff and Vale University Health Board","mental_illness",240.49,234.91,97.6797
+"Nov-23","7A4","Cardiff and Vale University Health Board","mental_illness",252,236.2,93.7302
+"Dec-23","7A4","Cardiff and Vale University Health Board","mental_illness",252.39,234.61,92.9553
+"Jan-24","7A4","Cardiff and Vale University Health Board","mental_illness",253.77,230.32,90.7593
+"Feb-24","7A4","Cardiff and Vale University Health Board","mental_illness",252.07,231.13,91.6928
+"Mar-24","7A4","Cardiff and Vale University Health Board","mental_illness",261.71,239.14,91.376
+"Jan-21","7A4","Cardiff and Vale University Health Board","surgical_acute",428.660006,236.809997,55.2442
+"Feb-21","7A4","Cardiff and Vale University Health Board","surgical_acute",421.260008,232.33,55.1512
+"Mar-21","7A4","Cardiff and Vale University Health Board","surgical_acute",449.269995,301.699997,67.1534
+"Apr-21","7A4","Cardiff and Vale University Health Board","surgical_acute",473.610004,347.810006,73.4381
+"May-21","7A4","Cardiff and Vale University Health Board","surgical_acute",418.999997,333.619997,79.6229
+"Jun-21","7A4","Cardiff and Vale University Health Board","surgical_acute",414.049997,337.829999,81.5916
+"Jul-21","7A4","Cardiff and Vale University Health Board","surgical_acute",412.95,335.860006,81.3319
+"Aug-21","7A4","Cardiff and Vale University Health Board","surgical_acute",424.349999,320.58,75.5461
+"Sep-21","7A4","Cardiff and Vale University Health Board","surgical_acute",429.339997,322.130004,75.0291
+"Oct-21","7A4","Cardiff and Vale University Health Board","surgical_acute",427.230007,323.700002,75.7672
+"Nov-21","7A4","Cardiff and Vale University Health Board","surgical_acute",413.830009,306.199998,73.9917
+"Dec-21","7A4","Cardiff and Vale University Health Board","surgical_acute",417.080004,304.86,73.0939
+"Jan-22","7A4","Cardiff and Vale University Health Board","surgical_acute",435.459998,333.920003,76.6821
+"Feb-22","7A4","Cardiff and Vale University Health Board","surgical_acute",429.65,348.590001,81.1335
+"Mar-22","7A4","Cardiff and Vale University Health Board","surgical_acute",432.999998,340.029997,78.5289
+"Apr-22","7A4","Cardiff and Vale University Health Board","surgical_acute",436.86,329.7,75.4704
+"May-22","7A4","Cardiff and Vale University Health Board","surgical_acute",437.73,334.31,76.3736
+"Jun-22","7A4","Cardiff and Vale University Health Board","surgical_acute",434.38,326.1,75.0725
+"Jul-22","7A4","Cardiff and Vale University Health Board","surgical_acute",439.78,338.63,76.9999
+"Aug-22","7A4","Cardiff and Vale University Health Board","surgical_acute",475.23,394.84,83.084
+"Sep-22","7A4","Cardiff and Vale University Health Board","surgical_acute",513.04,417.83,81.442
+"Oct-22","7A4","Cardiff and Vale University Health Board","surgical_acute",517.55,416.49,80.4734
+"Nov-22","7A4","Cardiff and Vale University Health Board","surgical_acute",461.3,357.05,77.4008
+"Dec-22","7A4","Cardiff and Vale University Health Board","surgical_acute",426.26,332.41,77.9829
+"Jan-23","7A4","Cardiff and Vale University Health Board","surgical_acute",462.11,381.92,82.647
+"Feb-23","7A4","Cardiff and Vale University Health Board","surgical_acute",477.69,386.35,80.8788
+"Mar-23","7A4","Cardiff and Vale University Health Board","surgical_acute",427.67,346.69,81.0648
+"Apr-23","7A4","Cardiff and Vale University Health Board","surgical_acute",480.24,395.94,82.4463
+"May-23","7A4","Cardiff and Vale University Health Board","surgical_acute",474.3,389.81,82.1864
+"Jun-23","7A4","Cardiff and Vale University Health Board","surgical_acute",462.89,378.5,81.7689
+"Jul-23","7A4","Cardiff and Vale University Health Board","surgical_acute",455.4,376.42,82.657
+"Aug-23","7A4","Cardiff and Vale University Health Board","surgical_acute",449.8,349.81,77.7701
+"Sep-23","7A4","Cardiff and Vale University Health Board","surgical_acute",441.4,338.47,76.681
+"Oct-23","7A4","Cardiff and Vale University Health Board","surgical_acute",459.52,360.28,78.4036
+"Nov-23","7A4","Cardiff and Vale University Health Board","surgical_acute",456.66,373.34,81.7545
+"Dec-23","7A4","Cardiff and Vale University Health Board","surgical_acute",462.89,339.03,73.242
+"Jan-24","7A4","Cardiff and Vale University Health Board","surgical_acute",449.8,321.67,71.514
+"Feb-24","7A4","Cardiff and Vale University Health Board","surgical_acute",441.58,328.59,74.4123
+"Mar-24","7A4","Cardiff and Vale University Health Board","surgical_acute",449.16,347.77,77.4268
+"Jan-21","7A5","Cwm Taf Morgannwg University Health Board","all_specialties",1725.620006,1319.44999,76.4624
+"Feb-21","7A5","Cwm Taf Morgannwg University Health Board","all_specialties",1687.499999,1276.869997,75.6664
+"Mar-21","7A5","Cwm Taf Morgannwg University Health Board","all_specialties",1699.200015,1251.770004,73.6682
+"Apr-21","7A5","Cwm Taf Morgannwg University Health Board","all_specialties",1715.150001,1286.620008,75.015
+"May-21","7A5","Cwm Taf Morgannwg University Health Board","all_specialties",1705.600003,1303.950002,76.4511
+"Jun-21","7A5","Cwm Taf Morgannwg University Health Board","all_specialties",1696.090006,1292.03,76.177
+"Jul-21","7A5","Cwm Taf Morgannwg University Health Board","all_specialties",1700.629992,1330.299984,78.224
+"Aug-21","7A5","Cwm Taf Morgannwg University Health Board","all_specialties",1707.060001,1355.549996,79.4085
+"Sep-21","7A5","Cwm Taf Morgannwg University Health Board","all_specialties",1740.199998,1398.14999,80.3442
+"Oct-21","7A5","Cwm Taf Morgannwg University Health Board","all_specialties",1719.31,1435.52001,83.494
+"Nov-21","7A5","Cwm Taf Morgannwg University Health Board","all_specialties",1733.049997,1432.129993,82.6364
+"Dec-21","7A5","Cwm Taf Morgannwg University Health Board","all_specialties",1731.109988,1375.469995,79.456
+"Jan-22","7A5","Cwm Taf Morgannwg University Health Board","all_specialties",1734.519996,1428.989993,82.3853
+"Feb-22","7A5","Cwm Taf Morgannwg University Health Board","all_specialties",1740.65,1449.480005,83.2723
+"Mar-22","7A5","Cwm Taf Morgannwg University Health Board","all_specialties",1673.059987,1409.179997,84.2277
+"Apr-22","7A5","Cwm Taf Morgannwg University Health Board","all_specialties",1722.17,1457.3,84.62
+"May-22","7A5","Cwm Taf Morgannwg University Health Board","all_specialties",1707.62,1435.11,84.0415
+"Jun-22","7A5","Cwm Taf Morgannwg University Health Board","all_specialties",1721.37,1495.04,86.8518
+"Jul-22","7A5","Cwm Taf Morgannwg University Health Board","all_specialties",1727.34,1478.6,85.5998
+"Aug-22","7A5","Cwm Taf Morgannwg University Health Board","all_specialties",1744.36,1502.86,86.1554
+"Sep-22","7A5","Cwm Taf Morgannwg University Health Board","all_specialties",1712.47,1485.23,86.7303
+"Oct-22","7A5","Cwm Taf Morgannwg University Health Board","all_specialties",1748.78,1507.26,86.1892
+"Nov-22","7A5","Cwm Taf Morgannwg University Health Board","all_specialties",1737.69,1515.92,87.2377
+"Dec-22","7A5","Cwm Taf Morgannwg University Health Board","all_specialties",1728.62,1486.92,86.0177
+"Jan-23","7A5","Cwm Taf Morgannwg University Health Board","all_specialties",1744.35,1549.72,88.8423
+"Feb-23","7A5","Cwm Taf Morgannwg University Health Board","all_specialties",1756.58,1521.38,86.6103
+"Mar-23","7A5","Cwm Taf Morgannwg University Health Board","all_specialties",1769.91,1550.67,87.6129
+"Apr-23","7A5","Cwm Taf Morgannwg University Health Board","all_specialties",1779.18,1555.7,87.4392
+"May-23","7A5","Cwm Taf Morgannwg University Health Board","all_specialties",1789.74,1517.73,84.8017
+"Jun-23","7A5","Cwm Taf Morgannwg University Health Board","all_specialties",1777.63,1524.52,85.7614
+"Jul-23","7A5","Cwm Taf Morgannwg University Health Board","all_specialties",1780.58,1535.64,86.2438
+"Aug-23","7A5","Cwm Taf Morgannwg University Health Board","all_specialties",1762.23,1530.93,86.8746
+"Sep-23","7A5","Cwm Taf Morgannwg University Health Board","all_specialties",1802.6,1551.17,86.0518
+"Oct-23","7A5","Cwm Taf Morgannwg University Health Board","all_specialties",1800.53,1573.11,87.3693
+"Nov-23","7A5","Cwm Taf Morgannwg University Health Board","all_specialties",1765.02,1541.79,87.3526
+"Dec-23","7A5","Cwm Taf Morgannwg University Health Board","all_specialties",1780.21,1520.54,85.4135
+"Jan-24","7A5","Cwm Taf Morgannwg University Health Board","all_specialties",1797.1,1577.25,87.7664
+"Feb-24","7A5","Cwm Taf Morgannwg University Health Board","all_specialties",1808.23,1584.06,87.6028
+"Mar-24","7A5","Cwm Taf Morgannwg University Health Board","all_specialties",1788.61,1566.58,87.5864
+"Jan-21","7A5","Cwm Taf Morgannwg University Health Board","geriatric_medicine",217.99,206.5,94.7291
+"Feb-21","7A5","Cwm Taf Morgannwg University Health Board","geriatric_medicine",268.059999,260.999998,97.3663
+"Mar-21","7A5","Cwm Taf Morgannwg University Health Board","geriatric_medicine",308.790005,282.890003,91.6124
+"Apr-21","7A5","Cwm Taf Morgannwg University Health Board","geriatric_medicine",313.129997,303.27,96.8511
+"May-21","7A5","Cwm Taf Morgannwg University Health Board","geriatric_medicine",313.010002,301.840004,96.4314
+"Jun-21","7A5","Cwm Taf Morgannwg University Health Board","geriatric_medicine",322.200005,311.360001,96.6356
+"Jul-21","7A5","Cwm Taf Morgannwg University Health Board","geriatric_medicine",341.359993,328.689995,96.2884
+"Aug-21","7A5","Cwm Taf Morgannwg University Health Board","geriatric_medicine",335.800003,329.769997,98.2043
+"Sep-21","7A5","Cwm Taf Morgannwg University Health Board","geriatric_medicine",354.5,339.989998,95.9069
+"Oct-21","7A5","Cwm Taf Morgannwg University Health Board","geriatric_medicine",354.769997,345.099991,97.2743
+"Nov-21","7A5","Cwm Taf Morgannwg University Health Board","geriatric_medicine",351.469997,338.069995,96.1874
+"Dec-21","7A5","Cwm Taf Morgannwg University Health Board","geriatric_medicine",342.419998,323.609993,94.5067
+"Jan-22","7A5","Cwm Taf Morgannwg University Health Board","geriatric_medicine",352.65,347.029998,98.4064
+"Feb-22","7A5","Cwm Taf Morgannwg University Health Board","geriatric_medicine",381.96,377.110002,98.7302
+"Mar-22","7A5","Cwm Taf Morgannwg University Health Board","geriatric_medicine",364.639992,359.249993,98.5218
+"Apr-22","7A5","Cwm Taf Morgannwg University Health Board","geriatric_medicine",378.54,368.37,97.3134
+"May-22","7A5","Cwm Taf Morgannwg University Health Board","geriatric_medicine",366.79,359.94,98.1324
+"Jun-22","7A5","Cwm Taf Morgannwg University Health Board","geriatric_medicine",354.93,352.14,99.2139
+"Jul-22","7A5","Cwm Taf Morgannwg University Health Board","geriatric_medicine",346.35,344.47,99.4572
+"Aug-22","7A5","Cwm Taf Morgannwg University Health Board","geriatric_medicine",345.71,345.71,100
+"Sep-22","7A5","Cwm Taf Morgannwg University Health Board","geriatric_medicine",358.53,354.17,98.7839
+"Oct-22","7A5","Cwm Taf Morgannwg University Health Board","geriatric_medicine",377.9,370.3,97.9889
+"Nov-22","7A5","Cwm Taf Morgannwg University Health Board","geriatric_medicine",374.05,368.57,98.535
+"Dec-22","7A5","Cwm Taf Morgannwg University Health Board","geriatric_medicine",372.3,370.77,99.589
+"Jan-23","7A5","Cwm Taf Morgannwg University Health Board","geriatric_medicine",385.86,382.36,99.0929
+"Feb-23","7A5","Cwm Taf Morgannwg University Health Board","geriatric_medicine",387.58,387.18,99.8968
+"Mar-23","7A5","Cwm Taf Morgannwg University Health Board","geriatric_medicine",378.49,376.94,99.5905
+"Apr-23","7A5","Cwm Taf Morgannwg University Health Board","geriatric_medicine",381.27,380.63,99.8321
+"May-23","7A5","Cwm Taf Morgannwg University Health Board","geriatric_medicine",356.38,353.28,99.1301
+"Jun-23","7A5","Cwm Taf Morgannwg University Health Board","geriatric_medicine",369.77,364.1,98.4666
+"Jul-23","7A5","Cwm Taf Morgannwg University Health Board","geriatric_medicine",361.16,360.14,99.7176
+"Aug-23","7A5","Cwm Taf Morgannwg University Health Board","geriatric_medicine",392.48,389.87,99.335
+"Sep-23","7A5","Cwm Taf Morgannwg University Health Board","geriatric_medicine",410.19,408.26,99.5295
+"Oct-23","7A5","Cwm Taf Morgannwg University Health Board","geriatric_medicine",407.23,406.68,99.8649
+"Nov-23","7A5","Cwm Taf Morgannwg University Health Board","geriatric_medicine",414.4,411.9,99.3967
+"Dec-23","7A5","Cwm Taf Morgannwg University Health Board","geriatric_medicine",425.36,417.58,98.171
+"Jan-24","7A5","Cwm Taf Morgannwg University Health Board","geriatric_medicine",421.39,419.26,99.4945
+"Feb-24","7A5","Cwm Taf Morgannwg University Health Board","geriatric_medicine",418.55,417.03,99.6368
+"Mar-24","7A5","Cwm Taf Morgannwg University Health Board","geriatric_medicine",424.93,423.23,99.5999
+"Jan-21","7A5","Cwm Taf Morgannwg University Health Board","maternity",81.680002,31.100001,38.0754
+"Feb-21","7A5","Cwm Taf Morgannwg University Health Board","maternity",77.340001,31.38,40.5741
+"Mar-21","7A5","Cwm Taf Morgannwg University Health Board","maternity",76.749998,34.560001,45.0293
+"Apr-21","7A5","Cwm Taf Morgannwg University Health Board","maternity",78.77,31.800001,40.3707
+"May-21","7A5","Cwm Taf Morgannwg University Health Board","maternity",77.339999,28.69,37.0959
+"Jun-21","7A5","Cwm Taf Morgannwg University Health Board","maternity",75.439998,34.17,45.2943
+"Jul-21","7A5","Cwm Taf Morgannwg University Health Board","maternity",76.469998,33.739999,44.1219
+"Aug-21","7A5","Cwm Taf Morgannwg University Health Board","maternity",79.799999,30.59,38.3333
+"Sep-21","7A5","Cwm Taf Morgannwg University Health Board","maternity",80.739996,34.39,42.5935
+"Oct-21","7A5","Cwm Taf Morgannwg University Health Board","maternity",78.169999,39.47,50.4925
+"Nov-21","7A5","Cwm Taf Morgannwg University Health Board","maternity",77.219998,28.67,37.1277
+"Dec-21","7A5","Cwm Taf Morgannwg University Health Board","maternity",80.399998,34.379999,42.7612
+"Jan-22","7A5","Cwm Taf Morgannwg University Health Board","maternity",85.239999,32.77,38.4444
+"Feb-22","7A5","Cwm Taf Morgannwg University Health Board","maternity",86.789999,30.25,34.8542
+"Mar-22","7A5","Cwm Taf Morgannwg University Health Board","maternity",85.83,37.46,43.6444
+"Apr-22","7A5","Cwm Taf Morgannwg University Health Board","maternity",75.01,32.06,42.741
+"May-22","7A5","Cwm Taf Morgannwg University Health Board","maternity",74.76,34.47,46.1075
+"Jun-22","7A5","Cwm Taf Morgannwg University Health Board","maternity",74.73,32.71,43.7709
+"Jul-22","7A5","Cwm Taf Morgannwg University Health Board","maternity",73.92,33.3,45.0487
+"Aug-22","7A5","Cwm Taf Morgannwg University Health Board","maternity",74.73,34.45,46.0993
+"Sep-22","7A5","Cwm Taf Morgannwg University Health Board","maternity",74.69,35,46.8604
+"Oct-22","7A5","Cwm Taf Morgannwg University Health Board","maternity",75.53,40.5,53.6211
+"Nov-22","7A5","Cwm Taf Morgannwg University Health Board","maternity",74.52,35.54,47.6919
+"Dec-22","7A5","Cwm Taf Morgannwg University Health Board","maternity",75.74,35.79,47.2538
+"Jan-23","7A5","Cwm Taf Morgannwg University Health Board","maternity",75.79,37.19,49.0698
+"Feb-23","7A5","Cwm Taf Morgannwg University Health Board","maternity",75.09,35.52,47.3032
+"Mar-23","7A5","Cwm Taf Morgannwg University Health Board","maternity",75.44,34.35,45.5329
+"Apr-23","7A5","Cwm Taf Morgannwg University Health Board","maternity",77.09,38.38,49.786
+"May-23","7A5","Cwm Taf Morgannwg University Health Board","maternity",75.05,35.86,47.7815
+"Jun-23","7A5","Cwm Taf Morgannwg University Health Board","maternity",77.55,38.54,49.697
+"Jul-23","7A5","Cwm Taf Morgannwg University Health Board","maternity",76.97,39.78,51.6825
+"Aug-23","7A5","Cwm Taf Morgannwg University Health Board","maternity",77.12,42.31,54.8626
+"Sep-23","7A5","Cwm Taf Morgannwg University Health Board","maternity",77,40.85,53.0519
+"Oct-23","7A5","Cwm Taf Morgannwg University Health Board","maternity",77.74,34.31,44.1343
+"Nov-23","7A5","Cwm Taf Morgannwg University Health Board","maternity",76.7,32.48,42.3468
+"Dec-23","7A5","Cwm Taf Morgannwg University Health Board","maternity",77.55,35.11,45.274
+"Jan-24","7A5","Cwm Taf Morgannwg University Health Board","maternity",76.23,36.7,48.1438
+"Feb-24","7A5","Cwm Taf Morgannwg University Health Board","maternity",77.25,36.42,47.1456
+"Mar-24","7A5","Cwm Taf Morgannwg University Health Board","maternity",75.7,39.19,51.7701
+"Jan-21","7A5","Cwm Taf Morgannwg University Health Board","medical_acute",882.939999,697.159988,78.9589
+"Feb-21","7A5","Cwm Taf Morgannwg University Health Board","medical_acute",751.919996,581.25,77.3021
+"Mar-21","7A5","Cwm Taf Morgannwg University Health Board","medical_acute",684.550007,527.490001,77.0565
+"Apr-21","7A5","Cwm Taf Morgannwg University Health Board","medical_acute",653.089999,523.810002,80.2049
+"May-21","7A5","Cwm Taf Morgannwg University Health Board","medical_acute",663.779992,559.360001,84.2689
+"Jun-21","7A5","Cwm Taf Morgannwg University Health Board","medical_acute",693.820006,543.469996,78.3301
+"Jul-21","7A5","Cwm Taf Morgannwg University Health Board","medical_acute",704.019999,562.06999,79.8372
+"Aug-21","7A5","Cwm Taf Morgannwg University Health Board","medical_acute",718.400003,570.45,79.4056
+"Sep-21","7A5","Cwm Taf Morgannwg University Health Board","medical_acute",707.559996,572.979994,80.9797
+"Oct-21","7A5","Cwm Taf Morgannwg University Health Board","medical_acute",715.789999,609.620017,85.1674
+"Nov-21","7A5","Cwm Taf Morgannwg University Health Board","medical_acute",760.35,623.669997,82.0241
+"Dec-21","7A5","Cwm Taf Morgannwg University Health Board","medical_acute",724.179991,576.79,79.6473
+"Jan-22","7A5","Cwm Taf Morgannwg University Health Board","medical_acute",747.179998,613.459999,82.1034
+"Feb-22","7A5","Cwm Taf Morgannwg University Health Board","medical_acute",705.040001,582.040003,82.5542
+"Mar-22","7A5","Cwm Taf Morgannwg University Health Board","medical_acute",654.609997,539.420001,82.4033
+"Apr-22","7A5","Cwm Taf Morgannwg University Health Board","medical_acute",714.59,597.39,83.599
+"May-22","7A5","Cwm Taf Morgannwg University Health Board","medical_acute",701.55,591.32,84.2876
+"Jun-22","7A5","Cwm Taf Morgannwg University Health Board","medical_acute",704.81,622,88.2507
+"Jul-22","7A5","Cwm Taf Morgannwg University Health Board","medical_acute",710.17,617.8,86.9933
+"Aug-22","7A5","Cwm Taf Morgannwg University Health Board","medical_acute",727.06,638.8,87.8607
+"Sep-22","7A5","Cwm Taf Morgannwg University Health Board","medical_acute",705.43,615.81,87.2957
+"Oct-22","7A5","Cwm Taf Morgannwg University Health Board","medical_acute",706.46,616.94,87.3284
+"Nov-22","7A5","Cwm Taf Morgannwg University Health Board","medical_acute",719.76,643.28,89.3742
+"Dec-22","7A5","Cwm Taf Morgannwg University Health Board","medical_acute",711.67,623.95,87.6741
+"Jan-23","7A5","Cwm Taf Morgannwg University Health Board","medical_acute",744.67,666.97,89.5658
+"Feb-23","7A5","Cwm Taf Morgannwg University Health Board","medical_acute",706.63,625.63,88.5371
+"Mar-23","7A5","Cwm Taf Morgannwg University Health Board","medical_acute",724.2,645.73,89.1646
+"Apr-23","7A5","Cwm Taf Morgannwg University Health Board","medical_acute",711,623.37,87.6751
+"May-23","7A5","Cwm Taf Morgannwg University Health Board","medical_acute",723.67,630.18,87.0811
+"Jun-23","7A5","Cwm Taf Morgannwg University Health Board","medical_acute",727.64,621.39,85.398
+"Jul-23","7A5","Cwm Taf Morgannwg University Health Board","medical_acute",724.36,633.39,87.4413
+"Aug-23","7A5","Cwm Taf Morgannwg University Health Board","medical_acute",675.04,592.12,87.7163
+"Sep-23","7A5","Cwm Taf Morgannwg University Health Board","medical_acute",686.43,589.41,85.866
+"Oct-23","7A5","Cwm Taf Morgannwg University Health Board","medical_acute",719.24,630.19,87.6189
+"Nov-23","7A5","Cwm Taf Morgannwg University Health Board","medical_acute",682.78,611.28,89.5281
+"Dec-23","7A5","Cwm Taf Morgannwg University Health Board","medical_acute",692.19,590.4,85.2945
+"Jan-24","7A5","Cwm Taf Morgannwg University Health Board","medical_acute",708.45,628.72,88.7459
+"Feb-24","7A5","Cwm Taf Morgannwg University Health Board","medical_acute",723.03,644.47,89.1346
+"Mar-24","7A5","Cwm Taf Morgannwg University Health Board","medical_acute",708.15,628.36,88.7326
+"Jan-21","7A5","Cwm Taf Morgannwg University Health Board","mental_illness",235.800001,188.35,79.877
+"Feb-21","7A5","Cwm Taf Morgannwg University Health Board","mental_illness",233.369999,187.629999,80.4002
+"Mar-21","7A5","Cwm Taf Morgannwg University Health Board","mental_illness",232.300001,179.390001,77.2234
+"Apr-21","7A5","Cwm Taf Morgannwg University Health Board","mental_illness",229.900002,170.830003,74.3062
+"May-21","7A5","Cwm Taf Morgannwg University Health Board","mental_illness",233.700001,162.229998,69.4181
+"Jun-21","7A5","Cwm Taf Morgannwg University Health Board","mental_illness",218.200003,170.1,77.956
+"Jul-21","7A5","Cwm Taf Morgannwg University Health Board","mental_illness",206.08,172.14,83.5307
+"Aug-21","7A5","Cwm Taf Morgannwg University Health Board","mental_illness",202.299999,168.789998,83.4355
+"Sep-21","7A5","Cwm Taf Morgannwg University Health Board","mental_illness",214.73,184.16,85.7635
+"Oct-21","7A5","Cwm Taf Morgannwg University Health Board","mental_illness",212.709999,188.140002,88.4491
+"Nov-21","7A5","Cwm Taf Morgannwg University Health Board","mental_illness",208.100003,195.680001,94.0317
+"Dec-21","7A5","Cwm Taf Morgannwg University Health Board","mental_illness",205.990003,190.829999,92.6404
+"Jan-22","7A5","Cwm Taf Morgannwg University Health Board","mental_illness",214.91,192.14,89.4049
+"Feb-22","7A5","Cwm Taf Morgannwg University Health Board","mental_illness",212,188.179999,88.7642
+"Mar-22","7A5","Cwm Taf Morgannwg University Health Board","mental_illness",212.059999,198.349999,93.5348
+"Apr-22","7A5","Cwm Taf Morgannwg University Health Board","mental_illness",210.76,199.71,94.7571
+"May-22","7A5","Cwm Taf Morgannwg University Health Board","mental_illness",210.93,185.13,87.7685
+"Jun-22","7A5","Cwm Taf Morgannwg University Health Board","mental_illness",215.24,192.06,89.2306
+"Jul-22","7A5","Cwm Taf Morgannwg University Health Board","mental_illness",208.13,189.13,90.8711
+"Aug-22","7A5","Cwm Taf Morgannwg University Health Board","mental_illness",213.9,192.94,90.201
+"Sep-22","7A5","Cwm Taf Morgannwg University Health Board","mental_illness",208.53,189.96,91.0948
+"Oct-22","7A5","Cwm Taf Morgannwg University Health Board","mental_illness",224.91,185.87,82.6419
+"Nov-22","7A5","Cwm Taf Morgannwg University Health Board","mental_illness",220.7,187.63,85.0159
+"Dec-22","7A5","Cwm Taf Morgannwg University Health Board","mental_illness",222.32,181.22,81.5131
+"Jan-23","7A5","Cwm Taf Morgannwg University Health Board","mental_illness",209.33,183.54,87.6797
+"Feb-23","7A5","Cwm Taf Morgannwg University Health Board","mental_illness",216.52,188.59,87.1005
+"Mar-23","7A5","Cwm Taf Morgannwg University Health Board","mental_illness",217.69,188.19,86.4486
+"Apr-23","7A5","Cwm Taf Morgannwg University Health Board","mental_illness",219.93,192.7,87.6188
+"May-23","7A5","Cwm Taf Morgannwg University Health Board","mental_illness",218.7,190.78,87.2337
+"Jun-23","7A5","Cwm Taf Morgannwg University Health Board","mental_illness",221.67,189.43,85.4559
+"Jul-23","7A5","Cwm Taf Morgannwg University Health Board","mental_illness",216.39,187.53,86.663
+"Aug-23","7A5","Cwm Taf Morgannwg University Health Board","mental_illness",216.58,184.87,85.3588
+"Sep-23","7A5","Cwm Taf Morgannwg University Health Board","mental_illness",217.17,187.81,86.4806
+"Oct-23","7A5","Cwm Taf Morgannwg University Health Board","mental_illness",212.51,183.88,86.5277
+"Nov-23","7A5","Cwm Taf Morgannwg University Health Board","mental_illness",209.03,182.1,87.1167
+"Dec-23","7A5","Cwm Taf Morgannwg University Health Board","mental_illness",211.27,181.17,85.7528
+"Jan-24","7A5","Cwm Taf Morgannwg University Health Board","mental_illness",214.33,183.71,85.7136
+"Feb-24","7A5","Cwm Taf Morgannwg University Health Board","mental_illness",215.31,170.12,79.0117
+"Mar-24","7A5","Cwm Taf Morgannwg University Health Board","mental_illness",211.49,179.8,85.0158
+"Jan-21","7A5","Cwm Taf Morgannwg University Health Board","surgical_acute",302.720004,192.950001,63.7388
+"Feb-21","7A5","Cwm Taf Morgannwg University Health Board","surgical_acute",350.490004,210.59,60.0845
+"Mar-21","7A5","Cwm Taf Morgannwg University Health Board","surgical_acute",388.430005,219.659998,56.5507
+"Apr-21","7A5","Cwm Taf Morgannwg University Health Board","surgical_acute",433.490003,250.440002,57.773
+"May-21","7A5","Cwm Taf Morgannwg University Health Board","surgical_acute",407.870009,242.03,59.34
+"Jun-21","7A5","Cwm Taf Morgannwg University Health Board","surgical_acute",379.229995,225.730003,59.5232
+"Jul-21","7A5","Cwm Taf Morgannwg University Health Board","surgical_acute",363.610002,227.069999,62.4488
+"Aug-21","7A5","Cwm Taf Morgannwg University Health Board","surgical_acute",360.829997,248.470002,68.8607
+"Sep-21","7A5","Cwm Taf Morgannwg University Health Board","surgical_acute",373.900006,258.999997,69.2699
+"Oct-21","7A5","Cwm Taf Morgannwg University Health Board","surgical_acute",348.900005,246.219999,70.5704
+"Nov-21","7A5","Cwm Taf Morgannwg University Health Board","surgical_acute",324.539999,236.169999,72.7707
+"Dec-21","7A5","Cwm Taf Morgannwg University Health Board","surgical_acute",366.999998,239.380003,65.2262
+"Jan-22","7A5","Cwm Taf Morgannwg University Health Board","surgical_acute",323.229998,233.889996,72.3602
+"Feb-22","7A5","Cwm Taf Morgannwg University Health Board","surgical_acute",345.47,262.590001,76.0095
+"Mar-22","7A5","Cwm Taf Morgannwg University Health Board","surgical_acute",347.189998,265.970004,76.6065
+"Apr-22","7A5","Cwm Taf Morgannwg University Health Board","surgical_acute",329.84,253.1,76.7342
+"May-22","7A5","Cwm Taf Morgannwg University Health Board","surgical_acute",339.9,253.43,74.5602
+"Jun-22","7A5","Cwm Taf Morgannwg University Health Board","surgical_acute",358.16,283.5,79.1546
+"Jul-22","7A5","Cwm Taf Morgannwg University Health Board","surgical_acute",377.19,282.36,74.8588
+"Aug-22","7A5","Cwm Taf Morgannwg University Health Board","surgical_acute",375.29,284.22,75.7334
+"Sep-22","7A5","Cwm Taf Morgannwg University Health Board","surgical_acute",355.99,281.55,79.0893
+"Oct-22","7A5","Cwm Taf Morgannwg University Health Board","surgical_acute",354.18,284.75,80.397
+"Nov-22","7A5","Cwm Taf Morgannwg University Health Board","surgical_acute",337.23,271.11,80.3932
+"Dec-22","7A5","Cwm Taf Morgannwg University Health Board","surgical_acute",336,266.47,79.3065
+"Jan-23","7A5","Cwm Taf Morgannwg University Health Board","surgical_acute",318.94,270.21,84.7213
+"Feb-23","7A5","Cwm Taf Morgannwg University Health Board","surgical_acute",359.81,273.91,76.1263
+"Mar-23","7A5","Cwm Taf Morgannwg University Health Board","surgical_acute",360.56,291.93,80.9657
+"Apr-23","7A5","Cwm Taf Morgannwg University Health Board","surgical_acute",374.85,305.58,81.5206
+"May-23","7A5","Cwm Taf Morgannwg University Health Board","surgical_acute",403.11,295.61,73.3323
+"Jun-23","7A5","Cwm Taf Morgannwg University Health Board","surgical_acute",364.23,295.69,81.1822
+"Jul-23","7A5","Cwm Taf Morgannwg University Health Board","surgical_acute",387.44,300.67,77.6043
+"Aug-23","7A5","Cwm Taf Morgannwg University Health Board","surgical_acute",387.29,309.63,79.9478
+"Sep-23","7A5","Cwm Taf Morgannwg University Health Board","surgical_acute",397.78,310.91,78.1613
+"Oct-23","7A5","Cwm Taf Morgannwg University Health Board","surgical_acute",369.14,303.38,82.1856
+"Nov-23","7A5","Cwm Taf Morgannwg University Health Board","surgical_acute",368.69,291.47,79.0556
+"Dec-23","7A5","Cwm Taf Morgannwg University Health Board","surgical_acute",363.3,286.43,78.8412
+"Jan-24","7A5","Cwm Taf Morgannwg University Health Board","surgical_acute",365.03,297.3,81.4454
+"Feb-24","7A5","Cwm Taf Morgannwg University Health Board","surgical_acute",359.96,301.89,83.8677
+"Mar-24","7A5","Cwm Taf Morgannwg University Health Board","surgical_acute",351.98,279.64,79.4477
+"Jan-21","7A2","Hywel Dda University Health Board","all_specialties",1135.050009,839.260009,73.9404
+"Feb-21","7A2","Hywel Dda University Health Board","all_specialties",1132.36001,831.47,73.4281
+"Mar-21","7A2","Hywel Dda University Health Board","all_specialties",1137.000007,897.379998,78.9252
+"Apr-21","7A2","Hywel Dda University Health Board","all_specialties",1137.000007,893.129995,78.5515
+"May-21","7A2","Hywel Dda University Health Board","all_specialties",1113.000006,865.950001,77.8032
+"Jun-21","7A2","Hywel Dda University Health Board","all_specialties",1147.230003,980.549996,85.4711
+"Jul-21","7A2","Hywel Dda University Health Board","all_specialties",1124.830005,932.219998,82.8765
+"Aug-21","7A2","Hywel Dda University Health Board","all_specialties",1134.000008,955.849995,84.2901
+"Sep-21","7A2","Hywel Dda University Health Board","all_specialties",1129.020001,960.250001,85.0516
+"Oct-21","7A2","Hywel Dda University Health Board","all_specialties",1129.000008,945.480005,83.7449
+"Nov-21","7A2","Hywel Dda University Health Board","all_specialties",1133.000009,950.130002,83.8597
+"Dec-21","7A2","Hywel Dda University Health Board","all_specialties",1124.970011,957.32,85.0974
+"Jan-22","7A2","Hywel Dda University Health Board","all_specialties",1105.970005,952.61,86.1334
+"Feb-22","7A2","Hywel Dda University Health Board","all_specialties",1086.049998,960.70999,88.4591
+"Mar-22","7A2","Hywel Dda University Health Board","all_specialties",1095.470005,978.850001,89.3543
+"Apr-22","7A2","Hywel Dda University Health Board","all_specialties",1107.92,964.07,87.0162
+"May-22","7A2","Hywel Dda University Health Board","all_specialties",1113.62,976.4,87.678
+"Jun-22","7A2","Hywel Dda University Health Board","all_specialties",1109.8,984.81,88.7376
+"Jul-22","7A2","Hywel Dda University Health Board","all_specialties",1127.62,960.02,85.1368
+"Aug-22","7A2","Hywel Dda University Health Board","all_specialties",1149.19,999.58,86.9813
+"Sep-22","7A2","Hywel Dda University Health Board","all_specialties",1100,974.3,88.5727
+"Oct-22","7A2","Hywel Dda University Health Board","all_specialties",1170.64,1020.34,87.1609
+"Nov-22","7A2","Hywel Dda University Health Board","all_specialties",1223,1021.34,83.511
+"Dec-22","7A2","Hywel Dda University Health Board","all_specialties",1198.45,1045.07,87.2018
+"Jan-23","7A2","Hywel Dda University Health Board","all_specialties",1209,1025.11,84.7899
+"Feb-23","7A2","Hywel Dda University Health Board","all_specialties",1218.86,1021.05,83.7709
+"Mar-23","7A2","Hywel Dda University Health Board","all_specialties",1197,1009.63,84.3467
+"Apr-23","7A2","Hywel Dda University Health Board","all_specialties",1183,995.49,84.1496
+"May-23","7A2","Hywel Dda University Health Board","all_specialties",1197,984.07,82.2114
+"Jun-23","7A2","Hywel Dda University Health Board","all_specialties",1173.01,1035.55,88.2814
+"Jul-23","7A2","Hywel Dda University Health Board","all_specialties",1167,991.63,84.9726
+"Aug-23","7A2","Hywel Dda University Health Board","all_specialties",1184,1027.9,86.8159
+"Sep-23","7A2","Hywel Dda University Health Board","all_specialties",1184,1015.65,85.7813
+"Oct-23","7A2","Hywel Dda University Health Board","all_specialties",1185,1004.5,84.7679
+"Nov-23","7A2","Hywel Dda University Health Board","all_specialties",1153.97,1053.94,91.3317
+"Dec-23","7A2","Hywel Dda University Health Board","all_specialties",1164,990.54,85.0979
+"Jan-24","7A2","Hywel Dda University Health Board","all_specialties",1174,1039.83,88.5716
+"Feb-24","7A2","Hywel Dda University Health Board","all_specialties",1169.45,1036.88,88.6639
+"Mar-24","7A2","Hywel Dda University Health Board","all_specialties",1165,1059.68,90.9597
+"Jan-21","7A2","Hywel Dda University Health Board","geriatric_medicine",1.4,0.26,18.5714
+"Feb-21","7A2","Hywel Dda University Health Board","geriatric_medicine",1.4,1,71.4286
+"Mar-21","7A2","Hywel Dda University Health Board","geriatric_medicine",1.4,0.35,25
+"Apr-21","7A2","Hywel Dda University Health Board","geriatric_medicine",1.4,0.35,25
+"May-21","7A2","Hywel Dda University Health Board","geriatric_medicine",1.4,0.9,64.2857
+"Jun-21","7A2","Hywel Dda University Health Board","geriatric_medicine",14.1,14.07,99.7872
+"Jul-21","7A2","Hywel Dda University Health Board","geriatric_medicine",15.18,15.14,99.7365
+"Aug-21","7A2","Hywel Dda University Health Board","geriatric_medicine",20.180001,15.14,75.0248
+"Sep-21","7A2","Hywel Dda University Health Board","geriatric_medicine",12,10.77,89.75
+"Oct-21","7A2","Hywel Dda University Health Board","geriatric_medicine",12,10.6,88.3333
+"Nov-21","7A2","Hywel Dda University Health Board","geriatric_medicine",13.23,11.83,89.418
+"Dec-21","7A2","Hywel Dda University Health Board","geriatric_medicine",13.23,11.83,89.418
+"Jan-22","7A2","Hywel Dda University Health Board","geriatric_medicine",13.23,11.83,89.418
+"Feb-22","7A2","Hywel Dda University Health Board","geriatric_medicine",13.33,12.75,95.6489
+"Mar-22","7A2","Hywel Dda University Health Board","geriatric_medicine",7.79,7.21,92.5546
+"Apr-22","7A2","Hywel Dda University Health Board","geriatric_medicine",7.79,7.69,98.7163
+"May-22","7A2","Hywel Dda University Health Board","geriatric_medicine",7.79,7.69,98.7163
+"Jun-22","7A2","Hywel Dda University Health Board","geriatric_medicine",5.45,4.8,88.0734
+"Jul-22","7A2","Hywel Dda University Health Board","geriatric_medicine",18.47,17.26,93.4488
+"Aug-22","7A2","Hywel Dda University Health Board","geriatric_medicine",20.13,20.13,100
+"Sep-22","7A2","Hywel Dda University Health Board","geriatric_medicine",20.13,19.1,94.8833
+"Oct-22","7A2","Hywel Dda University Health Board","geriatric_medicine",51.51,25.29,49.0973
+"Nov-22","7A2","Hywel Dda University Health Board","geriatric_medicine",23.63,19.3,81.6758
+"Dec-22","7A2","Hywel Dda University Health Board","geriatric_medicine",22.83,17.74,77.7048
+"Jan-23","7A2","Hywel Dda University Health Board","geriatric_medicine",21.83,14.87,68.1173
+"Feb-23","7A2","Hywel Dda University Health Board","geriatric_medicine",20.67,15.36,74.3106
+"Mar-23","7A2","Hywel Dda University Health Board","geriatric_medicine",8.38,4.32,51.5513
+"Apr-23","7A2","Hywel Dda University Health Board","geriatric_medicine",8.38,4,47.7327
+"May-23","7A2","Hywel Dda University Health Board","geriatric_medicine",8.38,4.68,55.8473
+"Jun-23","7A2","Hywel Dda University Health Board","geriatric_medicine",8.38,6.83,81.5036
+"Jul-23","7A2","Hywel Dda University Health Board","geriatric_medicine",8.38,7.26,86.6348
+"Aug-23","7A2","Hywel Dda University Health Board","geriatric_medicine",10.03,10,99.7009
+"Sep-23","7A2","Hywel Dda University Health Board","geriatric_medicine",10.03,0,0
+"Oct-23","7A2","Hywel Dda University Health Board","geriatric_medicine",10.03,8.94,89.1326
+"Nov-23","7A2","Hywel Dda University Health Board","geriatric_medicine",10.33,10.33,100
+"Dec-23","7A2","Hywel Dda University Health Board","geriatric_medicine",10.84,10.84,100
+"Jan-24","7A2","Hywel Dda University Health Board","geriatric_medicine",10.84,8.64,79.7048
+"Feb-24","7A2","Hywel Dda University Health Board","geriatric_medicine",10.84,8.07,74.4465
+"Mar-24","7A2","Hywel Dda University Health Board","geriatric_medicine",12.84,8.06,62.7726
+"Jan-21","7A2","Hywel Dda University Health Board","maternity",38.530001,15.47,40.1505
+"Feb-21","7A2","Hywel Dda University Health Board","maternity",38.530001,20.08,52.1152
+"Mar-21","7A2","Hywel Dda University Health Board","maternity",38.530001,19.290001,50.0649
+"Apr-21","7A2","Hywel Dda University Health Board","maternity",38.530001,19.2,49.8313
+"May-21","7A2","Hywel Dda University Health Board","maternity",40.530001,18.06,44.5596
+"Jun-21","7A2","Hywel Dda University Health Board","maternity",42.040001,24.58,58.4681
+"Jul-21","7A2","Hywel Dda University Health Board","maternity",42.040001,23.470001,55.8278
+"Aug-21","7A2","Hywel Dda University Health Board","maternity",42.040001,22.809999,54.2578
+"Sep-21","7A2","Hywel Dda University Health Board","maternity",42.04,23.729999,56.4462
+"Oct-21","7A2","Hywel Dda University Health Board","maternity",42.040001,24.229999,57.6356
+"Nov-21","7A2","Hywel Dda University Health Board","maternity",42.040001,24,57.0885
+"Dec-21","7A2","Hywel Dda University Health Board","maternity",42.040001,23.8,56.6127
+"Jan-22","7A2","Hywel Dda University Health Board","maternity",42.040001,22.950001,54.5909
+"Feb-22","7A2","Hywel Dda University Health Board","maternity",39.040001,20.96,53.6885
+"Mar-22","7A2","Hywel Dda University Health Board","maternity",38.040001,20.36,53.5226
+"Apr-22","7A2","Hywel Dda University Health Board","maternity",38.42,22.78,59.292
+"May-22","7A2","Hywel Dda University Health Board","maternity",36.45,21.63,59.3416
+"Jun-22","7A2","Hywel Dda University Health Board","maternity",34.1,19.7,57.7713
+"Jul-22","7A2","Hywel Dda University Health Board","maternity",34.1,20.75,60.8504
+"Aug-22","7A2","Hywel Dda University Health Board","maternity",32.98,22.3,67.6167
+"Sep-22","7A2","Hywel Dda University Health Board","maternity",32.33,18.73,57.9338
+"Oct-22","7A2","Hywel Dda University Health Board","maternity",40.51,23.15,57.1464
+"Nov-22","7A2","Hywel Dda University Health Board","maternity",41.33,20.33,49.1895
+"Dec-22","7A2","Hywel Dda University Health Board","maternity",41.03,22.17,54.0336
+"Jan-23","7A2","Hywel Dda University Health Board","maternity",40.03,20.47,51.1366
+"Feb-23","7A2","Hywel Dda University Health Board","maternity",41.03,22.1,53.863
+"Mar-23","7A2","Hywel Dda University Health Board","maternity",36.5,18.67,51.1507
+"Apr-23","7A2","Hywel Dda University Health Board","maternity",36.5,18.77,51.4247
+"May-23","7A2","Hywel Dda University Health Board","maternity",35.1,12.58,35.8405
+"Jun-23","7A2","Hywel Dda University Health Board","maternity",40.87,24.74,60.5334
+"Jul-23","7A2","Hywel Dda University Health Board","maternity",39.84,21.87,54.8946
+"Aug-23","7A2","Hywel Dda University Health Board","maternity",39.84,21.68,54.4177
+"Sep-23","7A2","Hywel Dda University Health Board","maternity",39.84,22.56,56.6265
+"Oct-23","7A2","Hywel Dda University Health Board","maternity",33.42,20.78,62.1783
+"Nov-23","7A2","Hywel Dda University Health Board","maternity",38.43,25.53,66.4325
+"Dec-23","7A2","Hywel Dda University Health Board","maternity",40.04,26.26,65.5844
+"Jan-24","7A2","Hywel Dda University Health Board","maternity",40.04,21.23,53.022
+"Feb-24","7A2","Hywel Dda University Health Board","maternity",36.84,20.06,54.4517
+"Mar-24","7A2","Hywel Dda University Health Board","maternity",39.64,21.42,54.0363
+"Jan-21","7A2","Hywel Dda University Health Board","medical_acute",670.190007,537.48001,80.1982
+"Feb-21","7A2","Hywel Dda University Health Board","medical_acute",666.200007,520.109998,78.0711
+"Mar-21","7A2","Hywel Dda University Health Board","medical_acute",666.700005,555.029999,83.2503
+"Apr-21","7A2","Hywel Dda University Health Board","medical_acute",674.340004,560.869995,83.1732
+"May-21","7A2","Hywel Dda University Health Board","medical_acute",640.340003,534.450002,83.4635
+"Jun-21","7A2","Hywel Dda University Health Board","medical_acute",668.790001,597.089996,89.2791
+"Jul-21","7A2","Hywel Dda University Health Board","medical_acute",643.660002,562.829995,87.4421
+"Aug-21","7A2","Hywel Dda University Health Board","medical_acute",641.120004,578.999994,90.3107
+"Sep-21","7A2","Hywel Dda University Health Board","medical_acute",658.039999,596.440001,90.6389
+"Oct-21","7A2","Hywel Dda University Health Board","medical_acute",647.610005,594.470003,91.7944
+"Nov-21","7A2","Hywel Dda University Health Board","medical_acute",648.100007,589.720001,90.9921
+"Dec-21","7A2","Hywel Dda University Health Board","medical_acute",660.560009,600.719999,90.941
+"Jan-22","7A2","Hywel Dda University Health Board","medical_acute",645.340007,601.07,93.14
+"Feb-22","7A2","Hywel Dda University Health Board","medical_acute",650.729999,605.249988,93.0109
+"Mar-22","7A2","Hywel Dda University Health Board","medical_acute",664.140006,618.710002,93.1596
+"Apr-22","7A2","Hywel Dda University Health Board","medical_acute",673.19,586.95,87.1894
+"May-22","7A2","Hywel Dda University Health Board","medical_acute",676.38,604.63,89.3921
+"Jun-22","7A2","Hywel Dda University Health Board","medical_acute",678.81,614.49,90.5246
+"Jul-22","7A2","Hywel Dda University Health Board","medical_acute",691.08,580.24,83.9613
+"Aug-22","7A2","Hywel Dda University Health Board","medical_acute",715.73,607.77,84.9161
+"Sep-22","7A2","Hywel Dda University Health Board","medical_acute",660.08,589.27,89.2725
+"Oct-22","7A2","Hywel Dda University Health Board","medical_acute",670.36,601.92,89.7906
+"Nov-22","7A2","Hywel Dda University Health Board","medical_acute",744.44,625.94,84.082
+"Dec-22","7A2","Hywel Dda University Health Board","medical_acute",730.2,660.88,90.5067
+"Jan-23","7A2","Hywel Dda University Health Board","medical_acute",739.25,652.75,88.299
+"Feb-23","7A2","Hywel Dda University Health Board","medical_acute",745.62,644.34,86.4167
+"Mar-23","7A2","Hywel Dda University Health Board","medical_acute",738.84,633.2,85.7019
+"Apr-23","7A2","Hywel Dda University Health Board","medical_acute",725.33,631.53,87.068
+"May-23","7A2","Hywel Dda University Health Board","medical_acute",757.69,614.16,81.0569
+"Jun-23","7A2","Hywel Dda University Health Board","medical_acute",720.2,638.51,88.6573
+"Jul-23","7A2","Hywel Dda University Health Board","medical_acute",714.75,608.1,85.0787
+"Aug-23","7A2","Hywel Dda University Health Board","medical_acute",702.61,591.76,84.2231
+"Sep-23","7A2","Hywel Dda University Health Board","medical_acute",701.75,594.95,84.7809
+"Oct-23","7A2","Hywel Dda University Health Board","medical_acute",711.12,589.97,82.9635
+"Nov-23","7A2","Hywel Dda University Health Board","medical_acute",682.56,633.08,92.7508
+"Dec-23","7A2","Hywel Dda University Health Board","medical_acute",686.09,595.7,86.8253
+"Jan-24","7A2","Hywel Dda University Health Board","medical_acute",702.05,632.13,90.0406
+"Feb-24","7A2","Hywel Dda University Health Board","medical_acute",698.62,629.88,90.1606
+"Mar-24","7A2","Hywel Dda University Health Board","medical_acute",693.04,633.01,91.3382
+"Jan-21","7A2","Hywel Dda University Health Board","mental_illness",96,88.81,92.5104
+"Feb-21","7A2","Hywel Dda University Health Board","mental_illness",96,90.85,94.6354
+"Mar-21","7A2","Hywel Dda University Health Board","mental_illness",96,87.519999,91.1667
+"Apr-21","7A2","Hywel Dda University Health Board","mental_illness",96,88.499999,92.1875
+"May-21","7A2","Hywel Dda University Health Board","mental_illness",96,88.489999,92.1771
+"Jun-21","7A2","Hywel Dda University Health Board","mental_illness",96,87.900001,91.5625
+"Jul-21","7A2","Hywel Dda University Health Board","mental_illness",96,89.34,93.0625
+"Aug-21","7A2","Hywel Dda University Health Board","mental_illness",96,90.2,93.9583
+"Sep-21","7A2","Hywel Dda University Health Board","mental_illness",96,90.3,94.0625
+"Oct-21","7A2","Hywel Dda University Health Board","mental_illness",96,82.6,86.0417
+"Nov-21","7A2","Hywel Dda University Health Board","mental_illness",96,90.4,94.1667
+"Dec-21","7A2","Hywel Dda University Health Board","mental_illness",100,91.2,91.2
+"Jan-22","7A2","Hywel Dda University Health Board","mental_illness",100,93.500001,93.5
+"Feb-22","7A2","Hywel Dda University Health Board","mental_illness",100,95.6,95.6
+"Mar-22","7A2","Hywel Dda University Health Board","mental_illness",100,96.200001,96.2
+"Apr-22","7A2","Hywel Dda University Health Board","mental_illness",100,96.63,96.63
+"May-22","7A2","Hywel Dda University Health Board","mental_illness",100,92,92
+"Jun-22","7A2","Hywel Dda University Health Board","mental_illness",100,91.1,91.1
+"Jul-22","7A2","Hywel Dda University Health Board","mental_illness",100,89.5,89.5
+"Aug-22","7A2","Hywel Dda University Health Board","mental_illness",100,91,91
+"Sep-22","7A2","Hywel Dda University Health Board","mental_illness",100,93.8,93.8
+"Oct-22","7A2","Hywel Dda University Health Board","mental_illness",100,95.3,95.3
+"Nov-22","7A2","Hywel Dda University Health Board","mental_illness",100,93,93
+"Dec-22","7A2","Hywel Dda University Health Board","mental_illness",100,93,93
+"Jan-23","7A2","Hywel Dda University Health Board","mental_illness",100,85.1,85.1
+"Feb-23","7A2","Hywel Dda University Health Board","mental_illness",100,83.9,83.9
+"Mar-23","7A2","Hywel Dda University Health Board","mental_illness",100,85.1,85.1
+"Apr-23","7A2","Hywel Dda University Health Board","mental_illness",100,85.5,85.5
+"May-23","7A2","Hywel Dda University Health Board","mental_illness",100,87.97,87.97
+"Jun-23","7A2","Hywel Dda University Health Board","mental_illness",100,89.5,89.5
+"Jul-23","7A2","Hywel Dda University Health Board","mental_illness",100,89.6,89.6
+"Aug-23","7A2","Hywel Dda University Health Board","mental_illness",100,89.7,89.7
+"Sep-23","7A2","Hywel Dda University Health Board","mental_illness",100,89.47,89.47
+"Oct-23","7A2","Hywel Dda University Health Board","mental_illness",100,82.1,82.1
+"Nov-23","7A2","Hywel Dda University Health Board","mental_illness",100,86.2,86.2
+"Dec-23","7A2","Hywel Dda University Health Board","mental_illness",100,75.4,75.4
+"Jan-24","7A2","Hywel Dda University Health Board","mental_illness",100,81.21,81.21
+"Feb-24","7A2","Hywel Dda University Health Board","mental_illness",100,92.83,92.83
+"Mar-24","7A2","Hywel Dda University Health Board","mental_illness",100,93.7,93.7
+"Jan-21","7A2","Hywel Dda University Health Board","surgical_acute",231.690002,146.92,63.4123
+"Feb-21","7A2","Hywel Dda University Health Board","surgical_acute",230.540002,156.740001,67.9882
+"Mar-21","7A2","Hywel Dda University Health Board","surgical_acute",235.180002,173.1,73.6032
+"Apr-21","7A2","Hywel Dda University Health Board","surgical_acute",234.540002,172.150002,73.399
+"May-21","7A2","Hywel Dda University Health Board","surgical_acute",242.540002,166.15,68.5042
+"Jun-21","7A2","Hywel Dda University Health Board","surgical_acute",241.760001,188.899998,78.1353
+"Jul-21","7A2","Hywel Dda University Health Board","surgical_acute",242.760002,179.050002,73.756
+"Aug-21","7A2","Hywel Dda University Health Board","surgical_acute",249.470002,186.340002,74.6944
+"Sep-21","7A2","Hywel Dda University Health Board","surgical_acute",235.750001,173.44,73.5695
+"Oct-21","7A2","Hywel Dda University Health Board","surgical_acute",246.160001,168.990003,68.6505
+"Nov-21","7A2","Hywel Dda University Health Board","surgical_acute",248.440001,166.440001,66.994
+"Dec-21","7A2","Hywel Dda University Health Board","surgical_acute",225.950001,164.550001,72.8258
+"Jan-22","7A2","Hywel Dda University Health Board","surgical_acute",226.269997,167.589998,74.0664
+"Feb-22","7A2","Hywel Dda University Health Board","surgical_acute",204.349998,163.120002,79.8238
+"Mar-22","7A2","Hywel Dda University Health Board","surgical_acute",210.619998,174.719999,82.9551
+"Apr-22","7A2","Hywel Dda University Health Board","surgical_acute",216.6,189.34,87.4146
+"May-22","7A2","Hywel Dda University Health Board","surgical_acute",222.08,194.64,87.6441
+"Jun-22","7A2","Hywel Dda University Health Board","surgical_acute",223.32,198.04,88.6799
+"Jul-22","7A2","Hywel Dda University Health Board","surgical_acute",223.13,199.68,89.4904
+"Aug-22","7A2","Hywel Dda University Health Board","surgical_acute",219.09,202.02,92.2087
+"Sep-22","7A2","Hywel Dda University Health Board","surgical_acute",225.01,200.87,89.2716
+"Oct-22","7A2","Hywel Dda University Health Board","surgical_acute",253.74,223.16,87.9483
+"Nov-22","7A2","Hywel Dda University Health Board","surgical_acute",257.1,210.37,81.8242
+"Dec-22","7A2","Hywel Dda University Health Board","surgical_acute",247.34,200.03,80.8725
+"Jan-23","7A2","Hywel Dda University Health Board","surgical_acute",250.82,199.98,79.7305
+"Feb-23","7A2","Hywel Dda University Health Board","surgical_acute",254.07,206.71,81.3595
+"Mar-23","7A2","Hywel Dda University Health Board","surgical_acute",259.14,218.95,84.491
+"Apr-23","7A2","Hywel Dda University Health Board","surgical_acute",259.26,207.56,80.0586
+"May-23","7A2","Hywel Dda University Health Board","surgical_acute",243.85,216.39,88.739
+"Jun-23","7A2","Hywel Dda University Health Board","surgical_acute",250.23,227.33,90.8484
+"Jul-23","7A2","Hywel Dda University Health Board","surgical_acute",249.7,217.89,87.2607
+"Aug-23","7A2","Hywel Dda University Health Board","surgical_acute",237.8,224.34,94.3398
+"Sep-23","7A2","Hywel Dda University Health Board","surgical_acute",238.85,219.94,92.0829
+"Oct-23","7A2","Hywel Dda University Health Board","surgical_acute",237.23,217.04,91.4893
+"Nov-23","7A2","Hywel Dda University Health Board","surgical_acute",232.09,211.74,91.2318
+"Dec-23","7A2","Hywel Dda University Health Board","surgical_acute",236.89,206.17,87.032
+"Jan-24","7A2","Hywel Dda University Health Board","surgical_acute",243.97,220.69,90.4578
+"Feb-24","7A2","Hywel Dda University Health Board","surgical_acute",245.96,212,86.1929
+"Mar-24","7A2","Hywel Dda University Health Board","surgical_acute",242.6,230.03,94.8186
+"Jan-21","7A7","Powys Teaching Health Board","all_specialties",190,145.47,76.5632
+"Feb-21","7A7","Powys Teaching Health Board","all_specialties",193,140.790001,72.9482
+"Mar-21","7A7","Powys Teaching Health Board","all_specialties",208,159.970003,76.9087
+"Apr-21","7A7","Powys Teaching Health Board","all_specialties",210,171.990001,81.9
+"May-21","7A7","Powys Teaching Health Board","all_specialties",208,173.71,83.5144
+"Jun-21","7A7","Powys Teaching Health Board","all_specialties",205,176.5,86.0976
+"Jul-21","7A7","Powys Teaching Health Board","all_specialties",202,166.23,82.2921
+"Aug-21","7A7","Powys Teaching Health Board","all_specialties",202,160.869999,79.6386
+"Sep-21","7A7","Powys Teaching Health Board","all_specialties",202,162.46,80.4257
+"Oct-21","7A7","Powys Teaching Health Board","all_specialties",205,167.029998,81.478
+"Nov-21","7A7","Powys Teaching Health Board","all_specialties",203,166.589998,82.064
+"Dec-21","7A7","Powys Teaching Health Board","all_specialties",208,166.119999,79.8654
+"Jan-22","7A7","Powys Teaching Health Board","all_specialties",206,166.9,81.0194
+"Feb-22","7A7","Powys Teaching Health Board","all_specialties",205,165.32,80.6439
+"Mar-22","7A7","Powys Teaching Health Board","all_specialties",211,166.76,79.0332
+"Apr-22","7A7","Powys Teaching Health Board","all_specialties",211,160.55,76.09
+"May-22","7A7","Powys Teaching Health Board","all_specialties",211,161.17,76.3839
+"Jun-22","7A7","Powys Teaching Health Board","all_specialties",202,161.27,79.8366
+"Jul-22","7A7","Powys Teaching Health Board","all_specialties",209,167.94,80.3541
+"Aug-22","7A7","Powys Teaching Health Board","all_specialties",211,170.48,80.7962
+"Sep-22","7A7","Powys Teaching Health Board","all_specialties",213,168.49,79.1033
+"Oct-22","7A7","Powys Teaching Health Board","all_specialties",213,172.82,81.1362
+"Nov-22","7A7","Powys Teaching Health Board","all_specialties",213,177.5,83.3333
+"Dec-22","7A7","Powys Teaching Health Board","all_specialties",216,174.38,80.7315
+"Jan-23","7A7","Powys Teaching Health Board","all_specialties",220,179.76,81.7091
+"Feb-23","7A7","Powys Teaching Health Board","all_specialties",220,177.22,80.5545
+"Mar-23","7A7","Powys Teaching Health Board","all_specialties",211,161.69,76.6303
+"Apr-23","7A7","Powys Teaching Health Board","all_specialties",208,165.46,79.5481
+"May-23","7A7","Powys Teaching Health Board","all_specialties",208,171.39,82.399
+"Jun-23","7A7","Powys Teaching Health Board","all_specialties",192,162.88,84.8333
+"Jul-23","7A7","Powys Teaching Health Board","all_specialties",194,164.12,84.5979
+"Aug-23","7A7","Powys Teaching Health Board","all_specialties",192,171.39,89.2656
+"Sep-23","7A7","Powys Teaching Health Board","all_specialties",195,168.07,86.1897
+"Oct-23","7A7","Powys Teaching Health Board","all_specialties",194,165.93,85.5309
+"Nov-23","7A7","Powys Teaching Health Board","all_specialties",194,166.33,85.7371
+"Dec-23","7A7","Powys Teaching Health Board","all_specialties",195,168,86.1538
+"Jan-24","7A7","Powys Teaching Health Board","all_specialties",195,172.51,88.4667
+"Feb-24","7A7","Powys Teaching Health Board","all_specialties",195,169.62,86.9846
+"Mar-24","7A7","Powys Teaching Health Board","all_specialties",187,168.16,89.9251
+"Jan-21","7A7","Powys Teaching Health Board","geriatric_medicine",38,32.87,86.5
+"Feb-21","7A7","Powys Teaching Health Board","geriatric_medicine",41,35.720001,87.122
+"Mar-21","7A7","Powys Teaching Health Board","geriatric_medicine",38,35.220001,92.6842
+"Apr-21","7A7","Powys Teaching Health Board","geriatric_medicine",36,32.869999,91.3056
+"May-21","7A7","Powys Teaching Health Board","geriatric_medicine",39,37,94.8718
+"Jun-21","7A7","Powys Teaching Health Board","geriatric_medicine",37,35.57,96.1351
+"Jul-21","7A7","Powys Teaching Health Board","geriatric_medicine",37,36.26,98
+"Aug-21","7A7","Powys Teaching Health Board","geriatric_medicine",35,32.65,93.2857
+"Sep-21","7A7","Powys Teaching Health Board","geriatric_medicine",36,33.8,93.8889
+"Oct-21","7A7","Powys Teaching Health Board","geriatric_medicine",36,33.769999,93.8056
+"Nov-21","7A7","Powys Teaching Health Board","geriatric_medicine",38,36.07,94.9211
+"Dec-21","7A7","Powys Teaching Health Board","geriatric_medicine",34,33.259999,97.8235
+"Jan-22","7A7","Powys Teaching Health Board","geriatric_medicine",35,33.42,95.4857
+"Feb-22","7A7","Powys Teaching Health Board","geriatric_medicine",34,30.89,90.8529
+"Mar-22","7A7","Powys Teaching Health Board","geriatric_medicine",39,34.77,89.1538
+"Apr-22","7A7","Powys Teaching Health Board","geriatric_medicine",37,34.96,94.4865
+"May-22","7A7","Powys Teaching Health Board","geriatric_medicine",35,31.26,89.3143
+"Jun-22","7A7","Powys Teaching Health Board","geriatric_medicine",35,33.7,96.2857
+"Jul-22","7A7","Powys Teaching Health Board","geriatric_medicine",33,27.58,83.5758
+"Aug-22","7A7","Powys Teaching Health Board","geriatric_medicine",33,31.65,95.9091
+"Sep-22","7A7","Powys Teaching Health Board","geriatric_medicine",35,33.7,96.2857
+"Oct-22","7A7","Powys Teaching Health Board","geriatric_medicine",36,34.48,95.7778
+"Nov-22","7A7","Powys Teaching Health Board","geriatric_medicine",36,33.94,94.2778
+"Dec-22","7A7","Powys Teaching Health Board","geriatric_medicine",32,29.35,91.7188
+"Jan-23","7A7","Powys Teaching Health Board","geriatric_medicine",34,32.26,94.8824
+"Feb-23","7A7","Powys Teaching Health Board","geriatric_medicine",36,32.68,90.7778
+"Mar-23","7A7","Powys Teaching Health Board","geriatric_medicine",35,29.55,84.4286
+"Apr-23","7A7","Powys Teaching Health Board","geriatric_medicine",35,30.1,86
+"May-23","7A7","Powys Teaching Health Board","geriatric_medicine",35,32.97,94.2
+"Jun-23","7A7","Powys Teaching Health Board","geriatric_medicine",35,32.96,94.1714
+"Jul-23","7A7","Powys Teaching Health Board","geriatric_medicine",35,31.52,90.0571
+"Aug-23","7A7","Powys Teaching Health Board","geriatric_medicine",37,36.07,97.4865
+"Sep-23","7A7","Powys Teaching Health Board","geriatric_medicine",36,35.23,97.8611
+"Oct-23","7A7","Powys Teaching Health Board","geriatric_medicine",35,31.58,90.2286
+"Nov-23","7A7","Powys Teaching Health Board","geriatric_medicine",35,30.83,88.0857
+"Dec-23","7A7","Powys Teaching Health Board","geriatric_medicine",35,33.49,95.6857
+"Jan-24","7A7","Powys Teaching Health Board","geriatric_medicine",35,34.04,97.2571
+"Feb-24","7A7","Powys Teaching Health Board","geriatric_medicine",38,36.69,96.5526
+"Mar-24","7A7","Powys Teaching Health Board","geriatric_medicine",37,36.26,98
+"Jan-21","7A7","Powys Teaching Health Board","maternity",8.7,0.25,2.8736
+"Feb-21","7A7","Powys Teaching Health Board","maternity",12,0.18,1.5
+"Mar-21","7A7","Powys Teaching Health Board","maternity",12,0.12,1
+"Apr-21","7A7","Powys Teaching Health Board","maternity",12,0.19,1.5833
+"May-21","7A7","Powys Teaching Health Board","maternity",12,0.21,1.75
+"Jun-21","7A7","Powys Teaching Health Board","maternity",11,0.29,2.6364
+"Jul-21","7A7","Powys Teaching Health Board","maternity",12,0.19,1.5833
+"Aug-21","7A7","Powys Teaching Health Board","maternity",12,0.09,0.75
+"Sep-21","7A7","Powys Teaching Health Board","maternity",12,0.23,1.9167
+"Oct-21","7A7","Powys Teaching Health Board","maternity",13,0.21,1.6154
+"Nov-21","7A7","Powys Teaching Health Board","maternity",10,0.23,2.3
+"Dec-21","7A7","Powys Teaching Health Board","maternity",12,0.16,1.3333
+"Jan-22","7A7","Powys Teaching Health Board","maternity",12,0.15,1.25
+"Feb-22","7A7","Powys Teaching Health Board","maternity",11,0.07,0.6364
+"Mar-22","7A7","Powys Teaching Health Board","maternity",11,0.03,0.2727
+"Apr-22","7A7","Powys Teaching Health Board","maternity",10,0.07,0.7
+"May-22","7A7","Powys Teaching Health Board","maternity",12,0.06,0.5
+"Jun-22","7A7","Powys Teaching Health Board","maternity",11,0.21,1.9091
+"Jul-22","7A7","Powys Teaching Health Board","maternity",12,0,0
+"Aug-22","7A7","Powys Teaching Health Board","maternity",12,0.12,1
+"Sep-22","7A7","Powys Teaching Health Board","maternity",12,0.1,0.8333
+"Oct-22","7A7","Powys Teaching Health Board","maternity",12,0.12,1
+"Nov-22","7A7","Powys Teaching Health Board","maternity",11,0.16,1.4545
+"Dec-22","7A7","Powys Teaching Health Board","maternity",12,0.03,0.25
+"Jan-23","7A7","Powys Teaching Health Board","maternity",11,0.06,0.5455
+"Feb-23","7A7","Powys Teaching Health Board","maternity",12,0.15,1.25
+"Mar-23","7A7","Powys Teaching Health Board","maternity",12,0.06,0.5
+"Apr-23","7A7","Powys Teaching Health Board","maternity",12,0,0
+"May-23","7A7","Powys Teaching Health Board","maternity",12,0.06,0.5
+"Jun-23","7A7","Powys Teaching Health Board","maternity",12,0.06,0.5
+"Jul-23","7A7","Powys Teaching Health Board","maternity",11,0.03,0.2727
+"Aug-23","7A7","Powys Teaching Health Board","maternity",11,0.03,0.2727
+"Sep-23","7A7","Powys Teaching Health Board","maternity",12,0.03,0.25
+"Oct-23","7A7","Powys Teaching Health Board","maternity",12,0.16,1.3333
+"Nov-23","7A7","Powys Teaching Health Board","maternity",11,0.2,1.8182
+"Dec-23","7A7","Powys Teaching Health Board","maternity",12,0.13,1.0833
+"Jan-24","7A7","Powys Teaching Health Board","maternity",12,0.13,1.0833
+"Feb-24","7A7","Powys Teaching Health Board","maternity",12,0.03,0.25
+"Mar-24","7A7","Powys Teaching Health Board","maternity",12,0.06,0.5
+"Jan-21","7A7","Powys Teaching Health Board","medical_acute",2,1.58,79
+"Feb-21","7A7","Powys Teaching Health Board","medical_acute",2,1.39,69.5
+"Sep-21","7A7","Powys Teaching Health Board","medical_acute",1,0.03,3
+"Jun-22","7A7","Powys Teaching Health Board","medical_acute",1,0.23,23
+"Jul-22","7A7","Powys Teaching Health Board","medical_acute",1,1,100
+"Aug-22","7A7","Powys Teaching Health Board","medical_acute",1,0.55,55
+"Jan-21","7A7","Powys Teaching Health Board","mental_illness",31,21.16,68.2581
+"Feb-21","7A7","Powys Teaching Health Board","mental_illness",34,18.07,53.1471
+"Mar-21","7A7","Powys Teaching Health Board","mental_illness",34,22.65,66.6176
+"Apr-21","7A7","Powys Teaching Health Board","mental_illness",36,28.9,80.2778
+"May-21","7A7","Powys Teaching Health Board","mental_illness",35,30.750001,87.8571
+"Jun-21","7A7","Powys Teaching Health Board","mental_illness",33,28.6,86.6667
+"Jul-21","7A7","Powys Teaching Health Board","mental_illness",36,28.420001,78.9444
+"Aug-21","7A7","Powys Teaching Health Board","mental_illness",35,27.03,77.2286
+"Sep-21","7A7","Powys Teaching Health Board","mental_illness",36,27.2,75.5556
+"Oct-21","7A7","Powys Teaching Health Board","mental_illness",34,30.06,88.4118
+"Nov-21","7A7","Powys Teaching Health Board","mental_illness",33,27.2,82.4242
+"Dec-21","7A7","Powys Teaching Health Board","mental_illness",36,29.219999,81.1667
+"Jan-22","7A7","Powys Teaching Health Board","mental_illness",36,29.739999,82.6111
+"Feb-22","7A7","Powys Teaching Health Board","mental_illness",36,29.829999,82.8611
+"Mar-22","7A7","Powys Teaching Health Board","mental_illness",36,27.93,77.5833
+"Apr-22","7A7","Powys Teaching Health Board","mental_illness",38,21.16,55.6842
+"May-22","7A7","Powys Teaching Health Board","mental_illness",36,18.35,50.9722
+"Jun-22","7A7","Powys Teaching Health Board","mental_illness",30,21.23,70.7667
+"Jul-22","7A7","Powys Teaching Health Board","mental_illness",35,28.1,80.2857
+"Aug-22","7A7","Powys Teaching Health Board","mental_illness",36,28.45,79.0278
+"Sep-22","7A7","Powys Teaching Health Board","mental_illness",38,28.9,76.0526
+"Oct-22","7A7","Powys Teaching Health Board","mental_illness",38,29.54,77.7368
+"Nov-22","7A7","Powys Teaching Health Board","mental_illness",38,28.7,75.5263
+"Dec-22","7A7","Powys Teaching Health Board","mental_illness",38,26.94,70.8947
+"Jan-23","7A7","Powys Teaching Health Board","mental_illness",38,26.1,68.6842
+"Feb-23","7A7","Powys Teaching Health Board","mental_illness",38,27.82,73.2105
+"Mar-23","7A7","Powys Teaching Health Board","mental_illness",38,27.81,73.1842
+"Apr-23","7A7","Powys Teaching Health Board","mental_illness",36,26.1,72.5
+"May-23","7A7","Powys Teaching Health Board","mental_illness",36,31.36,87.1111
+"Jun-23","7A7","Powys Teaching Health Board","mental_illness",35,24.63,70.3714
+"Jul-23","7A7","Powys Teaching Health Board","mental_illness",36,25.51,70.8611
+"Aug-23","7A7","Powys Teaching Health Board","mental_illness",34,28.39,83.5
+"Sep-23","7A7","Powys Teaching Health Board","mental_illness",36,27.14,75.3889
+"Oct-23","7A7","Powys Teaching Health Board","mental_illness",36,27.64,76.7778
+"Nov-23","7A7","Powys Teaching Health Board","mental_illness",36,28.23,78.4167
+"Dec-23","7A7","Powys Teaching Health Board","mental_illness",36,28.58,79.3889
+"Jan-24","7A7","Powys Teaching Health Board","mental_illness",36,31,86.1111
+"Feb-24","7A7","Powys Teaching Health Board","mental_illness",36,26.97,74.9167
+"Mar-24","7A7","Powys Teaching Health Board","mental_illness",28,26.04,93
+"Jan-21","7A7","Powys Teaching Health Board","surgical_acute",7,0,0
+"Feb-21","7A7","Powys Teaching Health Board","surgical_acute",8,0,0
+"Mar-21","7A7","Powys Teaching Health Board","surgical_acute",8,0,0
+"Apr-21","7A7","Powys Teaching Health Board","surgical_acute",8,0,0
+"May-21","7A7","Powys Teaching Health Board","surgical_acute",7,0,0
+"Jun-21","7A7","Powys Teaching Health Board","surgical_acute",8,0,0
+"Jul-21","7A7","Powys Teaching Health Board","surgical_acute",8,0,0
+"Aug-21","7A7","Powys Teaching Health Board","surgical_acute",9,1,11.1111
+"Sep-21","7A7","Powys Teaching Health Board","surgical_acute",8,0,0
+"Oct-21","7A7","Powys Teaching Health Board","surgical_acute",8,0,0
+"Nov-21","7A7","Powys Teaching Health Board","surgical_acute",8,0,0
+"Dec-21","7A7","Powys Teaching Health Board","surgical_acute",8,0,0
+"Jan-22","7A7","Powys Teaching Health Board","surgical_acute",8,0,0
+"Feb-22","7A7","Powys Teaching Health Board","surgical_acute",8,0,0
+"Mar-22","7A7","Powys Teaching Health Board","surgical_acute",8,0,0
+"Apr-22","7A7","Powys Teaching Health Board","surgical_acute",8,0,0
+"May-22","7A7","Powys Teaching Health Board","surgical_acute",8,0,0
+"Jun-22","7A7","Powys Teaching Health Board","surgical_acute",7,0,0
+"Jul-22","7A7","Powys Teaching Health Board","surgical_acute",8,0,0
+"Aug-22","7A7","Powys Teaching Health Board","surgical_acute",7,0,0
+"Sep-22","7A7","Powys Teaching Health Board","surgical_acute",8,0,0
+"Oct-22","7A7","Powys Teaching Health Board","surgical_acute",8,0,0
+"Nov-22","7A7","Powys Teaching Health Board","surgical_acute",8,0,0
+"Dec-22","7A7","Powys Teaching Health Board","surgical_acute",8,0,0
+"Jan-23","7A7","Powys Teaching Health Board","surgical_acute",8,0,0
+"Feb-23","7A7","Powys Teaching Health Board","surgical_acute",8,0,0
+"Mar-23","7A7","Powys Teaching Health Board","surgical_acute",8,0,0
+"Apr-23","7A7","Powys Teaching Health Board","surgical_acute",8,0,0
+"May-23","7A7","Powys Teaching Health Board","surgical_acute",8,0,0
+"Jan-21","7A3","Swansea Bay University Health Board","all_specialties",1503.700014,1195.700002,79.5172
+"Feb-21","7A3","Swansea Bay University Health Board","all_specialties",1492.700006,1179.520011,79.0192
+"Mar-21","7A3","Swansea Bay University Health Board","all_specialties",1501.90001,1212.3,80.7178
+"Apr-21","7A3","Swansea Bay University Health Board","all_specialties",1512.999989,1223.259989,80.85
+"May-21","7A3","Swansea Bay University Health Board","all_specialties",1539.300012,1262.500007,82.0178
+"Jun-21","7A3","Swansea Bay University Health Board","all_specialties",1516.299997,1276.219996,84.1667
+"Jul-21","7A3","Swansea Bay University Health Board","all_specialties",1514.700004,1261.239995,83.2667
+"Aug-21","7A3","Swansea Bay University Health Board","all_specialties",1504.939992,1264.589997,84.0293
+"Sep-21","7A3","Swansea Bay University Health Board","all_specialties",1541.530004,1310.279999,84.9987
+"Oct-21","7A3","Swansea Bay University Health Board","all_specialties",1577.199998,1317.089994,83.5081
+"Nov-21","7A3","Swansea Bay University Health Board","all_specialties",1561.229997,1321.319997,84.6333
+"Dec-21","7A3","Swansea Bay University Health Board","all_specialties",1538.389994,1261.120001,81.9766
+"Jan-22","7A3","Swansea Bay University Health Board","all_specialties",1551.620018,1297.329996,83.6113
+"Feb-22","7A3","Swansea Bay University Health Board","all_specialties",1534.560001,1299.56,84.6862
+"Mar-22","7A3","Swansea Bay University Health Board","all_specialties",1541.039995,1293.799999,83.9563
+"Apr-22","7A3","Swansea Bay University Health Board","all_specialties",1548.5,1302.1,84.0878
+"May-22","7A3","Swansea Bay University Health Board","all_specialties",1545.72,1304.89,84.4196
+"Jun-22","7A3","Swansea Bay University Health Board","all_specialties",1532.92,1322.47,86.2713
+"Jul-22","7A3","Swansea Bay University Health Board","all_specialties",1513.35,1318.09,87.0975
+"Aug-22","7A3","Swansea Bay University Health Board","all_specialties",1508.08,1300.43,86.2308
+"Sep-22","7A3","Swansea Bay University Health Board","all_specialties",1547.27,1347.96,87.1186
+"Oct-22","7A3","Swansea Bay University Health Board","all_specialties",1554.28,1356.95,87.3041
+"Nov-22","7A3","Swansea Bay University Health Board","all_specialties",1588.35,1357.2,85.4472
+"Dec-22","7A3","Swansea Bay University Health Board","all_specialties",1608.46,1374.46,85.4519
+"Jan-23","7A3","Swansea Bay University Health Board","all_specialties",1585.75,1347.54,84.9781
+"Feb-23","7A3","Swansea Bay University Health Board","all_specialties",1548.19,1319.42,85.2234
+"Mar-23","7A3","Swansea Bay University Health Board","all_specialties",1559.54,1311.63,84.1036
+"Apr-23","7A3","Swansea Bay University Health Board","all_specialties",1538.58,1324.4,86.0794
+"May-23","7A3","Swansea Bay University Health Board","all_specialties",1519.68,1316.76,86.6472
+"Jun-23","7A3","Swansea Bay University Health Board","all_specialties",1511.92,1322.35,87.4616
+"Jul-23","7A3","Swansea Bay University Health Board","all_specialties",1488.28,1279.31,85.959
+"Aug-23","7A3","Swansea Bay University Health Board","all_specialties",1435.58,1211.82,84.4133
+"Sep-23","7A3","Swansea Bay University Health Board","all_specialties",1421.43,1228.71,86.4418
+"Oct-23","7A3","Swansea Bay University Health Board","all_specialties",1425.35,1239.29,86.9464
+"Nov-23","7A3","Swansea Bay University Health Board","all_specialties",1446.93,1257.16,86.8846
+"Dec-23","7A3","Swansea Bay University Health Board","all_specialties",1437.69,1237.22,86.0561
+"Jan-24","7A3","Swansea Bay University Health Board","all_specialties",1455.47,1249.37,85.8396
+"Feb-24","7A3","Swansea Bay University Health Board","all_specialties",1453.5,1263.45,86.9247
+"Mar-24","7A3","Swansea Bay University Health Board","all_specialties",1422.47,1238.1,87.0387
+"Jan-21","7A3","Swansea Bay University Health Board","geriatric_medicine",49.6,46.099998,92.9435
+"Feb-21","7A3","Swansea Bay University Health Board","geriatric_medicine",48.9,45.400002,92.8425
+"Mar-21","7A3","Swansea Bay University Health Board","geriatric_medicine",47.5,45,94.7368
+"Apr-21","7A3","Swansea Bay University Health Board","geriatric_medicine",47.300001,45.200001,95.5603
+"May-21","7A3","Swansea Bay University Health Board","geriatric_medicine",46.699999,45.199999,96.788
+"Jun-21","7A3","Swansea Bay University Health Board","geriatric_medicine",49.200001,47.900001,97.3577
+"Jul-21","7A3","Swansea Bay University Health Board","geriatric_medicine",48.899999,48.099999,98.364
+"Aug-21","7A3","Swansea Bay University Health Board","geriatric_medicine",51.51,49.970001,97.0103
+"Sep-21","7A3","Swansea Bay University Health Board","geriatric_medicine",47.51,45.29,95.3273
+"Oct-21","7A3","Swansea Bay University Health Board","geriatric_medicine",58.079998,43.090001,74.1908
+"Nov-21","7A3","Swansea Bay University Health Board","geriatric_medicine",45.829999,41.39,90.312
+"Dec-21","7A3","Swansea Bay University Health Board","geriatric_medicine",52.130001,51.550001,98.8874
+"Jan-22","7A3","Swansea Bay University Health Board","geriatric_medicine",54.099998,53.839999,99.5194
+"Feb-22","7A3","Swansea Bay University Health Board","geriatric_medicine",66.32,51.289999,77.3372
+"Mar-22","7A3","Swansea Bay University Health Board","geriatric_medicine",56.590001,54.08,95.5646
+"Apr-22","7A3","Swansea Bay University Health Board","geriatric_medicine",58.37,54.74,93.7811
+"May-22","7A3","Swansea Bay University Health Board","geriatric_medicine",60.13,50.96,84.7497
+"Jun-22","7A3","Swansea Bay University Health Board","geriatric_medicine",61.01,50.68,83.0683
+"Jul-22","7A3","Swansea Bay University Health Board","geriatric_medicine",54.81,53.81,98.1755
+"Aug-22","7A3","Swansea Bay University Health Board","geriatric_medicine",51.24,50.01,97.5995
+"Sep-22","7A3","Swansea Bay University Health Board","geriatric_medicine",55.46,54.52,98.3051
+"Oct-22","7A3","Swansea Bay University Health Board","geriatric_medicine",58.81,54.62,92.8754
+"Nov-22","7A3","Swansea Bay University Health Board","geriatric_medicine",51.79,49.89,96.3313
+"Dec-22","7A3","Swansea Bay University Health Board","geriatric_medicine",49.38,47.39,95.97
+"Jan-23","7A3","Swansea Bay University Health Board","geriatric_medicine",53.72,44.4,82.6508
+"Feb-23","7A3","Swansea Bay University Health Board","geriatric_medicine",67.35,59.78,88.7602
+"Mar-23","7A3","Swansea Bay University Health Board","geriatric_medicine",96.14,59.04,61.4104
+"Apr-23","7A3","Swansea Bay University Health Board","geriatric_medicine",73.01,72.24,98.9453
+"May-23","7A3","Swansea Bay University Health Board","geriatric_medicine",62.43,62.33,99.8398
+"Jun-23","7A3","Swansea Bay University Health Board","geriatric_medicine",60.46,60.26,99.6692
+"Jul-23","7A3","Swansea Bay University Health Board","geriatric_medicine",60.32,60.06,99.569
+"Aug-23","7A3","Swansea Bay University Health Board","geriatric_medicine",59.91,59.91,100
+"Sep-23","7A3","Swansea Bay University Health Board","geriatric_medicine",58.23,56.17,96.4623
+"Oct-23","7A3","Swansea Bay University Health Board","geriatric_medicine",52.13,52.13,100
+"Nov-23","7A3","Swansea Bay University Health Board","geriatric_medicine",67.68,67.68,100
+"Dec-23","7A3","Swansea Bay University Health Board","geriatric_medicine",68.32,68.29,99.9561
+"Jan-24","7A3","Swansea Bay University Health Board","geriatric_medicine",91.26,91.23,99.9671
+"Feb-24","7A3","Swansea Bay University Health Board","geriatric_medicine",107.61,107.54,99.935
+"Mar-24","7A3","Swansea Bay University Health Board","geriatric_medicine",112.62,112.46,99.8579
+"Jan-21","7A3","Swansea Bay University Health Board","maternity",68,26.8,39.4118
+"Feb-21","7A3","Swansea Bay University Health Board","maternity",68,29.999999,44.1176
+"Mar-21","7A3","Swansea Bay University Health Board","maternity",68,28.6,42.0588
+"Apr-21","7A3","Swansea Bay University Health Board","maternity",68.200001,30.499999,44.7214
+"May-21","7A3","Swansea Bay University Health Board","maternity",69.5,33.399998,48.0576
+"Jun-21","7A3","Swansea Bay University Health Board","maternity",71.099998,33.7,47.398
+"Jul-21","7A3","Swansea Bay University Health Board","maternity",70.700001,34.600002,48.9392
+"Aug-21","7A3","Swansea Bay University Health Board","maternity",70.389999,32.45,46.1003
+"Sep-21","7A3","Swansea Bay University Health Board","maternity",69.529999,34.070001,49.0004
+"Oct-21","7A3","Swansea Bay University Health Board","maternity",70.32,34.77,49.4454
+"Nov-21","7A3","Swansea Bay University Health Board","maternity",70.5,32.07,45.4894
+"Dec-21","7A3","Swansea Bay University Health Board","maternity",71.099998,27.77,39.0577
+"Jan-22","7A3","Swansea Bay University Health Board","maternity",70.23,31.9,45.4222
+"Feb-22","7A3","Swansea Bay University Health Board","maternity",70.389999,31.709999,45.049
+"Mar-22","7A3","Swansea Bay University Health Board","maternity",70.259998,29.35,41.7734
+"Apr-22","7A3","Swansea Bay University Health Board","maternity",71.17,31.07,43.656
+"May-22","7A3","Swansea Bay University Health Board","maternity",70.71,28.06,39.6832
+"Jun-22","7A3","Swansea Bay University Health Board","maternity",63.43,31.2,49.1881
+"Jul-22","7A3","Swansea Bay University Health Board","maternity",71.19,30.58,42.9555
+"Aug-22","7A3","Swansea Bay University Health Board","maternity",71.19,30.58,42.9555
+"Sep-22","7A3","Swansea Bay University Health Board","maternity",72.23,33.5,46.3796
+"Oct-22","7A3","Swansea Bay University Health Board","maternity",70.87,34.61,48.8359
+"Nov-22","7A3","Swansea Bay University Health Board","maternity",71.07,36.87,51.8784
+"Dec-22","7A3","Swansea Bay University Health Board","maternity",70.77,31.74,44.8495
+"Jan-23","7A3","Swansea Bay University Health Board","maternity",63.19,29.39,46.5105
+"Feb-23","7A3","Swansea Bay University Health Board","maternity",63.46,31.54,49.7006
+"Mar-23","7A3","Swansea Bay University Health Board","maternity",64.1,30.52,47.6131
+"Apr-23","7A3","Swansea Bay University Health Board","maternity",63.67,35.47,55.7091
+"May-23","7A3","Swansea Bay University Health Board","maternity",64.13,35.1,54.7326
+"Jun-23","7A3","Swansea Bay University Health Board","maternity",64.43,35.8,55.5642
+"Jul-23","7A3","Swansea Bay University Health Board","maternity",64.97,34.77,53.517
+"Aug-23","7A3","Swansea Bay University Health Board","maternity",61.23,29.97,48.9466
+"Sep-23","7A3","Swansea Bay University Health Board","maternity",61.03,34.93,57.2341
+"Oct-23","7A3","Swansea Bay University Health Board","maternity",63.19,32.19,50.9416
+"Nov-23","7A3","Swansea Bay University Health Board","maternity",63.1,29.63,46.9572
+"Dec-23","7A3","Swansea Bay University Health Board","maternity",63.1,31.1,49.2868
+"Jan-24","7A3","Swansea Bay University Health Board","maternity",64.16,32.94,51.3404
+"Feb-24","7A3","Swansea Bay University Health Board","maternity",63.14,32.83,51.9956
+"Mar-24","7A3","Swansea Bay University Health Board","maternity",56.9,33.06,58.1019
+"Jan-21","7A3","Swansea Bay University Health Board","medical_acute",735.700015,642.000003,87.2638
+"Feb-21","7A3","Swansea Bay University Health Board","medical_acute",691.3,606.000005,87.6609
+"Mar-21","7A3","Swansea Bay University Health Board","medical_acute",690.900003,612.399997,88.638
+"Apr-21","7A3","Swansea Bay University Health Board","medical_acute",695.099995,611.199989,87.9298
+"May-21","7A3","Swansea Bay University Health Board","medical_acute",725.90001,636.600005,87.698
+"Jun-21","7A3","Swansea Bay University Health Board","medical_acute",707.500001,641.699997,90.6996
+"Jul-21","7A3","Swansea Bay University Health Board","medical_acute",702.400004,639.599997,91.0592
+"Aug-21","7A3","Swansea Bay University Health Board","medical_acute",694.669996,634.939998,91.4017
+"Sep-21","7A3","Swansea Bay University Health Board","medical_acute",724.42,664.549998,91.7355
+"Oct-21","7A3","Swansea Bay University Health Board","medical_acute",745.120001,685.829992,92.0429
+"Nov-21","7A3","Swansea Bay University Health Board","medical_acute",755.56,685.519993,90.7301
+"Dec-21","7A3","Swansea Bay University Health Board","medical_acute",721.219999,638.949996,88.5929
+"Jan-22","7A3","Swansea Bay University Health Board","medical_acute",715.010014,638.219999,89.2603
+"Feb-22","7A3","Swansea Bay University Health Board","medical_acute",722.690004,647.750006,89.6304
+"Mar-22","7A3","Swansea Bay University Health Board","medical_acute",712.819992,627.729999,88.0629
+"Apr-22","7A3","Swansea Bay University Health Board","medical_acute",714.66,627.95,87.867
+"May-22","7A3","Swansea Bay University Health Board","medical_acute",705.87,639.68,90.6229
+"Jun-22","7A3","Swansea Bay University Health Board","medical_acute",708.1,652.15,92.0986
+"Jul-22","7A3","Swansea Bay University Health Board","medical_acute",699.44,647.78,92.6141
+"Aug-22","7A3","Swansea Bay University Health Board","medical_acute",704.88,650.76,92.3221
+"Sep-22","7A3","Swansea Bay University Health Board","medical_acute",722.67,671.16,92.8723
+"Oct-22","7A3","Swansea Bay University Health Board","medical_acute",737.3,687.59,93.2578
+"Nov-22","7A3","Swansea Bay University Health Board","medical_acute",751.08,686.71,91.4297
+"Dec-22","7A3","Swansea Bay University Health Board","medical_acute",796.01,729.54,91.6496
+"Jan-23","7A3","Swansea Bay University Health Board","medical_acute",757.83,691.98,91.3107
+"Feb-23","7A3","Swansea Bay University Health Board","medical_acute",693.63,626.04,90.2556
+"Mar-23","7A3","Swansea Bay University Health Board","medical_acute",697.79,636.3,91.1879
+"Apr-23","7A3","Swansea Bay University Health Board","medical_acute",700.06,633.43,90.4822
+"May-23","7A3","Swansea Bay University Health Board","medical_acute",696.81,636.27,91.3118
+"Jun-23","7A3","Swansea Bay University Health Board","medical_acute",677.02,626.45,92.5305
+"Jul-23","7A3","Swansea Bay University Health Board","medical_acute",656.97,604.38,91.9951
+"Aug-23","7A3","Swansea Bay University Health Board","medical_acute",644.12,582.43,90.4226
+"Sep-23","7A3","Swansea Bay University Health Board","medical_acute",639.79,579.32,90.5485
+"Oct-23","7A3","Swansea Bay University Health Board","medical_acute",632.86,581.74,91.9224
+"Nov-23","7A3","Swansea Bay University Health Board","medical_acute",631.37,585.17,92.6826
+"Dec-23","7A3","Swansea Bay University Health Board","medical_acute",633.43,580.58,91.6565
+"Jan-24","7A3","Swansea Bay University Health Board","medical_acute",627.28,568.04,90.5561
+"Feb-24","7A3","Swansea Bay University Health Board","medical_acute",610.98,566.12,92.6577
+"Mar-24","7A3","Swansea Bay University Health Board","medical_acute",605.1,546.5,90.3157
+"Jan-21","7A3","Swansea Bay University Health Board","mental_illness",263,203.899999,77.5285
+"Feb-21","7A3","Swansea Bay University Health Board","mental_illness",262.299999,196.520002,74.9218
+"Mar-21","7A3","Swansea Bay University Health Board","mental_illness",262.700001,199.300001,75.866
+"Apr-21","7A3","Swansea Bay University Health Board","mental_illness",261.299999,207.660002,79.4719
+"May-21","7A3","Swansea Bay University Health Board","mental_illness",268.700001,221.500001,82.4339
+"Jun-21","7A3","Swansea Bay University Health Board","mental_illness",267.900001,220.02,82.1277
+"Jul-21","7A3","Swansea Bay University Health Board","mental_illness",257.999999,202.839997,78.6202
+"Aug-21","7A3","Swansea Bay University Health Board","mental_illness",253.889999,209.389999,82.4727
+"Sep-21","7A3","Swansea Bay University Health Board","mental_illness",265.599999,217.420002,81.8599
+"Oct-21","7A3","Swansea Bay University Health Board","mental_illness",265.54,214.659998,80.839
+"Nov-21","7A3","Swansea Bay University Health Board","mental_illness",265.27,232.260001,87.5561
+"Dec-21","7A3","Swansea Bay University Health Board","mental_illness",264.870001,220.230001,83.1464
+"Jan-22","7A3","Swansea Bay University Health Board","mental_illness",266.5,217.639997,81.666
+"Feb-22","7A3","Swansea Bay University Health Board","mental_illness",248.639999,220.759998,88.787
+"Mar-22","7A3","Swansea Bay University Health Board","mental_illness",250.48,223.56,89.2526
+"Apr-22","7A3","Swansea Bay University Health Board","mental_illness",252.32,225.6,89.4103
+"May-22","7A3","Swansea Bay University Health Board","mental_illness",256.29,221.51,86.4294
+"Jun-22","7A3","Swansea Bay University Health Board","mental_illness",257.46,220.67,85.7104
+"Jul-22","7A3","Swansea Bay University Health Board","mental_illness",251.56,216.75,86.1623
+"Aug-22","7A3","Swansea Bay University Health Board","mental_illness",247.78,216.29,87.2911
+"Sep-22","7A3","Swansea Bay University Health Board","mental_illness",255.67,222.41,86.991
+"Oct-22","7A3","Swansea Bay University Health Board","mental_illness",250.79,224.73,89.6088
+"Nov-22","7A3","Swansea Bay University Health Board","mental_illness",251.23,228.34,90.8888
+"Dec-22","7A3","Swansea Bay University Health Board","mental_illness",246.64,221.26,89.7097
+"Jan-23","7A3","Swansea Bay University Health Board","mental_illness",251.02,225.5,89.8335
+"Feb-23","7A3","Swansea Bay University Health Board","mental_illness",260.22,230.95,88.7518
+"Mar-23","7A3","Swansea Bay University Health Board","mental_illness",258.16,229.86,89.0378
+"Apr-23","7A3","Swansea Bay University Health Board","mental_illness",257.99,226.71,87.8755
+"May-23","7A3","Swansea Bay University Health Board","mental_illness",244.96,215,87.7694
+"Jun-23","7A3","Swansea Bay University Health Board","mental_illness",245.94,216,87.8263
+"Jul-23","7A3","Swansea Bay University Health Board","mental_illness",243.5,211.09,86.6899
+"Aug-23","7A3","Swansea Bay University Health Board","mental_illness",217.71,185.41,85.1637
+"Sep-23","7A3","Swansea Bay University Health Board","mental_illness",214.78,193.71,90.19
+"Oct-23","7A3","Swansea Bay University Health Board","mental_illness",220.19,198.15,89.9905
+"Nov-23","7A3","Swansea Bay University Health Board","mental_illness",218.65,200.16,91.5436
+"Dec-23","7A3","Swansea Bay University Health Board","mental_illness",216.89,192.61,88.8054
+"Jan-24","7A3","Swansea Bay University Health Board","mental_illness",217.82,196.94,90.4141
+"Feb-24","7A3","Swansea Bay University Health Board","mental_illness",219.67,194.07,88.3462
+"Mar-24","7A3","Swansea Bay University Health Board","mental_illness",220.13,189.44,86.0582
+"Jan-21","7A3","Swansea Bay University Health Board","surgical_acute",285.299999,212.700001,74.5531
+"Feb-21","7A3","Swansea Bay University Health Board","surgical_acute",318.400007,237.300002,74.5289
+"Mar-21","7A3","Swansea Bay University Health Board","surgical_acute",331.300006,263.800002,79.6257
+"Apr-21","7A3","Swansea Bay University Health Board","surgical_acute",338.799993,263.999999,77.9221
+"May-21","7A3","Swansea Bay University Health Board","surgical_acute",324.700003,258.800004,79.7043
+"Jun-21","7A3","Swansea Bay University Health Board","surgical_acute",315.399997,265.099999,84.052
+"Jul-21","7A3","Swansea Bay University Health Board","surgical_acute",329.000002,267.2,81.2158
+"Aug-21","7A3","Swansea Bay University Health Board","surgical_acute",335.749996,274.209998,81.6709
+"Sep-21","7A3","Swansea Bay University Health Board","surgical_acute",327.410004,276.989997,84.6003
+"Oct-21","7A3","Swansea Bay University Health Board","surgical_acute",332.399999,266.290001,80.1113
+"Nov-21","7A3","Swansea Bay University Health Board","surgical_acute",327.009998,259.580003,79.3798
+"Dec-21","7A3","Swansea Bay University Health Board","surgical_acute",334.639994,251.710002,75.2181
+"Jan-22","7A3","Swansea Bay University Health Board","surgical_acute",345.500007,285.379999,82.5991
+"Feb-22","7A3","Swansea Bay University Health Board","surgical_acute",343.299999,278.799997,81.2118
+"Mar-22","7A3","Swansea Bay University Health Board","surgical_acute",355.410003,286.77,80.6871
+"Apr-22","7A3","Swansea Bay University Health Board","surgical_acute",356.38,288.61,80.9838
+"May-22","7A3","Swansea Bay University Health Board","surgical_acute",356.77,293.36,82.2266
+"Jun-22","7A3","Swansea Bay University Health Board","surgical_acute",351.74,295.29,83.9512
+"Jul-22","7A3","Swansea Bay University Health Board","surgical_acute",349.74,295.65,84.5342
+"Aug-22","7A3","Swansea Bay University Health Board","surgical_acute",347.55,279.02,80.282
+"Sep-22","7A3","Swansea Bay University Health Board","surgical_acute",363.94,300.74,82.6345
+"Oct-22","7A3","Swansea Bay University Health Board","surgical_acute",351.22,286.99,81.7123
+"Nov-22","7A3","Swansea Bay University Health Board","surgical_acute",377.52,288.29,76.3642
+"Dec-22","7A3","Swansea Bay University Health Board","surgical_acute",351.51,272.61,77.554
+"Jan-23","7A3","Swansea Bay University Health Board","surgical_acute",366.44,286.07,78.0674
+"Feb-23","7A3","Swansea Bay University Health Board","surgical_acute",379.56,304.07,80.1112
+"Mar-23","7A3","Swansea Bay University Health Board","surgical_acute",362.95,292.87,80.6916
+"Apr-23","7A3","Swansea Bay University Health Board","surgical_acute",363.19,289.98,79.8425
+"May-23","7A3","Swansea Bay University Health Board","surgical_acute",368.91,298.13,80.8137
+"Jun-23","7A3","Swansea Bay University Health Board","surgical_acute",381.31,314.05,82.3608
+"Jul-23","7A3","Swansea Bay University Health Board","surgical_acute",379.42,299.65,78.9758
+"Aug-23","7A3","Swansea Bay University Health Board","surgical_acute",370.24,285.2,77.0311
+"Sep-23","7A3","Swansea Bay University Health Board","surgical_acute",367.24,297.18,80.9226
+"Oct-23","7A3","Swansea Bay University Health Board","surgical_acute",373.98,303.04,81.0311
+"Nov-23","7A3","Swansea Bay University Health Board","surgical_acute",385.6,305.99,79.3543
+"Dec-23","7A3","Swansea Bay University Health Board","surgical_acute",376.32,295.5,78.5236
+"Jan-24","7A3","Swansea Bay University Health Board","surgical_acute",370.94,285.73,77.0286
+"Feb-24","7A3","Swansea Bay University Health Board","surgical_acute",365.03,285.33,78.1662
+"Mar-24","7A3","Swansea Bay University Health Board","surgical_acute",347.13,286.02,82.3956

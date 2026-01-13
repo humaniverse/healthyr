@@ -1,0 +1,619 @@
+"ltla21_code","total_residents","disability_level","n","prop"
+"E06000001",92338,"Disabled under the Equality Act",21145,0.228995646429422
+"E06000001",92338,"Not disabled under the Equality Act",71193,0.771004353570578
+"E06000002",143924,"Disabled under the Equality Act",29520,0.205108251577221
+"E06000002",143924,"Not disabled under the Equality Act",114404,0.794891748422779
+"E06000003",136531,"Disabled under the Equality Act",30483,0.22326797577107
+"E06000003",136531,"Not disabled under the Equality Act",106048,0.77673202422893
+"E06000004",196595,"Disabled under the Equality Act",39052,0.198641877972482
+"E06000004",196595,"Not disabled under the Equality Act",157543,0.801358122027519
+"E06000005",107800,"Disabled under the Equality Act",21104,0.195769944341373
+"E06000005",107800,"Not disabled under the Equality Act",86696,0.804230055658627
+"E06000006",128479,"Disabled under the Equality Act",28382,0.220907696977716
+"E06000006",128479,"Not disabled under the Equality Act",100097,0.779092303022284
+"E06000007",210974,"Disabled under the Equality Act",37266,0.176637879549139
+"E06000007",210974,"Not disabled under the Equality Act",173708,0.823362120450861
+"E06000008",154738,"Disabled under the Equality Act",28575,0.184666985485143
+"E06000008",154738,"Not disabled under the Equality Act",126163,0.815333014514857
+"E06000009",141036,"Disabled under the Equality Act",35459,0.251418077653932
+"E06000009",141036,"Not disabled under the Equality Act",105577,0.748581922346068
+"E06000010",267011,"Disabled under the Equality Act",53395,0.19997303481879
+"E06000010",267011,"Not disabled under the Equality Act",213616,0.80002696518121
+"E06000011",342215,"Disabled under the Equality Act",63601,0.185851000102275
+"E06000011",342215,"Not disabled under the Equality Act",278614,0.814148999897725
+"E06000012",156965,"Disabled under the Equality Act",31990,0.203803395661453
+"E06000012",156965,"Not disabled under the Equality Act",124975,0.796196604338547
+"E06000013",169680,"Disabled under the Equality Act",33343,0.196505186232909
+"E06000013",169680,"Not disabled under the Equality Act",136337,0.803494813767091
+"E06000014",202821,"Disabled under the Equality Act",34592,0.170554331159002
+"E06000014",202821,"Not disabled under the Equality Act",168229,0.829445668840998
+"E06000015",261364,"Disabled under the Equality Act",49040,0.18763104329594
+"E06000015",261364,"Not disabled under the Equality Act",212324,0.81236895670406
+"E06000016",368571,"Disabled under the Equality Act",57148,0.155052893472357
+"E06000016",368571,"Not disabled under the Equality Act",311423,0.844947106527643
+"E06000017",41050,"Disabled under the Equality Act",6523,0.158903775883069
+"E06000017",41050,"Not disabled under the Equality Act",34527,0.841096224116931
+"E06000018",323632,"Disabled under the Equality Act",60218,0.186069362732981
+"E06000018",323632,"Not disabled under the Equality Act",263414,0.813930637267019
+"E06000019",187034,"Disabled under the Equality Act",34828,0.186212132553439
+"E06000019",187034,"Not disabled under the Equality Act",152206,0.813787867446561
+"E06000020",185540,"Disabled under the Equality Act",36526,0.196863210089469
+"E06000020",185540,"Not disabled under the Equality Act",149014,0.803136789910531
+"E06000021",258368,"Disabled under the Equality Act",54607,0.211353573197919
+"E06000021",258368,"Not disabled under the Equality Act",203761,0.788646426802081
+"E06000022",193409,"Disabled under the Equality Act",31778,0.164304660072696
+"E06000022",193409,"Not disabled under the Equality Act",161631,0.835695339927304
+"E06000023",472466,"Disabled under the Equality Act",81159,0.171777440069762
+"E06000023",472466,"Not disabled under the Equality Act",391307,0.828222559930238
+"E06000024",216728,"Disabled under the Equality Act",40533,0.187022442877708
+"E06000024",216728,"Not disabled under the Equality Act",176195,0.812977557122292
+"E06000025",290423,"Disabled under the Equality Act",47429,0.163310068417446
+"E06000025",290423,"Not disabled under the Equality Act",242994,0.836689931582554
+"E06000026",264695,"Disabled under the Equality Act",57395,0.216834469861539
+"E06000026",264695,"Not disabled under the Equality Act",207300,0.783165530138461
+"E06000027",139323,"Disabled under the Equality Act",33224,0.238467446150313
+"E06000027",139323,"Not disabled under the Equality Act",106099,0.761532553849687
+"E06000030",233410,"Disabled under the Equality Act",37075,0.158840666638105
+"E06000030",233410,"Not disabled under the Equality Act",196335,0.841159333361895
+"E06000031",215673,"Disabled under the Equality Act",35180,0.163117311856375
+"E06000031",215673,"Not disabled under the Equality Act",180493,0.836882688143625
+"E06000032",225261,"Disabled under the Equality Act",30932,0.137316268683882
+"E06000032",225261,"Not disabled under the Equality Act",194329,0.862683731316118
+"E06000033",180686,"Disabled under the Equality Act",33106,0.183223935446022
+"E06000033",180686,"Not disabled under the Equality Act",147580,0.816776064553978
+"E06000034",175999,"Disabled under the Equality Act",25443,0.144563321382508
+"E06000034",175999,"Not disabled under the Equality Act",150556,0.855436678617492
+"E06000035",279773,"Disabled under the Equality Act",48572,0.173612178444668
+"E06000035",279773,"Not disabled under the Equality Act",231201,0.826387821555332
+"E06000036",124607,"Disabled under the Equality Act",16703,0.134045438859775
+"E06000036",124607,"Not disabled under the Equality Act",107904,0.865954561140225
+"E06000037",161448,"Disabled under the Equality Act",23671,0.146616867350478
+"E06000037",161448,"Not disabled under the Equality Act",137777,0.853383132649522
+"E06000038",174224,"Disabled under the Equality Act",24095,0.138298971439067
+"E06000038",174224,"Not disabled under the Equality Act",150129,0.861701028560933
+"E06000039",158498,"Disabled under the Equality Act",17975,0.113408371083547
+"E06000039",158498,"Not disabled under the Equality Act",140523,0.886591628916453
+"E06000040",153496,"Disabled under the Equality Act",18906,0.123169333402825
+"E06000040",153496,"Not disabled under the Equality Act",134590,0.876830666597175
+"E06000041",177502,"Disabled under the Equality Act",22159,0.124838029994028
+"E06000041",177502,"Not disabled under the Equality Act",155343,0.875161970005972
+"E06000042",287060,"Disabled under the Equality Act",42512,0.148094475022643
+"E06000042",287060,"Not disabled under the Equality Act",244548,0.851905524977357
+"E06000043",277103,"Disabled under the Equality Act",51797,0.186923274017243
+"E06000043",277103,"Not disabled under the Equality Act",225306,0.813076725982757
+"E06000044",208003,"Disabled under the Equality Act",36648,0.176189766493752
+"E06000044",208003,"Not disabled under the Equality Act",171355,0.823810233506247
+"E06000045",248922,"Disabled under the Equality Act",43937,0.176509107270551
+"E06000045",248922,"Not disabled under the Equality Act",204985,0.823490892729449
+"E06000046",140457,"Disabled under the Equality Act",32755,0.233203044348092
+"E06000046",140457,"Not disabled under the Equality Act",107702,0.766796955651908
+"E06000047",522068,"Disabled under the Equality Act",119790,0.229452868208739
+"E06000047",522068,"Not disabled under the Equality Act",402278,0.770547131791261
+"E06000049",398772,"Disabled under the Equality Act",67819,0.170069613714102
+"E06000049",398772,"Not disabled under the Equality Act",330953,0.829930386285898
+"E06000050",357150,"Disabled under the Equality Act",65897,0.184507909841803
+"E06000050",357150,"Not disabled under the Equality Act",291253,0.815492090158197
+"E06000051",323606,"Disabled under the Equality Act",59990,0.185379751920545
+"E06000051",323606,"Not disabled under the Equality Act",263616,0.814620248079455
+"E06000052",570305,"Disabled under the Equality Act",120570,0.211413191187172
+"E06000052",570305,"Not disabled under the Equality Act",449735,0.788586808812828
+"E06000053",2053,"Disabled under the Equality Act",294,0.143205065757428
+"E06000053",2053,"Not disabled under the Equality Act",1759,0.856794934242572
+"E06000054",510331,"Disabled under the Equality Act",86495,0.169488038155628
+"E06000054",510331,"Not disabled under the Equality Act",423836,0.830511961844372
+"E06000055",185225,"Disabled under the Equality Act",28727,0.155092455122149
+"E06000055",185225,"Not disabled under the Equality Act",156498,0.844907544877851
+"E06000056",294252,"Disabled under the Equality Act",44032,0.149640444245069
+"E06000056",294252,"Not disabled under the Equality Act",250220,0.850359555754931
+"E06000057",320567,"Disabled under the Equality Act",67190,0.209597369660633
+"E06000057",320567,"Not disabled under the Equality Act",253377,0.790402630339367
+"E06000058",400196,"Disabled under the Equality Act",73838,0.184504592749553
+"E06000058",400196,"Not disabled under the Equality Act",326358,0.815495407250447
+"E06000059",379579,"Disabled under the Equality Act",75077,0.197790183334695
+"E06000059",379579,"Not disabled under the Equality Act",304502,0.802209816665306
+"E06000060",553078,"Disabled under the Equality Act",74601,0.134883325679199
+"E06000060",553078,"Not disabled under the Equality Act",478477,0.865116674320801
+"E06000061",359525,"Disabled under the Equality Act",62313,0.173320353243863
+"E06000061",359525,"Not disabled under the Equality Act",297212,0.826679646756137
+"E06000062",425725,"Disabled under the Equality Act",64876,0.152389453285572
+"E06000062",425725,"Not disabled under the Equality Act",360849,0.847610546714428
+"E07000008",145674,"Disabled under the Equality Act",21433,0.147129892774277
+"E07000008",145674,"Not disabled under the Equality Act",124241,0.852870107225723
+"E07000009",87762,"Disabled under the Equality Act",14166,0.161413823750598
+"E07000009",87762,"Not disabled under the Equality Act",73596,0.838586176249402
+"E07000010",102462,"Disabled under the Equality Act",20836,0.203353438347875
+"E07000010",102462,"Not disabled under the Equality Act",81626,0.796646561652125
+"E07000011",180832,"Disabled under the Equality Act",29577,0.163560652981773
+"E07000011",180832,"Not disabled under the Equality Act",151255,0.836439347018227
+"E07000012",162121,"Disabled under the Equality Act",23898,0.147408417169892
+"E07000012",162121,"Not disabled under the Equality Act",138223,0.852591582830108
+"E07000026",96154,"Disabled under the Equality Act",19205,0.199731680429311
+"E07000026",96154,"Not disabled under the Equality Act",76949,0.800268319570689
+"E07000027",67407,"Disabled under the Equality Act",14652,0.217366148916285
+"E07000027",67407,"Not disabled under the Equality Act",52755,0.782633851083715
+"E07000028",110024,"Disabled under the Equality Act",20767,0.188749727332218
+"E07000028",110024,"Not disabled under the Equality Act",89257,0.811250272667782
+"E07000029",67076,"Disabled under the Equality Act",14143,0.210850378674936
+"E07000029",67076,"Not disabled under the Equality Act",52933,0.789149621325064
+"E07000030",54735,"Disabled under the Equality Act",9226,0.168557595688316
+"E07000030",54735,"Not disabled under the Equality Act",45509,0.831442404311684
+"E07000031",104450,"Disabled under the Equality Act",18409,0.176247008137865
+"E07000031",104450,"Not disabled under the Equality Act",86041,0.823752991862135
+"E07000032",126206,"Disabled under the Equality Act",25066,0.198611793417112
+"E07000032",126206,"Not disabled under the Equality Act",101140,0.801388206582888
+"E07000033",80273,"Disabled under the Equality Act",18343,0.228507717414324
+"E07000033",80273,"Not disabled under the Equality Act",61930,0.771492282585676
+"E07000034",103569,"Disabled under the Equality Act",23838,0.230165396981722
+"E07000034",103569,"Not disabled under the Equality Act",79731,0.769834603018278
+"E07000035",71540,"Disabled under the Equality Act",13177,0.184190662566396
+"E07000035",71540,"Not disabled under the Equality Act",58363,0.815809337433604
+"E07000036",112906,"Disabled under the Equality Act",22123,0.195941756859689
+"E07000036",112906,"Not disabled under the Equality Act",90783,0.804058243140311
+"E07000037",90933,"Disabled under the Equality Act",16732,0.184003607051345
+"E07000037",90933,"Not disabled under the Equality Act",74201,0.815996392948655
+"E07000038",102001,"Disabled under the Equality Act",21748,0.213213595945138
+"E07000038",102001,"Not disabled under the Equality Act",80253,0.786786404054862
+"E07000039",107208,"Disabled under the Equality Act",18412,0.1717409148571
+"E07000039",107208,"Not disabled under the Equality Act",88796,0.8282590851429
+"E07000040",150829,"Disabled under the Equality Act",29413,0.195008917383262
+"E07000040",150829,"Not disabled under the Equality Act",121416,0.804991082616738
+"E07000041",130709,"Disabled under the Equality Act",23782,0.181946155199718
+"E07000041",130709,"Not disabled under the Equality Act",106927,0.818053844800282
+"E07000042",82852,"Disabled under the Equality Act",15326,0.184980447062231
+"E07000042",82852,"Not disabled under the Equality Act",67526,0.815019552937769
+"E07000043",98611,"Disabled under the Equality Act",19298,0.195698248674083
+"E07000043",98611,"Not disabled under the Equality Act",79313,0.804301751325917
+"E07000044",88626,"Disabled under the Equality Act",16755,0.189052873874484
+"E07000044",88626,"Not disabled under the Equality Act",71871,0.810947126125516
+"E07000045",134803,"Disabled under the Equality Act",27411,0.203341171932375
+"E07000045",134803,"Not disabled under the Equality Act",107392,0.796658828067625
+"E07000046",68114,"Disabled under the Equality Act",14449,0.212129664973427
+"E07000046",68114,"Not disabled under the Equality Act",53665,0.787870335026573
+"E07000047",57096,"Disabled under the Equality Act",11896,0.20835084769511
+"E07000047",57096,"Not disabled under the Equality Act",45200,0.79164915230489
+"E07000061",101686,"Disabled under the Equality Act",21919,0.215555730385697
+"E07000061",101686,"Not disabled under the Equality Act",79767,0.784444269614303
+"E07000062",90995,"Disabled under the Equality Act",20525,0.225561844057366
+"E07000062",90995,"Not disabled under the Equality Act",70470,0.774438155942634
+"E07000063",99905,"Disabled under the Equality Act",20342,0.203613432761123
+"E07000063",99905,"Not disabled under the Equality Act",79563,0.796386567238877
+"E07000064",93110,"Disabled under the Equality Act",20138,0.216281817205456
+"E07000064",93110,"Not disabled under the Equality Act",72972,0.783718182794544
+"E07000065",160151,"Disabled under the Equality Act",27629,0.172518435726283
+"E07000065",160151,"Not disabled under the Equality Act",132522,0.827481564273717
+"E07000066",187571,"Disabled under the Equality Act",31380,0.167296650335073
+"E07000066",187571,"Not disabled under the Equality Act",156191,0.832703349664927
+"E07000067",155268,"Disabled under the Equality Act",26288,0.16930726228199
+"E07000067",155268,"Not disabled under the Equality Act",128980,0.83069273771801
+"E07000068",77048,"Disabled under the Equality Act",10851,0.140834285120964
+"E07000068",77048,"Not disabled under the Equality Act",66197,0.859165714879036
+"E07000069",89587,"Disabled under the Equality Act",15884,0.177302510408876
+"E07000069",89587,"Not disabled under the Equality Act",73703,0.822697489591124
+"E07000070",181522,"Disabled under the Equality Act",26188,0.144269014224171
+"E07000070",181522,"Not disabled under the Equality Act",155334,0.855730985775829
+"E07000071",192715,"Disabled under the Equality Act",32624,0.169286251718859
+"E07000071",192715,"Not disabled under the Equality Act",160091,0.830713748281141
+"E07000072",134982,"Disabled under the Equality Act",19012,0.140848409417552
+"E07000072",134982,"Not disabled under the Equality Act",115970,0.859151590582448
+"E07000073",93328,"Disabled under the Equality Act",15224,0.163123607063261
+"E07000073",93328,"Not disabled under the Equality Act",78104,0.836876392936739
+"E07000074",66208,"Disabled under the Equality Act",11484,0.173453359110681
+"E07000074",66208,"Not disabled under the Equality Act",54724,0.826546640889319
+"E07000075",85664,"Disabled under the Equality Act",13697,0.159892136720209
+"E07000075",85664,"Not disabled under the Equality Act",71967,0.840107863279791
+"E07000076",148292,"Disabled under the Equality Act",35694,0.240700779543064
+"E07000076",148292,"Not disabled under the Equality Act",112598,0.759299220456936
+"E07000077",91341,"Disabled under the Equality Act",12230,0.133893870222573
+"E07000077",91341,"Not disabled under the Equality Act",79111,0.866106129777427
+"E07000078",118835,"Disabled under the Equality Act",18948,0.15944797408171
+"E07000078",118835,"Not disabled under the Equality Act",99887,0.84055202591829
+"E07000079",90832,"Disabled under the Equality Act",13983,0.153943544125418
+"E07000079",90832,"Not disabled under the Equality Act",76849,0.846056455874582
+"E07000080",87004,"Disabled under the Equality Act",16681,0.191726817157832
+"E07000080",87004,"Not disabled under the Equality Act",70323,0.808273182842168
+"E07000081",132416,"Disabled under the Equality Act",23073,0.174246314644756
+"E07000081",132416,"Not disabled under the Equality Act",109343,0.825753685355244
+"E07000082",121104,"Disabled under the Equality Act",20521,0.169449398863786
+"E07000082",121104,"Not disabled under the Equality Act",100583,0.830550601136213
+"E07000083",94885,"Disabled under the Equality Act",15172,0.159898824893292
+"E07000083",94885,"Not disabled under the Equality Act",79713,0.840101175106708
+"E07000084",185151,"Disabled under the Equality Act",27778,0.150028895334079
+"E07000084",185151,"Not disabled under the Equality Act",157373,0.849971104665921
+"E07000085",125744,"Disabled under the Equality Act",19579,0.155705242397252
+"E07000085",125744,"Not disabled under the Equality Act",106165,0.844294757602748
+"E07000086",136443,"Disabled under the Equality Act",21869,0.160279384065141
+"E07000086",136443,"Not disabled under the Equality Act",114574,0.839720615934859
+"E07000087",114513,"Disabled under the Equality Act",19252,0.168120650057199
+"E07000087",114513,"Not disabled under the Equality Act",95261,0.831879349942801
+"E07000088",81952,"Disabled under the Equality Act",16714,0.203948652869973
+"E07000088",81952,"Not disabled under the Equality Act",65238,0.796051347130027
+"E07000089",99408,"Disabled under the Equality Act",12850,0.129265250281667
+"E07000089",99408,"Not disabled under the Equality Act",86558,0.870734749718333
+"E07000090",124208,"Disabled under the Equality Act",24718,0.199004895014814
+"E07000090",124208,"Not disabled under the Equality Act",99490,0.800995104985186
+"E07000091",175785,"Disabled under the Equality Act",32591,0.185402622521831
+"E07000091",175785,"Not disabled under the Equality Act",143194,0.814597377478169
+"E07000092",99756,"Disabled under the Equality Act",14309,0.143439993584346
+"E07000092",99756,"Not disabled under the Equality Act",85447,0.856560006415654
+"E07000093",130492,"Disabled under the Equality Act",20316,0.15568770499341
+"E07000093",130492,"Not disabled under the Equality Act",110176,0.84431229500659
+"E07000094",127444,"Disabled under the Equality Act",19566,0.153526254668717
+"E07000094",127444,"Not disabled under the Equality Act",107878,0.846473745331283
+"E07000095",99007,"Disabled under the Equality Act",14255,0.143979718605755
+"E07000095",99007,"Not disabled under the Equality Act",84752,0.856020281394245
+"E07000096",155081,"Disabled under the Equality Act",23522,0.151675575989322
+"E07000096",155081,"Not disabled under the Equality Act",131559,0.848324424010678
+"E07000098",107827,"Disabled under the Equality Act",15076,0.139816558004952
+"E07000098",107827,"Not disabled under the Equality Act",92751,0.860183441995048
+"E07000099",133209,"Disabled under the Equality Act",21236,0.15941865789849
+"E07000099",133209,"Not disabled under the Equality Act",111973,0.84058134210151
+"E07000102",93771,"Disabled under the Equality Act",12692,0.135351014706039
+"E07000102",93771,"Not disabled under the Equality Act",81079,0.864648985293961
+"E07000103",102246,"Disabled under the Equality Act",12933,0.126489055806584
+"E07000103",102246,"Not disabled under the Equality Act",89313,0.873510944193416
+"E07000105",132747,"Disabled under the Equality Act",22655,0.170662990500727
+"E07000105",132747,"Not disabled under the Equality Act",110092,0.829337009499273
+"E07000106",157431,"Disabled under the Equality Act",30870,0.196085904300932
+"E07000106",157431,"Not disabled under the Equality Act",126561,0.803914095699068
+"E07000107",116753,"Disabled under the Equality Act",16374,0.140244790283761
+"E07000107",116753,"Not disabled under the Equality Act",100379,0.859755209716239
+"E07000108",116410,"Disabled under the Equality Act",24647,0.211725796752856
+"E07000108",116410,"Not disabled under the Equality Act",91763,0.788274203247144
+"E07000109",106900,"Disabled under the Equality Act",17509,0.16378858746492
+"E07000109",106900,"Not disabled under the Equality Act",89391,0.836211412535079
+"E07000110",175782,"Disabled under the Equality Act",28025,0.159430430874606
+"E07000110",175782,"Not disabled under the Equality Act",147757,0.840569569125394
+"E07000111",120514,"Disabled under the Equality Act",18088,0.150090445923295
+"E07000111",120514,"Not disabled under the Equality Act",102426,0.849909554076705
+"E07000112",109758,"Disabled under the Equality Act",23960,0.218298438382624
+"E07000112",109758,"Not disabled under the Equality Act",85798,0.781701561617376
+"E07000113",151677,"Disabled under the Equality Act",29637,0.195395478549813
+"E07000113",151677,"Not disabled under the Equality Act",122040,0.804604521450187
+"E07000114",140587,"Disabled under the Equality Act",32135,0.228577322227517
+"E07000114",140587,"Not disabled under the Equality Act",108452,0.771422677772483
+"E07000115",132201,"Disabled under the Equality Act",20224,0.152979175649201
+"E07000115",132201,"Not disabled under the Equality Act",111977,0.847020824350799
+"E07000116",115311,"Disabled under the Equality Act",17299,0.150020379668895
+"E07000116",115311,"Not disabled under the Equality Act",98012,0.849979620331105
+"E07000117",94646,"Disabled under the Equality Act",19502,0.206052025442174
+"E07000117",94646,"Not disabled under the Equality Act",75144,0.793947974557826
+"E07000118",117734,"Disabled under the Equality Act",21811,0.185256595376017
+"E07000118",117734,"Not disabled under the Equality Act",95923,0.814743404623983
+"E07000119",81374,"Disabled under the Equality Act",16649,0.204598520411925
+"E07000119",81374,"Not disabled under the Equality Act",64725,0.795401479588075
+"E07000120",82236,"Disabled under the Equality Act",17127,0.208266452648475
+"E07000120",82236,"Not disabled under the Equality Act",65109,0.791733547351525
+"E07000121",142934,"Disabled under the Equality Act",28856,0.201883386737935
+"E07000121",142934,"Not disabled under the Equality Act",114078,0.798116613262065
+"E07000122",95757,"Disabled under the Equality Act",16915,0.176645049448082
+"E07000122",95757,"Not disabled under the Equality Act",78842,0.823354950551918
+"E07000123",147835,"Disabled under the Equality Act",26840,0.181553759258633
+"E07000123",147835,"Not disabled under the Equality Act",120995,0.818446240741367
+"E07000124",61561,"Disabled under the Equality Act",9398,0.152661587693507
+"E07000124",61561,"Not disabled under the Equality Act",52163,0.847338412306493
+"E07000125",70868,"Disabled under the Equality Act",14027,0.197931365355308
+"E07000125",70868,"Not disabled under the Equality Act",56841,0.802068634644692
+"E07000126",111035,"Disabled under the Equality Act",20314,0.182951321655334
+"E07000126",111035,"Not disabled under the Equality Act",90721,0.817048678344666
+"E07000127",117428,"Disabled under the Equality Act",22776,0.193957148209967
+"E07000127",117428,"Not disabled under the Equality Act",94652,0.806042851790033
+"E07000128",111946,"Disabled under the Equality Act",24771,0.221276329658943
+"E07000128",111946,"Not disabled under the Equality Act",87175,0.778723670341057
+"E07000129",102926,"Disabled under the Equality Act",16305,0.158414783436644
+"E07000129",102926,"Not disabled under the Equality Act",86621,0.841585216563356
+"E07000130",183971,"Disabled under the Equality Act",30149,0.163879089639128
+"E07000130",183971,"Not disabled under the Equality Act",153822,0.836120910360872
+"E07000131",97626,"Disabled under the Equality Act",14709,0.150666830557433
+"E07000131",97626,"Not disabled under the Equality Act",82917,0.849333169442567
+"E07000132",113640,"Disabled under the Equality Act",19926,0.175343189017951
+"E07000132",113640,"Not disabled under the Equality Act",93714,0.824656810982049
+"E07000133",51752,"Disabled under the Equality Act",8727,0.168631164012985
+"E07000133",51752,"Not disabled under the Equality Act",43025,0.831368835987015
+"E07000134",104705,"Disabled under the Equality Act",18330,0.17506327300511
+"E07000134",104705,"Not disabled under the Equality Act",86375,0.82493672699489
+"E07000135",57747,"Disabled under the Equality Act",9916,0.171714547941884
+"E07000135",57747,"Not disabled under the Equality Act",47831,0.828285452058116
+"E07000136",70504,"Disabled under the Equality Act",12576,0.178372858277545
+"E07000136",70504,"Not disabled under the Equality Act",57928,0.821627141722455
+"E07000137",142296,"Disabled under the Equality Act",35512,0.249564288525327
+"E07000137",142296,"Not disabled under the Equality Act",106784,0.750435711474672
+"E07000138",103813,"Disabled under the Equality Act",21323,0.205398167859517
+"E07000138",103813,"Not disabled under the Equality Act",82490,0.794601832140483
+"E07000139",118074,"Disabled under the Equality Act",22104,0.187204634381828
+"E07000139",118074,"Not disabled under the Equality Act",95970,0.812795365618172
+"E07000140",95122,"Disabled under the Equality Act",17901,0.188189903492357
+"E07000140",95122,"Not disabled under the Equality Act",77221,0.811810096507643
+"E07000141",143404,"Disabled under the Equality Act",25627,0.178704917575521
+"E07000141",143404,"Not disabled under the Equality Act",117777,0.821295082424479
+"E07000142",95153,"Disabled under the Equality Act",19530,0.205248389435961
+"E07000142",95153,"Not disabled under the Equality Act",75623,0.794751610564039
+"E07000143",141476,"Disabled under the Equality Act",27724,0.195962566088948
+"E07000143",141476,"Not disabled under the Equality Act",113752,0.804037433911052
+"E07000144",131724,"Disabled under the Equality Act",24420,0.185387628678145
+"E07000144",131724,"Not disabled under the Equality Act",107304,0.814612371321855
+"E07000145",99748,"Disabled under the Equality Act",22549,0.226059670369331
+"E07000145",99748,"Not disabled under the Equality Act",77199,0.773940329630669
+"E07000146",154325,"Disabled under the Equality Act",31213,0.202254981370484
+"E07000146",154325,"Not disabled under the Equality Act",123112,0.797745018629516
+"E07000147",102980,"Disabled under the Equality Act",23227,0.225548650223344
+"E07000147",102980,"Not disabled under the Equality Act",79753,0.774451349776656
+"E07000148",143922,"Disabled under the Equality Act",30018,0.20857130945929
+"E07000148",143922,"Not disabled under the Equality Act",113904,0.79142869054071
+"E07000149",141948,"Disabled under the Equality Act",25142,0.177121199312424
+"E07000149",141948,"Not disabled under the Equality Act",116806,0.822878800687576
+"E07000163",56927,"Disabled under the Equality Act",9740,0.171096316334955
+"E07000163",56927,"Not disabled under the Equality Act",47187,0.828903683665045
+"E07000164",90689,"Disabled under the Equality Act",15690,0.173008854436591
+"E07000164",90689,"Not disabled under the Equality Act",74999,0.826991145563409
+"E07000165",162667,"Disabled under the Equality Act",25946,0.159503771508665
+"E07000165",162667,"Not disabled under the Equality Act",136721,0.840496228491335
+"E07000166",49776,"Disabled under the Equality Act",8114,0.163010286081646
+"E07000166",49776,"Not disabled under the Equality Act",41662,0.836989713918354
+"E07000167",54707,"Disabled under the Equality Act",9593,0.175352331511507
+"E07000167",54707,"Not disabled under the Equality Act",45114,0.824647668488493
+"E07000168",108736,"Disabled under the Equality Act",23950,0.22025824014126
+"E07000168",108736,"Not disabled under the Equality Act",84786,0.77974175985874
+"E07000169",91988,"Disabled under the Equality Act",14953,0.1625538113667
+"E07000169",91988,"Not disabled under the Equality Act",77035,0.8374461886333
+"E07000170",126300,"Disabled under the Equality Act",27809,0.220182106096595
+"E07000170",126300,"Not disabled under the Equality Act",98491,0.779817893903405
+"E07000171",117804,"Disabled under the Equality Act",24022,0.203914977420122
+"E07000171",117804,"Not disabled under the Equality Act",93782,0.796085022579878
+"E07000172",110942,"Disabled under the Equality Act",20978,0.189089794667484
+"E07000172",110942,"Not disabled under the Equality Act",89964,0.810910205332516
+"E07000173",117263,"Disabled under the Equality Act",22062,0.18814118690465
+"E07000173",117263,"Not disabled under the Equality Act",95201,0.81185881309535
+"E07000174",110485,"Disabled under the Equality Act",24318,0.220102276327103
+"E07000174",110485,"Not disabled under the Equality Act",86167,0.779897723672897
+"E07000175",122955,"Disabled under the Equality Act",24469,0.199007767069253
+"E07000175",122955,"Not disabled under the Equality Act",98486,0.800992232930747
+"E07000176",119077,"Disabled under the Equality Act",19074,0.160182067065848
+"E07000176",119077,"Not disabled under the Equality Act",100003,0.839817932934152
+"E07000177",161016,"Disabled under the Equality Act",23398,0.14531475132906
+"E07000177",161016,"Not disabled under the Equality Act",137618,0.85468524867094
+"E07000178",162040,"Disabled under the Equality Act",23491,0.144970377684522
+"E07000178",162040,"Not disabled under the Equality Act",138549,0.855029622315478
+"E07000179",149085,"Disabled under the Equality Act",20899,0.1401817754972
+"E07000179",149085,"Not disabled under the Equality Act",128186,0.8598182245028
+"E07000180",138913,"Disabled under the Equality Act",20398,0.146840108557154
+"E07000180",138913,"Not disabled under the Equality Act",118515,0.853159891442846
+"E07000181",114237,"Disabled under the Equality Act",17296,0.151404536183548
+"E07000181",114237,"Not disabled under the Equality Act",96941,0.848595463816452
+"E07000187",116089,"Disabled under the Equality Act",20612,0.177553428834773
+"E07000187",116089,"Not disabled under the Equality Act",95477,0.822446571165227
+"E07000188",125342,"Disabled under the Equality Act",23987,0.191372405099647
+"E07000188",125342,"Not disabled under the Equality Act",101355,0.808627594900353
+"E07000189",172672,"Disabled under the Equality Act",31753,0.183892003335804
+"E07000189",172672,"Not disabled under the Equality Act",140919,0.816107996664196
+"E07000192",100519,"Disabled under the Equality Act",20325,0.202200578995016
+"E07000192",100519,"Not disabled under the Equality Act",80194,0.797799421004984
+"E07000193",124019,"Disabled under the Equality Act",20932,0.168780590070876
+"E07000193",124019,"Not disabled under the Equality Act",103087,0.831219409929124
+"E07000194",106436,"Disabled under the Equality Act",18944,0.177984892329663
+"E07000194",106436,"Not disabled under the Equality Act",87492,0.822015107670337
+"E07000195",123299,"Disabled under the Equality Act",25611,0.207714580004704
+"E07000195",123299,"Not disabled under the Equality Act",97688,0.792285419995296
+"E07000196",110472,"Disabled under the Equality Act",20606,0.186526902744587
+"E07000196",110472,"Not disabled under the Equality Act",89866,0.813473097255413
+"E07000197",136867,"Disabled under the Equality Act",24969,0.182432580534387
+"E07000197",136867,"Not disabled under the Equality Act",111898,0.817567419465613
+"E07000198",95845,"Disabled under the Equality Act",18822,0.196379571182639
+"E07000198",95845,"Not disabled under the Equality Act",77023,0.803620428817361
+"E07000199",78647,"Disabled under the Equality Act",14541,0.184889442699658
+"E07000199",78647,"Not disabled under the Equality Act",64106,0.815110557300342
+"E07000200",92341,"Disabled under the Equality Act",16160,0.175003519563358
+"E07000200",92341,"Not disabled under the Equality Act",76181,0.824996480436642
+"E07000202",139642,"Disabled under the Equality Act",25165,0.180210824823477
+"E07000202",139642,"Not disabled under the Equality Act",114477,0.819789175176523
+"E07000203",102701,"Disabled under the Equality Act",17539,0.170777304992162
+"E07000203",102701,"Not disabled under the Equality Act",85162,0.829222695007838
+"E07000207",138754,"Disabled under the Equality Act",16565,0.119383945688052
+"E07000207",138754,"Not disabled under the Equality Act",122189,0.880616054311948
+"E07000208",80938,"Disabled under the Equality Act",10369,0.128110405495565
+"E07000208",80938,"Not disabled under the Equality Act",70569,0.871889594504435
+"E07000209",143651,"Disabled under the Equality Act",19516,0.135857042415298
+"E07000209",143651,"Not disabled under the Equality Act",124135,0.864142957584702
+"E07000210",87386,"Disabled under the Equality Act",13242,0.151534570755041
+"E07000210",87386,"Not disabled under the Equality Act",74144,0.848465429244959
+"E07000211",150846,"Disabled under the Equality Act",21065,0.139645731408191
+"E07000211",150846,"Not disabled under the Equality Act",129781,0.860354268591809
+"E07000212",88080,"Disabled under the Equality Act",12842,0.145799273387829
+"E07000212",88080,"Not disabled under the Equality Act",75238,0.854200726612171
+"E07000213",102956,"Disabled under the Equality Act",14638,0.142177240763044
+"E07000213",102956,"Not disabled under the Equality Act",88318,0.857822759236956
+"E07000214",90453,"Disabled under the Equality Act",12268,0.135628447923231
+"E07000214",90453,"Not disabled under the Equality Act",78185,0.864371552076769
+"E07000215",87874,"Disabled under the Equality Act",13058,0.148599130573321
+"E07000215",87874,"Not disabled under the Equality Act",74816,0.851400869426679
+"E07000216",128229,"Disabled under the Equality Act",18396,0.143462087359334
+"E07000216",128229,"Not disabled under the Equality Act",109833,0.856537912640666
+"E07000217",103943,"Disabled under the Equality Act",14142,0.1360553380218
+"E07000217",103943,"Not disabled under the Equality Act",89801,0.8639446619782
+"E07000218",65032,"Disabled under the Equality Act",12045,0.18521650879567
+"E07000218",65032,"Not disabled under the Equality Act",52987,0.81478349120433
+"E07000219",134197,"Disabled under the Equality Act",25694,0.191464786843223
+"E07000219",134197,"Not disabled under the Equality Act",108503,0.808535213156777
+"E07000220",114363,"Disabled under the Equality Act",18058,0.157900719638345
+"E07000220",114363,"Not disabled under the Equality Act",96305,0.842099280361655
+"E07000221",134725,"Disabled under the Equality Act",21681,0.160927815921321
+"E07000221",134725,"Not disabled under the Equality Act",113044,0.839072184078679
+"E07000222",148453,"Disabled under the Equality Act",22535,0.151798885842657
+"E07000222",148453,"Not disabled under the Equality Act",125918,0.848201114157343
+"E07000223",64544,"Disabled under the Equality Act",12577,0.194859320773426
+"E07000223",64544,"Not disabled under the Equality Act",51967,0.805140679226574
+"E07000224",164889,"Disabled under the Equality Act",32481,0.196987064024889
+"E07000224",164889,"Not disabled under the Equality Act",132408,0.80301293597511
+"E07000225",124068,"Disabled under the Equality Act",20976,0.169068575297418
+"E07000225",124068,"Not disabled under the Equality Act",103092,0.830931424702582
+"E07000226",118493,"Disabled under the Equality Act",17697,0.149350594549889
+"E07000226",118493,"Not disabled under the Equality Act",100796,0.850649405450111
+"E07000227",146779,"Disabled under the Equality Act",21804,0.148549860674892
+"E07000227",146779,"Not disabled under the Equality Act",124975,0.851450139325108
+"E07000228",152566,"Disabled under the Equality Act",22063,0.144612823302702
+"E07000228",152566,"Not disabled under the Equality Act",130503,0.855387176697298
+"E07000229",111338,"Disabled under the Equality Act",21303,0.191336291293179
+"E07000229",111338,"Not disabled under the Equality Act",90035,0.808663708706821
+"E07000234",99183,"Disabled under the Equality Act",16437,0.165723964792354
+"E07000234",99183,"Not disabled under the Equality Act",82746,0.834276035207646
+"E07000235",79486,"Disabled under the Equality Act",15144,0.190524117454646
+"E07000235",79486,"Not disabled under the Equality Act",64342,0.809475882545354
+"E07000236",87036,"Disabled under the Equality Act",15304,0.175835286548095
+"E07000236",87036,"Not disabled under the Equality Act",71732,0.824164713451905
+"E07000237",103872,"Disabled under the Equality Act",18195,0.175167513863216
+"E07000237",103872,"Not disabled under the Equality Act",85677,0.824832486136784
+"E07000238",132492,"Disabled under the Equality Act",22955,0.173255743743018
+"E07000238",132492,"Not disabled under the Equality Act",109537,0.826744256256982
+"E07000239",101605,"Disabled under the Equality Act",20459,0.201358200875941
+"E07000239",101605,"Not disabled under the Equality Act",81146,0.798641799124059
+"E07000240",148170,"Disabled under the Equality Act",19128,0.129094958493622
+"E07000240",148170,"Not disabled under the Equality Act",129042,0.870905041506378
+"E07000241",119836,"Disabled under the Equality Act",17906,0.149420875196101
+"E07000241",119836,"Not disabled under the Equality Act",101930,0.850579124803899
+"E07000242",150157,"Disabled under the Equality Act",20462,0.136270703330514
+"E07000242",150157,"Not disabled under the Equality Act",129695,0.863729296669486
+"E07000243",89495,"Disabled under the Equality Act",15468,0.172836471311246
+"E07000243",89495,"Not disabled under the Equality Act",74027,0.827163528688754
+"E07000244",246058,"Disabled under the Equality Act",50749,0.206248120361866
+"E07000244",246058,"Not disabled under the Equality Act",195309,0.793751879638134
+"E07000245",179949,"Disabled under the Equality Act",29375,0.163240695974971
+"E07000245",179949,"Not disabled under the Equality Act",150574,0.836759304025029
+"E07000246",157445,"Disabled under the Equality Act",30163,0.19157801136905
+"E07000246",157445,"Not disabled under the Equality Act",127282,0.80842198863095
+"E08000001",295963,"Disabled under the Equality Act",53598,0.181096961444505
+"E08000001",295963,"Not disabled under the Equality Act",242365,0.818903038555495
+"E08000002",193851,"Disabled under the Equality Act",35886,0.18512156243713
+"E08000002",193851,"Not disabled under the Equality Act",157965,0.81487843756287
+"E08000003",551938,"Disabled under the Equality Act",96737,0.175267874290228
+"E08000003",551938,"Not disabled under the Equality Act",455201,0.824732125709772
+"E08000004",242087,"Disabled under the Equality Act",44249,0.182781396770582
+"E08000004",242087,"Not disabled under the Equality Act",197838,0.817218603229418
+"E08000005",223773,"Disabled under the Equality Act",42567,0.190224021664812
+"E08000005",223773,"Not disabled under the Equality Act",181206,0.809775978335188
+"E08000006",269924,"Disabled under the Equality Act",49818,0.184563062195285
+"E08000006",269924,"Not disabled under the Equality Act",220106,0.815436937804715
+"E08000007",294773,"Disabled under the Equality Act",53493,0.181471844436227
+"E08000007",294773,"Not disabled under the Equality Act",241280,0.818528155563773
+"E08000008",231071,"Disabled under the Equality Act",46209,0.199977496094274
+"E08000008",231071,"Not disabled under the Equality Act",184862,0.800022503905726
+"E08000009",235052,"Disabled under the Equality Act",37550,0.159751884689345
+"E08000009",235052,"Not disabled under the Equality Act",197502,0.840248115310655
+"E08000010",329330,"Disabled under the Equality Act",65868,0.200006072935961
+"E08000010",329330,"Not disabled under the Equality Act",263462,0.799993927064039
+"E08000011",154519,"Disabled under the Equality Act",34990,0.226444644347944
+"E08000011",154519,"Not disabled under the Equality Act",119529,0.773555355652056
+"E08000012",486088,"Disabled under the Equality Act",105962,0.217989335264397
+"E08000012",486088,"Not disabled under the Equality Act",380126,0.782010664735603
+"E08000013",183248,"Disabled under the Equality Act",40829,0.222807343054222
+"E08000013",183248,"Not disabled under the Equality Act",142419,0.777192656945778
+"E08000014",279234,"Disabled under the Equality Act",61134,0.218934656954382
+"E08000014",279234,"Not disabled under the Equality Act",218100,0.781065343045618
+"E08000015",320200,"Disabled under the Equality Act",73088,0.228257339163023
+"E08000015",320200,"Not disabled under the Equality Act",247112,0.771742660836977
+"E08000016",244572,"Disabled under the Equality Act",53916,0.220450419508366
+"E08000016",244572,"Not disabled under the Equality Act",190656,0.779549580491634
+"E08000017",308109,"Disabled under the Equality Act",62418,0.202584150414301
+"E08000017",308109,"Not disabled under the Equality Act",245691,0.797415849585699
+"E08000018",265807,"Disabled under the Equality Act",56177,0.21134507368128
+"E08000018",265807,"Not disabled under the Equality Act",209630,0.78865492631872
+"E08000019",556521,"Disabled under the Equality Act",109869,0.197421121574927
+"E08000019",556521,"Not disabled under the Equality Act",446652,0.802578878425073
+"E08000021",300125,"Disabled under the Equality Act",56961,0.189790920449813
+"E08000021",300125,"Not disabled under the Equality Act",243164,0.810209079550187
+"E08000022",208968,"Disabled under the Equality Act",41748,0.199781784770874
+"E08000022",208968,"Not disabled under the Equality Act",167220,0.800218215229126
+"E08000023",147777,"Disabled under the Equality Act",33368,0.225799684659994
+"E08000023",147777,"Not disabled under the Equality Act",114409,0.774200315340006
+"E08000024",274170,"Disabled under the Equality Act",64396,0.234876171718277
+"E08000024",274170,"Not disabled under the Equality Act",209774,0.765123828281723
+"E08000025",1144919,"Disabled under the Equality Act",198064,0.17299389738488
+"E08000025",1144919,"Not disabled under the Equality Act",946855,0.82700610261512
+"E08000026",345323,"Disabled under the Equality Act",57225,0.165714418095522
+"E08000026",345323,"Not disabled under the Equality Act",288098,0.834285581904478
+"E08000027",323488,"Disabled under the Equality Act",62567,0.193413666040162
+"E08000027",323488,"Not disabled under the Equality Act",260921,0.806586333959838
+"E08000028",341832,"Disabled under the Equality Act",61047,0.178587727304641
+"E08000028",341832,"Not disabled under the Equality Act",280785,0.821412272695359
+"E08000029",216240,"Disabled under the Equality Act",37234,0.172188309285979
+"E08000029",216240,"Not disabled under the Equality Act",179006,0.827811690714021
+"E08000030",284124,"Disabled under the Equality Act",54153,0.190596359336065
+"E08000030",284124,"Not disabled under the Equality Act",229971,0.809403640663935
+"E08000031",263727,"Disabled under the Equality Act",47979,0.181926765177627
+"E08000031",263727,"Not disabled under the Equality Act",215748,0.818073234822373
+"E08000032",546411,"Disabled under the Equality Act",93697,0.171477148154045
+"E08000032",546411,"Not disabled under the Equality Act",452714,0.828522851845955
+"E08000033",206629,"Disabled under the Equality Act",37860,0.183226942975091
+"E08000033",206629,"Not disabled under the Equality Act",168769,0.816773057024909
+"E08000034",433216,"Disabled under the Equality Act",75591,0.174488015216428
+"E08000034",433216,"Not disabled under the Equality Act",357625,0.825511984783572
+"E08000035",811953,"Disabled under the Equality Act",135681,0.167104499891004
+"E08000035",811953,"Not disabled under the Equality Act",676272,0.832895500108996
+"E08000036",353370,"Disabled under the Equality Act",71206,0.201505504145796
+"E08000036",353370,"Not disabled under the Equality Act",282164,0.798494495854204
+"E08000037",196151,"Disabled under the Equality Act",42548,0.216914519936172
+"E08000037",196151,"Not disabled under the Equality Act",153603,0.783085480063828
+"E09000001",8583,"Disabled under the Equality Act",919,0.107072119305604
+"E09000001",8583,"Not disabled under the Equality Act",7664,0.892927880694396
+"E09000002",218868,"Disabled under the Equality Act",28993,0.132467971562768
+"E09000002",218868,"Not disabled under the Equality Act",189875,0.867532028437232
+"E09000003",389344,"Disabled under the Equality Act",49679,0.12759667543355
+"E09000003",389344,"Not disabled under the Equality Act",339665,0.87240332456645
+"E09000004",246472,"Disabled under the Equality Act",36083,0.146397968126197
+"E09000004",246472,"Not disabled under the Equality Act",210389,0.853602031873803
+"E09000005",339814,"Disabled under the Equality Act",41163,0.121133914435544
+"E09000005",339814,"Not disabled under the Equality Act",298651,0.878866085564456
+"E09000006",329991,"Disabled under the Equality Act",45894,0.139076520268735
+"E09000006",329991,"Not disabled under the Equality Act",284097,0.860923479731265
+"E09000007",210136,"Disabled under the Equality Act",31882,0.1517207903453
+"E09000007",210136,"Not disabled under the Equality Act",178254,0.8482792096547
+"E09000008",390719,"Disabled under the Equality Act",54852,0.140387337191178
+"E09000008",390719,"Not disabled under the Equality Act",335867,0.859612662808822
+"E09000009",367115,"Disabled under the Equality Act",44811,0.122062568949784
+"E09000009",367115,"Not disabled under the Equality Act",322304,0.877937431050216
+"E09000010",329984,"Disabled under the Equality Act",44876,0.135994472459271
+"E09000010",329984,"Not disabled under the Equality Act",285108,0.864005527540729
+"E09000011",289069,"Disabled under the Equality Act",41576,0.143827252316921
+"E09000011",289069,"Not disabled under the Equality Act",247493,0.856172747683079
+"E09000012",259146,"Disabled under the Equality Act",37020,0.142853835289759
+"E09000012",259146,"Not disabled under the Equality Act",222126,0.857146164710241
+"E09000013",183158,"Disabled under the Equality Act",22972,0.125421766998984
+"E09000013",183158,"Not disabled under the Equality Act",160186,0.874578233001016
+"E09000014",264238,"Disabled under the Equality Act",36114,0.136672242448096
+"E09000014",264238,"Not disabled under the Equality Act",228124,0.863327757551904
+"E09000015",261203,"Disabled under the Equality Act",31258,0.119669375926004
+"E09000015",261203,"Not disabled under the Equality Act",229945,0.880330624073996
+"E09000016",262052,"Disabled under the Equality Act",38449,0.146722787843634
+"E09000016",262052,"Not disabled under the Equality Act",223603,0.853277212156366
+"E09000017",305909,"Disabled under the Equality Act",39466,0.129012222589071
+"E09000017",305909,"Not disabled under the Equality Act",266443,0.870987777410929
+"E09000018",288181,"Disabled under the Equality Act",35294,0.122471641086678
+"E09000018",288181,"Not disabled under the Equality Act",252887,0.877528358913322
+"E09000019",216589,"Disabled under the Equality Act",35063,0.161887261125911
+"E09000019",216589,"Not disabled under the Equality Act",181526,0.838112738874089
+"E09000020",143376,"Disabled under the Equality Act",18311,0.127713145854257
+"E09000020",143376,"Not disabled under the Equality Act",125065,0.872286854145743
+"E09000021",168063,"Disabled under the Equality Act",21990,0.130843790721337
+"E09000021",168063,"Not disabled under the Equality Act",146073,0.869156209278663
+"E09000022",317654,"Disabled under the Equality Act",42017,0.132272850334011
+"E09000022",317654,"Not disabled under the Equality Act",275637,0.867727149665989
+"E09000023",300553,"Disabled under the Equality Act",43248,0.143894754003454
+"E09000023",300553,"Not disabled under the Equality Act",257305,0.856105245996546
+"E09000024",215187,"Disabled under the Equality Act",25902,0.120369724936915
+"E09000024",215187,"Not disabled under the Equality Act",189285,0.879630275063085
+"E09000025",351036,"Disabled under the Equality Act",42032,0.119737007030618
+"E09000025",351036,"Not disabled under the Equality Act",309004,0.880262992969382
+"E09000026",310259,"Disabled under the Equality Act",37022,0.119326111410144
+"E09000026",310259,"Not disabled under the Equality Act",273237,0.880673888589856
+"E09000027",195278,"Disabled under the Equality Act",23479,0.120233718083962
+"E09000027",195278,"Not disabled under the Equality Act",171799,0.879766281916038
+"E09000028",307637,"Disabled under the Equality Act",42022,0.136596053140552
+"E09000028",307637,"Not disabled under the Equality Act",265615,0.863403946859448
+"E09000029",209639,"Disabled under the Equality Act",29614,0.141261883523581
+"E09000029",209639,"Not disabled under the Equality Act",180025,0.858738116476419
+"E09000030",310306,"Disabled under the Equality Act",40125,0.129307844514769
+"E09000030",310306,"Not disabled under the Equality Act",270181,0.870692155485231
+"E09000031",278426,"Disabled under the Equality Act",36762,0.132035082930473
+"E09000031",278426,"Not disabled under the Equality Act",241664,0.867964917069526
+"E09000032",327506,"Disabled under the Equality Act",37444,0.11433072981869
+"E09000032",327506,"Not disabled under the Equality Act",290062,0.88566927018131
+"E09000033",204234,"Disabled under the Equality Act",28122,0.137694996915303
+"E09000033",204234,"Not disabled under the Equality Act",176112,0.862305003084697

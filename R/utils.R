@@ -1,7 +1,7 @@
 # Health Index utilities
 
 library(tidyverse)
-library(healthyr)
+#library(healthyr)
 library(healthindexwales)
 library(healthindexscotland)
 library(healthindexni)

@@ -5,7 +5,7 @@
 \alias{scotland_beds}
 \title{Bed occupancy/availability in Scotland}
 \format{
-A data frame with 11,060 rows and 6 variables:
+A data frame with 11,029 rows and 6 variables:
 \describe{
 \item{hb19_code}{Scottish Health Board code}
 \item{date}{Date, representing the start of the quarter}
@@ -23,6 +23,6 @@ A data frame with 11,060 rows and 6 variables:
 scotland_beds
 }
 \description{
-Beds by Board of Treatment and Specialty, 2016-2022.
+Beds by Board of Treatment and Specialty, 2016-2024.
 }
 \keyword{datasets}

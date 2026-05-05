@@ -3,9 +3,9 @@
 \docType{data}
 \name{wales_health_board_critical_general_acute_beds}
 \alias{wales_health_board_critical_general_acute_beds}
-\title{Wales health board bed availability - (2022)}
+\title{Wales health board bed availability - (2022 - )}
 \format{
-A data frame with 3,103 rows and 7 variables:
+A data frame with 1,595 rows and 7 variables:
 \describe{
 \item{date}{Date}
 \item{health_board_code}{Local health board code}

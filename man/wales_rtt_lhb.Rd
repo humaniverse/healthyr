@@ -5,7 +5,7 @@
 \alias{wales_rtt_lhb}
 \title{Consultant-led Referral to Treatment (RTT) by Local Health Board}
 \format{
-A data frame with 1,652 rows and 6 variables:
+A data frame with 2,212 rows and 7 variables:
 \describe{
 \item{lhb22_code}{Local Health Board code}
 \item{lhb22_name}{Local Health Board name}

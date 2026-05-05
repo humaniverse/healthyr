@@ -34,11 +34,13 @@ scrape_data <- function(id, sheet, skip_rows) {
 
   # "Day Case" column removed due to missing values and duplicate values with "Total Day Cases".
   data <- raw |>
-    rename(trust18_name = "HSC Trust") |>
+    rename(trust18_name = "HSC Trust",
+           date = any_of(c("Quarter Ending", "Quarter Ending*"))
+    ) |>
     left_join(lookup_trusts, by = "trust18_name") |>
     select(
       trust18_code,
-      date = "Quarter Ending",
+      date,
       hospital = "Hospital",
       programme_of_care = "Programme of Care",
       specialty = "Specialty",

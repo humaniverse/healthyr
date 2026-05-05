@@ -2,9 +2,9 @@
 
 library(tidyverse)
 #library(healthyr)
-library(healthindexwales)
-library(healthindexscotland)
-library(healthindexni)
+#library(healthindexwales)
+#library(healthindexscotland)
+#library(healthindexni)
 
 # Returns a tibble of LTLA code with selected domain score, rank, and decile.
 # nation: england/wales/scotland/ni

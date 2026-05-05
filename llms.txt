@@ -1,0 +1,160 @@
+# healthyr
+
+## Overview
+
+healthyr is an R package for distributing UK health data:
+
+## Installation
+
+You can install the development version from
+[GitHub](https://github.com/) with:
+
+``` r
+
+# install.packages("devtools")
+devtools::install_github("humaniverse/healthyr")
+```
+
+## Development
+
+To add data sets to the package:
+
+1.  Update `data-raw/query-urls.R`. Keep to alphabetical ordering. Make
+    sure to build and export the tibble.
+2.  Add a file to `data-raw/`. See other files for template.
+3.  Document the data set in `R/data.R`. Keep to alphabetical ordering.
+4.  Run `devtools::document()` to export documentation.
+5.  Run `devtools::check()` to check for errors/warnings/notes.
+6.  Update `LICENSE` by adding the license of the new data set if not
+    already covered.
+
+![](reference/figures/file-structure.png)
+
+## Contributing
+
+To contribute to this project, please follow [GitHub
+Flow](https://guides.github.com/introduction/flow/) when submitting
+changes.
+
+> Please note that this project is released with a Contributor Code of
+> Conduct. By participating in this project you agree to abide by its
+> terms.
+
+## Credits
+
+See [LICENSE](https://humaniverse.github.io/LICENSE)
+
+# Package index
+
+## All functions
+
+- [`england_ae_acute_trust_attribution`](https://humaniverse.github.io/healthyr/reference/england_ae_acute_trust_attribution.md)
+  : England Attribution from Type 3 A&E Providers to Acute Trusts
+  (updated June 2022)
+- [`england_crime_severity`](https://humaniverse.github.io/healthyr/reference/england_crime_severity.md)
+  : Crime severity score in England
+- [`england_critical_general_acute_beds`](https://humaniverse.github.io/healthyr/reference/england_critical_general_acute_beds.md)
+  : Critical care and General & Acute Beds
+- [`england_delayed_discharge_reasons`](https://humaniverse.github.io/healthyr/reference/england_delayed_discharge_reasons.md)
+  : Disability by LTLA for England, 2021
+- [`england_disability_21`](https://humaniverse.github.io/healthyr/reference/england_disability_21.md)
+  : Disability by LTLA for England, 2021
+- [`england_health_index`](https://humaniverse.github.io/healthyr/reference/england_health_index.md)
+  : England Health Index (ONS)
+- [`england_health_index_ics`](https://humaniverse.github.io/healthyr/reference/england_health_index_ics.md)
+  : England Health Index (ONS)
+- [`england_health_index_ics_indicators`](https://humaniverse.github.io/healthyr/reference/england_health_index_ics_indicators.md)
+  : England Health Index (ONS) - subdomains
+- [`england_health_index_indicators`](https://humaniverse.github.io/healthyr/reference/england_health_index_indicators.md)
+  : England Health Index (ONS) - underlying indicators
+- [`england_health_index_subdomains`](https://humaniverse.github.io/healthyr/reference/england_health_index_subdomains.md)
+  : England Health Index (ONS) - subdomains
+- [`england_homelessness`](https://humaniverse.github.io/healthyr/reference/england_homelessness.md)
+  : Statutory homelessness in England
+- [`england_icb_accidents_emergency`](https://humaniverse.github.io/healthyr/reference/england_icb_accidents_emergency.md)
+  : England Accident and Emergency Admissions by Integrated Care Board -
+  (2022-25)
+- [`england_icb_criteria_to_reside`](https://humaniverse.github.io/healthyr/reference/england_icb_criteria_to_reside.md)
+  : Hospital ICB Discharge Data - Criteria to Reside
+- [`england_icb_discharged_patients`](https://humaniverse.github.io/healthyr/reference/england_icb_discharged_patients.md)
+  : Hospital ICB Discharge Data - Discharged Patients
+- [`england_legal_partnership_21`](https://humaniverse.github.io/healthyr/reference/england_legal_partnership_21.md)
+  : Legal Partnership Status, England, 2021
+- [`england_rtt_flow_stp`](https://humaniverse.github.io/healthyr/reference/england_rtt_flow_stp.md)
+  : Consultant-led Referral to Treatment (RTT) pathway flow by ICS/STP
+- [`england_rtt_region`](https://humaniverse.github.io/healthyr/reference/england_rtt_region.md)
+  : Consultant-led Referral to Treatment (RTT) by NHS Region
+- [`england_rtt_stp`](https://humaniverse.github.io/healthyr/reference/england_rtt_stp.md)
+  : Consultant-led Referral to Treatment (RTT) by ICS/STP
+- [`england_rtt_trust`](https://humaniverse.github.io/healthyr/reference/england_rtt_trust.md)
+  : Consultant-led Referral to Treatment (RTT) by NHS Trust
+- [`england_sexual_orientation_21`](https://humaniverse.github.io/healthyr/reference/england_sexual_orientation_21.md)
+  : Sexual orientation, England, 2021
+- [`england_sicb_iapt`](https://humaniverse.github.io/healthyr/reference/england_sicb_iapt.md)
+  : Psychological Therapies - IAPT
+- [`england_trust_accidents_emergency`](https://humaniverse.github.io/healthyr/reference/england_trust_accidents_emergency.md)
+  : England Accident and Emergency Admissions by Trust - (2021-25)
+- [`england_trust_criteria_to_reside`](https://humaniverse.github.io/healthyr/reference/england_trust_criteria_to_reside.md)
+  : Hospital Trust Discharge Data - Criteria to Reside
+- [`england_trust_discharged_patients`](https://humaniverse.github.io/healthyr/reference/england_trust_discharged_patients.md)
+  : Hospital Trust Discharge Data - Discharged Patients
+- [`england_trust_iapt`](https://humaniverse.github.io/healthyr/reference/england_trust_iapt.md)
+  : Physchological Therpaies - IAPT
+- [`england_underdoctored_areas`](https://humaniverse.github.io/healthyr/reference/england_underdoctored_areas.md)
+  : Underdoctored areas in England
+- [`ni_beds`](https://humaniverse.github.io/healthyr/reference/ni_beds.md)
+  : Bed Availability in Northern Ireland
+- [`ni_rtt_hsct`](https://humaniverse.github.io/healthyr/reference/ni_rtt_hsct.md)
+  : Consultant-led Referral to Treatment (RTT) by Health & Social Care
+  Trust
+- [`ni_underdoctored_areas`](https://humaniverse.github.io/healthyr/reference/ni_underdoctored_areas.md)
+  : Underdoctored areas in Northern Ireland
+- [`ni_unpaid_care_21`](https://humaniverse.github.io/healthyr/reference/ni_unpaid_care_21.md)
+  : Provision of unpaid care (delayed discharge) in Northern Ireland
+- [`ni_waiting_times`](https://humaniverse.github.io/healthyr/reference/ni_waiting_times.md)
+  : Northern Ireland Emergency Care Waiting Times
+- [`scotland_ae_admission`](https://humaniverse.github.io/healthyr/reference/scotland_ae_admission.md)
+  : Scotland A&E Admission Outcomes
+- [`scotland_ae_attendance`](https://humaniverse.github.io/healthyr/reference/scotland_ae_attendance.md)
+  : Scotland A&E attendances
+- [`scotland_beds`](https://humaniverse.github.io/healthyr/reference/scotland_beds.md)
+  : Bed occupancy/availability in Scotland
+- [`scotland_care_at_home`](https://humaniverse.github.io/healthyr/reference/scotland_care_at_home.md)
+  : Care at Home in Scotland
+- [`scotland_delayed_discharge_hb`](https://humaniverse.github.io/healthyr/reference/scotland_delayed_discharge_hb.md)
+  : Delayed Discharge Bed Days by Health Board in Scotland
+- [`scotland_delayed_discharge_ltla`](https://humaniverse.github.io/healthyr/reference/scotland_delayed_discharge_ltla.md)
+  : Delayed Discharge Bed Days by Council Area in Scotland
+- [`scotland_homelessness`](https://humaniverse.github.io/healthyr/reference/scotland_homelessness.md)
+  : Homelessness in Scotland
+- [`scotland_rtt`](https://humaniverse.github.io/healthyr/reference/scotland_rtt.md)
+  : Consultant-led Referral to Treatment (RTT) in Scotland
+- [`scotland_rtt_hb`](https://humaniverse.github.io/healthyr/reference/scotland_rtt_hb.md)
+  : Consultant-led Referral to Treatment (RTT) by Scottish Health Board
+- [`scotland_underdoctored_areas`](https://humaniverse.github.io/healthyr/reference/scotland_underdoctored_areas.md)
+  : Underdoctored areas in Scotland
+- [`wales_ae_performance`](https://humaniverse.github.io/healthyr/reference/wales_ae_performance.md)
+  : Emergency department performance statistics
+- [`wales_ambulance_waiting_times`](https://humaniverse.github.io/healthyr/reference/wales_ambulance_waiting_times.md)
+  : Wales ambulance waiting times - (2022)
+- [`wales_crime_severity`](https://humaniverse.github.io/healthyr/reference/wales_crime_severity.md)
+  : Crime severity score in Wales
+- [`wales_delayed_discharge_reasons`](https://humaniverse.github.io/healthyr/reference/wales_delayed_discharge_reasons.md)
+  : Delayed discharge reasons for Wales, 2023 April - 2025 March
+- [`wales_disability_21`](https://humaniverse.github.io/healthyr/reference/wales_disability_21.md)
+  : Disability by LTLA for Wales, 2021
+- [`wales_health_board_critical_general_acute_beds`](https://humaniverse.github.io/healthyr/reference/wales_health_board_critical_general_acute_beds.md)
+  : Wales health board bed availability - (2022 - )
+- [`wales_homelessness`](https://humaniverse.github.io/healthyr/reference/wales_homelessness.md)
+  : Homelessness in Wales
+- [`wales_hospitals_critical_general_acute_beds`](https://humaniverse.github.io/healthyr/reference/wales_hospitals_critical_general_acute_beds.md)
+  : Wales hospital bed availability - (2022)
+- [`wales_legal_partnership_21`](https://humaniverse.github.io/healthyr/reference/wales_legal_partnership_21.md)
+  : Legal Partnership Status, Wales, 2021
+- [`wales_rtt_lhb`](https://humaniverse.github.io/healthyr/reference/wales_rtt_lhb.md)
+  : Consultant-led Referral to Treatment (RTT) by Local Health Board
+- [`wales_sexual_orientation_21`](https://humaniverse.github.io/healthyr/reference/wales_sexual_orientation_21.md)
+  : Sexual orientation, Wales, 2021
+- [`wales_underdoctored_areas`](https://humaniverse.github.io/healthyr/reference/wales_underdoctored_areas.md)
+  : Underdoctored areas in Wales
+

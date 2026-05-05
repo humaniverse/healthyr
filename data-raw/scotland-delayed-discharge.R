@@ -47,7 +47,8 @@ scotland_delayed_discharge_ltla <-
     delay_reason = ReasonForDelay,
     num_delayed_bed_days = NumberOfDelayedBedDays,
     average_daily_delayed_beds = AverageDailyNumberOfDelayedBeds
-  )
+  ) |>
+  drop_na(ltla_code) # Raw data has nulls
 
 # Save output to data/ folder
 usethis::use_data(scotland_delayed_discharge_ltla, overwrite = TRUE)

@@ -1,3 +1,5 @@
+# Note that there is no migrated replacement dataset on the new StatsWales website
+
 # ---- Load ----
 library(httr2)
 library(dplyr)
